@@ -5,6 +5,7 @@
   "videos": {
     "mode": "auto",
     "max": 8,
+    "maxPerChannel": 2,
     "minViews": 10000,
     "minDurationMin": 5,
     "maxDurationMin": 40,

@@ -90,7 +90,13 @@ function pickVideos(c) {
   let items = store.items.filter(v => v.status !== 'blocked');
   if (cfg.videos.mode === 'manual') items = items.filter(v => v.status === 'approved');
   items.sort((a, b) => (b.status === 'approved') - (a.status === 'approved') || b.score - a.score);
-  items = items.slice(0, cfg.videos.max);
+  // 同じチャンネルの動画は最大2本まで（承認済みは除く）
+  const perChannel = new Map();
+  items = items.filter(v => {
+    const n = (perChannel.get(v.channelId) ?? 0) + 1;
+    perChannel.set(v.channelId, n);
+    return v.status === 'approved' || n <= (cfg.videos.maxPerChannel ?? 2);
+  }).slice(0, cfg.videos.max);
   if (!items.length && DEMO) {
     items = Array.from({ length: 6 }, (_, i) => ({ demo: true, id: '', title: `（サンプル）${c.name}旅行vlog ${i + 1}`, channel: 'サンプルチャンネル', durationSec: 600 + i * 137, views: 120000 - i * 15000, summary: 'ここに、動画の見どころを自分の言葉で2〜3行でまとめた概要が入ります。' }));
   }
