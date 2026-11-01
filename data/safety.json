@@ -1,168 +1,198 @@
 {
   "checkedAt": "2026-11-01",
-  "source": "manual",
+  "source": "auto",
   "countries": {
     "korea": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "taiwan": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "vietnam": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "singapore": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "thailand": {
       "status": "ok",
       "listed": true,
       "infection": false,
       "reasons": [
-        "一部地域に危険情報あり。主な観光地はレベル0（手動確認）"
+        "一部地域のみにレベル0まで。主な観光地は含まれていない"
       ],
-      "hash": null
+      "hash": "ea265dffcac47343",
+      "maxLevel": 0,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_007.html",
+      "dangerText": [
+        "危険情報"
+      ]
     },
     "china": {
       "status": "ok",
       "listed": true,
       "infection": false,
       "reasons": [
-        "一部地域に危険情報あり。主な観光地はレベル0（手動確認）"
+        "一部地域のみにレベル0まで。主な観光地は含まれていない"
       ],
-      "hash": null
+      "hash": "ea265dffcac47343",
+      "maxLevel": 0,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_009.html",
+      "dangerText": [
+        "危険情報"
+      ]
     },
     "malaysia": {
       "status": "ok",
       "listed": true,
       "infection": false,
       "reasons": [
-        "一部地域に危険情報あり。主な観光地はレベル0（手動確認）"
+        "一部地域のみにレベル0まで。主な観光地は含まれていない"
       ],
-      "hash": null
+      "hash": "ea265dffcac47343",
+      "maxLevel": 0,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_017.html",
+      "dangerText": [
+        "危険情報"
+      ]
     },
     "usa": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "hawaii": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "guam": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "canada": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "australia": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "new-zealand": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "france": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "italy": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "spain": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "uk": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     },
     "switzerland": {
       "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし（手動確認）"
+        "危険情報なし"
       ],
-      "hash": null
+      "hash": null,
+      "maxLevel": 0
     }
   }
 }
