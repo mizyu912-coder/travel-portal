@@ -15,7 +15,12 @@ async function api(path, params) {
   const url = new URL(`${API}/${path}`);
   for (const [k, v] of Object.entries({ ...params, key: KEY })) url.searchParams.set(k, v);
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`${path}: HTTP ${res.status} ${await res.text()}`);
+  if (!res.ok) {
+    const body = await res.text();
+    const err = new Error(`${path}: HTTP ${res.status} ${body.slice(0, 300)}`);
+    err.quota = res.status === 429 || /quota|rateLimitExceeded/i.test(body);
+    throw err;
+  }
   return res.json();
 }
 // "PT1H2M3S" → 秒
@@ -31,8 +36,21 @@ function score(v) {
 
 const publishedAfter = new Date(Date.now() - cfg.maxAgeYears * 365 * 864e5).toISOString();
 
+let quotaHit = false;
 for (const c of countries) {
   if (only.length && !only.includes(c.id)) continue;
+  try { await collect(c); }
+  catch (e) {
+    if (!e.quota) throw e;
+    // 1日の上限に達したら、残りの国は次回に回す（集めた分は保存済み）
+    console.warn(`YouTube API の1日の上限に達したため、${c.name}以降は次回に収集します。`);
+    quotaHit = true;
+    break;
+  }
+}
+if (quotaHit) process.exitCode = 0;
+
+async function collect(c) {
   const file = `data/videos/${c.id}.json`;
   const store = readJSON(file, { items: [] });
   const known = new Map(store.items.map(i => [i.id, i]));
