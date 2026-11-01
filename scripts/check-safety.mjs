@@ -45,13 +45,15 @@ for (const c of countries) {
       r.reasons.push('危険情報一覧に載ったが、国別ページの番号（mofaCode）が未設定のため自動で非公開');
     } else {
       try {
-        const page = parseCountryPage(await get(countryUrl(c.safety.mofaCode)));
+        const html = await get(countryUrl(c.safety.mofaCode));
+        const page = parseCountryPage(html);
         r.hash = sha(page.block.join('\n'));
         r.maxLevel = page.maxLevel ?? 0;
         r.mofaUrl = countryUrl(c.safety.mofaCode);
+        if (!page.noInfection && !page.noDanger) r.infection = r.infection || /感染症危険情報[（(]レベル/.test(html);
         if (page.noDanger) {
           r.reasons.push('国別ページでは危険情報なし');
-        } else if (!page.block.length) {
+        } else if (!page.block.length || page.maxLevel === null) {
           r.status = 'hidden';
           r.reasons.push('国別ページから危険情報を読み取れなかったため自動で非公開');
         } else {

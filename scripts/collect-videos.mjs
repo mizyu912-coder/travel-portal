@@ -26,7 +26,7 @@ function score(v) {
   const ageYears = (Date.now() - new Date(v.publishedAt)) / (365 * 864e5);
   const likeRate = v.views ? v.likes / v.views : 0;
   // 再生数（対数）＋いいね率＋新しさ
-  return +(Math.log10(Math.max(v.views, 1)) + Math.min(likeRate, 0.1) * 50 + Math.max(0, 1 - ageYears / cfg.maxAgeYears)).toFixed(3);
+  return +(Math.log10(Math.max(v.views, 1)) + Math.min(likeRate, 0.04) * 25 + Math.max(0, 1 - ageYears / cfg.maxAgeYears)).toFixed(3);
 }
 
 const publishedAfter = new Date(Date.now() - cfg.maxAgeYears * 365 * 864e5).toISOString();

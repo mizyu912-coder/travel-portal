@@ -12,18 +12,18 @@ export function parseKikenList(html) {
   return names;
 }
 
-// 国別ページから危険情報の部分を取り出す
+// 国別ページから危険情報の部分を取り出す。
+// ページ内の <h4 class="danger">危険情報</h4> から次の <h4> 見出しまでを危険情報とみなす。
 export function parseCountryPage(html) {
   const lines = htmlToLines(html).map(toHalf);
   const noDanger = lines.some(l => l.includes('現在、危険情報は出ておりません'));
   const noInfection = lines.some(l => l.includes('現在、感染症危険情報は出ておりません'));
-  const start = lines.findIndex(l => /危険情報/.test(l) && !/感染症/.test(l) && /レベル|危険情報$|【危険情報】/.test(l));
   let block = [];
-  if (start >= 0) {
-    for (let i = start; i < Math.min(lines.length, start + 40); i++) {
-      if (i > start && /感染症危険情報|スポット情報|広域情報/.test(lines[i])) break;
-      block.push(lines[i]);
-    }
+  const i = html.search(/<h4[^>]*class="[^"]*danger[^"]*"/i);
+  if (i >= 0) {
+    const rest = html.slice(i);
+    const j = rest.slice(4).search(/<h4[\s>]/i);
+    block = htmlToLines(j >= 0 ? rest.slice(0, j + 4) : rest.slice(0, 20000)).map(toHalf);
   }
   const levels = [...block.join('\n').matchAll(/レベル\s*([1-4])/g)].map(m => Number(m[1]));
   return { noDanger, noInfection, block, maxLevel: levels.length ? Math.max(...levels) : null };

@@ -8,15 +8,22 @@ test('危険情報一覧からリンク名を拾う', () => {
 });
 
 test('一部地域だけのレベルは掲載を続けられる', () => {
-  const html = `<h2>危険情報</h2><p>【危険度】</p><p>●カンボジア国境から３０ｋｍ以内の地域<br>　レベル３：渡航は止めてください。</p><p>●ソンクラー県（上記３郡を除く）<br>レベル２：不要不急の渡航は止めてください。</p><h2>感染症危険情報</h2><p>現在、感染症危険情報は出ておりません。</p>`;
+  // 2026-11-01 に取得した外務省タイページの構成を簡略化したもの
+  const html = `<ul><li class="on">危険情報</li><li>感染症危険情報<span class="infect_cnt"><span>0</span></span></li></ul>
+<p>現在、危険情報が出ております。</p>
+<h4 class="danger"><span>危険情報</span></h4><div>レベル３<br />渡航中止勧告</div><div>レベル２<br />不要不急の渡航中止</div>
+<a class="underline" href="/info/x.html">【危険レベル】<br>●カンボジアとの国境付近（シーサケート県、トラート県のカンボジア国境から30km以内）<br>レベル3：渡航は止めてください。（渡航中止勧告）  《継続》<br>●ソンクラー県（上記３郡を除く）<br>レベル２：不要不急の渡航は止めてください。</a>
+<h4 class="infection"><span>感染症危険情報</span></h4><p>現在、感染症危険情報は出ておりません。</p>`;
   const r = parseCountryPage(html);
   assert.equal(r.maxLevel, 3);
+  assert.equal(r.noInfection, true);
+  assert.ok(!r.block.join('').includes('現在、感染症'));
   assert.equal(NATIONWIDE.test(r.block.join('\n')), false);
   assert.equal(r.block.join('\n').includes('バンコク'), false);
 });
 
 test('「上記以外の地域」にレベルが出ていれば検出する', () => {
-  const html = `<h2>危険情報</h2><p>中部パプア州：レベル２</p><p>上記以外の全地域：レベル１：十分注意してください。</p>`;
+  const html = `<h4 class="danger">危険情報</h4><p>中部パプア州：レベル２</p><p>上記以外の全地域：レベル１：十分注意してください。</p><h4 class="infection">感染症危険情報</h4>`;
   assert.ok(NATIONWIDE.test(parseCountryPage(html).block.join('\n')));
 });
 
