@@ -1,0 +1,684 @@
+[
+  {
+    "id": "korea",
+    "name": "韓国",
+    "nameEn": "South Korea",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "410"
+    },
+    "safety": {
+      "mofaNames": [
+        "韓国",
+        "大韓民国"
+      ],
+      "mofaCode": "003",
+      "touristAreas": [
+        "ソウル",
+        "釜山",
+        "済州"
+      ]
+    },
+    "videoQueries": [
+      "韓国旅行 vlog",
+      "ソウル 旅行 vlog",
+      "釜山 旅行"
+    ],
+    "basic": {
+      "capital": "ソウル",
+      "language": "韓国語",
+      "currency": "ウォン（KRW）",
+      "timeDiff": "時差なし",
+      "flight": "東京からソウルまで約2時間30分",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "春（4〜5月）と秋（9〜11月）",
+      "plug": "C・SEタイプ／220V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "taiwan",
+    "name": "台湾",
+    "nameEn": "Taiwan",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "158"
+    },
+    "safety": {
+      "mofaNames": [
+        "台湾"
+      ],
+      "mofaCode": "008",
+      "touristAreas": [
+        "台北",
+        "台中",
+        "台南",
+        "高雄"
+      ]
+    },
+    "videoQueries": [
+      "台湾旅行 vlog",
+      "台北 旅行 vlog",
+      "台南 旅行"
+    ],
+    "basic": {
+      "capital": "台北",
+      "language": "中国語（繁体字）、台湾語",
+      "currency": "新台湾ドル（TWD）",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "東京から台北まで約4時間",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "秋〜春（10〜12月、3〜4月）",
+      "plug": "Aタイプ／110V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "vietnam",
+    "name": "ベトナム",
+    "nameEn": "Vietnam",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "704"
+    },
+    "safety": {
+      "mofaNames": [
+        "ベトナム"
+      ],
+      "mofaCode": "015",
+      "touristAreas": [
+        "ハノイ",
+        "ホーチミン",
+        "ダナン",
+        "ホイアン"
+      ]
+    },
+    "videoQueries": [
+      "ベトナム旅行 vlog",
+      "ダナン 旅行 vlog",
+      "ホーチミン 旅行"
+    ],
+    "basic": {
+      "capital": "ハノイ",
+      "language": "ベトナム語",
+      "currency": "ドン（VND）",
+      "timeDiff": "日本より2時間遅い",
+      "flight": "東京からハノイまで約6時間",
+      "entry": "観光目的の短期滞在はビザ不要（日数は要確認）",
+      "season": "北部は10〜4月、南部は乾季の12〜4月",
+      "plug": "A・Cタイプ／220V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "singapore",
+    "name": "シンガポール",
+    "nameEn": "Singapore",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "702",
+      "marker": [
+        103.82,
+        1.35
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "シンガポール"
+      ],
+      "mofaCode": "005",
+      "touristAreas": [
+        "シンガポール"
+      ]
+    },
+    "videoQueries": [
+      "シンガポール旅行 vlog",
+      "シンガポール 観光"
+    ],
+    "basic": {
+      "capital": "シンガポール",
+      "language": "英語、中国語、マレー語、タミル語",
+      "currency": "シンガポールドル（SGD）",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "東京から約7時間",
+      "entry": "観光目的で30日以内ならビザ不要（電子入国カードの提出が必要）",
+      "season": "通年（比較的雨が少ないのは2〜4月）",
+      "plug": "BFタイプ／230V",
+      "tip": "基本的に不要（サービス料込みが多い）"
+    }
+  },
+  {
+    "id": "thailand",
+    "name": "タイ",
+    "nameEn": "Thailand",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "764"
+    },
+    "safety": {
+      "mofaNames": [
+        "タイ"
+      ],
+      "mofaCode": "007",
+      "touristAreas": [
+        "バンコク",
+        "チェンマイ",
+        "プーケット",
+        "パタヤ",
+        "クラビ",
+        "アユタヤ"
+      ]
+    },
+    "videoQueries": [
+      "タイ旅行 vlog",
+      "バンコク 旅行 vlog",
+      "プーケット 旅行"
+    ],
+    "basic": {
+      "capital": "バンコク",
+      "language": "タイ語",
+      "currency": "バーツ（THB）",
+      "timeDiff": "日本より2時間遅い",
+      "flight": "東京からバンコクまで約6時間30分",
+      "entry": "観光目的の短期滞在はビザ不要（日数は要確認。デジタル入国カードの提出が必要）",
+      "season": "乾季の11〜2月",
+      "plug": "A・C・Oタイプ／220V",
+      "tip": "少額のチップの習慣あり"
+    },
+    "safetyNote": "カンボジア国境付近と南部4県にはレベル2〜3が出ています。"
+  },
+  {
+    "id": "china",
+    "name": "中国",
+    "nameEn": "China",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "156"
+    },
+    "safety": {
+      "mofaNames": [
+        "中国",
+        "中華人民共和国（中国）",
+        "中華人民共和国"
+      ],
+      "mofaCode": "009",
+      "touristAreas": [
+        "北京",
+        "上海",
+        "西安",
+        "成都",
+        "広州",
+        "桂林"
+      ]
+    },
+    "videoQueries": [
+      "中国旅行 vlog",
+      "上海 旅行 vlog",
+      "北京 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "北京",
+      "language": "中国語",
+      "currency": "人民元（CNY）",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "東京から北京・上海まで約3〜4時間",
+      "entry": "短期滞在のビザ免除措置あり（期限と日数は要確認）",
+      "season": "春（4〜5月）と秋（9〜10月）",
+      "plug": "A・C・Oタイプ／220V",
+      "tip": "基本的に不要"
+    },
+    "safetyNote": "新疆ウイグル自治区とチベット自治区にはレベル1（十分注意）が出ています。"
+  },
+  {
+    "id": "malaysia",
+    "name": "マレーシア",
+    "nameEn": "Malaysia",
+    "region": "asia",
+    "map": {
+      "isoNumeric": "458"
+    },
+    "safety": {
+      "mofaNames": [
+        "マレーシア"
+      ],
+      "mofaCode": "017",
+      "touristAreas": [
+        "クアラルンプール",
+        "ペナン",
+        "マラッカ",
+        "ランカウイ",
+        "コタキナバル"
+      ]
+    },
+    "videoQueries": [
+      "マレーシア旅行 vlog",
+      "クアラルンプール 旅行 vlog",
+      "ペナン 旅行"
+    ],
+    "basic": {
+      "capital": "クアラルンプール",
+      "language": "マレー語（英語も広く通じる）",
+      "currency": "リンギット（MYR）",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "東京からクアラルンプールまで約7時間30分",
+      "entry": "観光目的で90日以内ならビザ不要（デジタル入国カードの提出が必要）",
+      "season": "通年（地域によって雨季が異なる）",
+      "plug": "BFタイプ／240V",
+      "tip": "基本的に不要"
+    },
+    "safetyNote": "サバ州東側の島々と沿岸部にはレベル1〜2が出ています。"
+  },
+  {
+    "id": "usa",
+    "name": "アメリカ（本土）",
+    "nameEn": "United States",
+    "region": "north-america",
+    "map": {
+      "isoNumeric": "840"
+    },
+    "safety": {
+      "mofaNames": [
+        "米国",
+        "アメリカ合衆国",
+        "アメリカ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ニューヨーク",
+        "ロサンゼルス",
+        "サンフランシスコ",
+        "ラスベガス"
+      ]
+    },
+    "videoQueries": [
+      "アメリカ旅行 vlog",
+      "ニューヨーク 旅行 vlog",
+      "ロサンゼルス 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "ワシントンD.C.",
+      "language": "英語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本より14〜17時間遅い（地域とサマータイムで異なる）",
+      "flight": "東京からロサンゼルスまで約10時間、ニューヨークまで約13時間",
+      "entry": "90日以内の観光はビザ不要。電子渡航認証（ESTA）が必要",
+      "season": "地域によって異なる",
+      "plug": "Aタイプ／120V",
+      "tip": "レストランでは15〜20%程度"
+    }
+  },
+  {
+    "id": "hawaii",
+    "name": "ハワイ",
+    "nameEn": "Hawaii",
+    "region": "north-america",
+    "map": {
+      "marker": [
+        -157.86,
+        21.31
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "米国",
+        "アメリカ合衆国",
+        "アメリカ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ハワイ",
+        "ホノルル"
+      ]
+    },
+    "videoQueries": [
+      "ハワイ旅行 vlog",
+      "ホノルル 旅行 vlog",
+      "ハワイ島 旅行"
+    ],
+    "basic": {
+      "capital": "ホノルル（州都）",
+      "language": "英語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本より19時間遅い",
+      "flight": "東京からホノルルまで約7時間",
+      "entry": "90日以内の観光はビザ不要。電子渡航認証（ESTA）が必要",
+      "season": "通年（乾季は4〜10月）",
+      "plug": "Aタイプ／120V",
+      "tip": "レストランでは15〜20%程度"
+    }
+  },
+  {
+    "id": "guam",
+    "name": "グアム",
+    "nameEn": "Guam",
+    "region": "oceania",
+    "map": {
+      "isoNumeric": "316",
+      "marker": [
+        144.79,
+        13.44
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "米国",
+        "アメリカ合衆国",
+        "アメリカ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "グアム"
+      ]
+    },
+    "videoQueries": [
+      "グアム旅行 vlog",
+      "グアム 観光"
+    ],
+    "basic": {
+      "capital": "ハガニア",
+      "language": "英語、チャモロ語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本より1時間早い",
+      "flight": "東京から約3時間30分",
+      "entry": "ESTA、またはグアム・北マリアナ諸島ビザ免除プログラムで入国",
+      "season": "乾季の12〜6月",
+      "plug": "Aタイプ／110V",
+      "tip": "レストランでは10〜15%程度"
+    }
+  },
+  {
+    "id": "canada",
+    "name": "カナダ",
+    "nameEn": "Canada",
+    "region": "north-america",
+    "map": {
+      "isoNumeric": "124"
+    },
+    "safety": {
+      "mofaNames": [
+        "カナダ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "バンクーバー",
+        "トロント",
+        "モントリオール",
+        "バンフ"
+      ]
+    },
+    "videoQueries": [
+      "カナダ旅行 vlog",
+      "バンクーバー 旅行 vlog",
+      "バンフ 旅行"
+    ],
+    "basic": {
+      "capital": "オタワ",
+      "language": "英語、フランス語",
+      "currency": "カナダドル（CAD）",
+      "timeDiff": "日本より13〜17時間遅い（地域とサマータイムで異なる）",
+      "flight": "東京からバンクーバーまで約9時間",
+      "entry": "6か月以内の観光はビザ不要。電子渡航認証（eTA）が必要",
+      "season": "夏（6〜9月）、紅葉は9〜10月",
+      "plug": "Aタイプ／120V",
+      "tip": "レストランでは15〜20%程度"
+    }
+  },
+  {
+    "id": "australia",
+    "name": "オーストラリア",
+    "nameEn": "Australia",
+    "region": "oceania",
+    "map": {
+      "isoNumeric": "036"
+    },
+    "safety": {
+      "mofaNames": [
+        "オーストラリア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "シドニー",
+        "メルボルン",
+        "ケアンズ",
+        "ゴールドコースト"
+      ]
+    },
+    "videoQueries": [
+      "オーストラリア旅行 vlog",
+      "シドニー 旅行 vlog",
+      "ケアンズ 旅行"
+    ],
+    "basic": {
+      "capital": "キャンベラ",
+      "language": "英語",
+      "currency": "オーストラリアドル（AUD）",
+      "timeDiff": "日本より0〜2時間早い（地域とサマータイムで異なる）",
+      "flight": "東京からシドニーまで約9時間30分",
+      "entry": "電子渡航許可（ETA）が必要",
+      "season": "地域によって異なる（シドニーは9〜4月）",
+      "plug": "Oタイプ／240V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "new-zealand",
+    "name": "ニュージーランド",
+    "nameEn": "New Zealand",
+    "region": "oceania",
+    "map": {
+      "isoNumeric": "554"
+    },
+    "safety": {
+      "mofaNames": [
+        "ニュージーランド"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "オークランド",
+        "クイーンズタウン",
+        "クライストチャーチ"
+      ]
+    },
+    "videoQueries": [
+      "ニュージーランド旅行 vlog",
+      "クイーンズタウン 旅行",
+      "ニュージーランド 観光"
+    ],
+    "basic": {
+      "capital": "ウェリントン",
+      "language": "英語、マオリ語",
+      "currency": "ニュージーランドドル（NZD）",
+      "timeDiff": "日本より3時間早い（サマータイム中は4時間）",
+      "flight": "東京からオークランドまで約11時間",
+      "entry": "電子渡航認証（NZeTA）が必要",
+      "season": "夏（12〜2月）",
+      "plug": "Oタイプ／230V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "france",
+    "name": "フランス",
+    "nameEn": "France",
+    "region": "europe",
+    "map": {
+      "isoNumeric": "250"
+    },
+    "safety": {
+      "mofaNames": [
+        "フランス"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "パリ",
+        "ニース",
+        "リヨン",
+        "モン・サン・ミシェル"
+      ]
+    },
+    "videoQueries": [
+      "フランス旅行 vlog",
+      "パリ 旅行 vlog",
+      "南フランス 旅行"
+    ],
+    "basic": {
+      "capital": "パリ",
+      "language": "フランス語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（サマータイム中は7時間）",
+      "flight": "東京からパリまで約14〜15時間",
+      "entry": "シェンゲン協定国内で180日間に90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・SEタイプ／230V",
+      "tip": "基本的に不要（サービス料込み）"
+    }
+  },
+  {
+    "id": "italy",
+    "name": "イタリア",
+    "nameEn": "Italy",
+    "region": "europe",
+    "map": {
+      "isoNumeric": "380"
+    },
+    "safety": {
+      "mofaNames": [
+        "イタリア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ローマ",
+        "フィレンツェ",
+        "ヴェネツィア",
+        "ミラノ"
+      ]
+    },
+    "videoQueries": [
+      "イタリア旅行 vlog",
+      "ローマ 旅行 vlog",
+      "フィレンツェ 旅行"
+    ],
+    "basic": {
+      "capital": "ローマ",
+      "language": "イタリア語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（サマータイム中は7時間）",
+      "flight": "東京からローマまで約15時間",
+      "entry": "シェンゲン協定国内で180日間に90日以内ならビザ不要",
+      "season": "春（4〜6月）と秋（9〜10月）",
+      "plug": "C・SE・Lタイプ／230V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "spain",
+    "name": "スペイン",
+    "nameEn": "Spain",
+    "region": "europe",
+    "map": {
+      "isoNumeric": "724"
+    },
+    "safety": {
+      "mofaNames": [
+        "スペイン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "マドリード",
+        "バルセロナ",
+        "セビリア",
+        "グラナダ"
+      ]
+    },
+    "videoQueries": [
+      "スペイン旅行 vlog",
+      "バルセロナ 旅行 vlog",
+      "マドリード 旅行"
+    ],
+    "basic": {
+      "capital": "マドリード",
+      "language": "スペイン語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（サマータイム中は7時間）",
+      "flight": "東京からマドリードまで約15時間",
+      "entry": "シェンゲン協定国内で180日間に90日以内ならビザ不要",
+      "season": "春（4〜6月）と秋（9〜10月）",
+      "plug": "C・SEタイプ／230V",
+      "tip": "基本的に不要"
+    }
+  },
+  {
+    "id": "uk",
+    "name": "イギリス",
+    "nameEn": "United Kingdom",
+    "region": "europe",
+    "map": {
+      "isoNumeric": "826"
+    },
+    "safety": {
+      "mofaNames": [
+        "英国",
+        "イギリス"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ロンドン",
+        "エディンバラ",
+        "コッツウォルズ"
+      ]
+    },
+    "videoQueries": [
+      "イギリス旅行 vlog",
+      "ロンドン 旅行 vlog",
+      "コッツウォルズ 旅行"
+    ],
+    "basic": {
+      "capital": "ロンドン",
+      "language": "英語",
+      "currency": "英ポンド（GBP）",
+      "timeDiff": "日本より9時間遅い（サマータイム中は8時間）",
+      "flight": "東京からロンドンまで約14〜15時間",
+      "entry": "6か月以内の観光はビザ不要。電子渡航認証（ETA）が必要",
+      "season": "5〜9月",
+      "plug": "BFタイプ／230V",
+      "tip": "レストランでは10〜15%程度（サービス料込みなら不要）"
+    }
+  },
+  {
+    "id": "switzerland",
+    "name": "スイス",
+    "nameEn": "Switzerland",
+    "region": "europe",
+    "map": {
+      "isoNumeric": "756"
+    },
+    "safety": {
+      "mofaNames": [
+        "スイス"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "チューリッヒ",
+        "ジュネーブ",
+        "ツェルマット",
+        "インターラーケン"
+      ]
+    },
+    "videoQueries": [
+      "スイス旅行 vlog",
+      "ツェルマット 旅行",
+      "インターラーケン 旅行"
+    ],
+    "basic": {
+      "capital": "ベルン",
+      "language": "ドイツ語、フランス語、イタリア語、ロマンシュ語",
+      "currency": "スイスフラン（CHF）",
+      "timeDiff": "日本より8時間遅い（サマータイム中は7時間）",
+      "flight": "東京からチューリッヒまで約14〜15時間",
+      "entry": "シェンゲン協定国内で180日間に90日以内ならビザ不要",
+      "season": "夏（6〜9月）、スキーは12〜3月",
+      "plug": "J・Cタイプ／230V",
+      "tip": "基本的に不要"
+    }
+  }
+]

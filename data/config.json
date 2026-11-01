@@ -1,0 +1,14 @@
+{
+  "siteName": "旅の予習ポータル",
+  "siteDescription": "旅行前の予習に。国ごとに、評判のよい旅行vlogとブログをまとめています。",
+  "baseUrl": "",
+  "videos": {
+    "mode": "auto",
+    "max": 8,
+    "minViews": 10000,
+    "minDurationMin": 5,
+    "maxDurationMin": 40,
+    "maxAgeYears": 3,
+    "japaneseOnly": true
+  }
+}

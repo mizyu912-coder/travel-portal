@@ -1,0 +1,168 @@
+{
+  "checkedAt": "2026-11-01",
+  "source": "manual",
+  "countries": {
+    "korea": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "taiwan": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "vietnam": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "singapore": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "thailand": {
+      "status": "ok",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "一部地域に危険情報あり。主な観光地はレベル0（手動確認）"
+      ],
+      "hash": null
+    },
+    "china": {
+      "status": "ok",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "一部地域に危険情報あり。主な観光地はレベル0（手動確認）"
+      ],
+      "hash": null
+    },
+    "malaysia": {
+      "status": "ok",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "一部地域に危険情報あり。主な観光地はレベル0（手動確認）"
+      ],
+      "hash": null
+    },
+    "usa": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "hawaii": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "guam": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "canada": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "australia": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "new-zealand": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "france": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "italy": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "spain": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "uk": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    },
+    "switzerland": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし（手動確認）"
+      ],
+      "hash": null
+    }
+  }
+}

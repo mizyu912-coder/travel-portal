@@ -1,0 +1,18 @@
+{
+  "name": "travel-portal",
+  "version": "1.0.0",
+  "description": "旅の予習ポータル",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "demo": "node scripts/build.mjs --demo",
+    "check-safety": "node scripts/check-safety.mjs",
+    "collect-videos": "node scripts/collect-videos.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "private": true
+}
