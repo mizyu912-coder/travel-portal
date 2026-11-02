@@ -48,6 +48,34 @@ const usable = i => i.mime === 'image/jpeg' && i.width >= 1600 && i.width > i.he
   && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description)
   && !NOT_SCENERY.test(i.file) && !NOT_SCENERY.test(i.cats);
 
+// 一覧やランキング用の小さい画像（幅500px）のURLを Commons から正式にもらって small に入れる
+async function addSmall(places) {
+  const need = places.flatMap(c => readJSON(`data/images/${c.id}.json`, []).filter(i => !i.small).map(i => i.file));
+  const urls = new Map();
+  for (let i = 0; i < need.length; i += 40) {
+    const url = new URL(API);
+    Object.entries({ action: 'query', format: 'json', titles: need.slice(i, i + 40).join('|'), prop: 'imageinfo', iiprop: 'url', iiurlwidth: '500' })
+      .forEach(([k, v]) => url.searchParams.set(k, v));
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': UA } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const j = await res.json();
+      const back = new Map((j.query?.normalized ?? []).map(n => [n.to, n.from]));
+      for (const pg of Object.values(j.query?.pages ?? {})) {
+        const u = pg.imageinfo?.[0]?.thumburl;
+        if (u) urls.set(back.get(pg.title) ?? pg.title, u);
+      }
+    } catch (e) { console.warn(`小さい画像のURLを取得できませんでした（${e.message}）`); }
+  }
+  for (const c of places) {
+    const file = `data/images/${c.id}.json`;
+    const imgs = readJSON(file, []);
+    if (!imgs.some(i => !i.small && urls.has(i.file))) continue;
+    writeJSON(file, imgs.map(i => (!i.small && urls.has(i.file) ? { ...i, small: urls.get(i.file) } : i)));
+  }
+  console.log(`小さい画像のURL：${urls.size} 件を追加`);
+}
+
 for (const c of loadPlaces()) {
   if (only.length && !only.includes(c.id)) continue;
   const file = `data/images/${c.id}.json`;
@@ -71,3 +99,5 @@ for (const c of loadPlaces()) {
   writeJSON(file, picked);
   console.log(`${c.name}: 写真 ${picked.length} 枚`);
 }
+
+await addSmall(loadPlaces().filter(c => !only.length || only.includes(c.id)));

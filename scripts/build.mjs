@@ -116,7 +116,7 @@ const chips = regions.map(r => `<div class="chips" data-region="${r.id}" hidden>
 
 const card = (c, href, cls = 'card') => {
   const im = firstImage(c);
-  return `<a class="${cls}" href="${href}" target="_blank" rel="noopener"><span class="card-img">${im ? `<img src="${esc(smallThumb(im.thumb, 500))}" alt="" loading="lazy" width="640" height="427">` : ''}</span><span class="card-name">${esc(c.name)}</span><span class="card-en">${esc(c.nameEn)}</span></a>`;
+  return `<a class="${cls}" href="${href}" target="_blank" rel="noopener"><span class="card-img">${im ? `<img src="${esc(im.small ?? im.thumb)}" alt="" loading="lazy" width="500" height="333">` : ''}</span><span class="card-name">${esc(c.name)}</span><span class="card-en">${esc(c.nameEn)}</span></a>`;
 };
 const lineup = regions.filter(r => pub.some(c => c.region === r.id)).map(r => `<div class="lineup-region"><h3>${esc(r.name)}</h3><div class="cards">${pub.filter(c => c.region === r.id).map(c => card(c, `countries/${c.id}.html`)).join('')}</div>${citiesIn(r).length ? `<p class="cities-label"><span class="sec-en">POPULAR CITIES</span>人気の都市</p><div class="cards cards-city">${citiesIn(r).map(ct => card(ct, `cities/${ct.id}.html`, 'card card-city')).join('')}</div>` : ''}</div>`).join('');
 
@@ -140,7 +140,7 @@ const rankRows = list => list.map(pl => ({ ...pl, views: realVideos(pl.c).slice(
   .filter(r => r.views > 0).sort((a, b) => b.views - a.views).slice(0, 10);
 const rankList = rows => rows.length ? `<ol class="rank-list">${rows.map((r, i) => {
   const im = firstImage(r.c);
-  return `<li><a href="${r.href}" target="_blank" rel="noopener"><span class="rank-no${i < 3 ? ' top' : ''}">${i + 1}</span><span class="rank-img">${im ? `<img src="${esc(smallThumb(im.thumb, 330))}" alt="" loading="lazy" width="320" height="213">` : ''}</span><span class="rank-body"><span class="rank-name">${esc(r.c.name)}${r.parent ? `<small>${esc(r.parent.name)}</small>` : ''}</span><span class="rank-meta">おすすめ動画の総再生数 ${fmtViews(r.views)}</span></span></a></li>`;
+  return `<li><a href="${r.href}" target="_blank" rel="noopener"><span class="rank-no${i < 3 ? ' top' : ''}">${i + 1}</span><span class="rank-img">${im ? `<img src="${esc(im.small ?? im.thumb)}" alt="" loading="lazy" width="500" height="333">` : ''}</span><span class="rank-body"><span class="rank-name">${esc(r.c.name)}${r.parent ? `<small>${esc(r.parent.name)}</small>` : ''}</span><span class="rank-meta">おすすめ動画の総再生数 ${fmtViews(r.views)}</span></span></a></li>`;
 }).join('')}</ol>` : '<p class="note">集計中です。</p>';
 const ranking = `<section class="ranking" id="ranking">
   <div class="sec-head"><span class="sec-en">RANKING</span><h2>人気ランキング</h2></div>
