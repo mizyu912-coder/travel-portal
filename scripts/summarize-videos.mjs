@@ -64,7 +64,16 @@ for (const c of countries) {
   for (let i = 0; i < targets.length && !stop; i += BATCH) {
     const batch = targets.slice(i, i + BATCH);
     try {
-      const out = await summarize(c, batch);
+      let out;
+      // 混雑（503）のときは少し待ってやり直す
+      for (let attempt = 1; ; attempt++) {
+        try { out = await summarize(c, batch); break; }
+        catch (e) {
+          if (!/HTTP 50[023]/.test(e.message) || attempt >= 4) throw e;
+          console.warn(`${c.name}: AIが混雑しているため ${attempt * 20} 秒後にやり直します`);
+          await sleep(attempt * 20000);
+        }
+      }
       for (const o of out) {
         const v = store.items.find(x => x.id === o.id);
         if (v && typeof o.summary === 'string' && o.summary.trim()) { v.summary = o.summary.trim(); v.summarySource = 'ai'; made++; }
