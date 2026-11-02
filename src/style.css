@@ -178,3 +178,14 @@ table.info th{width:10em;white-space:nowrap;color:var(--muted);font-weight:500;f
   .gallery.g3 figure:first-child img{aspect-ratio:auto}
 }
 @media (max-width:420px){.gnav a:last-child{display:none}}
+
+/* ---- 人気の都市 ---- */
+.chip.city{background:transparent;color:var(--gold);border:1px solid var(--gold);font-weight:500}
+.chip.city:hover{background:rgba(217,164,65,.15)}
+.cities-label{margin:18px 0 10px;font-weight:700;font-size:.9rem}
+.cities-label .sec-en{margin-right:10px;font-size:.7rem}
+.cards-city{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card-city{aspect-ratio:16/10}
+.card-city .card-name{font-size:1rem;bottom:26px}
+.card-city .card-en{bottom:10px}
+@media (max-width:720px){.cards-city{grid-template-columns:1fr 1fr}}

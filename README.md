@@ -33,6 +33,16 @@
 2. 外務省の危険情報が出ている国は、`safety.mofaCode` に外務省の国別ページの番号を入れます（`https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_007.html` なら `007`）。`safety.touristAreas` には主な観光地の名前を入れます。
 3. コミットすると自動で公開されます。動画は次の週次実行で集まります（すぐ集めたいときは Actions から手動実行）。
 
+## 人気の都市を追加する
+
+1. `data/cities.json` に1件追加します（`id`、`name`、`nameEn`、`country`＝親の国のID、`videoQueries`（2つまで）、`imageQueries`（英語の地名）、`basic`）。
+2. 必要なら `data/blogs/<都市ID>.json` に記事を入れます。
+3. 動画・写真・概要文は国と同じしくみで自動で集まります。すぐ集めたいときは Actions の weekly-update を手動実行し、places に都市のIDを入れます（例：`tokyo kyoto`）。
+4. 都市ページは親の国が掲載中のときだけ公開されます。海外の都市は、親の国の `safety.touristAreas` にその都市名を入れておくと、危険情報に都市名が出たときに国ごと止まります。
+5. YouTube の検索枠は1日100回です。国1件で約3回、都市1件で2回使うので、合計が90回を超えないようにしてください。
+
+日本（`domestic: true`）は国内のため外務省のチェックの対象外です。
+
 ## 危険情報の自動反映
 
 毎週、`check-safety.mjs` が次のルールで判定します。

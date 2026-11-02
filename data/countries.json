@@ -1,5 +1,38 @@
 [
   {
+    "id": "japan",
+    "name": "日本",
+    "nameEn": "Japan",
+    "region": "japan",
+    "domestic": true,
+    "map": {
+      "isoNumeric": "392"
+    },
+    "safety": {
+      "mofaNames": [],
+      "mofaCode": null,
+      "touristAreas": []
+    },
+    "videoQueries": [
+      "国内旅行 vlog",
+      "日本 旅行 vlog 国内",
+      "国内 一人旅 vlog"
+    ],
+    "basic": {
+      "area": "北海道から沖縄まで47都道府県",
+      "transport": "新幹線・飛行機・高速バスが中心。地方の観光地はレンタカーが便利",
+      "season": "桜の春（3〜4月）と紅葉の秋（10〜11月）が人気。夏は北海道、冬は沖縄も過ごしやすい",
+      "pass": "新幹線と宿のセットプラン、航空会社の早割、JRの「青春18きっぷ」など",
+      "note": "大型連休や紅葉シーズンは宿が早く埋まるので、早めの予約がおすすめ"
+    },
+    "imageQueries": [
+      "Mount Fuji",
+      "Shirakawa-go",
+      "Itsukushima",
+      "Himeji Castle"
+    ]
+  },
+  {
     "id": "korea",
     "name": "韓国",
     "nameEn": "South Korea",

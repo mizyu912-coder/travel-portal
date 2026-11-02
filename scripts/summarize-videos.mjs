@@ -3,7 +3,7 @@
 // 必要な環境変数：GEMINI_API_KEY
 // OpenAI 互換の窓口を使うので、SUMMARY_ENDPOINT と SUMMARY_MODEL を変えれば別のAIにも切り替えられる。
 import fs from 'node:fs';
-import { readJSON, writeJSON, p } from './lib.mjs';
+import { readJSON, writeJSON, p, loadPlaces } from './lib.mjs';
 
 const TOKEN = process.env.GEMINI_API_KEY;
 if (!TOKEN) { console.log('GEMINI_API_KEY が未設定のため、概要文の作成はスキップします。'); process.exit(0); }
@@ -16,7 +16,7 @@ const MAX_REQUESTS = Number(process.env.SUMMARY_MAX_REQUESTS || 15);
 let requests = 0;
 const ONLY = process.argv.slice(2);
 const cfg = readJSON('data/config.json').videos;
-const countries = readJSON('data/countries.json');
+const countries = loadPlaces();
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const SYSTEM = `あなたは旅行情報サイトの編集者です。YouTubeの旅行動画のタイトルと説明文を読み、旅行の予習をしたい人に向けて、その動画で何が見られるかを紹介する概要文を書きます。
@@ -37,7 +37,7 @@ async function summarize(country, videos) {
       model: MODEL,
       temperature: 0.4,
       response_format: { type: 'json_object' },
-      messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: `国・地域：${country.name}\n動画：\n${JSON.stringify(input, null, 1)}` }],
+      messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: `${country.kind === 'city' ? '都市' : '国・地域'}：${country.name}\n動画：\n${JSON.stringify(input, null, 1)}` }],
     }),
   });
   if (!res.ok) {

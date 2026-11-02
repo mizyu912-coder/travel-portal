@@ -31,3 +31,12 @@ export const toHalf = s => s.replace(/[０-９]/g, d => String.fromCharCode(d.ch
 export function setOutput(name, value) {
   if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `${name}=${value}\n`);
 }
+
+// 国・地域（data/countries.json）と人気の都市（data/cities.json）をまとめて返す。
+// 動画・写真・概要文の収集はどちらも同じ扱い。都市には kind: 'city' と country（親の国ID）が付く。
+export function loadPlaces() {
+  return [
+    ...readJSON('data/countries.json'),
+    ...readJSON('data/cities.json', []).map(c => ({ ...c, kind: 'city' })),
+  ];
+}

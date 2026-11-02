@@ -3,7 +3,7 @@
 // ・AI生成やCGのカテゴリが付いた画像は除外する
 // ・ライセンスは CC0／パブリックドメイン／CC BY／CC BY-SA のみ（表示用に作者とライセンスを記録する）
 // 既に画像がある国はそのまま。足りない国だけを探す。
-import { readJSON, writeJSON, today } from './lib.mjs';
+import { readJSON, writeJSON, today, loadPlaces } from './lib.mjs';
 
 const API = 'https://commons.wikimedia.org/w/api.php';
 const UA = 'travel-portal/1.0 (https://github.com/mizyu912-coder/travel-portal)';
@@ -45,7 +45,7 @@ const matches = (i, q) => ` ${words(i.file)} `.includes(` ${words(q)} `);
 const usable = i => i.mime === 'image/jpeg' && i.width >= 1600 && i.width > i.height * 1.2
   && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description);
 
-for (const c of readJSON('data/countries.json')) {
+for (const c of loadPlaces()) {
   if (only.length && !only.includes(c.id)) continue;
   const file = `data/images/${c.id}.json`;
   const have = readJSON(file, []);

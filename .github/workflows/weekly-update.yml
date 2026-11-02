@@ -3,7 +3,12 @@ name: weekly-update
 on:
   schedule:
     - cron: '0 0 * * 1'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      places:
+        description: '動画を集める国・都市のID（空欄なら全部。例：japan tokyo kyoto）'
+        required: false
+        default: ''
   push:
     branches: [main]
     paths: ['data/**', 'src/**', 'scripts/**']
@@ -40,7 +45,8 @@ jobs:
 
       - name: YouTube 動画の収集
         if: github.event_name != 'push' && env.YOUTUBE_API_KEY != ''
-        run: node scripts/collect-videos.mjs
+        env: { PLACES: '${{ inputs.places }}' }
+        run: node scripts/collect-videos.mjs $PLACES
 
       - name: 写真の取得（Wikimedia Commons、足りない国だけ）
         run: node scripts/fetch-images.mjs

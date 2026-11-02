@@ -1,0 +1,399 @@
+[
+  {
+    "id": "tokyo",
+    "name": "東京",
+    "nameEn": "Tokyo",
+    "country": "japan",
+    "videoQueries": [
+      "東京観光 vlog",
+      "東京 旅行 vlog"
+    ],
+    "imageQueries": [
+      "Sensō-ji",
+      "Tokyo Tower",
+      "Tokyo Skytree",
+      "Shibuya",
+      "Asakusa"
+    ],
+    "basic": {
+      "area": "関東地方。日本の首都",
+      "access": "大阪から新幹線で約2時間30分、札幌・福岡から飛行機で約1時間30〜2時間",
+      "stay": "2泊3日〜",
+      "transport": "JR山手線と地下鉄が便利。交通系ICカードがあると楽",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "浅草・浅草寺、渋谷、東京スカイツリー、上野、銀座"
+    }
+  },
+  {
+    "id": "kyoto",
+    "name": "京都",
+    "nameEn": "Kyoto",
+    "country": "japan",
+    "videoQueries": [
+      "京都旅行 vlog",
+      "京都 観光 vlog"
+    ],
+    "imageQueries": [
+      "Fushimi Inari",
+      "Kinkaku-ji",
+      "Kiyomizu-dera",
+      "Arashiyama",
+      "Gion"
+    ],
+    "basic": {
+      "area": "関西地方。古い寺社が多い古都",
+      "access": "東京から新幹線で約2時間15分",
+      "stay": "1泊2日〜2泊3日",
+      "transport": "市バスと地下鉄。混雑する時期は電車を中心に組むと動きやすい",
+      "season": "桜の春（3月末〜4月上旬）と紅葉の秋（11月）",
+      "highlights": "伏見稲荷大社、清水寺、金閣寺、嵐山、祇園"
+    }
+  },
+  {
+    "id": "osaka",
+    "name": "大阪",
+    "nameEn": "Osaka",
+    "country": "japan",
+    "videoQueries": [
+      "大阪旅行 vlog",
+      "大阪 観光 vlog"
+    ],
+    "imageQueries": [
+      "Osaka Castle",
+      "Dotonbori",
+      "Tsutenkaku",
+      "Umeda Sky"
+    ],
+    "basic": {
+      "area": "関西地方。食い倒れの街",
+      "access": "東京から新幹線で約2時間30分。京都から電車で約30分",
+      "stay": "1泊2日〜",
+      "transport": "地下鉄（御堂筋線など）とJR大阪環状線",
+      "season": "春と秋。夏の天神祭（7月）も人気",
+      "highlights": "道頓堀、大阪城、通天閣・新世界、USJ、梅田"
+    }
+  },
+  {
+    "id": "sapporo",
+    "name": "札幌",
+    "nameEn": "Sapporo",
+    "country": "japan",
+    "videoQueries": [
+      "札幌 旅行 vlog",
+      "札幌 観光"
+    ],
+    "imageQueries": [
+      "Sapporo Clock Tower",
+      "Odori Park",
+      "Sapporo TV Tower",
+      "Sapporo"
+    ],
+    "basic": {
+      "area": "北海道。道内観光の拠点",
+      "access": "東京（羽田）から新千歳空港まで飛行機で約1時間30分、空港から札幌駅までJRで約40分",
+      "stay": "2泊3日〜（小樽などと組み合わせて）",
+      "transport": "地下鉄と市電。小樽へはJRで約40分",
+      "season": "夏（7〜8月）と雪まつりの冬（2月上旬）",
+      "highlights": "大通公園、時計台、すすきの、二条市場、小樽"
+    }
+  },
+  {
+    "id": "fukuoka",
+    "name": "福岡",
+    "nameEn": "Fukuoka",
+    "country": "japan",
+    "videoQueries": [
+      "福岡旅行 vlog",
+      "福岡 観光"
+    ],
+    "imageQueries": [
+      "Fukuoka Tower",
+      "Dazaifu",
+      "Ohori Park",
+      "Nakasu",
+      "Fukuoka"
+    ],
+    "basic": {
+      "area": "九州北部。空港と街が近い",
+      "access": "東京から飛行機で約2時間。福岡空港から博多駅まで地下鉄で約5分",
+      "stay": "1泊2日〜",
+      "transport": "地下鉄と西鉄バス。太宰府へは西鉄電車で",
+      "season": "春と秋。屋台は通年",
+      "highlights": "中洲の屋台、太宰府天満宮、大濠公園、福岡タワー"
+    }
+  },
+  {
+    "id": "okinawa",
+    "name": "沖縄（本島）",
+    "nameEn": "Okinawa",
+    "country": "japan",
+    "videoQueries": [
+      "沖縄旅行 vlog",
+      "沖縄 観光 vlog"
+    ],
+    "imageQueries": [
+      "Shuri Castle",
+      "Kouri",
+      "Churaumi",
+      "Manzamo",
+      "Naha"
+    ],
+    "basic": {
+      "area": "日本の南西端の島々。那覇が玄関口",
+      "access": "東京から那覇まで飛行機で約2時間30分",
+      "stay": "2泊3日〜",
+      "transport": "那覇市内はゆいレール。北部や離島へはレンタカーやバス",
+      "season": "海は4〜10月。梅雨（5〜6月）と台風（7〜9月）に注意",
+      "highlights": "国際通り、首里城、美ら海水族館、古宇利島、万座毛"
+    }
+  },
+  {
+    "id": "seoul",
+    "name": "ソウル",
+    "nameEn": "Seoul",
+    "country": "korea",
+    "videoQueries": [
+      "ソウル 旅行 vlog",
+      "ソウル 観光"
+    ],
+    "imageQueries": [
+      "Changdeokgung",
+      "N Seoul Tower",
+      "Myeongdong",
+      "Cheonggyecheon",
+      "Gwanghwamun"
+    ],
+    "basic": {
+      "area": "韓国の首都",
+      "access": "東京から飛行機で約2時間30分。仁川空港から市内まで空港鉄道で約45〜60分",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄が便利。交通カード（T-moneyなど）があると楽",
+      "season": "春（4〜5月）と秋（9〜11月）",
+      "highlights": "景福宮、北村韓屋村、明洞、弘大、聖水"
+    }
+  },
+  {
+    "id": "busan",
+    "name": "釜山",
+    "nameEn": "Busan",
+    "country": "korea",
+    "videoQueries": [
+      "釜山 旅行 vlog",
+      "釜山 観光"
+    ],
+    "imageQueries": [
+      "Gamcheon",
+      "Haeundae",
+      "Gwangalli",
+      "Haedong Yonggungsa"
+    ],
+    "basic": {
+      "area": "韓国南東部の港町",
+      "access": "福岡から飛行機で約1時間、成田・関空からも直行便あり",
+      "stay": "1泊2日〜2泊3日",
+      "transport": "地下鉄とバス。郊外はタクシーも手ごろ",
+      "season": "夏の海（7〜8月）と秋",
+      "highlights": "海雲台、甘川文化村、チャガルチ市場、広安里、海東龍宮寺"
+    }
+  },
+  {
+    "id": "taipei",
+    "name": "台北",
+    "nameEn": "Taipei",
+    "country": "taiwan",
+    "videoQueries": [
+      "台北 旅行 vlog",
+      "台北 観光"
+    ],
+    "imageQueries": [
+      "Longshan Temple",
+      "Chiang Kai-shek Memorial",
+      "Ximending",
+      "Taipei skyline",
+      "Dihua"
+    ],
+    "basic": {
+      "area": "台湾北部。台湾の中心都市",
+      "access": "東京から飛行機で約4時間。羽田便は松山空港で市内に近い",
+      "stay": "2泊3日〜",
+      "transport": "MRT（地下鉄）。悠遊カードがあると便利",
+      "season": "秋〜春（10〜4月）。夏は暑くスコールが多い",
+      "highlights": "台北101、九份、士林夜市、龍山寺、迪化街"
+    }
+  },
+  {
+    "id": "bangkok",
+    "name": "バンコク",
+    "nameEn": "Bangkok",
+    "country": "thailand",
+    "videoQueries": [
+      "バンコク 旅行 vlog",
+      "バンコク 観光"
+    ],
+    "imageQueries": [
+      "Wat Pho",
+      "Wat Benchamabophit",
+      "Chao Phraya",
+      "Bangkok skyline",
+      "Wat Saket"
+    ],
+    "basic": {
+      "area": "タイの首都",
+      "access": "東京から飛行機で約6〜7時間",
+      "stay": "3泊4日〜",
+      "transport": "BTS（高架鉄道）とMRT（地下鉄）、チャオプラヤー川の船。配車アプリも便利",
+      "season": "乾季（11〜2月）",
+      "highlights": "ワット・アルン、ワット・ポー、王宮、カオサン通り、ナイトマーケット"
+    }
+  },
+  {
+    "id": "danang",
+    "name": "ダナン",
+    "nameEn": "Da Nang",
+    "country": "vietnam",
+    "videoQueries": [
+      "ダナン 旅行 vlog",
+      "ダナン ホイアン 旅行"
+    ],
+    "imageQueries": [
+      "Dragon Bridge",
+      "Marble Mountains",
+      "My Khe",
+      "Ba Na Hills",
+      "Son Tra"
+    ],
+    "basic": {
+      "area": "ベトナム中部のビーチリゾート。世界遺産ホイアンが近い",
+      "access": "成田・関空から直行便で約5〜6時間",
+      "stay": "3泊4日〜",
+      "transport": "配車アプリ（Grab）が便利。ホイアンまで車で約45分",
+      "season": "乾季（2〜8月）。秋から冬は雨が多い",
+      "highlights": "ミーケービーチ、ホイアン旧市街、バーナーヒルズ、五行山、ドラゴン橋"
+    }
+  },
+  {
+    "id": "paris",
+    "name": "パリ",
+    "nameEn": "Paris",
+    "country": "france",
+    "videoQueries": [
+      "パリ 旅行 vlog",
+      "パリ 観光"
+    ],
+    "imageQueries": [
+      "Louvre",
+      "Sacré-Cœur",
+      "Notre-Dame de Paris",
+      "Arc de Triomphe",
+      "Montmartre"
+    ],
+    "basic": {
+      "area": "フランスの首都",
+      "access": "東京から直行便で約14〜15時間",
+      "stay": "3泊4日〜",
+      "transport": "メトロ（地下鉄）とバス。中心部は歩いても回れる",
+      "season": "春（5〜6月）と秋（9〜10月）",
+      "highlights": "エッフェル塔、ルーヴル美術館、モンマルトル、凱旋門、セーヌ川"
+    }
+  },
+  {
+    "id": "london",
+    "name": "ロンドン",
+    "nameEn": "London",
+    "country": "uk",
+    "videoQueries": [
+      "ロンドン 旅行 vlog",
+      "ロンドン 観光"
+    ],
+    "imageQueries": [
+      "Westminster",
+      "Buckingham Palace",
+      "St Paul's Cathedral",
+      "London Eye",
+      "Tower of London"
+    ],
+    "basic": {
+      "area": "イギリスの首都",
+      "access": "東京から直行便で約14〜15時間",
+      "stay": "3泊4日〜",
+      "transport": "地下鉄（チューブ）と2階建てバス。タッチ決済のカードで乗れる",
+      "season": "夏（6〜8月）。日が長く過ごしやすい",
+      "highlights": "ビッグ・ベン、大英博物館、タワーブリッジ、バッキンガム宮殿"
+    }
+  },
+  {
+    "id": "rome",
+    "name": "ローマ",
+    "nameEn": "Rome",
+    "country": "italy",
+    "videoQueries": [
+      "ローマ 旅行 vlog",
+      "ローマ 観光"
+    ],
+    "imageQueries": [
+      "Trevi Fountain",
+      "Pantheon Rome",
+      "Roman Forum",
+      "Piazza Navona",
+      "Spanish Steps"
+    ],
+    "basic": {
+      "area": "イタリアの首都。バチカン市国が市内にある",
+      "access": "東京から直行便で約14〜15時間",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄とバス。中心部は歩いて回るのが基本",
+      "season": "春（4〜6月）と秋（9〜10月）",
+      "highlights": "コロッセオ、トレヴィの泉、バチカン美術館、パンテオン、スペイン広場"
+    }
+  },
+  {
+    "id": "barcelona",
+    "name": "バルセロナ",
+    "nameEn": "Barcelona",
+    "country": "spain",
+    "videoQueries": [
+      "バルセロナ 旅行 vlog",
+      "バルセロナ 観光"
+    ],
+    "imageQueries": [
+      "Park Güell",
+      "Casa Batlló",
+      "Casa Milà",
+      "Barceloneta",
+      "Barcelona skyline"
+    ],
+    "basic": {
+      "area": "スペイン北東部、地中海沿いの都市",
+      "access": "日本からの直行便はなく、ヨーロッパや中東で乗り継いで約16時間〜",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄とバス。サグラダ・ファミリアなどは事前予約が安心",
+      "season": "春〜秋（5〜10月）",
+      "highlights": "サグラダ・ファミリア、グエル公園、カサ・バトリョ、ゴシック地区"
+    }
+  },
+  {
+    "id": "newyork",
+    "name": "ニューヨーク",
+    "nameEn": "New York",
+    "country": "usa",
+    "videoQueries": [
+      "ニューヨーク 旅行 vlog",
+      "ニューヨーク 観光"
+    ],
+    "imageQueries": [
+      "Times Square",
+      "Brooklyn Bridge",
+      "Central Park",
+      "Statue of Liberty",
+      "Flatiron"
+    ],
+    "basic": {
+      "area": "アメリカ東海岸の大都市",
+      "access": "東京から直行便で約13時間",
+      "stay": "4泊6日〜",
+      "transport": "地下鉄が24時間運行。タッチ決済のカードで乗れる",
+      "season": "春（4〜6月）と秋（9〜11月）。冬のホリデーシーズンも人気",
+      "highlights": "タイムズスクエア、セントラルパーク、自由の女神、ブルックリン橋"
+    }
+  }
+]

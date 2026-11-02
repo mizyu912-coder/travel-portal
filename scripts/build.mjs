@@ -10,17 +10,22 @@ const DEMO = process.argv.includes('--demo');
 const cfg = readJSON('data/config.json');
 const regions = readJSON('data/regions.json');
 const countries = readJSON('data/countries.json');
+const cities = readJSON('data/cities.json', []);
 const safety = readJSON('data/safety.json', { countries: {} });
 const links = readJSON('data/links.json', {});
 const world = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-50m.json'), 'utf8'));
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const isPublished = c => (safety.countries[c.id]?.status ?? 'ok') === 'ok';
+const countryOf = city => countries.find(c => c.id === city.country);
+// 都市は親の国が掲載中のときだけ公開する
+const cityPublished = city => { const c = countryOf(city); return !!c && isPublished(c); };
 const fmtDur = s => `${Math.floor(s / 60)}分${String(s % 60).padStart(2, '0')}秒`;
 const fmtViews = n => n >= 1e4 ? `${(n / 1e4).toFixed(n >= 1e5 ? 0 : 1)}万回` : `${n.toLocaleString('ja-JP')}回`;
 
 fs.rmSync(p('dist'), { recursive: true, force: true });
 fs.mkdirSync(p('dist/countries'), { recursive: true });
+fs.mkdirSync(p('dist/cities'), { recursive: true });
 fs.copyFileSync(p('src/style.css'), p('dist/style.css'));
 fs.copyFileSync(p('src/map.js'), p('dist/map.js'));
 
@@ -84,20 +89,24 @@ const regionViews = Object.fromEntries(regions.map(r => {
 const pub = countries.filter(isPublished);
 const regionTabs = regions.filter(r => pub.some(c => c.region === r.id))
   .map(r => `<button type="button" class="region-btn" data-region="${r.id}">${esc(r.name)}</button>`).join('');
+const pubCities = cities.filter(cityPublished);
+const citiesIn = r => pubCities.filter(ct => countryOf(ct).region === r.id);
 const chips = regions.map(r => `<div class="chips" data-region="${r.id}" hidden>${pub.filter(c => c.region === r.id)
-  .map(c => `<a class="chip" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}</a>`).join('')}</div>`).join('');
+  .map(c => `<a class="chip" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}</a>`).join('')}${citiesIn(r)
+  .map(ct => `<a class="chip city" href="cities/${ct.id}.html" target="_blank" rel="noopener">${esc(ct.name)}</a>`).join('')}</div>`).join('');
 
-const lineup = regions.filter(r => pub.some(c => c.region === r.id)).map(r => `<div class="lineup-region"><h3>${esc(r.name)}</h3><div class="cards">${pub.filter(c => c.region === r.id).map(c => {
+const card = (c, href, cls = 'card') => {
   const im = firstImage(c);
-  return `<a class="card" href="countries/${c.id}.html" target="_blank" rel="noopener"><span class="card-img">${im ? `<img src="${esc(smallThumb(im.thumb, 640))}" alt="" loading="lazy" width="640" height="427">` : ''}</span><span class="card-name">${esc(c.name)}</span><span class="card-en">${esc(c.nameEn)}</span></a>`;
-}).join('')}</div></div>`).join('');
+  return `<a class="${cls}" href="${href}" target="_blank" rel="noopener"><span class="card-img">${im ? `<img src="${esc(smallThumb(im.thumb, 640))}" alt="" loading="lazy" width="640" height="427">` : ''}</span><span class="card-name">${esc(c.name)}</span><span class="card-en">${esc(c.nameEn)}</span></a>`;
+};
+const lineup = regions.filter(r => pub.some(c => c.region === r.id)).map(r => `<div class="lineup-region"><h3>${esc(r.name)}</h3><div class="cards">${pub.filter(c => c.region === r.id).map(c => card(c, `countries/${c.id}.html`)).join('')}</div>${citiesIn(r).length ? `<p class="cities-label"><span class="sec-en">POPULAR CITIES</span>人気の都市</p><div class="cards cards-city">${citiesIn(r).map(ct => card(ct, `cities/${ct.id}.html`, 'card card-city')).join('')}</div>` : ''}</div>`).join('');
 
 fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
   cls: 'home',
   body: `<section class="hero"><div class="hero-inner">
-  <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS</p>
+  <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS ・ ${pubCities.length} CITIES</p>
   <h1>${esc(cfg.catch)}</h1>
   <p class="lead">${esc(cfg.siteDescription)}</p>
   <a class="cta" href="#map-section">行き先を選ぶ</a>
@@ -108,7 +117,7 @@ fs.writeFileSync(p('dist/index.html'), layout({
   <nav class="regions">${regionTabs}</nav>
   <svg id="map" viewBox="0 0 ${W} ${H}" data-world="0 0 ${W} ${H}" role="img" aria-label="世界地図">${shapes}${markers}</svg>
   ${chips}
-  <p class="note">色がついている国・地域が掲載中です。国を選ぶと、別のタブで国のページが開きます。掲載しているのは、外務省の危険情報で主な観光地がレベル0の国・地域だけです。</p>
+  <p class="note">色がついている国・地域が掲載中です。国や都市を選ぶと、別のタブでページが開きます。海外は、外務省の危険情報で主な観光地がレベル0の国・地域だけを掲載しています。</p>
 </section>
 <section class="lineup" id="lineup">
   <div class="sec-head"><span class="sec-en">LINEUP</span><h2>上映中の国・地域</h2></div>
@@ -117,7 +126,7 @@ fs.writeFileSync(p('dist/index.html'), layout({
 <section class="howto">
   <div class="sec-head"><span class="sec-en">HOW TO ENJOY</span><h2>トリップシアターの楽しみ方</h2></div>
   <ol class="steps3">
-    <li><strong>行き先を選ぶ</strong><span>地図か一覧から、気になる国・地域を選びます。</span></li>
+    <li><strong>行き先を選ぶ</strong><span>地図か一覧から、気になる国・地域や都市を選びます。</span></li>
     <li><strong>旅を観る</strong><span>再生数や評価をもとに選んだ旅行vlogで、現地の雰囲気を先に体験します。</span></li>
     <li><strong>計画に活かす</strong><span>基本情報やブログのモデルコースを参考に、自分の旅を組み立てます。</span></li>
   </ol>
@@ -168,34 +177,11 @@ function videoCard(v, i) {
 </article>`;
 }
 
-for (const c of countries) {
-  const s = safety.countries[c.id] ?? { status: 'ok' };
-  const region = regions.find(r => r.id === c.region);
-  const mofa = s.mofaUrl ?? (c.safety.mofaCode ? `https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_${c.safety.mofaCode}.html` : 'https://www.anzen.mofa.go.jp/');
-  let body;
-  if (!isPublished(c)) {
-    body = `<article class="country"><h1>${esc(c.name)}</h1><div class="notice">外務省の安全情報が変わったため、このページの掲載を一時停止しています。最新の情報は<a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>でご確認ください。</div></article>`;
-  } else {
-    const videos = pickVideos(c);
-    // リンク確認で開けたもの（または1回だけ失敗したもの）だけを表示する
-    const blogs = readJSON(`data/blogs/${c.id}.json`, []).map(b => {
-      const l = links[b.url];
-      // 自動確認を拒否するサイトは、手で title を書いたときだけ表示する
-      if (!l || (l.blocked && !l.ok && !b.title) || (!l.ok && !l.blocked && (l.fails ?? 0) >= 2)) return null;
-      return { ...b, title: b.title || l.title || b.url, site: b.site || l.site || new URL(b.url).hostname };
-    }).filter(Boolean);
-    body = `<article class="country">
-<div class="country-head"><p class="crumb"><a href="../index.html#lineup">${esc(region?.name)}</a></p><p class="eyebrow">NOW SHOWING</p><h1>${esc(c.name)}<span class="h1-sub">の旅行vlog・旅行情報</span></h1><p class="h1-en">${esc(c.nameEn)}</p></div>
-${gallery(c)}
-<section class="safety ${s.listed ? 'partial' : ''}"><h2><span class="sec-en">SAFETY</span>安全情報</h2>
-<p>${s.listed ? `国内の一部地域に危険情報が出ています。${esc(c.safetyNote ?? '')}主な観光地はレベル0です。` : '外務省の危険情報は出ていません。'}（${esc(safety.checkedAt)}時点）</p>
-<p><a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページで最新情報を見る</a></p></section>
-<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
-<section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${INFO.map(([k, l]) => c.basic[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
-<p class="small">ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。</p></section>
-<section><h2><span class="sec-en">READING</span>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
-</article>
-<script>
+const DOMESTIC_INFO = [['area', 'エリア'], ['transport', '主な移動手段'], ['season', '旅行シーズン'], ['pass', 'お得な切符・プラン'], ['note', '旅のヒント']];
+const CITY_INFO = [['area', '場所'], ['access', 'アクセス'], ['stay', '滞在日数の目安'], ['transport', '市内の移動'], ['season', 'ベストシーズン'], ['highlights', '主な見どころ']];
+const mofaUrlOf = (c, s) => s.mofaUrl ?? (c.safety?.mofaCode ? `https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_${c.safety.mofaCode}.html` : 'https://www.anzen.mofa.go.jp/');
+
+const PAGE_SCRIPT = `<script>
 document.querySelectorAll('.more-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const rest = [...btn.closest('section').querySelectorAll('.video[hidden]')];
@@ -215,6 +201,59 @@ document.querySelectorAll('.thumb-link[data-embed]').forEach(a => {
   });
 });
 </script>`;
+
+function blogsOf(c) {
+  // リンク確認で開けたもの（または1回だけ失敗したもの）だけを表示する
+  return readJSON(`data/blogs/${c.id}.json`, []).map(b => {
+    const l = links[b.url];
+    // 自動確認を拒否するサイトは、手で title を書いたときだけ表示する
+    if (!l || (l.blocked && !l.ok && !b.title) || (!l.ok && !l.blocked && (l.fails ?? 0) >= 2)) return null;
+    return { ...b, title: b.title || l.title || b.url, site: b.site || l.site || new URL(b.url).hostname };
+  }).filter(Boolean);
+}
+
+// 国ページと都市ページの共通部分
+function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
+  const videos = pickVideos(c);
+  const blogs = blogsOf(c);
+  return `<article class="country">
+<div class="country-head"><p class="crumb">${crumb}</p><p class="eyebrow">NOW SHOWING</p><h1>${esc(c.name)}<span class="h1-sub">${sub}</span></h1><p class="h1-en">${esc(c.nameEn)}</p></div>
+${gallery(c)}
+${safetyHtml}
+<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
+${extra}
+<section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
+<p class="small">${c.domestic || countryOf(c)?.domestic ? '移動時間などは目安です。最新の情報は交通機関の公式サイトで確認してください。' : 'ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。'}</p></section>
+${blogs.length ? `<section><h2><span class="sec-en">READING</span>おすすめのブログ・記事</h2><ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul></section>` : ''}
+</article>
+${PAGE_SCRIPT}`;
+}
+
+function safetySection(c, s, cityName) {
+  if (c.domestic) return '';
+  const mofa = mofaUrlOf(c, s);
+  const head = cityName ? `${esc(c.name)}の` : '';
+  return `<section class="safety ${s.listed ? 'partial' : ''}"><h2><span class="sec-en">SAFETY</span>安全情報</h2>
+<p>${s.listed ? `${head}国内の一部地域に危険情報が出ています。${esc(c.safetyNote ?? '')}${cityName ? `${esc(cityName)}を含む` : ''}主な観光地はレベル0です。` : `${head}外務省の危険情報は出ていません。`}（${esc(safety.checkedAt)}時点）</p>
+<p><a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページで最新情報を見る</a></p></section>`;
+}
+
+const cityLinks = (list, prefix, label = '人気の都市') => list.length ? `<section><h2><span class="sec-en">POPULAR CITIES</span>${label}</h2><div class="cards cards-city">${list.map(ct => card(ct, `${prefix}${ct.id}.html`, 'card card-city').replace(' target="_blank" rel="noopener"', '')).join('')}</div></section>` : '';
+
+for (const c of countries) {
+  const s = safety.countries[c.id] ?? { status: 'ok' };
+  const region = regions.find(r => r.id === c.region);
+  let body;
+  if (!isPublished(c)) {
+    body = `<article class="country"><h1>${esc(c.name)}</h1><div class="notice">外務省の安全情報が変わったため、このページの掲載を一時停止しています。最新の情報は<a href="${mofaUrlOf(c, s)}" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>でご確認ください。</div></article>`;
+  } else {
+    body = placeBody(c, {
+      crumb: `<a href="../index.html#lineup">${esc(region?.name)}</a>`,
+      sub: c.domestic ? 'の国内旅行vlog・旅行情報' : 'の旅行vlog・旅行情報',
+      safetyHtml: safetySection(c, s),
+      infoRows: c.domestic ? DOMESTIC_INFO : INFO,
+      extra: cityLinks(pubCities.filter(ct => ct.country === c.id), '../cities/'),
+    });
   }
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
     title: `${c.name}の旅行情報・おすすめ旅行vlog｜${cfg.siteName}`,
@@ -222,4 +261,29 @@ document.querySelectorAll('.thumb-link[data-embed]').forEach(a => {
     body, depth: 1, cls: 'page-country',
   }));
 }
-console.log(`dist/ を生成しました（掲載 ${pub.length} / ${countries.length} 件${DEMO ? '、サンプル表示あり' : ''}）`);
+
+// ---------- 都市ページ ----------
+for (const ct of cities) {
+  const c = countryOf(ct);
+  if (!c) { console.warn(`${ct.name}：親の国（${ct.country}）が見つかりません`); continue; }
+  const s = safety.countries[c.id] ?? { status: 'ok' };
+  let body;
+  if (!cityPublished(ct)) {
+    body = `<article class="country"><h1>${esc(ct.name)}</h1><div class="notice">外務省の安全情報が変わったため、このページの掲載を一時停止しています。最新の情報は<a href="${mofaUrlOf(c, s)}" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>でご確認ください。</div></article>`;
+  } else {
+    const others = pubCities.filter(o => o.country === c.id && o.id !== ct.id);
+    body = placeBody(ct, {
+      crumb: `<a href="../countries/${c.id}.html">${esc(c.name)}</a>`,
+      sub: 'の旅行vlog・観光情報',
+      safetyHtml: safetySection(c, s, ct.name),
+      infoRows: CITY_INFO,
+      extra: cityLinks(others, '', `${c.name}のほかの都市`),
+    });
+  }
+  fs.writeFileSync(p(`dist/cities/${ct.id}.html`), layout({
+    title: `${ct.name}の観光情報・おすすめ旅行vlog｜${cfg.siteName}`,
+    desc: `${ct.name}旅行の予習に。見どころやアクセスと、評判のよい旅行vlog・ブログをまとめています。`,
+    body, depth: 1, cls: 'page-country page-city',
+  }));
+}
+console.log(`dist/ を生成しました（国・地域 ${pub.length} / ${countries.length} 件、都市 ${pubCities.length} / ${cities.length} 件${DEMO ? '、サンプル表示あり' : ''}）`);

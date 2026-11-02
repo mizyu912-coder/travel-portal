@@ -2,13 +2,13 @@
 // 必要な環境変数：YOUTUBE_API_KEY
 // 使い方：node scripts/collect-videos.mjs            （全ての国）
 //         node scripts/collect-videos.mjs korea taiwan（指定した国だけ）
-import { readJSON, writeJSON, today } from './lib.mjs';
+import { readJSON, writeJSON, today, loadPlaces } from './lib.mjs';
 
 const KEY = process.env.YOUTUBE_API_KEY;
 if (!KEY) { console.error('YOUTUBE_API_KEY が設定されていません。'); process.exit(1); }
 const API = 'https://www.googleapis.com/youtube/v3';
 const cfg = readJSON('data/config.json').videos;
-const countries = readJSON('data/countries.json');
+const countries = loadPlaces();
 const only = process.argv.slice(2);
 
 async function api(path, params) {

@@ -36,6 +36,8 @@ catch (e) { report.push(`- ⚠️ 感染症危険情報の一覧を取得でき�
 
 for (const c of countries) {
   const before = prev.countries?.[c.id] ?? {};
+  // 国内（日本）は外務省の危険情報の対象外
+  if (c.domestic) { result.countries[c.id] = { status: 'ok', domestic: true, listed: false, reasons: ['国内のため対象外'] }; continue; }
   const isListed = c.safety.mofaNames.some(n => listed.has(n));
   let r = { status: 'ok', listed: isListed, infection: infected.has(c.id), reasons: [], hash: null, maxLevel: 0 };
 
