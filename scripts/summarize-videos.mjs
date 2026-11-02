@@ -10,7 +10,10 @@ if (!TOKEN) { console.log('GEMINI_API_KEY が未設定のため、概要文の�
 const ENDPOINT = process.env.SUMMARY_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions';
 let MODEL = process.env.SUMMARY_MODEL || 'gemini-3.8-flash';
 const tried = new Set();
-const BATCH = 8;
+const BATCH = 12;
+// Gemini の無料枠は1モデルにつき1日20回なので、1回の実行で使う回数を抑える（毎日実行して少しずつ進める）
+const MAX_REQUESTS = Number(process.env.SUMMARY_MAX_REQUESTS || 15);
+let requests = 0;
 const ONLY = process.argv.slice(2);
 const cfg = readJSON('data/config.json').videos;
 const countries = readJSON('data/countries.json');
@@ -26,6 +29,7 @@ const SYSTEM = `あなたは旅行情報サイトの編集者です。YouTubeの
 
 async function summarize(country, videos) {
   const input = videos.map(v => ({ id: v.id, title: v.title, channel: v.channel, durationMin: Math.round(v.durationSec / 60), description: (v.description ?? '').replace(/https?:\/\/\S+/g, '').slice(0, 500) }));
+  requests++;
   const res = await fetch(ENDPOINT, {
     method: 'POST',
     headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json', Accept: 'application/json' },
@@ -64,45 +68,50 @@ async function fallbackModel() {
 }
 
 let made = 0, stop = false;
-for (const c of countries) {
-  if (stop) break;
-  if (ONLY.length && !ONLY.includes(c.id)) continue;
-  const file = `data/videos/${c.id}.json`;
-  if (!fs.existsSync(p(file))) continue;
-  const store = readJSON(file);
-  // サイトに表示される可能性がある上位の動画だけを対象にする
-  const targets = store.items.filter(v => v.status !== 'blocked').sort((a, b) => b.score - a.score)
-    .slice(0, cfg.max + 6).filter(v => !v.summary);
-  for (let i = 0; i < targets.length && !stop; i += BATCH) {
-    const batch = targets.slice(i, i + BATCH);
-    try {
-      let out;
-      // 混雑（503）のときは少し待ってやり直す
-      for (let attempt = 1; ; attempt++) {
-        try { out = await summarize(c, batch); break; }
-        catch (e) {
-          if (!/HTTP 50[023]/.test(e.message)) throw e;
-          if (attempt >= 3) {
-            // 同じモデルが混雑し続けるときは、使える別の軽いモデルに切り替える
-            const next = await fallbackModel();
-            if (!next) throw e;
-            console.warn(`${MODEL} が混雑しているため ${next} に切り替えます`);
-            MODEL = next; attempt = 0; continue;
+const stores = new Map();
+// 1周目：各国で最初に表示される動画（initial 本）を優先。2周目：「もっと見る」で出る動画。
+for (const phase of [1, 2]) {
+  for (const c of countries) {
+    if (stop) break;
+    if (ONLY.length && !ONLY.includes(c.id)) continue;
+    const file = `data/videos/${c.id}.json`;
+    if (!fs.existsSync(p(file))) continue;
+    if (!stores.has(file)) stores.set(file, readJSON(file));
+    const store = stores.get(file);
+    const ranked = store.items.filter(v => v.status !== 'blocked').sort((a, b) => b.score - a.score);
+    const pool = phase === 1 ? ranked.slice(0, cfg.initial) : ranked.slice(cfg.initial, cfg.max + 6);
+    const targets = pool.filter(v => !v.summary);
+    for (let i = 0; i < targets.length && !stop; i += BATCH) {
+      if (requests >= MAX_REQUESTS) { console.log(`今回の上限（${MAX_REQUESTS}回）に達したので、残りは次回に作ります。`); stop = true; break; }
+      const batch = targets.slice(i, i + BATCH);
+      try {
+        let out;
+        // 混雑（503）のときは少し待ってやり直し、続くようなら別の軽いモデルに切り替える
+        for (let attempt = 1; ; attempt++) {
+          try { out = await summarize(c, batch); break; }
+          catch (e) {
+            if (!/HTTP 50[023]/.test(e.message) || requests >= MAX_REQUESTS) throw e;
+            if (attempt >= 2) {
+              const next = await fallbackModel();
+              if (!next) throw e;
+              console.warn(`${MODEL} が混雑しているため ${next} に切り替えます`);
+              MODEL = next; attempt = 0; continue;
+            }
+            console.warn(`${c.name}: AIが混雑しているため30秒後にやり直します`);
+            await sleep(30000);
           }
-          console.warn(`${c.name}: AIが混雑しているため ${attempt * 20} 秒後にやり直します`);
-          await sleep(attempt * 20000);
         }
+        for (const o of out) {
+          const v = store.items.find(x => x.id === o.id);
+          if (v && typeof o.summary === 'string' && o.summary.trim()) { v.summary = o.summary.trim(); v.summarySource = 'ai'; made++; }
+        }
+        writeJSON(file, store);
+      } catch (e) {
+        console.warn(`${c.name}: 概要文を作れませんでした（${e.message}）`);
+        if (e.limit) { console.warn('AIの無料枠の上限に達したため、残りは次回に作ります。'); stop = true; }
       }
-      for (const o of out) {
-        const v = store.items.find(x => x.id === o.id);
-        if (v && typeof o.summary === 'string' && o.summary.trim()) { v.summary = o.summary.trim(); v.summarySource = 'ai'; made++; }
-      }
-      writeJSON(file, store);
-    } catch (e) {
-      console.warn(`${c.name}: 概要文を作れませんでした（${e.message}）`);
-      if (e.limit) { console.warn('GitHub Models の利用上限に達したため、残りは次回に作ります。'); stop = true; }
+      await sleep(7000); // 無料枠の1分あたりの回数制限に合わせる
     }
-    await sleep(7000); // 無料枠の1分あたりの回数制限に合わせる
   }
 }
-console.log(`概要文を ${made} 本作りました。`);
+console.log(`概要文を ${made} 本作りました（AIへの依頼 ${requests} 回）。`);

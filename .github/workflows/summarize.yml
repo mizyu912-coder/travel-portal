@@ -1,24 +1,33 @@
-# 動画の概要文だけを作り直して公開する（YouTube の検索枠を使わない）
+# 動画の概要文を作って公開する（YouTube の検索枠を使わない）。
+# Gemini の無料枠は1日20回までなので、毎日少しずつ作る。
 name: summarize
 on:
+  schedule:
+    - cron: '30 1 * * *'
   workflow_dispatch:
     inputs:
       countries: { description: '対象の国ID（空欄なら全部。例：korea taiwan）', required: false, default: '' }
       model: { description: '使うモデル（空欄なら既定）', required: false, default: '' }
-permissions: { contents: write }
+permissions: { contents: write, pages: write, id-token: write }
+concurrency: { group: weekly-update, cancel-in-progress: false }
 jobs:
   summarize:
     runs-on: ubuntu-latest
+    environment: { name: github-pages }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
-      - run: node scripts/summarize-videos.mjs ${{ inputs.countries }}
-        env: { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}', SUMMARY_MODEL: '${{ inputs.model }}' }
+      - run: node scripts/summarize-videos.mjs ${{ inputs.countries || '' }}
+        env: { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}', SUMMARY_MODEL: '${{ inputs.model || '' }}' }
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           git diff --cached --quiet || git commit -m "自動更新：動画の概要文（$(date +%Y-%m-%d)）"
           git push
+      - run: node scripts/build.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+      - uses: actions/deploy-pages@v4

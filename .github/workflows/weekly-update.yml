@@ -42,11 +42,6 @@ jobs:
         if: github.event_name != 'push' && env.YOUTUBE_API_KEY != ''
         run: node scripts/collect-videos.mjs
 
-      - name: 動画の概要文をAIで作成（Gemini API）
-        if: github.event_name != 'push'
-        env: { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}' }
-        run: node scripts/summarize-videos.mjs
-
       - name: ブログ・記事リンクの確認
         run: node scripts/check-links.mjs
 

@@ -21,7 +21,9 @@
 | `scripts/check-safety.mjs` | 外務省のページを読み、各国の掲載可否を判定 |
 | `scripts/collect-videos.mjs` | YouTube Data API で動画の候補を集めて点数を付ける |
 | `scripts/build.mjs` | `dist/` にサイトを生成 |
-| `.github/workflows/weekly-update.yml` | 毎週月曜に上の3つを実行して公開 |
+| `.github/workflows/weekly-update.yml` | 毎週月曜に危険情報・動画・リンクを確認して公開 |
+| `scripts/summarize-videos.mjs` | Gemini API（無料枠）で動画の概要文を作る |
+| `.github/workflows/summarize.yml` | 毎日10:30（日本時間）に概要文がまだ無い動画を少しずつ処理して公開（無料枠は1日20回） |
 
 ## 国を追加する
 
