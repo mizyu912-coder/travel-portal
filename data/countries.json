@@ -34,7 +34,12 @@
       "season": "春（4〜5月）と秋（9〜11月）",
       "plug": "C・SEタイプ／220V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Gyeongbokgung",
+      "Bukchon Hanok Village",
+      "Haeundae Beach"
+    ]
   },
   {
     "id": "taiwan",
@@ -71,7 +76,12 @@
       "season": "秋〜春（10〜12月、3〜4月）",
       "plug": "Aタイプ／110V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Jiufen",
+      "Taipei 101",
+      "Sun Moon Lake"
+    ]
   },
   {
     "id": "vietnam",
@@ -108,7 +118,12 @@
       "season": "北部は10〜4月、南部は乾季の12〜4月",
       "plug": "A・Cタイプ／220V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Ha Long Bay",
+      "Hoi An",
+      "Da Nang"
+    ]
   },
   {
     "id": "singapore",
@@ -145,7 +160,12 @@
       "season": "通年（比較的雨が少ないのは2〜4月）",
       "plug": "BFタイプ／230V",
       "tip": "基本的に不要（サービス料込みが多い）"
-    }
+    },
+    "imageQueries": [
+      "Marina Bay Sands",
+      "Gardens by the Bay",
+      "Singapore skyline"
+    ]
   },
   {
     "id": "thailand",
@@ -185,7 +205,12 @@
       "plug": "A・C・Oタイプ／220V",
       "tip": "少額のチップの習慣あり"
     },
-    "safetyNote": "カンボジア国境付近と南部4県にはレベル2〜3が出ています。"
+    "safetyNote": "カンボジア国境付近と南部4県にはレベル2〜3が出ています。",
+    "imageQueries": [
+      "Wat Arun",
+      "Grand Palace Bangkok",
+      "Phi Phi Islands"
+    ]
   },
   {
     "id": "china",
@@ -227,7 +252,12 @@
       "plug": "A・C・Oタイプ／220V",
       "tip": "基本的に不要"
     },
-    "safetyNote": "新疆ウイグル自治区とチベット自治区にはレベル1（十分注意）が出ています。"
+    "safetyNote": "新疆ウイグル自治区とチベット自治区にはレベル1（十分注意）が出ています。",
+    "imageQueries": [
+      "Great Wall Mutianyu",
+      "The Bund Shanghai",
+      "Li River Guilin"
+    ]
   },
   {
     "id": "malaysia",
@@ -266,7 +296,12 @@
       "plug": "BFタイプ／240V",
       "tip": "基本的に不要"
     },
-    "safetyNote": "サバ州東側の島々と沿岸部にはレベル1〜2が出ています。"
+    "safetyNote": "サバ州東側の島々と沿岸部にはレベル1〜2が出ています。",
+    "imageQueries": [
+      "Petronas Towers",
+      "George Town Penang",
+      "Langkawi"
+    ]
   },
   {
     "id": "usa",
@@ -305,7 +340,12 @@
       "season": "地域によって異なる",
       "plug": "Aタイプ／120V",
       "tip": "レストランでは15〜20%程度"
-    }
+    },
+    "imageQueries": [
+      "Manhattan skyline",
+      "Golden Gate Bridge",
+      "Grand Canyon"
+    ]
   },
   {
     "id": "hawaii",
@@ -345,7 +385,12 @@
       "season": "通年（乾季は4〜10月）",
       "plug": "Aタイプ／120V",
       "tip": "レストランでは15〜20%程度"
-    }
+    },
+    "imageQueries": [
+      "Waikiki",
+      "Diamond Head",
+      "Na Pali Coast"
+    ]
   },
   {
     "id": "guam",
@@ -384,7 +429,12 @@
       "season": "乾季の12〜6月",
       "plug": "Aタイプ／110V",
       "tip": "レストランでは10〜15%程度"
-    }
+    },
+    "imageQueries": [
+      "Tumon Bay",
+      "Guam beach",
+      "Hagåtña"
+    ]
   },
   {
     "id": "canada",
@@ -421,7 +471,12 @@
       "season": "夏（6〜9月）、紅葉は9〜10月",
       "plug": "Aタイプ／120V",
       "tip": "レストランでは15〜20%程度"
-    }
+    },
+    "imageQueries": [
+      "Moraine Lake",
+      "Vancouver skyline",
+      "Old Quebec"
+    ]
   },
   {
     "id": "australia",
@@ -458,7 +513,12 @@
       "season": "地域によって異なる（シドニーは9〜4月）",
       "plug": "Oタイプ／240V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Sydney Opera House",
+      "Great Barrier Reef",
+      "Uluru"
+    ]
   },
   {
     "id": "new-zealand",
@@ -494,7 +554,12 @@
       "season": "夏（12〜2月）",
       "plug": "Oタイプ／230V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Milford Sound",
+      "Lake Tekapo",
+      "Queenstown New Zealand"
+    ]
   },
   {
     "id": "france",
@@ -531,7 +596,12 @@
       "season": "5〜9月",
       "plug": "C・SEタイプ／230V",
       "tip": "基本的に不要（サービス料込み）"
-    }
+    },
+    "imageQueries": [
+      "Eiffel Tower",
+      "Mont-Saint-Michel",
+      "Nice France"
+    ]
   },
   {
     "id": "italy",
@@ -568,7 +638,12 @@
       "season": "春（4〜6月）と秋（9〜10月）",
       "plug": "C・SE・Lタイプ／230V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Colosseum",
+      "Florence Cathedral",
+      "Venice Grand Canal"
+    ]
   },
   {
     "id": "spain",
@@ -605,7 +680,12 @@
       "season": "春（4〜6月）と秋（9〜10月）",
       "plug": "C・SEタイプ／230V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Sagrada Familia",
+      "Alhambra",
+      "Plaza de España Seville"
+    ]
   },
   {
     "id": "uk",
@@ -642,7 +722,12 @@
       "season": "5〜9月",
       "plug": "BFタイプ／230V",
       "tip": "レストランでは10〜15%程度（サービス料込みなら不要）"
-    }
+    },
+    "imageQueries": [
+      "Tower Bridge",
+      "Edinburgh Castle",
+      "Cotswolds"
+    ]
   },
   {
     "id": "switzerland",
@@ -679,6 +764,11 @@
       "season": "夏（6〜9月）、スキーは12〜3月",
       "plug": "J・Cタイプ／230V",
       "tip": "基本的に不要"
-    }
+    },
+    "imageQueries": [
+      "Matterhorn",
+      "Chapel Bridge Lucerne",
+      "Lauterbrunnen"
+    ]
   }
 ]

@@ -104,6 +104,16 @@ function pickVideos(c) {
   return items;
 }
 
+// Wikimedia Commons の写真（作者とライセンスを必ず表示する）
+function gallery(c) {
+  const imgs = readJSON(`data/images/${c.id}.json`, []).filter(i => !i.hidden).slice(0, 3);
+  if (!imgs.length) return '';
+  return `<div class="gallery g${imgs.length}">${imgs.map((im, i) => `<figure>
+  <img src="${esc(im.thumb)}" alt="${esc(c.name)}の風景（${esc(im.query)}）" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1067">
+  <figcaption><a href="${esc(im.page)}" target="_blank" rel="noopener">写真：${esc(im.artist.slice(0, 40))}</a> / ${im.licenseUrl ? `<a href="${esc(im.licenseUrl)}" target="_blank" rel="noopener">${esc(im.license)}</a>` : esc(im.license)} / Wikimedia Commons</figcaption>
+</figure>`).join('')}</div>`;
+}
+
 function videoCard(v, i) {
   const url = v.demo ? '#' : `https://www.youtube.com/watch?v=${v.id}`;
   const thumb = v.demo ? '<div class="thumb demo">サンプル</div>'
@@ -134,6 +144,7 @@ for (const c of countries) {
     }).filter(Boolean);
     body = `<article class="country">
 <p class="crumb">${esc(region?.name)}</p><h1>${esc(c.name)}の旅行情報と旅行vlog</h1>
+${gallery(c)}
 <section class="safety ${s.listed ? 'partial' : ''}"><h2>安全情報</h2>
 <p>${s.listed ? `国内の一部地域に危険情報が出ています。${esc(c.safetyNote ?? '')}主な観光地はレベル0です。` : '外務省の危険情報は出ていません。'}（${esc(safety.checkedAt)}時点）</p>
 <p><a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページで最新情報を見る</a></p></section>

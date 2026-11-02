@@ -22,6 +22,8 @@
 | `scripts/collect-videos.mjs` | YouTube Data API で動画の候補を集めて点数を付ける |
 | `scripts/build.mjs` | `dist/` にサイトを生成 |
 | `.github/workflows/weekly-update.yml` | 毎週月曜に危険情報・動画・リンクを確認して公開 |
+| `data/images/<国ID>.json` | 国ページの写真（自動で取得。`"hidden": true` で非表示、消すと次回別の写真を探す） |
+| `scripts/fetch-images.mjs` | Wikimedia Commons から写真を探す（Commons が選んだ高品質な写真のみ、AI生成・CGは除外、CC0/PD/CC BY/CC BY-SA のみ） |
 | `scripts/summarize-videos.mjs` | Gemini API（無料枠）で動画の概要文を作る |
 | `.github/workflows/summarize.yml` | 毎日10:30（日本時間）に概要文がまだ無い動画を少しずつ処理して公開（無料枠は1日20回） |
 
@@ -59,6 +61,7 @@
 - 動画はリンクと YouTube 公式の埋め込みだけ。サムネイルは YouTube API が返す画像を、その動画へのリンクとしてだけ表示します
 - 動画の概要やブログの紹介文は自分の言葉で書き、説明文や本文はコピーしない
 - 安全情報は出典を明記して要約し、外務省のページへリンクする
+- 写真は Wikimedia Commons の写真だけを使い、各写真に作者とライセンスを表示する（CC BY / CC BY-SA の条件）
 - 地図データは [world-atlas](https://github.com/topojson/world-atlas)（Natural Earth、パブリックドメイン）
 
 ## はじめての設定
