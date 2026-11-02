@@ -37,8 +37,10 @@
     },
     "imageQueries": [
       "Gyeongbokgung",
-      "Bukchon Hanok Village",
-      "Haeundae Beach"
+      "Bukchon",
+      "Haeundae",
+      "Gamcheon",
+      "Seoul skyline"
     ]
   },
   {
@@ -80,7 +82,8 @@
     "imageQueries": [
       "Jiufen",
       "Taipei 101",
-      "Sun Moon Lake"
+      "Sun Moon Lake",
+      "Taroko"
     ]
   },
   {
@@ -122,7 +125,8 @@
     "imageQueries": [
       "Ha Long Bay",
       "Hoi An",
-      "Da Nang"
+      "Dragon Bridge",
+      "Hanoi"
     ]
   },
   {
@@ -389,7 +393,8 @@
     "imageQueries": [
       "Waikiki",
       "Diamond Head",
-      "Na Pali Coast"
+      "Na Pali",
+      "Hanauma Bay"
     ]
   },
   {
@@ -431,9 +436,9 @@
       "tip": "レストランでは10〜15%程度"
     },
     "imageQueries": [
-      "Tumon Bay",
-      "Guam beach",
-      "Hagåtña"
+      "Tumon",
+      "Guam",
+      "Two Lovers Point"
     ]
   },
   {
@@ -516,8 +521,9 @@
     },
     "imageQueries": [
       "Sydney Opera House",
-      "Great Barrier Reef",
-      "Uluru"
+      "Uluru",
+      "Twelve Apostles",
+      "Great Barrier Reef"
     ]
   },
   {
@@ -558,7 +564,8 @@
     "imageQueries": [
       "Milford Sound",
       "Lake Tekapo",
-      "Queenstown New Zealand"
+      "Queenstown",
+      "Mount Cook"
     ]
   },
   {
@@ -726,7 +733,8 @@
     "imageQueries": [
       "Tower Bridge",
       "Edinburgh Castle",
-      "Cotswolds"
+      "Cotswolds",
+      "Big Ben"
     ]
   },
   {

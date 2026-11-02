@@ -37,6 +37,9 @@ async function search(query, category) {
   }).filter(Boolean);
 }
 
+// 検索語の単語がすべて、ファイル名か説明文に含まれている写真だけを使う（関係ない写真を避ける）
+const norm = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const matches = (i, q) => { const text = norm(`${i.file} ${i.description}`); return norm(q).split(/\s+/).filter(w => w.length > 2 && w !== 'the').every(w => text.includes(w)); };
 const usable = i => i.mime === 'image/jpeg' && i.width >= 1600 && i.width > i.height * 1.2
   && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description);
 
@@ -51,7 +54,7 @@ for (const c of readJSON('data/countries.json')) {
     if (picked.some(p => p.query === q)) continue;
     let found = null;
     for (const cat of CATEGORIES) {
-      try { found = (await search(q, cat)).find(i => usable(i) && !picked.some(p => p.file === i.file)); }
+      try { found = (await search(q, cat)).find(i => usable(i) && matches(i, q) && !picked.some(p => p.file === i.file)); }
       catch (e) { console.warn(`${c.name}「${q}」：${e.message}`); }
       if (found) break;
     }
