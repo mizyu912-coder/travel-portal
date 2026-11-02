@@ -159,7 +159,7 @@ fs.writeFileSync(p('dist/index.html'), layout({
   <div class="hero-text">
   <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS ・ ${pubCities.length} CITIES</p>
   <h1>${esc(cfg.catch).replace('、', '、<wbr>')}</h1>
-  <p class="lead">${esc(cfg.siteDescription)}</p>
+  <p class="lead">${esc(cfg.siteDescription).replace("。", "。<br>")}</p>
   <a class="cta" href="#map-section">行き先を選ぶ</a>
   </div>
 </div>
