@@ -36,6 +36,7 @@
     "licenseUrl": "",
     "description": "Port Hagatna Pillbox",
     "query": "Hagatna",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "hidden": true
   }
 ]
