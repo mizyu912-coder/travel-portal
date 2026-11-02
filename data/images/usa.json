@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Manhattan from Weehawken, NJ.jpg",
+    "width": 4335,
+    "height": 1200,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Manhattan_from_Weehawken%2C_NJ.jpg/1920px-Manhattan_from_Weehawken%2C_NJ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Manhattan_from_Weehawken,_NJ.jpg",
+    "artist": "Dmitry Avdeev",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Midtown Manhattan as seen from Weehawken, NJ",
+    "query": "Manhattan skyline",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Golden Gate Bridge as seen from Marshall’s Beach, March 2018.jpg",
+    "width": 4861,
+    "height": 2734,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach%2C_March_2018.jpg/1920px-Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach,_March_2018.jpg",
+    "artist": "Frank Schulenburg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Golden Gate Bridge as seen from Marshall’s Beach, Presidio of San Francisco, in March 2018",
+    "query": "Golden Gate Bridge",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Grand Canyon South Rim at Sunset.jpg",
+    "width": 7600,
+    "height": 2426,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Grand_Canyon_South_Rim_at_Sunset.jpg/1920px-Grand_Canyon_South_Rim_at_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_South_Rim_at_Sunset.jpg",
+    "artist": "Mgimelfarb",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Grand Canyon South Rim at Sunset.",
+    "query": "Grand Canyon",
+    "addedAt": "2026-11-02"
+  }
+]

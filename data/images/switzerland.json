@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Matterhorn, March 2019 (01).jpg",
+    "width": 5827,
+    "height": 3885,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Matterhorn%2C_March_2019_%2801%29.jpg/1920px-Matterhorn%2C_March_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Matterhorn,_March_2019_(01).jpg",
+    "artist": "Liridon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Matterhorn",
+    "query": "Matterhorn",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:CH.LU.Luzern Kapellbrücke 01 16x9-R 16384x9216.jpg",
+    "width": 16384,
+    "height": 9216,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg/1920px-CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg",
+    "artist": "NOTE: This image is a panorama consisting of multiple frames that were merged or stitched in software. As a result, this image necessarily underwent some form of digital manipulation. These manipulations may include blending, blurring, cloning, and color and perspective adjustments. As a result of these adjustments, the image content may be slightly different from reality at the points where multiple images were combined. This manipulation is often required due to lens, perspective, and parallax distortions.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Chapel Bridge, a covered wooden footbridge spanning the river Reuss in the city of Lucerne in central Switzerland. Named",
+    "query": "Chapel Bridge Lucerne",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Lauterbrunnen-valley.jpg",
+    "width": 1840,
+    "height": 1232,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Lauterbrunnen-valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen-valley.jpg",
+    "artist": "Keith Halstead",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Photograph of Lauterbrunnen valley taken in February 2005 by Keith Halstead. This is now a featured picture on the Engli",
+    "query": "Lauterbrunnen",
+    "addedAt": "2026-11-02"
+  }
+]

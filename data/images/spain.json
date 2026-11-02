@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Sagrada Familia March 2015-10a.jpg",
+    "width": 6249,
+    "height": 4698,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Sagrada_Familia_March_2015-10a.jpg/1920px-Sagrada_Familia_March_2015-10a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_March_2015-10a.jpg",
+    "artist": "Alvesgaspar",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "The ceiling of Sagrada Familia Cathedral, Barcelona, Spain",
+    "query": "Sagrada Familia",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Alhambra in the evening.jpg",
+    "width": 4563,
+    "height": 1614,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Alhambra_in_the_evening.jpg/1920px-Alhambra_in_the_evening.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Alhambra_in_the_evening.jpg",
+    "artist": "Jebulon",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "description": "The Alhambra (The Red) in the evening light, Granada, Spain. View from mirador San Nicolas.",
+    "query": "Alhambra",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Seville, Plaza de España (38625005691) (edited).jpg",
+    "width": 4353,
+    "height": 3453,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Seville%2C_Plaza_de_Espa%C3%B1a_%2838625005691%29_%28edited%29.jpg/1920px-Seville%2C_Plaza_de_Espa%C3%B1a_%2838625005691%29_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Seville,_Plaza_de_Espa%C3%B1a_(38625005691)_(edited).jpg",
+    "artist": "Dmitry Dzhus from London",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "Seville, Plaza de España",
+    "query": "Plaza de España Seville",
+    "addedAt": "2026-11-02"
+  }
+]
