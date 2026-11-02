@@ -26,7 +26,7 @@ async function summarize(country, videos) {
   const input = videos.map(v => ({ id: v.id, title: v.title, channel: v.channel, durationMin: Math.round(v.durationSec / 60), description: (v.description ?? '').replace(/https?:\/\/\S+/g, '').slice(0, 500) }));
   const res = await fetch(ENDPOINT, {
     method: 'POST',
-    headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json', Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
     body: JSON.stringify({
       model: MODEL,
       temperature: 0.4,
