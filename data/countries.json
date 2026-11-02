@@ -4,6 +4,7 @@
     "name": "日本",
     "nameEn": "Japan",
     "region": "japan",
+    "flag": "jp",
     "domestic": true,
     "map": {
       "isoNumeric": "392"
@@ -37,6 +38,7 @@
     "name": "韓国",
     "nameEn": "South Korea",
     "region": "asia",
+    "flag": "kr",
     "map": {
       "isoNumeric": "410"
     },
@@ -81,6 +83,7 @@
     "name": "台湾",
     "nameEn": "Taiwan",
     "region": "asia",
+    "flag": "tw",
     "map": {
       "isoNumeric": "158"
     },
@@ -124,6 +127,7 @@
     "name": "ベトナム",
     "nameEn": "Vietnam",
     "region": "asia",
+    "flag": "vn",
     "map": {
       "isoNumeric": "704"
     },
@@ -168,6 +172,7 @@
     "name": "シンガポール",
     "nameEn": "Singapore",
     "region": "asia",
+    "flag": "sg",
     "map": {
       "isoNumeric": "702",
       "marker": [
@@ -210,6 +215,7 @@
     "name": "タイ",
     "nameEn": "Thailand",
     "region": "asia",
+    "flag": "th",
     "map": {
       "isoNumeric": "764"
     },
@@ -255,6 +261,7 @@
     "name": "中国",
     "nameEn": "China",
     "region": "asia",
+    "flag": "cn",
     "map": {
       "isoNumeric": "156"
     },
@@ -302,6 +309,7 @@
     "name": "マレーシア",
     "nameEn": "Malaysia",
     "region": "asia",
+    "flag": "my",
     "map": {
       "isoNumeric": "458"
     },
@@ -346,6 +354,7 @@
     "name": "アメリカ（本土）",
     "nameEn": "United States",
     "region": "north-america",
+    "flag": "us",
     "map": {
       "isoNumeric": "840"
     },
@@ -390,6 +399,7 @@
     "name": "ハワイ",
     "nameEn": "Hawaii",
     "region": "north-america",
+    "flag": "us",
     "map": {
       "marker": [
         -157.86,
@@ -437,6 +447,7 @@
     "name": "グアム",
     "nameEn": "Guam",
     "region": "oceania",
+    "flag": "gu",
     "map": {
       "isoNumeric": "316",
       "marker": [
@@ -482,6 +493,7 @@
     "name": "カナダ",
     "nameEn": "Canada",
     "region": "north-america",
+    "flag": "ca",
     "map": {
       "isoNumeric": "124"
     },
@@ -524,6 +536,7 @@
     "name": "オーストラリア",
     "nameEn": "Australia",
     "region": "oceania",
+    "flag": "au",
     "map": {
       "isoNumeric": "036"
     },
@@ -567,6 +580,7 @@
     "name": "ニュージーランド",
     "nameEn": "New Zealand",
     "region": "oceania",
+    "flag": "nz",
     "map": {
       "isoNumeric": "554"
     },
@@ -610,6 +624,7 @@
     "name": "フランス",
     "nameEn": "France",
     "region": "europe",
+    "flag": "fr",
     "map": {
       "isoNumeric": "250"
     },
@@ -652,6 +667,7 @@
     "name": "イタリア",
     "nameEn": "Italy",
     "region": "europe",
+    "flag": "it",
     "map": {
       "isoNumeric": "380"
     },
@@ -694,6 +710,7 @@
     "name": "スペイン",
     "nameEn": "Spain",
     "region": "europe",
+    "flag": "es",
     "map": {
       "isoNumeric": "724"
     },
@@ -736,6 +753,7 @@
     "name": "イギリス",
     "nameEn": "United Kingdom",
     "region": "europe",
+    "flag": "gb",
     "map": {
       "isoNumeric": "826"
     },
@@ -779,6 +797,7 @@
     "name": "スイス",
     "nameEn": "Switzerland",
     "region": "europe",
+    "flag": "ch",
     "map": {
       "isoNumeric": "756"
     },

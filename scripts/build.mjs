@@ -74,13 +74,13 @@ const shapes = geo.features.map(f => {
   const d = path(f);
   if (!d) return '';
   if (c && isPublished(c) && !c.map.marker) {
-    return `<path d="${d}" class="land on" data-id="${c.id}" data-region="${c.region}" tabindex="0" role="link" aria-label="${esc(c.name)}"><title>${esc(c.name)}</title></path>`;
+    return `<path d="${d}" class="land on" data-id="${c.id}" data-region="${c.region}" tabindex="0" role="link" aria-label="${esc(c.name)}"></path>`;
   }
   return `<path d="${d}" class="land"/>`;
 }).join('');
 const markers = countries.filter(c => c.map.marker && isPublished(c)).map(c => {
   const [x, y] = proj(c.map.marker);
-  return `<g class="marker" data-id="${c.id}" data-region="${c.region}" tabindex="0" role="link" aria-label="${esc(c.name)}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5"/><title>${esc(c.name)}</title></g>`;
+  return `<g class="marker" data-id="${c.id}" data-region="${c.region}" tabindex="0" role="link" aria-label="${esc(c.name)}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5"/></g>`;
 }).join('');
 const regionViews = Object.fromEntries(regions.map(r => {
   const [[x0, y0], [x1, y1]] = [proj(r.bbox[0]), proj(r.bbox[1])].map(pt => pt);
@@ -123,12 +123,12 @@ const realVideos = c => pickVideos(c).filter(v => !v.demo);
 const seen = new Set();
 const picks = places.flatMap(({ c, href }) => realVideos(c).slice(0, 3).filter(v => !seen.has(v.id) && seen.add(v.id))
   .map(v => ({ id: v.id, t: v.title, ch: v.channel, v: fmtViews(v.views), d: fmtDur(v.durationSec), p: c.name, h: href })));
-const carousel = `<div class="carousel" aria-roledescription="carousel" aria-label="人気の旅行動画">
-  <div class="car-frame"><div class="car-track"></div>
-    <button type="button" class="car-nav car-prev" aria-label="前の動画">‹</button><button type="button" class="car-nav car-next" aria-label="次の動画">›</button>
-    <div class="car-progress"><span></span></div></div>
-  <div class="car-foot"><span class="car-label">POPULAR VLOGS</span><div class="car-dots" role="tablist"></div></div>
-</div>`;
+const reel = `<div class="reel" aria-label="人気の旅行動画"><p class="reel-label"><span class="sec-en">POPULAR VLOGS</span>いま人気の旅行動画</p><div class="reel-view"><div class="reel-track"></div></div></div>`;
+// 地図にマウスを合わせたときの表示（国名・国旗・人気の都市）
+const flags = new Set(pub.map(c => c.flag).filter(Boolean));
+fs.mkdirSync(p('dist/flags'), { recursive: true });
+for (const f of flags) fs.copyFileSync(p(`node_modules/flag-icons/flags/4x3/${f}.svg`), p(`dist/flags/${f}.svg`));
+const placeInfo = Object.fromEntries(pub.map(c => [c.id, { n: c.name, e: c.nameEn, f: c.flag ?? '', c: pubCities.filter(ct => ct.country === c.id).map(ct => ct.name) }]));
 
 // 人気ランキング：表示している動画（上位8本）の合計再生数で並べる
 const rankRows = list => list.map(pl => ({ ...pl, views: realVideos(pl.c).slice(0, cfg.videos.initial).reduce((s, v) => s + v.views, 0) }))
@@ -157,12 +157,14 @@ fs.writeFileSync(p('dist/index.html'), layout({
   <p class="lead">${esc(cfg.siteDescription)}</p>
   <a class="cta" href="#map-section">行き先を選ぶ</a>
   </div>
-  ${carousel}
-</div></section>
+</div>
+${reel}
+</section>
 <section class="map-wrap" id="map-section">
   <div class="sec-head row"><span class="sec-en">SELECT YOUR SCREEN</span><h2>エリアから探す</h2></div>
   <div class="map-bar"><nav class="regions">${regionTabs}</nav><span class="step" id="step-label">エリアを選んでください</span><button type="button" id="back" hidden>← 世界地図に戻る</button></div>
-  <svg id="map" viewBox="0 0 ${W} ${H}" data-world="0 0 ${W} ${H}" role="img" aria-label="世界地図" style="--arn:${(W / H).toFixed(3)}">${shapes}${markers}</svg>
+  <div class="map-stage"><svg id="map" viewBox="0 0 ${W} ${H}" data-world="0 0 ${W} ${H}" role="img" aria-label="世界地図" style="--arn:${(W / H).toFixed(3)}">${shapes}${markers}</svg>
+  <div class="map-tip" hidden></div></div>
   ${chips}
   <p class="note">色がついている国・地域が掲載中です。国や都市を選ぶと、別のタブでページが開きます。海外は、外務省の危険情報で主な観光地がレベル0の国・地域だけを掲載しています。</p>
 </section>
@@ -179,7 +181,7 @@ ${ranking}
     <li><strong>計画に活かす</strong><span>基本情報やブログのモデルコースを参考に、自分の旅を組み立てます。</span></li>
   </ol>
 </section>
-<script>window.REGION_VIEWS=${JSON.stringify(regionViews)};window.PICKS=${JSON.stringify(picks).replace(/</g, '\\u003c')};</script><script src="map.js"></script><script src="home.js"></script>`,
+<script>window.REGION_VIEWS=${JSON.stringify(regionViews)};window.PICKS=${JSON.stringify(picks).replace(/</g, '\\u003c')};window.PLACE_INFO=${JSON.stringify(placeInfo).replace(/</g, '\\u003c')};</script><script src="map.js"></script><script src="home.js"></script>`,
 }));
 
 // ---------- 国ページ ----------

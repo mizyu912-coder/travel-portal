@@ -54,4 +54,29 @@
     });
     item.addEventListener('mouseleave', () => hl(null));
   });
+
+  // 地図上の国にマウスを合わせると、国旗と国名（人気の都市）を表示する
+  const tip = document.querySelector('.map-tip');
+  const stage = svg.parentElement;
+  const info = window.PLACE_INFO || {};
+  svg.querySelectorAll('[data-id]').forEach(el => {
+    el.addEventListener('pointerenter', e => {
+      if (e.pointerType !== 'mouse') return;
+      const d = info[el.dataset.id];
+      if (!d) return;
+      tip.innerHTML = (d.f ? `<img src="flags/${d.f}.svg" alt="" width="36" height="27">` : '')
+        + `<span class="tip-text"><strong>${d.n}</strong><small>${d.e}</small>${d.c.length ? `<span class="tip-cities">${d.c.join('・')}</span>` : ''}</span>`;
+      tip.hidden = false;
+      el.classList.add('hl');
+    });
+    el.addEventListener('pointermove', e => {
+      if (tip.hidden) return;
+      const r = stage.getBoundingClientRect();
+      let x = e.clientX - r.left + 16, y = e.clientY - r.top + 16;
+      if (x + tip.offsetWidth > r.width) x = e.clientX - r.left - tip.offsetWidth - 12;
+      if (y + tip.offsetHeight > r.height) y = e.clientY - r.top - tip.offsetHeight - 12;
+      tip.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    el.addEventListener('pointerleave', () => { tip.hidden = true; el.classList.remove('hl'); });
+  });
 })();
