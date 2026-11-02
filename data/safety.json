@@ -2,6 +2,14 @@
   "checkedAt": "2026-11-02",
   "source": "auto",
   "countries": {
+    "japan": {
+      "status": "ok",
+      "domestic": true,
+      "listed": false,
+      "reasons": [
+        "国内のため対象外"
+      ]
+    },
     "korea": {
       "status": "ok",
       "listed": false,
