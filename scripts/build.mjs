@@ -285,6 +285,19 @@ function blogsOf(c) {
   }).filter(Boolean);
 }
 
+// 旅の紹介文（data/guides/<ID>.json、サイト独自の文章）
+const guideOf = c => readJSON(`data/guides/${c.id}.json`, null);
+function guideSection(c) {
+  const g = guideOf(c);
+  if (!g) return '';
+  const label = c.kind === 'city' || countryOf(c) ? 'この街の旅' : c.domestic ? '国内旅行の楽しみ方' : 'この国・地域の旅';
+  return `<section class="guide"><h2><span class="sec-en">TRAVEL NOTES</span>${label}</h2>
+<p class="guide-lead">${esc(g.lead)}</p>
+<ul class="guide-points">${g.points.map(pt => `<li>${esc(pt)}</li>`).join('')}</ul>
+${g.firstTime ? `<div class="guide-first"><strong>最初の旅のコツ</strong><p>${esc(g.firstTime)}</p></div>` : ''}</section>`;
+}
+const descOf = (c, fallback) => { const g = guideOf(c); return g ? `${c.name}旅行の予習に。${g.lead}`.slice(0, 118) + (`${c.name}旅行の予習に。${g.lead}`.length > 118 ? '…' : '') : fallback; };
+
 // 国ページと都市ページの共通部分
 function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
   const videos = pickVideos(c);
@@ -293,6 +306,7 @@ function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
 <div class="country-head"><p class="crumb">${crumb}</p><p class="eyebrow">NOW SHOWING</p><h1>${esc(c.name)}<span class="h1-sub">${sub}</span></h1><p class="h1-en">${esc(c.nameEn)}</p></div>
 ${gallery(c)}
 ${safetyHtml}
+${guideSection(c)}
 <section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
 ${extra}
 <section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
@@ -330,7 +344,7 @@ for (const c of countries) {
   }
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
     title: `${c.name}の旅行情報・おすすめ旅行vlog｜${cfg.siteName}`,
-    desc: `${c.name}旅行の予習に。${c.domestic ? '人気の都市' : '安全情報や入国・通貨などの基本情報'}と、再生数や評価で選んだ旅行vlog・ブログをまとめています。`,
+    desc: descOf(c, `${c.name}旅行の予習に。${c.domestic ? '人気の都市' : '安全情報や入国・通貨などの基本情報'}と、再生数や評価で選んだ旅行vlog・ブログをまとめています。`),
     body, depth: 1, cls: 'page-country', path: `countries/${c.id}.html`, noindex: !isPublished(c),
     image: firstImage(c)?.thumb,
     jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`]]),
@@ -357,7 +371,7 @@ for (const ct of cities) {
   }
   fs.writeFileSync(p(`dist/cities/${ct.id}.html`), layout({
     title: `${ct.name}の観光情報・おすすめ旅行vlog｜${cfg.siteName}`,
-    desc: `${ct.name}旅行の予習に。見どころ・アクセス・滞在日数の目安と、再生数や評価で選んだ旅行vlog・モデルコース記事をまとめています。`,
+    desc: descOf(ct, `${ct.name}旅行の予習に。見どころ・アクセス・滞在日数の目安と、再生数や評価で選んだ旅行vlog・モデルコース記事をまとめています。`),
     body, depth: 1, cls: 'page-country page-city', path: `cities/${ct.id}.html`, noindex: !cityPublished(ct),
     image: firstImage(ct)?.thumb,
     jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`], [ct.name, `cities/${ct.id}.html`]]),
