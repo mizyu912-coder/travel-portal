@@ -37,6 +37,7 @@ function score(v) {
 const publishedAfter = new Date(Date.now() - cfg.maxAgeYears * 365 * 864e5).toISOString();
 
 let quotaHit = false;
+let searchQuotaHit = false;
 for (const c of countries) {
   if (only.length && !only.includes(c.id)) continue;
   try { await collect(c); }
@@ -56,9 +57,19 @@ async function collect(c) {
   const known = new Map(store.items.map(i => [i.id, i]));
 
   const ids = new Set();
-  for (const q of c.videoQueries) {
-    const r = await api('search', { part: 'id', q, type: 'video', maxResults: 25, regionCode: 'JP', relevanceLanguage: 'ja', publishedAfter, safeSearch: 'strict' });
-    r.items.forEach(i => ids.add(i.id.videoId));
+  let searchError = null;
+  if (!searchQuotaHit) {
+    try {
+      for (const q of c.videoQueries) {
+        const r = await api('search', { part: 'id', q, type: 'video', maxResults: 25, regionCode: 'JP', relevanceLanguage: 'ja', publishedAfter, safeSearch: 'strict' });
+        r.items.forEach(i => ids.add(i.id.videoId));
+      }
+    } catch (e) {
+      if (!e.quota) throw e;
+      // 検索の上限に達しても、既に集めた動画の再生数などの更新は続ける
+      searchQuotaHit = true; searchError = e;
+      console.warn(`YouTube の検索が1日の上限に達しました。${c.name}以降は新しい動画を探さず、既存の動画の情報だけ更新します。`);
+    }
   }
   known.forEach((_, id) => ids.add(id)); // 既存の動画も統計を更新する
 
@@ -77,6 +88,9 @@ async function collect(c) {
         likes: +(v.statistics.likeCount ?? 0),
         embeddable: v.status.embeddable !== false,
         thumbnail: v.snippet.thumbnails?.high?.url ?? v.snippet.thumbnails?.medium?.url,
+        // 概要文をAIで作るときの材料（サイトには表示しない）
+        description: (v.snippet.description ?? '').slice(0, 600),
+        tags: (v.snippet.tags ?? []).slice(0, 10),
       };
       item.score = score(item);
       const old = known.get(v.id);

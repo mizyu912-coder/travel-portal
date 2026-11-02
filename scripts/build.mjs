@@ -128,7 +128,8 @@ for (const c of countries) {
     // リンク確認で開けたもの（または1回だけ失敗したもの）だけを表示する
     const blogs = readJSON(`data/blogs/${c.id}.json`, []).map(b => {
       const l = links[b.url];
-      if (!l || (!l.ok && l.fails >= 2)) return null;
+      // 自動確認を拒否するサイトは、手で title を書いたときだけ表示する
+      if (!l || (l.blocked && !l.ok && !b.title) || (!l.ok && !l.blocked && (l.fails ?? 0) >= 2)) return null;
       return { ...b, title: b.title || l.title || b.url, site: b.site || l.site || new URL(b.url).hostname };
     }).filter(Boolean);
     body = `<article class="country">
@@ -138,7 +139,7 @@ for (const c of countries) {
 <p><a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページで最新情報を見る</a></p></section>
 <section><h2>基本情報</h2><table class="info">${INFO.map(([k, l]) => c.basic[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。</p></section>
-<section><h2>おすすめの旅行動画</h2>${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
+<section><h2>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
 <section><h2>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
 </article>
 <script>

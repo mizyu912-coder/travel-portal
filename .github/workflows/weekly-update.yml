@@ -13,6 +13,7 @@ permissions:
   issues: write
   pages: write
   id-token: write
+  models: read
 
 concurrency: { group: weekly-update, cancel-in-progress: false }
 
@@ -41,6 +42,11 @@ jobs:
       - name: YouTube 動画の収集
         if: github.event_name != 'push' && env.YOUTUBE_API_KEY != ''
         run: node scripts/collect-videos.mjs
+
+      - name: 動画の概要文をAIで作成（GitHub Models）
+        if: github.event_name != 'push'
+        env: { GITHUB_TOKEN: '${{ github.token }}' }
+        run: node scripts/summarize-videos.mjs
 
       - name: ブログ・記事リンクの確認
         run: node scripts/check-links.mjs
