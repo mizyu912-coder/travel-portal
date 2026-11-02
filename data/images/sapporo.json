@@ -10,7 +10,8 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "札幌市時計台130周年時の様子",
     "query": "Sapporo Clock Tower",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Sapporo_Clock_Tower_130.JPG/500px-Sapporo_Clock_Tower_130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Odori Park (15982613668).jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "description": "Sapporo, Hokkaido",
     "query": "Odori Park",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Odori_Park_%2815982613668%29.jpg/500px-Odori_Park_%2815982613668%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Sapporo TV Tower at night 20250725.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "さっぽろテレビ塔",
     "query": "Sapporo TV Tower",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Sapporo_TV_Tower_at_night_20250725.jpg/500px-Sapporo_TV_Tower_at_night_20250725.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

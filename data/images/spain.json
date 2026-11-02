@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "The ceiling of Sagrada Familia Cathedral, Barcelona, Spain",
     "query": "Sagrada Familia",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Sagrada_Familia_March_2015-10a.jpg/500px-Sagrada_Familia_March_2015-10a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Alhambra in the evening.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "",
     "description": "The Alhambra (The Red) in the evening light, Granada, Spain. View from mirador San Nicolas.",
     "query": "Alhambra",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Alhambra_in_the_evening.jpg/500px-Alhambra_in_the_evening.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Seville, Plaza de España (38625005691) (edited).jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "description": "Seville, Plaza de España",
     "query": "Plaza de España Seville",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Seville%2C_Plaza_de_Espa%C3%B1a_%2838625005691%29_%28edited%29.jpg/500px-Seville%2C_Plaza_de_Espa%C3%B1a_%2838625005691%29_%28edited%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

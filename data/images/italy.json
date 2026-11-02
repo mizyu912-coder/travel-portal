@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "description": "A 4×4 segment panorama of the Colosseum at dusk. Taken by myself with a Canon 5D and 50mm f/1.8 lens at f/5.6.",
     "query": "Colosseum",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/500px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Florence Cathedral seen from Piazzale Michelangelo night dllu.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "The Florence Cathedral seen from Piazzale Michelangelo at night.",
     "query": "Florence Cathedral",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Florence_Cathedral_seen_from_Piazzale_Michelangelo_night_dllu.jpg/500px-Florence_Cathedral_seen_from_Piazzale_Michelangelo_night_dllu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Panorama of Canal Grande and Ponte di Rialto, Venice - September 2017.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Canal Grande and Rialto Bridge, Venice - part of UNESCO World Heritage Site Ref. Number 394.",
     "query": "Venice Grand Canal",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Panorama_of_Canal_Grande_and_Ponte_di_Rialto%2C_Venice_-_September_2017.jpg/500px-Panorama_of_Canal_Grande_and_Ponte_di_Rialto%2C_Venice_-_September_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

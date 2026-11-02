@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "This is a photo of a monument in Thailand identified by the ID",
     "query": "Wat Pho",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Wat_Pho%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg/500px-Wat_Pho%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Wat Benchamabophit Thailand.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "description": "Wat Benchamabophit, also known as the Marble Temple, is a Buddhist temple in Bangkok. It is one of Thailand's best-known",
     "query": "Wat Benchamabophit",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Wat_Benchamabophit_Thailand.jpg/500px-Wat_Benchamabophit_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Long motorboat on the Chao Phraya River in Bangkok.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "A long motorboat passing by on the Chao Phraya River in downtown Bangkok.",
     "query": "Chao Phraya",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Long_motorboat_on_the_Chao_Phraya_River_in_Bangkok.jpg/500px-Long_motorboat_on_the_Chao_Phraya_River_in_Bangkok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

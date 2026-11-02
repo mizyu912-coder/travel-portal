@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "description": "Shirakawa-go (Ogi) in Shirakawa, Gifu prefecture, Japan",
     "query": "Shirakawa-go",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg/500px-Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Itsukushima-jinja torii at sunset, Miyajima, Japan, 20240816 1812 4144.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "description": "Floating torii gate in Miyajima at sunset",
     "query": "Itsukushima",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Itsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg/500px-Itsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Himeji Castle, November 2016 -02.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Himeji Castle, UNESCO World Heritage Site Ref. Number 661, is a hilltop Japanese castle complex located in Himeji, Hyōgo",
     "query": "Himeji Castle",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/500px-Himeji_Castle%2C_November_2016_-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

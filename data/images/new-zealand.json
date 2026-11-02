@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Lake Tekapo ist der größte See der Region Canterbury auf der Südinsel von Neuseeland.",
     "query": "Lake Tekapo",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Lake_Tekapo_01.jpg/500px-Lake_Tekapo_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Remarkables view MC.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "description": "View from The Remarkables near Queenstown/New Zealand. Panorama stitched from 8 landscape format images using PTGui [2].",
     "query": "Queenstown New Zealand",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Remarkables_view_MC.jpg/500px-Remarkables_view_MC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Milford Sound in Fiordland National Park 01.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Milford Sound in Fiordland National Park, South Island of New Zealand",
     "query": "Milford Sound",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Milford_Sound_in_Fiordland_National_Park_01.jpg/500px-Milford_Sound_in_Fiordland_National_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

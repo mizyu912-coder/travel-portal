@@ -10,7 +10,8 @@
     "licenseUrl": "",
     "description": "Tumon Bay",
     "query": "Tumon Bay",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Tumon_Bay.JPG/500px-Tumon_Bay.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Two lovers point (80103943).jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "description": "Two lovers point",
     "query": "Two Lovers Point",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Two_lovers_point_%2880103943%29.jpg/500px-Two_lovers_point_%2880103943%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Port Hagatna Pillbox.JPG",
@@ -37,6 +39,7 @@
     "description": "Port Hagatna Pillbox",
     "query": "Hagatna",
     "addedAt": "2026-11-02",
-    "hidden": true
+    "hidden": true,
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Port_Hagatna_Pillbox.JPG/500px-Port_Hagatna_Pillbox.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

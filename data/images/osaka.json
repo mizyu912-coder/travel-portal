@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Inui-yagura Turret, guarding the outer moat of Osaka Castle and the skyline of Osaka Business Park, Osaka, Japan.",
     "query": "Osaka Castle",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg/500px-Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Dotonbori Neon Sign, Osaka 20190415 1.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "The neon sign for the Dotonbori area, as seen on a road south of Dotonbori River",
     "query": "Dotonbori",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Dotonbori_Neon_Sign%2C_Osaka_20190415_1.jpg/500px-Dotonbori_Neon_Sign%2C_Osaka_20190415_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Shinsekai and Tsutenkaku Tower.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "2026年3月24日22:02撮影。",
     "query": "Tsutenkaku",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Shinsekai_and_Tsutenkaku_Tower.jpg/500px-Shinsekai_and_Tsutenkaku_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

@@ -10,7 +10,8 @@
     "licenseUrl": "",
     "description": "Valley of the Ten Peaks and Moraine Lake, Banff National Park, Canada. Mountains from left to right: Tonsa (3057 m), Mou",
     "query": "Moraine Lake",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/500px-Moraine_Lake_17092005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Vancouver dusk pano.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Vancouver, BC viewed from the south with mountains behind. Blended exposure version. 20 stitched images (original @ 5000",
     "query": "Vancouver skyline",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Vancouver_dusk_pano.jpg/500px-Vancouver_dusk_pano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Autumnal Retreat in Old Quebec- A Canvas of Fading Reds and Vibrant Oranges.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "District 234, rue Phydime-Deschênes, Quebec city, Canada. Captured in the fall of 2022, this image showcases a quintesse",
     "query": "Old Quebec",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Autumnal_Retreat_in_Old_Quebec-_A_Canvas_of_Fading_Reds_and_Vibrant_Oranges.jpg/500px-Autumnal_Retreat_in_Old_Quebec-_A_Canvas_of_Fading_Reds_and_Vibrant_Oranges.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

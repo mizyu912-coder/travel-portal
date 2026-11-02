@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Waikiki Beach on March 2, 2024. View towards Diamond Head",
     "query": "Waikiki",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Waikiki_Beach_%282024%29-L1004709.jpg/500px-Waikiki_Beach_%282024%29-L1004709.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Diamond Inside Panorama.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Panoramic image taken of a section of the Diamond synchrotron building.",
     "query": "Diamond Head",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Diamond_Inside_Panorama.jpg/500px-Diamond_Inside_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Hanauma Bay, Oahu, Hawaii, USA2.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Hanauma Bay, Oahu, Hawaii, USA",
     "query": "Hanauma Bay",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Hanauma_Bay%2C_Oahu%2C_Hawaii%2C_USA2.jpg/500px-Hanauma_Bay%2C_Oahu%2C_Hawaii%2C_USA2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

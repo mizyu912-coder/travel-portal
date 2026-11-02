@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Naha, Okinawa, Japan:Hoshimmon (Kimihokori-Ujo) Gate to the inner yard of Shuri Castle.",
     "query": "Shuri Castle",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Naha_Okinawa_Japan_Shuri-Castle-02.jpg/500px-Naha_Okinawa_Japan_Shuri-Castle-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Nago Okinawa Kouri-Bridge-02.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Nago, Okinawa, Japan: Kouri Bridge, with 2.200 m the longest bridge on an open road in Japan, connecting Kouri Island an",
     "query": "Kouri",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Nago_Okinawa_Kouri-Bridge-02.jpg/500px-Nago_Okinawa_Kouri-Bridge-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Okinawa Churaumi Aquarium 3.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Okinawa Churaumi Aquarium (aquarium in Okinawa, Japan)",
     "query": "Churaumi",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Okinawa_Churaumi_Aquarium_3.jpg/500px-Okinawa_Churaumi_Aquarium_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "The Eiffel Tower in spring, Paris, France.",
     "query": "Eiffel Tower",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg/500px-Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:MSM sunset 02.JPG",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "description": "Mont Saint-Michel, in Normandy (Manche, Basse-Normandie, France), at night.",
     "query": "Mont-Saint-Michel",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/MSM_sunset_02.JPG/500px-MSM_sunset_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Ferris wheel Nice Dec 2008 a.jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Nice, France, at night: centre of the Ferris wheel near square Masséna, December 2008",
     "query": "Nice France",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Ferris_wheel_Nice_Dec_2008_a.jpg/500px-Ferris_wheel_Nice_Dec_2008_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

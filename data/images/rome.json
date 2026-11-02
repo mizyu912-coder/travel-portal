@@ -10,7 +10,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "description": "A 5x5 segment panorama taken by myself with a Canon 5D and 24-105mm f/4L IS lens. Stitched with rectilinear projection t",
     "query": "Trevi Fountain",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/500px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Rome (Italy), Piazza Navona -- 2013 -- 4418.jpg",
@@ -23,7 +24,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Sign at the Piazza Navona in Rome, Italy",
     "query": "Piazza Navona",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Rome_%28Italy%29%2C_Piazza_Navona_--_2013_--_4418.jpg/500px-Rome_%28Italy%29%2C_Piazza_Navona_--_2013_--_4418.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Dome of Pantheon (Rome).jpg",
@@ -36,6 +38,7 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Dome of Pantheon (Rome)",
     "query": "Pantheon Rome",
-    "addedAt": "2026-11-02"
+    "addedAt": "2026-11-02",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Dome_of_Pantheon_%28Rome%29.jpg/500px-Dome_of_Pantheon_%28Rome%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]
