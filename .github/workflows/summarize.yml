@@ -19,8 +19,11 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
-      - run: node scripts/summarize-videos.mjs ${{ inputs.countries || '' }}
-        env: { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}', SUMMARY_MODEL: '${{ inputs.model || '' }}' }
+      - run: node scripts/summarize-videos.mjs $COUNTRIES
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUMMARY_MODEL: ${{ inputs.model }}
+          COUNTRIES: ${{ inputs.countries }}
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
