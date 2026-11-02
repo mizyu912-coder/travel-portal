@@ -10,6 +10,8 @@ const UA = 'travel-portal/1.0 (https://github.com/mizyu912-coder/travel-portal)'
 // 最後の '' は品質カテゴリなしの検索（上の3つで見つからない小さな地域向け。AI・CGの除外は同じく行う）
 const CATEGORIES = ['Featured_pictures_on_Wikimedia_Commons', 'Quality_images', 'Valued_images_sorted_by_promotion_date', ''];
 const BAD_CATEGORY = /AI-generated|AI generated|Computer-generated|CGI|Midjourney|Stable Diffusion|DALL|Renderings/i;
+// 風景写真でないもの（絵画・古い絵はがき・軍用機など）も使わない
+const NOT_SCENERY = /painting|postcard|\bart\b|aircraft|military|navy|Hawkeye/i;
 const OK_LICENSE = /^(CC0|Public domain|PD|CC BY(-SA)? \d(\.\d)?)/i;
 const PER_COUNTRY = 3;
 const only = process.argv.slice(2);
@@ -43,7 +45,8 @@ const norm = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase
 const words = s => norm(s).replace(/[^a-z0-9]+/g, ' ').trim();
 const matches = (i, q) => ` ${words(i.file)} `.includes(` ${words(q)} `);
 const usable = i => i.mime === 'image/jpeg' && i.width >= 1600 && i.width > i.height * 1.2
-  && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description);
+  && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description)
+  && !NOT_SCENERY.test(i.file) && !NOT_SCENERY.test(i.cats);
 
 for (const c of loadPlaces()) {
   if (only.length && !only.includes(c.id)) continue;

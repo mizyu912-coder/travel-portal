@@ -36,8 +36,8 @@
     "imageQueries": [
       "Fushimi Inari",
       "Kinkaku-ji",
-      "Kiyomizu-dera",
       "Arashiyama",
+      "Yasaka Pagoda",
       "Gion"
     ],
     "basic": {
@@ -157,11 +157,11 @@
       "ソウル 観光"
     ],
     "imageQueries": [
-      "Changdeokgung",
       "N Seoul Tower",
-      "Myeongdong",
       "Cheonggyecheon",
-      "Gwanghwamun"
+      "Gwanghwamun Square",
+      "Seoul skyline",
+      "Bukhansan"
     ],
     "basic": {
       "area": "韓国の首都",
@@ -256,11 +256,11 @@
       "ダナン ホイアン 旅行"
     ],
     "imageQueries": [
-      "Dragon Bridge",
-      "Marble Mountains",
       "My Khe",
       "Ba Na Hills",
-      "Son Tra"
+      "Son Tra",
+      "Da Nang skyline",
+      "Han River Bridge"
     ],
     "basic": {
       "area": "ベトナム中部のビーチリゾート。世界遺産ホイアンが近い",
@@ -308,9 +308,9 @@
     "imageQueries": [
       "Westminster",
       "Buckingham Palace",
-      "St Paul's Cathedral",
       "London Eye",
-      "Tower of London"
+      "Tower of London",
+      "Trafalgar Square"
     ],
     "basic": {
       "area": "イギリスの首都",
@@ -332,10 +332,10 @@
     ],
     "imageQueries": [
       "Trevi Fountain",
-      "Pantheon Rome",
-      "Roman Forum",
       "Piazza Navona",
-      "Spanish Steps"
+      "Pantheon Rome",
+      "St. Peter's Square",
+      "Castel Sant'Angelo"
     ],
     "basic": {
       "area": "イタリアの首都。バチカン市国が市内にある",
@@ -381,11 +381,11 @@
       "ニューヨーク 観光"
     ],
     "imageQueries": [
-      "Times Square",
       "Brooklyn Bridge",
       "Central Park",
       "Statue of Liberty",
-      "Flatiron"
+      "Flatiron",
+      "Times Square"
     ],
     "basic": {
       "area": "アメリカ東海岸の大都市",
