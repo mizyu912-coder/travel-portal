@@ -7,7 +7,8 @@ import { readJSON, writeJSON, today } from './lib.mjs';
 
 const API = 'https://commons.wikimedia.org/w/api.php';
 const UA = 'travel-portal/1.0 (https://github.com/mizyu912-coder/travel-portal)';
-const CATEGORIES = ['Featured_pictures_on_Wikimedia_Commons', 'Quality_images', 'Valued_images_sorted_by_promotion_date'];
+// 最後の '' は品質カテゴリなしの検索（上の3つで見つからない小さな地域向け。AI・CGの除外は同じく行う）
+const CATEGORIES = ['Featured_pictures_on_Wikimedia_Commons', 'Quality_images', 'Valued_images_sorted_by_promotion_date', ''];
 const BAD_CATEGORY = /AI-generated|AI generated|Computer-generated|CGI|Midjourney|Stable Diffusion|DALL|Renderings/i;
 const OK_LICENSE = /^(CC0|Public domain|PD|CC BY(-SA)? \d(\.\d)?)/i;
 const PER_COUNTRY = 3;
@@ -18,7 +19,7 @@ async function search(query, category) {
   const url = new URL(API);
   Object.entries({
     action: 'query', format: 'json', generator: 'search', gsrnamespace: '6', gsrlimit: '20',
-    gsrsearch: `${query} incategory:${category} filetype:bitmap`,
+    gsrsearch: `${query}${category ? ` incategory:${category}` : ''} filetype:bitmap`,
     prop: 'imageinfo|categories', iiprop: 'url|size|mime|extmetadata', iiurlwidth: '1600', cllimit: 'max',
   }).forEach(([k, v]) => url.searchParams.set(k, v));
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
