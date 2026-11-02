@@ -6,7 +6,7 @@ import { readJSON, writeJSON, p } from './lib.mjs';
 
 const TOKEN = process.env.GITHUB_TOKEN;
 if (!TOKEN) { console.error('GITHUB_TOKEN がありません。'); process.exit(1); }
-const ENDPOINT = 'https://models.github.ai/inference/chat/completions';
+const ENDPOINT = process.env.SUMMARY_ENDPOINT || 'https://models.github.ai/inference/chat/completions';
 const MODEL = process.env.SUMMARY_MODEL || 'openai/gpt-4o-mini';
 const BATCH = 8;
 const ONLY = process.argv.slice(2);
@@ -39,7 +39,10 @@ async function summarize(country, videos) {
     err.limit = res.status === 429;
     throw err;
   }
-  const json = await res.json();
+  const raw = await res.text();
+  let json;
+  try { json = JSON.parse(raw); }
+  catch { throw new Error(`AIの返答がJSONではありません（${res.status} ${res.headers.get('content-type')}）：${raw.slice(0, 300)}`); }
   const content = json.choices?.[0]?.message?.content ?? '';
   // JSON の前後に文章が付いて返ってくることがあるので、{ ... } の部分だけを取り出す
   const m = content.match(/\{[\s\S]*\}/);
