@@ -1,0 +1,10 @@
+name: debug-img
+on: { push: { branches: [debug-img] } }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/500px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/1920px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"; do curl -s -o /dev/null -w "%{http_code} %{content_type} %{size_download}\n" -H "Referer: https://mizyu912-coder.github.io/" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130" "$u"; done
+          curl -s https://mizyu912-coder.github.io/travel-portal/ | grep -o 'rank-img"><img src="[^"]*' | head -2
+          curl -sI https://mizyu912-coder.github.io/travel-portal/ | grep -i -E "cache-control|last-modified|age"
