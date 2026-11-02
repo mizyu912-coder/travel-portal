@@ -8,7 +8,8 @@ import { readJSON, writeJSON, p } from './lib.mjs';
 const TOKEN = process.env.GEMINI_API_KEY;
 if (!TOKEN) { console.log('GEMINI_API_KEY が未設定のため、概要文の作成はスキップします。'); process.exit(0); }
 const ENDPOINT = process.env.SUMMARY_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions';
-const MODEL = process.env.SUMMARY_MODEL || 'gemini-3.8-flash';
+let MODEL = process.env.SUMMARY_MODEL || 'gemini-3.8-flash';
+const tried = new Set();
 const BATCH = 8;
 const ONLY = process.argv.slice(2);
 const cfg = readJSON('data/config.json').videos;
@@ -51,6 +52,17 @@ async function summarize(country, videos) {
   catch { throw new Error(`AIの返答を読めませんでした：${content.slice(0, 200)}`); }
 }
 
+async function fallbackModel() {
+  tried.add(MODEL);
+  try {
+    const res = await fetch(ENDPOINT.replace(/chat\/completions$/, 'models'), { headers: { Authorization: `Bearer ${TOKEN}` } });
+    const ids = (await res.json()).data?.map(m => m.id.replace(/^models\//, '')) ?? [];
+    console.log(`使えるモデル：${ids.filter(i => /flash|lite/.test(i)).join(', ')}`);
+    return ids.filter(i => /flash/.test(i) && !/image|tts|audio|live|embedding|preview/.test(i) && !tried.has(i))
+      .sort((a, b) => (/lite/.test(b) - /lite/.test(a)) || b.localeCompare(a))[0] ?? null;
+  } catch { return null; }
+}
+
 let made = 0, stop = false;
 for (const c of countries) {
   if (stop) break;
@@ -69,7 +81,14 @@ for (const c of countries) {
       for (let attempt = 1; ; attempt++) {
         try { out = await summarize(c, batch); break; }
         catch (e) {
-          if (!/HTTP 50[023]/.test(e.message) || attempt >= 4) throw e;
+          if (!/HTTP 50[023]/.test(e.message)) throw e;
+          if (attempt >= 3) {
+            // 同じモデルが混雑し続けるときは、使える別の軽いモデルに切り替える
+            const next = await fallbackModel();
+            if (!next) throw e;
+            console.warn(`${MODEL} が混雑しているため ${next} に切り替えます`);
+            MODEL = next; attempt = 0; continue;
+          }
           console.warn(`${c.name}: AIが混雑しているため ${attempt * 20} 秒後にやり直します`);
           await sleep(attempt * 20000);
         }
