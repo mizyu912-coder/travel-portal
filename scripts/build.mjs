@@ -260,7 +260,7 @@ document.querySelectorAll('.more-btn').forEach(btn => {
     const rest = [...btn.closest('section').querySelectorAll('.video[hidden]')];
     rest.slice(0, Number(btn.dataset.step)).forEach(v => { v.hidden = false; });
     const left = rest.length - Number(btn.dataset.step);
-    if (left > 0) btn.textContent = 'もっと見る（残り' + left + '本）'; else btn.parentElement.remove();
+    if (left <= 0) btn.parentElement.remove();
   });
 });
 document.querySelectorAll('.thumb-link[data-embed]').forEach(a => {
@@ -293,7 +293,7 @@ function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
 <div class="country-head"><p class="crumb">${crumb}</p><p class="eyebrow">NOW SHOWING</p><h1>${esc(c.name)}<span class="h1-sub">${sub}</span></h1><p class="h1-en">${esc(c.nameEn)}</p></div>
 ${gallery(c)}
 ${safetyHtml}
-<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
+<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
 ${extra}
 <section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">${c.domestic || countryOf(c)?.domestic ? '移動時間などは目安です。最新の情報は交通機関の公式サイトで確認してください。' : 'ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。'}</p></section>

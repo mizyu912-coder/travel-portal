@@ -61,7 +61,7 @@ async function collect(c) {
   if (!searchQuotaHit) {
     try {
       for (const q of c.videoQueries) {
-        const r = await api('search', { part: 'id', q, type: 'video', maxResults: 25, regionCode: 'JP', relevanceLanguage: 'ja', publishedAfter, safeSearch: 'strict' });
+        const r = await api('search', { part: 'id', q, type: 'video', maxResults: 50, regionCode: 'JP', relevanceLanguage: 'ja', publishedAfter, safeSearch: 'strict' });
         r.items.forEach(i => ids.add(i.id.videoId));
       }
     } catch (e) {
