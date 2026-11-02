@@ -24,7 +24,7 @@
     btns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.region === region)));
     document.querySelectorAll('.chips').forEach(c => { c.hidden = c.dataset.region !== region; });
     animate(region ? window.REGION_VIEWS[region] : svg.dataset.world.split(' ').map(Number));
-    label.textContent = region ? '② 国・地域を選んでください' : '① エリアを選んでください';
+    label.textContent = region ? '国・地域を選んでください' : 'エリアを選んでください';
     back.hidden = !region;
   }
   function open(id) { window.open(`countries/${id}.html`, '_blank', 'noopener'); }
@@ -35,5 +35,23 @@
     const go = () => (current === el.dataset.region ? open(el.dataset.id) : select(el.dataset.region));
     el.addEventListener('click', go);
     el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+  });
+
+  // エリアの一覧（マウスを合わせると出るパネル）：国に合わせると都市を切り替え、地図上でもその国を光らせる
+  const hl = id => svg.querySelectorAll('[data-id]').forEach(el => el.classList.toggle('hl', el.dataset.id === id));
+  document.querySelectorAll('.region-item').forEach(item => {
+    const lists = [...item.querySelectorAll('.fly-cities')];
+    const empty = item.querySelector('.fly-empty');
+    item.querySelectorAll('.fly-country').forEach(a => {
+      a.addEventListener('mouseenter', () => {
+        item.querySelectorAll('.fly-country').forEach(o => o.classList.toggle('active', o === a));
+        let found = false;
+        lists.forEach(l => { const on = l.dataset.country === a.dataset.id; l.hidden = !on; found = found || on; });
+        if (empty) empty.hidden = found;
+        hl(a.dataset.id);
+      });
+      a.addEventListener('focus', () => a.dispatchEvent(new Event('mouseenter')));
+    });
+    item.addEventListener('mouseleave', () => hl(null));
   });
 })();

@@ -2,7 +2,7 @@
 // node scripts/build.mjs          本番用
 // node scripts/build.mjs --demo   動画データが無い国にサンプル表示を入れる（見た目の確認用）
 import fs from 'node:fs';
-import { geoNaturalEarth1, geoPath } from 'd3-geo';
+import { geoMercator, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import { readJSON, p, today } from './lib.mjs';
 
@@ -21,13 +21,14 @@ const countryOf = city => countries.find(c => c.id === city.country);
 // 都市は親の国が掲載中のときだけ公開する
 const cityPublished = city => { const c = countryOf(city); return !!c && isPublished(c); };
 const fmtDur = s => `${Math.floor(s / 60)}分${String(s % 60).padStart(2, '0')}秒`;
-const fmtViews = n => n >= 1e4 ? `${(n / 1e4).toFixed(n >= 1e5 ? 0 : 1)}万回` : `${n.toLocaleString('ja-JP')}回`;
+const fmtViews = n => n >= 1e8 ? `${(n / 1e8).toFixed(1)}億回` : n >= 1e4 ? `${(n / 1e4).toFixed(n >= 1e5 ? 0 : 1)}万回` : `${n.toLocaleString('ja-JP')}回`;
 
 fs.rmSync(p('dist'), { recursive: true, force: true });
 fs.mkdirSync(p('dist/countries'), { recursive: true });
 fs.mkdirSync(p('dist/cities'), { recursive: true });
 fs.copyFileSync(p('src/style.css'), p('dist/style.css'));
 fs.copyFileSync(p('src/map.js'), p('dist/map.js'));
+fs.copyFileSync(p('src/home.js'), p('dist/home.js'));
 
 const LOGO = `<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="6" width="28" height="20" rx="3" fill="currentColor"/><path d="M13 11.5v9l8-4.5z" fill="var(--cut)"/><g fill="var(--cut)"><rect x="4.5" y="8" width="2" height="2" rx=".5"/><rect x="4.5" y="22" width="2" height="2" rx=".5"/><rect x="25.5" y="8" width="2" height="2" rx=".5"/><rect x="25.5" y="22" width="2" height="2" rx=".5"/></g></svg>`;
 const layout = ({ title, desc, body, depth = 0, cls = '' }) => {
@@ -57,9 +58,14 @@ const smallThumb = (url, w) => url?.replace(/\/\d+px-/, `/${w}px-`);
 const firstImage = c => readJSON(`data/images/${c.id}.json`, []).find(i => !i.hidden);
 
 // ---------- 世界地図 ----------
-const W = 960, H = 500;
+// 日本を中心にしたメルカトル図法（東経150度が中央）。北緯74度〜南緯50度を表示する
+const W = 960, TOP_LAT = 74, BOTTOM_LAT = -50;
+const mercY = lat => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
+const SCALE = W / (2 * Math.PI);
+const proj = geoMercator().rotate([-150, 0]).scale(SCALE).translate([W / 2, SCALE * mercY(TOP_LAT)]);
+const H = Math.round(SCALE * (mercY(TOP_LAT) - mercY(BOTTOM_LAT)));
 const geo = feature(world, world.objects.countries);
-const proj = geoNaturalEarth1().fitExtent([[8, 8], [W - 8, H - 8]], { type: 'Sphere' });
+geo.features = geo.features.filter(f => f.id !== '010'); // 南極は表示しない
 const path = geoPath(proj);
 const byIso = new Map(countries.filter(c => c.map.isoNumeric).map(c => [c.map.isoNumeric, c]));
 
@@ -87,10 +93,18 @@ const regionViews = Object.fromEntries(regions.map(r => {
 }));
 
 const pub = countries.filter(isPublished);
-const regionTabs = regions.filter(r => pub.some(c => c.region === r.id))
-  .map(r => `<button type="button" class="region-btn" data-region="${r.id}">${esc(r.name)}</button>`).join('');
 const pubCities = cities.filter(cityPublished);
 const citiesIn = r => pubCities.filter(ct => countryOf(ct).region === r.id);
+// エリアのボタンにマウスを合わせると、国の一覧（国に合わせるとその国の都市）が出る
+const regionTabs = regions.filter(r => pub.some(c => c.region === r.id)).map(r => {
+  const list = pub.filter(c => c.region === r.id);
+  const withCities = list.filter(c => pubCities.some(ct => ct.country === c.id));
+  return `<div class="region-item"><button type="button" class="region-btn" data-region="${r.id}" aria-haspopup="true">${esc(r.name)}</button>
+<div class="flyout"><div class="fly-inner">
+<div class="fly-col"><p class="fly-label">国・地域</p><ul>${list.map(c => `<li><a class="fly-country" data-id="${c.id}" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}${pubCities.some(ct => ct.country === c.id) ? '<span class="fly-arrow">›</span>' : ''}</a></li>`).join('')}</ul></div>
+${withCities.length ? `<div class="fly-col fly-cities-col"><p class="fly-label">人気の都市</p>${withCities.map((c, i) => `<ul class="fly-cities" data-country="${c.id}"${i ? ' hidden' : ''}>${pubCities.filter(ct => ct.country === c.id).map(ct => `<li><a href="cities/${ct.id}.html" target="_blank" rel="noopener">${esc(ct.name)}</a></li>`).join('')}</ul>`).join('')}<p class="fly-empty" hidden>この国の都市ページは準備中です</p></div>` : ''}
+</div></div></div>`;
+}).join('');
 const chips = regions.map(r => `<div class="chips" data-region="${r.id}" hidden>${pub.filter(c => c.region === r.id)
   .map(c => `<a class="chip" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}</a>`).join('')}${citiesIn(r)
   .map(ct => `<a class="chip city" href="cities/${ct.id}.html" target="_blank" rel="noopener">${esc(ct.name)}</a>`).join('')}</div>`).join('');
@@ -101,24 +115,58 @@ const card = (c, href, cls = 'card') => {
 };
 const lineup = regions.filter(r => pub.some(c => c.region === r.id)).map(r => `<div class="lineup-region"><h3>${esc(r.name)}</h3><div class="cards">${pub.filter(c => c.region === r.id).map(c => card(c, `countries/${c.id}.html`)).join('')}</div>${citiesIn(r).length ? `<p class="cities-label"><span class="sec-en">POPULAR CITIES</span>人気の都市</p><div class="cards cards-city">${citiesIn(r).map(ct => card(ct, `cities/${ct.id}.html`, 'card card-city')).join('')}</div>` : ''}</div>`).join('');
 
+// ---------- 人気の動画（ファーストビューのカルーセル）と人気ランキング ----------
+const places = [...pub.map(c => ({ c, href: `countries/${c.id}.html`, kind: 'country' })),
+  ...pubCities.map(c => ({ c, href: `cities/${c.id}.html`, kind: 'city', parent: countryOf(c) }))];
+const realVideos = c => pickVideos(c).filter(v => !v.demo);
+// 各国・都市の上位3本を候補にし、ページを開くたびにブラウザ側でランダムに10本選ぶ
+const seen = new Set();
+const picks = places.flatMap(({ c, href }) => realVideos(c).slice(0, 3).filter(v => !seen.has(v.id) && seen.add(v.id))
+  .map(v => ({ id: v.id, t: v.title, ch: v.channel, v: fmtViews(v.views), d: fmtDur(v.durationSec), p: c.name, h: href })));
+const carousel = `<div class="carousel" aria-roledescription="carousel" aria-label="人気の旅行動画">
+  <div class="car-frame"><div class="car-track"></div>
+    <button type="button" class="car-nav car-prev" aria-label="前の動画">‹</button><button type="button" class="car-nav car-next" aria-label="次の動画">›</button>
+    <div class="car-progress"><span></span></div></div>
+  <div class="car-foot"><span class="car-label">POPULAR VLOGS</span><div class="car-dots" role="tablist"></div></div>
+</div>`;
+
+// 人気ランキング：表示している動画（上位8本）の合計再生数で並べる
+const rankRows = list => list.map(pl => ({ ...pl, views: realVideos(pl.c).slice(0, cfg.videos.initial).reduce((s, v) => s + v.views, 0) }))
+  .filter(r => r.views > 0).sort((a, b) => b.views - a.views).slice(0, 10);
+const rankList = rows => rows.length ? `<ol class="rank-list">${rows.map((r, i) => {
+  const im = firstImage(r.c);
+  return `<li><a href="${r.href}" target="_blank" rel="noopener"><span class="rank-no${i < 3 ? ' top' : ''}">${i + 1}</span><span class="rank-img">${im ? `<img src="${esc(smallThumb(im.thumb, 320))}" alt="" loading="lazy" width="320" height="213">` : ''}</span><span class="rank-body"><span class="rank-name">${esc(r.c.name)}${r.parent ? `<small>${esc(r.parent.name)}</small>` : ''}</span><span class="rank-meta">おすすめ動画の総再生数 ${fmtViews(r.views)}</span></span></a></li>`;
+}).join('')}</ol>` : '<p class="note">集計中です。</p>';
+const ranking = `<section class="ranking" id="ranking">
+  <div class="sec-head"><span class="sec-en">RANKING</span><h2>人気ランキング</h2></div>
+  <div class="rank-cols">
+    <div class="rank-col"><h3>国・地域</h3>${rankList(rankRows(places.filter(pl => pl.kind === 'country')))}</div>
+    <div class="rank-col"><h3>都市</h3>${rankList(rankRows(places.filter(pl => pl.kind === 'city')))}</div>
+  </div>
+  <p class="note">各ページで紹介している旅行vlog（上位${cfg.videos.initial}本）の合計再生数の順です。毎週の動画の更新に合わせて変わります。</p>
+</section>`;
+
 fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
   cls: 'home',
   body: `<section class="hero"><div class="hero-inner">
+  <div class="hero-text">
   <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS ・ ${pubCities.length} CITIES</p>
-  <h1>${esc(cfg.catch)}</h1>
+  <h1>${esc(cfg.catch).replace('、', '、<wbr>')}</h1>
   <p class="lead">${esc(cfg.siteDescription)}</p>
   <a class="cta" href="#map-section">行き先を選ぶ</a>
+  </div>
+  ${carousel}
 </div></section>
 <section class="map-wrap" id="map-section">
-  <div class="sec-head"><span class="sec-en">SELECT YOUR SCREEN</span><h2>エリアから探す</h2></div>
-  <div class="steps"><span class="step" id="step-label">① エリアを選んでください</span><button type="button" id="back" hidden>← 世界地図に戻る</button></div>
-  <nav class="regions">${regionTabs}</nav>
-  <svg id="map" viewBox="0 0 ${W} ${H}" data-world="0 0 ${W} ${H}" role="img" aria-label="世界地図">${shapes}${markers}</svg>
+  <div class="sec-head row"><span class="sec-en">SELECT YOUR SCREEN</span><h2>エリアから探す</h2></div>
+  <div class="map-bar"><nav class="regions">${regionTabs}</nav><span class="step" id="step-label">エリアを選んでください</span><button type="button" id="back" hidden>← 世界地図に戻る</button></div>
+  <svg id="map" viewBox="0 0 ${W} ${H}" data-world="0 0 ${W} ${H}" role="img" aria-label="世界地図" style="--arn:${(W / H).toFixed(3)}">${shapes}${markers}</svg>
   ${chips}
   <p class="note">色がついている国・地域が掲載中です。国や都市を選ぶと、別のタブでページが開きます。海外は、外務省の危険情報で主な観光地がレベル0の国・地域だけを掲載しています。</p>
 </section>
+${ranking}
 <section class="lineup" id="lineup">
   <div class="sec-head"><span class="sec-en">LINEUP</span><h2>上映中の国・地域</h2></div>
   ${lineup}
@@ -131,7 +179,7 @@ fs.writeFileSync(p('dist/index.html'), layout({
     <li><strong>計画に活かす</strong><span>基本情報やブログのモデルコースを参考に、自分の旅を組み立てます。</span></li>
   </ol>
 </section>
-<script>window.REGION_VIEWS=${JSON.stringify(regionViews)};</script><script src="map.js"></script>`,
+<script>window.REGION_VIEWS=${JSON.stringify(regionViews)};window.PICKS=${JSON.stringify(picks).replace(/</g, '\\u003c')};</script><script src="map.js"></script><script src="home.js"></script>`,
 }));
 
 // ---------- 国ページ ----------
