@@ -1,0 +1,23 @@
+# 動画の概要文だけを作り直して公開する（YouTube の検索枠を使わない）
+name: summarize
+on:
+  workflow_dispatch:
+    inputs:
+      countries: { description: '対象の国ID（空欄なら全部。例：korea taiwan）', required: false, default: '' }
+permissions: { contents: write, models: read }
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: node scripts/summarize-videos.mjs ${{ inputs.countries }}
+        env: { GITHUB_TOKEN: '${{ github.token }}' }
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "自動更新：動画の概要文（$(date +%Y-%m-%d)）"
+          git push

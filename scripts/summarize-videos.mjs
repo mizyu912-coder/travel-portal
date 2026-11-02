@@ -9,6 +9,7 @@ if (!TOKEN) { console.error('GITHUB_TOKEN がありません。'); process.exit(
 const ENDPOINT = 'https://models.github.ai/inference/chat/completions';
 const MODEL = process.env.SUMMARY_MODEL || 'openai/gpt-4o-mini';
 const BATCH = 8;
+const ONLY = process.argv.slice(2);
 const cfg = readJSON('data/config.json').videos;
 const countries = readJSON('data/countries.json');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -39,12 +40,17 @@ async function summarize(country, videos) {
     throw err;
   }
   const json = await res.json();
-  return JSON.parse(json.choices[0].message.content).summaries ?? [];
+  const content = json.choices?.[0]?.message?.content ?? '';
+  // JSON の前後に文章が付いて返ってくることがあるので、{ ... } の部分だけを取り出す
+  const m = content.match(/\{[\s\S]*\}/);
+  try { return JSON.parse(m ? m[0] : content).summaries ?? []; }
+  catch { throw new Error(`AIの返答を読めませんでした：${content.slice(0, 200)}`); }
 }
 
 let made = 0, stop = false;
 for (const c of countries) {
   if (stop) break;
+  if (ONLY.length && !ONLY.includes(c.id)) continue;
   const file = `data/videos/${c.id}.json`;
   if (!fs.existsSync(p(file))) continue;
   const store = readJSON(file);
