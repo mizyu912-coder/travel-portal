@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Park Güell 02.jpg",
+    "width": 2960,
+    "height": 2232,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Park_G%C3%BCell_02.jpg/1920px-Park_G%C3%BCell_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Park_G%C3%BCell_02.jpg",
+    "artist": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Houses in Park Güell designed by Antoni Gaudi, Barcelona, Spain",
+    "query": "Park Güell",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Casa Batlló 01.jpg",
+    "width": 3267,
+    "height": 2422,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Casa_Batll%C3%B3_01.jpg/1920px-Casa_Batll%C3%B3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Casa_Batll%C3%B3_01.jpg",
+    "artist": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Top part of the facade of Casa Batlló designed by Antoni Gaudi between 1904 and 1906, Barcelona, Spain",
+    "query": "Casa Batlló",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Casa Milà 2877.jpg",
+    "width": 4504,
+    "height": 3378,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Casa_Mil%C3%A0_2877.jpg/1920px-Casa_Mil%C3%A0_2877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Casa_Mil%C3%A0_2877.jpg",
+    "artist": "C messier",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Casa Milà (La Pedrera)",
+    "query": "Casa Milà",
+    "addedAt": "2026-11-02"
+  }
+]

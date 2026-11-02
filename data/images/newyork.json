@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Times Square Ball from above.jpg",
+    "width": 5616,
+    "height": 3744,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Times_Square_Ball_from_above.jpg/1920px-Times_Square_Ball_from_above.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Times_Square_Ball_from_above.jpg",
+    "artist": "Anthony Quintano",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "description": "While assisting in setting up a robotic camera just above the 3 in \"2013\" this is what it looked like when I looked down",
+    "query": "Times Square",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Brooklyn Bridge August 2017.jpg",
+    "width": 5803,
+    "height": 3874,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Brooklyn_Bridge_August_2017.jpg/1920px-Brooklyn_Bridge_August_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_August_2017.jpg",
+    "artist": "Arild Vågen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Brooklyn bridge.",
+    "query": "Brooklyn Bridge",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Central Park New York City New York 23 cropped.jpg",
+    "width": 4648,
+    "height": 3248,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Central_Park_New_York_City_New_York_23_cropped.jpg/1920px-Central_Park_New_York_City_New_York_23_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Central_Park_New_York_City_New_York_23_cropped.jpg",
+    "artist": "Jet Lowe",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "description": "Central Park Bridges (view from Bridlepath looking southwest), Gothic Arch, Spanning bridlepath south of tennis courts, ",
+    "query": "Central Park",
+    "addedAt": "2026-11-02"
+  }
+]
