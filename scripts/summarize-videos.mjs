@@ -42,7 +42,7 @@ async function summarize(country, videos) {
   const raw = await res.text();
   let json;
   try { json = JSON.parse(raw); }
-  catch { throw new Error(`AIの返答がJSONではありません（${res.status} ${res.headers.get('content-type')}）：${raw.slice(0, 300)}`); }
+  catch { throw new Error(`AIの返答がJSONではありません（${res.status} ${res.headers.get('content-type')} ${res.url} ${[...res.headers.keys()].join(',')}）：${raw.slice(0, 300)}`); }
   const content = json.choices?.[0]?.message?.content ?? '';
   // JSON の前後に文章が付いて返ってくることがあるので、{ ... } の部分だけを取り出す
   const m = content.match(/\{[\s\S]*\}/);
