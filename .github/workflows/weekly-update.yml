@@ -13,7 +13,6 @@ permissions:
   issues: write
   pages: write
   id-token: write
-  models: read
 
 concurrency: { group: weekly-update, cancel-in-progress: false }
 
@@ -43,9 +42,9 @@ jobs:
         if: github.event_name != 'push' && env.YOUTUBE_API_KEY != ''
         run: node scripts/collect-videos.mjs
 
-      - name: 動画の概要文をAIで作成（GitHub Models）
+      - name: 動画の概要文をAIで作成（Gemini API）
         if: github.event_name != 'push'
-        env: { GITHUB_TOKEN: '${{ github.token }}' }
+        env: { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}' }
         run: node scripts/summarize-videos.mjs
 
       - name: ブログ・記事リンクの確認

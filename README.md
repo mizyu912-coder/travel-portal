@@ -63,7 +63,8 @@
 
 1. このリポジトリの Settings → Pages で Source を「GitHub Actions」にする
 2. Google Cloud で YouTube Data API v3 を有効にして APIキーを作り、Settings → Secrets and variables → Actions に `YOUTUBE_API_KEY` として登録する
-3. Actions の weekly-update を手動実行する
+3. 動画の概要文を自動で作る場合は、Google AI Studio で Gemini の APIキーを作り、`GEMINI_API_KEY` として同じ場所に登録する
+4. Actions の weekly-update を手動実行する（概要文だけ作り直すときは summarize を実行）
 
 ## 手元で確認する
 

@@ -1,13 +1,14 @@
-// GitHub Models（無料枠）で、動画の概要文を作る。
+// Google Gemini API（無料枠）で、動画の概要文を作る。
 // 新しく入った動画のうち、表示候補で概要がまだ無いものだけを対象にする。
-// 必要な環境変数：GITHUB_TOKEN（GitHub Actions では自動で使える。ワークフローに models: read の権限が必要）
+// 必要な環境変数：GEMINI_API_KEY
+// OpenAI 互換の窓口を使うので、SUMMARY_ENDPOINT と SUMMARY_MODEL を変えれば別のAIにも切り替えられる。
 import fs from 'node:fs';
 import { readJSON, writeJSON, p } from './lib.mjs';
 
-const TOKEN = process.env.GITHUB_TOKEN;
-if (!TOKEN) { console.error('GITHUB_TOKEN がありません。'); process.exit(1); }
-const ENDPOINT = process.env.SUMMARY_ENDPOINT || 'https://models.github.ai/inference/chat/completions';
-const MODEL = process.env.SUMMARY_MODEL || 'openai/gpt-4o-mini';
+const TOKEN = process.env.GEMINI_API_KEY;
+if (!TOKEN) { console.log('GEMINI_API_KEY が未設定のため、概要文の作成はスキップします。'); process.exit(0); }
+const ENDPOINT = process.env.SUMMARY_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions';
+const MODEL = process.env.SUMMARY_MODEL || 'gemini-2.5-flash';
 const BATCH = 8;
 const ONLY = process.argv.slice(2);
 const cfg = readJSON('data/config.json').videos;
@@ -26,7 +27,7 @@ async function summarize(country, videos) {
   const input = videos.map(v => ({ id: v.id, title: v.title, channel: v.channel, durationMin: Math.round(v.durationSec / 60), description: (v.description ?? '').replace(/https?:\/\/\S+/g, '').slice(0, 500) }));
   const res = await fetch(ENDPOINT, {
     method: 'POST',
-    headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json', Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+    headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({
       model: MODEL,
       temperature: 0.4,
@@ -42,7 +43,7 @@ async function summarize(country, videos) {
   const raw = await res.text();
   let json;
   try { json = JSON.parse(raw); }
-  catch { throw new Error(`AIの返答がJSONではありません（${res.status} ${res.headers.get('content-type')} ${res.url} ${[...res.headers.keys()].join(',')}）：${raw.slice(0, 300)}`); }
+  catch { throw new Error(`AIの返答がJSONではありません（${res.status} ${res.headers.get('content-type')}）：${raw.slice(0, 300)}`); }
   const content = json.choices?.[0]?.message?.content ?? '';
   // JSON の前後に文章が付いて返ってくることがあるので、{ ... } の部分だけを取り出す
   const m = content.match(/\{[\s\S]*\}/);
@@ -73,7 +74,7 @@ for (const c of countries) {
       console.warn(`${c.name}: 概要文を作れませんでした（${e.message}）`);
       if (e.limit) { console.warn('GitHub Models の利用上限に達したため、残りは次回に作ります。'); stop = true; }
     }
-    await sleep(5000); // 1分あたりの回数制限に合わせる
+    await sleep(7000); // 無料枠の1分あたりの回数制限に合わせる
   }
 }
 console.log(`概要文を ${made} 本作りました。`);

@@ -5,7 +5,7 @@ on:
     inputs:
       countries: { description: '対象の国ID（空欄なら全部。例：korea taiwan）', required: false, default: '' }
       model: { description: '使うモデル（空欄なら既定）', required: false, default: '' }
-permissions: { contents: write, models: read }
+permissions: { contents: write }
 jobs:
   summarize:
     runs-on: ubuntu-latest
@@ -15,7 +15,7 @@ jobs:
         with: { node-version: 22, cache: npm }
       - run: npm ci
       - run: node scripts/summarize-videos.mjs ${{ inputs.countries }}
-        env: { GITHUB_TOKEN: '${{ github.token }}', SUMMARY_MODEL: '${{ inputs.model }}' }
+        env: { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}', SUMMARY_MODEL: '${{ inputs.model }}' }
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
