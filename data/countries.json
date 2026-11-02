@@ -125,8 +125,9 @@
     "imageQueries": [
       "Ha Long Bay",
       "Hoi An",
-      "Dragon Bridge",
-      "Hanoi"
+      "Da Nang",
+      "Hanoi",
+      "Ho Chi Minh City"
     ]
   },
   {
@@ -394,7 +395,8 @@
       "Waikiki",
       "Diamond Head",
       "Na Pali",
-      "Hanauma Bay"
+      "Hanauma Bay",
+      "Oahu"
     ]
   },
   {
@@ -436,9 +438,10 @@
       "tip": "レストランでは10〜15%程度"
     },
     "imageQueries": [
-      "Tumon",
-      "Guam",
-      "Two Lovers Point"
+      "Tumon Bay",
+      "Two Lovers Point",
+      "Hagatna",
+      "Tumon"
     ]
   },
   {
@@ -565,6 +568,7 @@
       "Milford Sound",
       "Lake Tekapo",
       "Queenstown",
+      "Aoraki",
       "Mount Cook"
     ]
   },

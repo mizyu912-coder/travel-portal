@@ -37,9 +37,10 @@ async function search(query, category) {
   }).filter(Boolean);
 }
 
-// 検索語の単語がすべて、ファイル名か説明文に含まれている写真だけを使う（関係ない写真を避ける）
 const norm = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-const matches = (i, q) => { const text = norm(`${i.file} ${i.description}`); return norm(q).split(/\s+/).filter(w => w.length > 2 && w !== 'the').every(w => text.includes(w)); };
+// 検索語（地名）がひと続きのままファイル名に入っている写真だけを使う
+const words = s => norm(s).replace(/[^a-z0-9]+/g, ' ').trim();
+const matches = (i, q) => ` ${words(i.file)} `.includes(` ${words(q)} `);
 const usable = i => i.mime === 'image/jpeg' && i.width >= 1600 && i.width > i.height * 1.2
   && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description);
 
