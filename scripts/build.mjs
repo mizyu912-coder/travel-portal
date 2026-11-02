@@ -2,6 +2,7 @@
 // node scripts/build.mjs          本番用
 // node scripts/build.mjs --demo   動画データが無い国にサンプル表示を入れる（見た目の確認用）
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import { geoMercator, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import { readJSON, p, today } from './lib.mjs';
@@ -27,6 +28,9 @@ fs.rmSync(p('dist'), { recursive: true, force: true });
 fs.mkdirSync(p('dist/countries'), { recursive: true });
 fs.mkdirSync(p('dist/cities'), { recursive: true });
 fs.copyFileSync(p('src/style.css'), p('dist/style.css'));
+// ブラウザに古いCSS・JSが残らないよう、中身が変わるたびに ?v= を変える
+const ver = file => crypto.createHash('sha1').update(fs.readFileSync(p(file))).digest('hex').slice(0, 8);
+const V = { css: ver('src/style.css'), map: ver('src/map.js'), home: ver('src/home.js') };
 fs.copyFileSync(p('src/map.js'), p('dist/map.js'));
 fs.copyFileSync(p('src/home.js'), p('dist/home.js'));
 
@@ -39,7 +43,7 @@ const layout = ({ title, desc, body, depth = 0, cls = '' }) => {
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${r}style.css"></head>
+<link rel="stylesheet" href="${r}style.css?v=${V.css}"></head>
 <body class="${cls}"><header class="site"><div class="bar">
 <a href="${r}index.html" class="logo">${LOGO}<span class="logo-text"><span class="logo-en">${esc(cfg.siteNameEn)}</span><span class="logo-ja">${esc(cfg.siteName)}</span></span></a>
 <nav class="gnav"><a href="${r}index.html#map-section">エリアから探す</a><a href="${r}index.html#lineup">国・地域の一覧</a></nav>
@@ -181,7 +185,7 @@ ${ranking}
     <li><strong>計画に活かす</strong><span>基本情報やブログのモデルコースを参考に、自分の旅を組み立てます。</span></li>
   </ol>
 </section>
-<script>window.REGION_VIEWS=${JSON.stringify(regionViews)};window.PICKS=${JSON.stringify(picks).replace(/</g, '\\u003c')};window.PLACE_INFO=${JSON.stringify(placeInfo).replace(/</g, '\\u003c')};</script><script src="map.js"></script><script src="home.js"></script>`,
+<script>window.REGION_VIEWS=${JSON.stringify(regionViews)};window.PICKS=${JSON.stringify(picks).replace(/</g, '\\u003c')};window.PLACE_INFO=${JSON.stringify(placeInfo).replace(/</g, '\\u003c')};</script><script src="map.js?v=${V.map}"></script><script src="home.js?v=${V.home}"></script>`,
 }));
 
 // ---------- 国ページ ----------
