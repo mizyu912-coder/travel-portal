@@ -167,13 +167,6 @@
     "site": "",
     "checkedAt": "2026-11-02"
   },
-  "https://allabout.co.jp/gm/gc/20263": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 403",
-    "checkedAt": "2026-11-02",
-    "blocked": true
-  },
   "https://allabout.co.jp/gm/gc/401628/": {
     "fails": 1,
     "ok": false,
