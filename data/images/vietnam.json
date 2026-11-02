@@ -24,5 +24,18 @@
     "description": "Hội An (Vietnam) – World Heritage Site Hoi An Ancient Town – houses",
     "query": "Hoi An",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Cu Đê River, Da Nang.jpg",
+    "width": 12152,
+    "height": 4487,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cu_%C4%90%C3%AA_River%2C_Da_Nang.jpg/1920px-Cu_%C4%90%C3%AA_River%2C_Da_Nang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cu_%C4%90%C3%AA_River,_Da_Nang.jpg",
+    "artist": "Christopher Crouzet",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Hanging fishing nets in the Cu Đê river, just before it merges with Da Nang Bay.",
+    "query": "Da Nang",
+    "addedAt": "2026-11-02"
   }
 ]
