@@ -8,7 +8,7 @@ import { readJSON, writeJSON, p } from './lib.mjs';
 const TOKEN = process.env.GEMINI_API_KEY;
 if (!TOKEN) { console.log('GEMINI_API_KEY が未設定のため、概要文の作成はスキップします。'); process.exit(0); }
 const ENDPOINT = process.env.SUMMARY_ENDPOINT || 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions';
-const MODEL = process.env.SUMMARY_MODEL || 'gemini-2.5-flash';
+const MODEL = process.env.SUMMARY_MODEL || 'gemini-3.8-flash';
 const BATCH = 8;
 const ONLY = process.argv.slice(2);
 const cfg = readJSON('data/config.json').videos;
