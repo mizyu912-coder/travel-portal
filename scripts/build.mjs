@@ -11,6 +11,7 @@ const cfg = readJSON('data/config.json');
 const regions = readJSON('data/regions.json');
 const countries = readJSON('data/countries.json');
 const safety = readJSON('data/safety.json', { countries: {} });
+const links = readJSON('data/links.json', {});
 const world = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-50m.json'), 'utf8'));
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -124,7 +125,12 @@ for (const c of countries) {
     body = `<article class="country"><h1>${esc(c.name)}</h1><div class="notice">外務省の安全情報が変わったため、このページの掲載を一時停止しています。最新の情報は<a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>でご確認ください。</div></article>`;
   } else {
     const videos = pickVideos(c);
-    const blogs = readJSON(`data/blogs/${c.id}.json`, []);
+    // リンク確認で開けたもの（または1回だけ失敗したもの）だけを表示する
+    const blogs = readJSON(`data/blogs/${c.id}.json`, []).map(b => {
+      const l = links[b.url];
+      if (!l || (!l.ok && l.fails >= 2)) return null;
+      return { ...b, title: b.title || l.title || b.url, site: b.site || l.site || new URL(b.url).hostname };
+    }).filter(Boolean);
     body = `<article class="country">
 <p class="crumb">${esc(region?.name)}</p><h1>${esc(c.name)}の旅行情報と旅行vlog</h1>
 <section class="safety ${s.listed ? 'partial' : ''}"><h2>安全情報</h2>
@@ -133,7 +139,7 @@ for (const c of countries) {
 <section><h2>基本情報</h2><table class="info">${INFO.map(([k, l]) => c.basic[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。</p></section>
 <section><h2>おすすめの旅行動画</h2>${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
-<section><h2>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
+<section><h2>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
 </article>
 <script>
 document.querySelectorAll('.more-btn').forEach(btn => {

@@ -41,7 +41,7 @@ table.info th{width:9em;white-space:nowrap;color:var(--muted);font-weight:600}
 .thumb{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;border:0;background:var(--land)}
 .thumb.demo{background:var(--land);display:grid;place-items:center;color:var(--muted)}
 .dur{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.75);color:#fff;font-size:.75rem;padding:1px 6px;border-radius:4px}
-.blogs{padding-left:1.2em}.blogs li{margin-bottom:10px}.blogs .meta{margin-left:8px}
+.blogs{list-style:none;padding:0}.blogs li{margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px}.blogs .meta{display:block;margin:2px 0 0}.tag{display:inline-block;font-size:.72rem;color:var(--on);border:1px solid var(--on);border-radius:4px;padding:0 6px;margin-right:8px;vertical-align:1px}
 @media (max-width:600px){.hero h1{font-size:1.4rem}table.info th{width:7em}}
 .more-wrap{text-align:center;margin-top:16px}
 .more-btn{font:inherit;border:1px solid var(--on);background:var(--card);color:var(--on);border-radius:999px;padding:8px 28px;cursor:pointer}

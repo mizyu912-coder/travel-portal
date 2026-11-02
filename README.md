@@ -14,7 +14,9 @@
 | `data/safety.json` | 危険情報の判定結果（自動で更新） |
 | `data/overrides.json` | 自動判定を人が上書きするとき用 |
 | `data/videos/<国ID>.json` | 動画の候補（自動で更新）。`status` と `summary` は手で編集できる |
-| `data/blogs/<国ID>.json` | ブログ・記事のリンク（手で追加） |
+| `data/blogs/<国ID>.json` | ブログ・記事のリンク（手で追加。`title` を空にするとページのタイトルを自動で使う） |
+| `data/links.json` | リンクの確認結果（自動で更新。2回続けて開けないリンクは非表示） |
+| `scripts/check-links.mjs` | ブログ・記事のリンクを確認し、タイトルとリンク切れを記録 |
 | `data/config.json` | サイト名、動画の選び方の条件 |
 | `scripts/check-safety.mjs` | 外務省のページを読み、各国の掲載可否を判定 |
 | `scripts/collect-videos.mjs` | YouTube Data API で動画の候補を集めて点数を付ける |
