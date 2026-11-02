@@ -24,5 +24,18 @@
     "description": "Edinburgh Castle from the Grass Market",
     "query": "Edinburgh Castle",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Sheepscombe St Johns Church.jpg",
+    "width": 3665,
+    "height": 2502,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Sheepscombe_St_Johns_Church.jpg/1920px-Sheepscombe_St_Johns_Church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sheepscombe_St_Johns_Church.jpg",
+    "artist": "Saffron Blaze",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Saint John the Apostle Church in Sheepscombe, England (Cotswolds). The church was built in 1820. The first record of the",
+    "query": "Cotswolds",
+    "addedAt": "2026-11-02"
   }
 ]

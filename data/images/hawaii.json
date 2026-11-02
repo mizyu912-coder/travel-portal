@@ -24,5 +24,18 @@
     "description": "Panoramic image taken of a section of the Diamond synchrotron building.",
     "query": "Diamond Head",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:(Venice) Well head in Corte dei Pali - Cannaregio.jpg",
+    "width": 8256,
+    "height": 5504,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/%28Venice%29_Well_head_in_Corte_dei_Pali_-_Cannaregio.jpg/1920px-%28Venice%29_Well_head_in_Corte_dei_Pali_-_Cannaregio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:(Venice)_Well_head_in_Corte_dei_Pali_-_Cannaregio.jpg",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Vera da pozzo in Corte dei Pali, Venice.",
+    "query": "Na Pali",
+    "addedAt": "2026-11-02"
   }
 ]
