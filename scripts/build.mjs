@@ -24,14 +24,32 @@ fs.mkdirSync(p('dist/countries'), { recursive: true });
 fs.copyFileSync(p('src/style.css'), p('dist/style.css'));
 fs.copyFileSync(p('src/map.js'), p('dist/map.js'));
 
-const layout = ({ title, desc, body, depth = 0 }) => `<!doctype html>
+const LOGO = `<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="6" width="28" height="20" rx="3" fill="currentColor"/><path d="M13 11.5v9l8-4.5z" fill="var(--cut)"/><g fill="var(--cut)"><rect x="4.5" y="8" width="2" height="2" rx=".5"/><rect x="4.5" y="22" width="2" height="2" rx=".5"/><rect x="25.5" y="8" width="2" height="2" rx=".5"/><rect x="25.5" y="22" width="2" height="2" rx=".5"/></g></svg>`;
+const layout = ({ title, desc, body, depth = 0, cls = '' }) => {
+  const r = '../'.repeat(depth);
+  return `<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}">
-<link rel="stylesheet" href="${'../'.repeat(depth)}style.css"></head>
-<body><header class="site"><a href="${'../'.repeat(depth)}index.html" class="logo">${esc(cfg.siteName)}</a></header>
+<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${r}style.css"></head>
+<body class="${cls}"><header class="site"><div class="bar">
+<a href="${r}index.html" class="logo">${LOGO}<span class="logo-text"><span class="logo-en">${esc(cfg.siteNameEn)}</span><span class="logo-ja">${esc(cfg.siteName)}</span></span></a>
+<nav class="gnav"><a href="${r}index.html#map-section">エリアから探す</a><a href="${r}index.html#lineup">国・地域の一覧</a></nav>
+</div></header>
 <main>${body}</main>
-<footer class="site"><p>安全情報の出典：<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>（最終確認 ${esc(safety.checkedAt)}）。動画とブログの著作権は各制作者に帰属します。掲載の停止をご希望の方はお問い合わせください。</p></footer>
+<footer class="site"><div class="bar">
+<div class="foot-brand">${LOGO}<span><strong>${esc(cfg.siteNameEn)}</strong><br>${esc(cfg.siteName)}｜${esc(cfg.tagline)}</span></div>
+<p>安全情報の出典：<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>（最終確認 ${esc(safety.checkedAt)}）。動画とブログの著作権は各制作者に、写真の著作権は各撮影者に帰属します。掲載の停止をご希望の方はお問い合わせください。</p>
+<p class="copy">© ${new Date().getFullYear()} ${esc(cfg.siteNameEn)}</p>
+</div></footer>
 </body></html>`;
+};
+
+// Commons の写真を小さいサイズで読み込む
+const smallThumb = (url, w) => url?.replace(/\/\d+px-/, `/${w}px-`);
+const firstImage = c => readJSON(`data/images/${c.id}.json`, []).find(i => !i.hidden);
 
 // ---------- 世界地図 ----------
 const W = 960, H = 500;
@@ -69,16 +87,40 @@ const regionTabs = regions.filter(r => pub.some(c => c.region === r.id))
 const chips = regions.map(r => `<div class="chips" data-region="${r.id}" hidden>${pub.filter(c => c.region === r.id)
   .map(c => `<a class="chip" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}</a>`).join('')}</div>`).join('');
 
+const lineup = regions.filter(r => pub.some(c => c.region === r.id)).map(r => `<div class="lineup-region"><h3>${esc(r.name)}</h3><div class="cards">${pub.filter(c => c.region === r.id).map(c => {
+  const im = firstImage(c);
+  return `<a class="card" href="countries/${c.id}.html" target="_blank" rel="noopener"><span class="card-img">${im ? `<img src="${esc(smallThumb(im.thumb, 640))}" alt="" loading="lazy" width="640" height="427">` : ''}</span><span class="card-name">${esc(c.name)}</span><span class="card-en">${esc(c.nameEn)}</span></a>`;
+}).join('')}</div></div>`).join('');
+
 fs.writeFileSync(p('dist/index.html'), layout({
-  title: `${cfg.siteName}｜国別の旅行vlog・ブログまとめ`,
+  title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
-  body: `<section class="hero"><h1>${esc(cfg.siteName)}</h1><p>${esc(cfg.siteDescription)}</p></section>
-<section class="map-wrap">
+  cls: 'home',
+  body: `<section class="hero"><div class="hero-inner">
+  <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS</p>
+  <h1>${esc(cfg.catch)}</h1>
+  <p class="lead">${esc(cfg.siteDescription)}</p>
+  <a class="cta" href="#map-section">行き先を選ぶ</a>
+</div></section>
+<section class="map-wrap" id="map-section">
+  <div class="sec-head"><span class="sec-en">SELECT YOUR SCREEN</span><h2>エリアから探す</h2></div>
   <div class="steps"><span class="step" id="step-label">① エリアを選んでください</span><button type="button" id="back" hidden>← 世界地図に戻る</button></div>
   <nav class="regions">${regionTabs}</nav>
   <svg id="map" viewBox="0 0 ${W} ${H}" data-world="0 0 ${W} ${H}" role="img" aria-label="世界地図">${shapes}${markers}</svg>
   ${chips}
   <p class="note">色がついている国・地域が掲載中です。国を選ぶと、別のタブで国のページが開きます。掲載しているのは、外務省の危険情報で主な観光地がレベル0の国・地域だけです。</p>
+</section>
+<section class="lineup" id="lineup">
+  <div class="sec-head"><span class="sec-en">LINEUP</span><h2>上映中の国・地域</h2></div>
+  ${lineup}
+</section>
+<section class="howto">
+  <div class="sec-head"><span class="sec-en">HOW TO ENJOY</span><h2>トリップシアターの楽しみ方</h2></div>
+  <ol class="steps3">
+    <li><strong>行き先を選ぶ</strong><span>地図か一覧から、気になる国・地域を選びます。</span></li>
+    <li><strong>旅を観る</strong><span>再生数や評価をもとに選んだ旅行vlogで、現地の雰囲気を先に体験します。</span></li>
+    <li><strong>計画に活かす</strong><span>基本情報やブログのモデルコースを参考に、自分の旅を組み立てます。</span></li>
+  </ol>
 </section>
 <script>window.REGION_VIEWS=${JSON.stringify(regionViews)};</script><script src="map.js"></script>`,
 }));
@@ -143,15 +185,15 @@ for (const c of countries) {
       return { ...b, title: b.title || l.title || b.url, site: b.site || l.site || new URL(b.url).hostname };
     }).filter(Boolean);
     body = `<article class="country">
-<p class="crumb">${esc(region?.name)}</p><h1>${esc(c.name)}の旅行情報と旅行vlog</h1>
+<div class="country-head"><p class="crumb"><a href="../index.html#lineup">${esc(region?.name)}</a></p><p class="eyebrow">NOW SHOWING</p><h1>${esc(c.name)}<span class="h1-sub">の旅行vlog・旅行情報</span></h1><p class="h1-en">${esc(c.nameEn)}</p></div>
 ${gallery(c)}
-<section class="safety ${s.listed ? 'partial' : ''}"><h2>安全情報</h2>
+<section class="safety ${s.listed ? 'partial' : ''}"><h2><span class="sec-en">SAFETY</span>安全情報</h2>
 <p>${s.listed ? `国内の一部地域に危険情報が出ています。${esc(c.safetyNote ?? '')}主な観光地はレベル0です。` : '外務省の危険情報は出ていません。'}（${esc(safety.checkedAt)}時点）</p>
 <p><a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページで最新情報を見る</a></p></section>
-<section><h2>基本情報</h2><table class="info">${INFO.map(([k, l]) => c.basic[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
+<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
+<section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${INFO.map(([k, l]) => c.basic[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。</p></section>
-<section><h2>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
-<section><h2>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
+<section><h2><span class="sec-en">READING</span>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
 </article>
 <script>
 document.querySelectorAll('.more-btn').forEach(btn => {
@@ -177,7 +219,7 @@ document.querySelectorAll('.thumb-link[data-embed]').forEach(a => {
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
     title: `${c.name}の旅行情報・おすすめ旅行vlog｜${cfg.siteName}`,
     desc: `${c.name}旅行の予習に。基本情報と、評判のよい旅行vlog・ブログをまとめています。`,
-    body, depth: 1,
+    body, depth: 1, cls: 'page-country',
   }));
 }
 console.log(`dist/ を生成しました（掲載 ${pub.length} / ${countries.length} 件${DEMO ? '、サンプル表示あり' : ''}）`);

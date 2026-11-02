@@ -1,6 +1,9 @@
 {
-  "siteName": "旅の予習ポータル",
-  "siteDescription": "旅行前の予習に。国ごとに、評判のよい旅行vlogとブログをまとめています。",
+  "siteName": "トリップシアター",
+  "siteNameEn": "TRIP THEATER",
+  "tagline": "旅行vlogで予習する国別ガイド",
+  "catch": "旅の前に、旅を観る。",
+  "siteDescription": "行き先の国を選ぶだけで、評判のよい旅行vlogとブログがまとめて見られる。旅行前の予習のためのガイドです。",
   "baseUrl": "",
   "videos": {
     "mode": "auto",
