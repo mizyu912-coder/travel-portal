@@ -37,7 +37,7 @@ async function summarize(country, videos) {
     }),
   });
   if (!res.ok) {
-    const err = new Error(`HTTP ${res.status} ${(await res.text()).slice(0, 300)}`);
+    const err = new Error(`HTTP ${res.status} ${(await res.text()).slice(0, 1500)}`);
     err.limit = res.status === 429;
     throw err;
   }
