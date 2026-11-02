@@ -3,7 +3,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.australia.com/ja-jp/trips-and-itineraries/sydney-and-surrounds/ultimate-trip-to-australia.html": {
     "ok": true,
@@ -23,7 +24,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.tour.ne.jp/blog/maplefun/theme/machi/": {
     "ok": true,
@@ -43,13 +45,15 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://allabout.co.jp/gm/gc/2249/": {
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://ontrip.jal.co.jp/chn/17799765": {
     "ok": true,
@@ -62,7 +66,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://loudavymkrokem.cz/ja/paris-france-travel-guide/": {
     "ok": true,
@@ -75,7 +80,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.nta.co.jp/media/tripa/articles/ZrszN": {
     "ok": true,
@@ -144,7 +150,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.nta.co.jp/media/tripa/articles/GY2rg": {
     "ok": true,
@@ -164,13 +171,15 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://allabout.co.jp/gm/gc/401628/": {
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.tour.ne.jp/w_review/KUL/model_plan/163/": {
     "ok": true,
@@ -183,7 +192,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://4travel.jp/travelogue/11922462": {
     "ok": true,
@@ -202,21 +212,23 @@
   "https://www.travel.co.jp/guide/matome/2591/": {
     "ok": true,
     "fails": 0,
-    "title": "�V���K�|�[���ŏ��q���I 3��4�����f���R�[�X�ŉf���X�|�b�g���� | �g���x��jp ���s�K�C�h",
-    "site": "�g���x��jp ���s�K�C�h",
+    "title": "シンガポールで女子旅！ 3泊4日モデルコースで映えスポット巡り | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
     "checkedAt": "2026-11-02"
   },
   "https://allabout.co.jp/gm/gc/24811/": {
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.trvlogue.com/ja/singapore-itinerary-top-attractions": {
     "fails": 1,
     "ok": false,
     "error": "HTTP 429",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.nta.co.jp/media/tripa/articles/Yo6gj": {
     "ok": true,
@@ -229,7 +241,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.trifa.co/ja/column/country/spain": {
     "ok": true,
@@ -291,7 +304,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 429",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.veltra.com/jp/yokka/article/bangkok-traveling-alone/": {
     "ok": true,
@@ -304,13 +318,15 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.trvlogue.com/ja/london-itinerary-day-trips": {
     "fails": 1,
     "ok": false,
     "error": "HTTP 429",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://4travel.jp/travelogue/10923271": {
     "ok": true,
@@ -323,13 +339,8 @@
     "fails": 1,
     "ok": false,
     "error": "HTTP 403",
-    "checkedAt": "2026-11-02"
-  },
-  "https://www.his-j.com/tyo/tour/newyork/modelcourse/first.html": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
-    "checkedAt": "2026-11-02"
+    "checkedAt": "2026-11-02",
+    "blocked": true
   },
   "https://www.tour.ne.jp/w_review/NYC/model_plan/241/": {
     "ok": true,
