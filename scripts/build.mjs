@@ -103,11 +103,11 @@ function pickVideos(c) {
   return items;
 }
 
-function videoCard(v) {
+function videoCard(v, i) {
   const url = v.demo ? '#' : `https://www.youtube.com/watch?v=${v.id}`;
   const thumb = v.demo ? '<div class="thumb demo">サンプル</div>'
     : `<img class="thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" width="480" height="360">`;
-  return `<article class="video">
+  return `<article class="video"${i >= cfg.videos.initial ? ' hidden' : ''}>
   <a href="${url}" target="_blank" rel="noopener" class="thumb-link" data-embed="${v.embeddable && !v.demo ? esc(v.id) : ''}">${thumb}<span class="dur">${fmtDur(v.durationSec)}</span></a>
   <h3><a href="${url}" target="_blank" rel="noopener">${esc(v.title)}</a></h3>
   <p class="meta">${esc(v.channel)} ・ ${fmtViews(v.views)}再生</p>
@@ -132,10 +132,18 @@ for (const c of countries) {
 <p><a href="${mofa}" target="_blank" rel="noopener">外務省 海外安全ホームページで最新情報を見る</a></p></section>
 <section><h2>基本情報</h2><table class="info">${INFO.map(([k, l]) => c.basic[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。</p></section>
-<section><h2>おすすめの旅行動画</h2>${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>` : '<p>動画は準備中です。</p>'}</section>
+<section><h2>おすすめの旅行動画</h2>${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る（残り${videos.length - cfg.videos.initial}本）</button></p>` : ''}` : '<p>動画は準備中です。</p>'}</section>
 <section><h2>おすすめのブログ・記事</h2>${blogs.length ? `<ul class="blogs">${blogs.map(b => `<li><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul>` : '<p>ブログは準備中です。</p>'}</section>
 </article>
 <script>
+document.querySelectorAll('.more-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const rest = [...btn.closest('section').querySelectorAll('.video[hidden]')];
+    rest.slice(0, Number(btn.dataset.step)).forEach(v => { v.hidden = false; });
+    const left = rest.length - Number(btn.dataset.step);
+    if (left > 0) btn.textContent = 'もっと見る（残り' + left + '本）'; else btn.parentElement.remove();
+  });
+});
 document.querySelectorAll('.thumb-link[data-embed]').forEach(a => {
   if (!a.dataset.embed) return;
   a.addEventListener('click', e => {

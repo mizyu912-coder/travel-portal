@@ -43,3 +43,6 @@ table.info th{width:9em;white-space:nowrap;color:var(--muted);font-weight:600}
 .dur{position:absolute;right:6px;bottom:6px;background:rgba(0,0,0,.75);color:#fff;font-size:.75rem;padding:1px 6px;border-radius:4px}
 .blogs{padding-left:1.2em}.blogs li{margin-bottom:10px}.blogs .meta{margin-left:8px}
 @media (max-width:600px){.hero h1{font-size:1.4rem}table.info th{width:7em}}
+.more-wrap{text-align:center;margin-top:16px}
+.more-btn{font:inherit;border:1px solid var(--on);background:var(--card);color:var(--on);border-radius:999px;padding:8px 28px;cursor:pointer}
+.more-btn:hover{background:var(--on);color:#fff}
