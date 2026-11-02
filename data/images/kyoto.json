@@ -24,5 +24,18 @@
     "description": "Wide-frame view and water reflection of Kinkaku-ji Temple, a sunny day, Kyoto, Japan.",
     "query": "Kinkaku-ji",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Bamboo Forest, Arashiyama, Kyoto, Japan.jpg",
+    "width": 6558,
+    "height": 4372,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg/1920px-Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Bamboo_Forest,_Arashiyama,_Kyoto,_Japan.jpg",
+    "artist": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Bamboo Forest, Arashiyama, Kyoto, Japan. Focus stacking from 6 pictures (long exposure photography).",
+    "query": "Arashiyama",
+    "addedAt": "2026-11-02"
   }
 ]

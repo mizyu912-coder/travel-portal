@@ -11,5 +11,31 @@
     "description": "A staircase at the N Seoul Tower Complex",
     "query": "N Seoul Tower",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Cheonggyecheon evening 2.jpg",
+    "width": 5200,
+    "height": 3535,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Cheonggyecheon_evening_2.jpg/1920px-Cheonggyecheon_evening_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cheonggyecheon_evening_2.jpg",
+    "artist": "kallerna This photo was taken with Fujifilm X-T30",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Cheonggyecheon, Seoul.",
+    "query": "Cheonggyecheon",
+    "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Gwanghwamun Square 20220806 06.jpg",
+    "width": 6000,
+    "height": 3211,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Gwanghwamun_Square_20220806_06.jpg/1920px-Gwanghwamun_Square_20220806_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gwanghwamun_Square_20220806_06.jpg",
+    "artist": "Republic of Korea",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "Gwanghwamun Square August 6, 2022 Gwanghwamun Square, Jongno-gu, Seoul KOCIS(Korean Culture and Informatioon Service) Of",
+    "query": "Gwanghwamun Square",
+    "addedAt": "2026-11-02"
   }
 ]

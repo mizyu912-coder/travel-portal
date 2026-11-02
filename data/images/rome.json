@@ -24,5 +24,18 @@
     "description": "Sign at the Piazza Navona in Rome, Italy",
     "query": "Piazza Navona",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Dome of Pantheon (Rome).jpg",
+    "width": 5970,
+    "height": 3954,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Dome_of_Pantheon_%28Rome%29.jpg/1920px-Dome_of_Pantheon_%28Rome%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Dome_of_Pantheon_(Rome).jpg",
+    "artist": "Livioandronico2013",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Dome of Pantheon (Rome)",
+    "query": "Pantheon Rome",
+    "addedAt": "2026-11-02"
   }
 ]

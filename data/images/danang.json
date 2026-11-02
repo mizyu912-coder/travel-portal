@@ -24,5 +24,18 @@
     "description": "French Village with impressive architecture in Ba Na Hills",
     "query": "Ba Na Hills",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Rhesus macaques (Macaca mulatta) male female Son Tra.jpg",
+    "width": 6000,
+    "height": 4000,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Rhesus_macaques_%28Macaca_mulatta%29_male_female_Son_Tra.jpg/1920px-Rhesus_macaques_%28Macaca_mulatta%29_male_female_Son_Tra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rhesus_macaques_(Macaca_mulatta)_male_female_Son_Tra.jpg",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Rhesus macaques (Macaca mulatta) male (on left) and female, Son Tra Nature Reserve, Vietnam",
+    "query": "Son Tra",
+    "addedAt": "2026-11-02"
   }
 ]

@@ -24,5 +24,18 @@
     "description": "Buckingham Palace in London, England. taken by myself with a Canon 5D and 24-105mm f/4L IS lens.",
     "query": "Buckingham Palace",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:London Eye Twilight April 2006.jpg",
+    "width": 2100,
+    "height": 1400,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/London_Eye_Twilight_April_2006.jpg/1920px-London_Eye_Twilight_April_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:London_Eye_Twilight_April_2006.jpg",
+    "artist": "User:Diliff",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "description": "This photo is of the London Eye on the 7th of April 2006 as viewed from the rear. It is a 6 second exposure and taken wi",
+    "query": "London Eye",
+    "addedAt": "2026-11-02"
   }
 ]

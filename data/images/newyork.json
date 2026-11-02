@@ -24,5 +24,18 @@
     "description": "Central Park Bridges (view from Bridlepath looking southwest), Gothic Arch, Spanning bridlepath south of tennis courts, ",
     "query": "Central Park",
     "addedAt": "2026-11-02"
+  },
+  {
+    "file": "File:Statue of liberty front.jpg",
+    "width": 7940,
+    "height": 5296,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Statue_of_liberty_front.jpg/1920px-Statue_of_liberty_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Statue_of_liberty_front.jpg",
+    "artist": "銀河市長",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "The central object is the Statue of Liberty that located in the Liberty Island.",
+    "query": "Statue of Liberty",
+    "addedAt": "2026-11-02"
   }
 ]
