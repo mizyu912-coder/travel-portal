@@ -33,14 +33,26 @@ const ver = file => crypto.createHash('sha1').update(fs.readFileSync(p(file))).d
 const V = { css: ver('src/style.css'), map: ver('src/map.js'), home: ver('src/home.js') };
 fs.copyFileSync(p('src/map.js'), p('dist/map.js'));
 fs.copyFileSync(p('src/home.js'), p('dist/home.js'));
+for (const f of ['favicon.svg', 'og.png']) if (fs.existsSync(p(`src/${f}`))) fs.copyFileSync(p(`src/${f}`), p(`dist/${f}`));
 
 const LOGO = `<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="6" width="28" height="20" rx="3" fill="currentColor"/><path d="M13 11.5v9l8-4.5z" fill="var(--cut)"/><g fill="var(--cut)"><rect x="4.5" y="8" width="2" height="2" rx=".5"/><rect x="4.5" y="22" width="2" height="2" rx=".5"/><rect x="25.5" y="8" width="2" height="2" rx=".5"/><rect x="25.5" y="22" width="2" height="2" rx=".5"/></g></svg>`;
-const layout = ({ title, desc, body, depth = 0, cls = '' }) => {
+// サイトマップに載せるページ（path はサイトのルートからの相対パス）
+const sitemap = [];
+const BASE = (cfg.baseUrl || '').replace(/\/$/, '');
+const abs = path => `${BASE}/${path === 'index.html' ? '' : path}`;
+const layout = ({ title, desc, body, depth = 0, cls = '', path, image, jsonld, noindex = false }) => {
   const r = '../'.repeat(depth);
+  if (path && !noindex) sitemap.push(path);
+  const ogImage = image || `${BASE}/og.png`;
   return `<!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}">
-<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website">
+${noindex ? '<meta name="robots" content="noindex">' : ''}${path && BASE ? `<link rel="canonical" href="${esc(abs(path))}">` : ''}
+<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${path === 'index.html' ? 'website' : 'article'}">
+<meta property="og:site_name" content="${esc(cfg.siteName)}"><meta property="og:locale" content="ja_JP">${path && BASE ? `<meta property="og:url" content="${esc(abs(path))}">` : ''}
+<meta property="og:image" content="${esc(ogImage)}"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="${r}favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#14161f">
+${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${r}style.css?v=${V.css}"></head>
@@ -52,6 +64,8 @@ const layout = ({ title, desc, body, depth = 0, cls = '' }) => {
 <footer class="site"><div class="bar">
 <div class="foot-brand">${LOGO}<span><strong>${esc(cfg.siteNameEn)}</strong><br>${esc(cfg.siteName)}｜${esc(cfg.tagline)}</span></div>
 <p>安全情報の出典：<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>（最終確認 ${esc(safety.checkedAt)}）。動画とブログの著作権は各制作者に、写真の著作権は各撮影者に帰属します。掲載の停止をご希望の方はお問い合わせください。</p>
+<p class="ad-note">当サイトは、アフィリエイト広告などの広告を掲載することがあります。</p>
+<nav class="foot-nav"><a href="${r}about.html">サイトについて</a><a href="${r}privacy.html">プライバシーポリシー</a><a href="${r}privacy.html#ads">広告について</a><a href="${r}contact.html">お問い合わせ</a></nav>
 <p class="copy">© ${new Date().getFullYear()} ${esc(cfg.siteNameEn)}</p>
 </div></footer>
 </body></html>`;
@@ -154,7 +168,8 @@ const ranking = `<section class="ranking" id="ranking">
 fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
-  cls: 'home',
+  cls: 'home', path: 'index.html',
+  jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, alternateName: cfg.siteNameEn, url: `${BASE}/`, description: cfg.siteDescription, inLanguage: 'ja' },
   body: `<section class="hero"><div class="hero-inner">
   <div class="hero-text">
   <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS ・ ${pubCities.length} CITIES</p>
@@ -188,6 +203,9 @@ ${ranking}
 </section>
 <script>window.REGION_VIEWS=${JSON.stringify(regionViews)};window.PICKS=${JSON.stringify(picks).replace(/</g, '\\u003c')};window.PLACE_INFO=${JSON.stringify(placeInfo).replace(/</g, '\\u003c')};</script><script src="map.js?v=${V.map}"></script><script src="home.js?v=${V.home}"></script>`,
 }));
+
+const crumbs = list => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: list.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: abs(path) })) });
 
 // ---------- 国ページ ----------
 const INFO = [['capital', '首都'], ['language', '言語'], ['currency', '通貨'], ['timeDiff', '時差'], ['flight', '飛行時間の目安'], ['entry', 'ビザ・入国'], ['season', 'ベストシーズン'], ['plug', 'コンセント・電圧'], ['tip', 'チップ']];
@@ -312,8 +330,10 @@ for (const c of countries) {
   }
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
     title: `${c.name}の旅行情報・おすすめ旅行vlog｜${cfg.siteName}`,
-    desc: `${c.name}旅行の予習に。基本情報と、評判のよい旅行vlog・ブログをまとめています。`,
-    body, depth: 1, cls: 'page-country',
+    desc: `${c.name}旅行の予習に。${c.domestic ? '人気の都市' : '安全情報や入国・通貨などの基本情報'}と、再生数や評価で選んだ旅行vlog・ブログをまとめています。`,
+    body, depth: 1, cls: 'page-country', path: `countries/${c.id}.html`, noindex: !isPublished(c),
+    image: firstImage(c)?.thumb,
+    jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`]]),
   }));
 }
 
@@ -337,8 +357,68 @@ for (const ct of cities) {
   }
   fs.writeFileSync(p(`dist/cities/${ct.id}.html`), layout({
     title: `${ct.name}の観光情報・おすすめ旅行vlog｜${cfg.siteName}`,
-    desc: `${ct.name}旅行の予習に。見どころやアクセスと、評判のよい旅行vlog・ブログをまとめています。`,
-    body, depth: 1, cls: 'page-country page-city',
+    desc: `${ct.name}旅行の予習に。見どころ・アクセス・滞在日数の目安と、再生数や評価で選んだ旅行vlog・モデルコース記事をまとめています。`,
+    body, depth: 1, cls: 'page-country page-city', path: `cities/${ct.id}.html`, noindex: !cityPublished(ct),
+    image: firstImage(ct)?.thumb,
+    jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`], [ct.name, `cities/${ct.id}.html`]]),
   }));
+}
+// ---------- サイトについて・プライバシーポリシー・お問い合わせ ----------
+const doc = (path, title, en, html, desc) => fs.writeFileSync(p(`dist/${path}`), layout({
+  title: `${title}｜${cfg.siteName}`, desc, path, cls: 'page-doc',
+  body: `<article class="doc"><div class="country-head"><p class="eyebrow">${en}</p><h1>${title}</h1></div>${html}</article>`,
+}));
+const contactLink = cfg.contactFormUrl ? `<a href="${esc(cfg.contactFormUrl)}" target="_blank" rel="noopener">お問い合わせフォーム</a>` : '<a href="contact.html">お問い合わせページ</a>';
+
+doc('about.html', 'サイトについて', 'ABOUT', `
+<p>${esc(cfg.siteName)}（${esc(cfg.siteNameEn)}）は、旅行の前に旅行vlogやブログで予習したい人のためのガイドサイトです。行き先の国・地域や都市を選ぶと、評判のよい旅行動画と記事、旅の基本情報をまとめて見られます。</p>
+<h2>掲載している国・地域</h2>
+<p>海外は、外務省 海外安全ホームページの危険情報で、主な観光地がレベル0（危険情報なし）の国・地域だけを掲載しています。感染症危険情報が出ている国・地域は掲載しません。危険情報は毎週自動で確認し、変化があれば掲載を止めます。渡航前には必ず<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>で最新の情報をご確認ください。</p>
+<h2>動画の選び方</h2>
+<p>YouTubeで公開されている日本語の旅行動画から、再生数、高評価の割合、公開時期、動画の長さをもとに自動で選んでいます。同じチャンネルの動画は1ページ2本までです。動画の概要文は、動画のタイトルと説明文をもとにAIが作成しており、動画の内容をすべて確認したものではありません。</p>
+<h2>写真と記事</h2>
+<p>ページ上部の写真は、Wikimedia Commons で自由な利用が認められた写真（CC0・パブリックドメイン・CC BY・CC BY-SA）を使い、撮影者とライセンスを表示しています。AIで生成された画像は使いません。紹介している記事は各サイトへのリンクで、内容の著作権は各サイトに帰属します。</p>
+<h2>運営者</h2>
+<table class="info"><tr><th>サイト名</th><td>${esc(cfg.siteName)}（${esc(cfg.siteNameEn)}）</td></tr><tr><th>運営</th><td>${esc(cfg.operator)}</td></tr><tr><th>URL</th><td>${esc(BASE)}/</td></tr><tr><th>お問い合わせ</th><td>${contactLink}</td></tr></table>
+<p>動画やブログの制作者の方で、掲載の停止をご希望の場合は、お問い合わせからご連絡ください。確認のうえ速やかに対応します。</p>`,
+`${cfg.siteName}の目的、掲載している国・地域の基準、動画の選び方、運営者について。`);
+
+doc('privacy.html', 'プライバシーポリシー', 'PRIVACY POLICY', `
+<p>${esc(cfg.operator)}（以下「当サイト」）は、${esc(cfg.siteName)}における利用者の情報の取り扱いについて、次のとおり定めます。</p>
+<h2>取得する情報と利用目的</h2>
+<p>当サイトは、お問い合わせの際に入力いただいたお名前・メールアドレス・内容を、お問い合わせへの回答と、必要な連絡のためにだけ使います。法令に基づく場合を除き、本人の同意なく第三者に提供しません。</p>
+<h2>Cookie（クッキー）とアクセス解析</h2>
+<p>当サイトでは、利用状況を把握してサイトを改善するために、Google アナリティクスなどのアクセス解析ツールを使うことがあります。これらのツールはCookieを使って、個人を特定しない形で利用状況を集めます。Cookieはブラウザの設定で無効にできます。Google アナリティクスによるデータの取り扱いは<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのポリシー</a>をご覧ください。</p>
+<h2 id="ads">広告について</h2>
+<p>当サイトは、第三者配信の広告サービス（Google アドセンスなど）や、アフィリエイトプログラム（旅行予約サイトなどの紹介）を利用することがあります。広告やアフィリエイトのリンクには「広告」「PR」と分かるように表示します。</p>
+<p>Google などの第三者配信事業者は、Cookieを使って、利用者が当サイトや他のサイトを訪れた情報をもとに広告を配信することがあります。パーソナライズ広告は<a href="https://adssettings.google.com/" target="_blank" rel="noopener">Googleの広告設定</a>で無効にできます。</p>
+<p>動画や記事の選定は、再生数や評価などの基準に基づいて行っており、広告主からの依頼や報酬によって選んだり順位を変えたりすることはありません。</p>
+<h2>YouTube動画の埋め込み</h2>
+<p>当サイトの動画は、YouTubeのプライバシー強化モード（youtube-nocookie.com）で埋め込んでいます。再生した場合、YouTube（Google）がCookieなどを使うことがあります。詳しくは<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご覧ください。</p>
+<h2>免責事項</h2>
+<p>当サイトの情報はできるかぎり正確になるよう努めていますが、内容の正確さや最新であることを保証するものではありません。ビザ・入国条件・安全情報などは変わることがあるため、渡航前に公式の情報をご確認ください。当サイトからリンクしている外部サイトの内容について、当サイトは責任を負いません。</p>
+<h2>著作権</h2>
+<p>紹介している動画・記事・写真の著作権は、それぞれの制作者・撮影者に帰属します。掲載に問題がある場合は、お問い合わせからご連絡ください。</p>
+<h2>改定</h2>
+<p>このポリシーは、必要に応じて変更することがあります。変更後の内容は、このページに掲載した時点から適用します。</p>
+<p class="small">制定日：${esc(cfg.policyDate)}<br>運営：${esc(cfg.operator)}</p>`,
+`${cfg.siteName}のプライバシーポリシー、広告・アフィリエイトについて、免責事項。`);
+
+doc('contact.html', 'お問い合わせ', 'CONTACT', cfg.contactFormUrl ? `
+<p>サイトへのご意見、掲載内容の誤り、掲載の停止のご希望などは、下のフォームからご連絡ください。内容を確認のうえ、必要に応じてご返信します。</p>
+<p class="contact-cta"><a class="cta" href="${esc(cfg.contactFormUrl)}" target="_blank" rel="noopener">お問い合わせフォームを開く</a></p>
+<p class="small">フォームは Google フォームを使っています。入力いただいた情報は<a href="privacy.html">プライバシーポリシー</a>に沿って取り扱います。</p>` : `
+<p>お問い合わせフォームは準備中です。もうしばらくお待ちください。</p>`,
+`${cfg.siteName}へのお問い合わせ。掲載内容の誤りや掲載停止のご希望など。`);
+
+// ---------- サイトマップと robots.txt ----------
+if (BASE) {
+  const lastmod = today();
+  fs.writeFileSync(p('dist/sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemap.map(path => `  <url><loc>${esc(abs(path))}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n')}
+</urlset>
+`);
+  fs.writeFileSync(p('dist/robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
 }
 console.log(`dist/ を生成しました（国・地域 ${pub.length} / ${countries.length} 件、都市 ${pubCities.length} / ${cities.length} 件${DEMO ? '、サンプル表示あり' : ''}）`);

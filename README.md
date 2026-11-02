@@ -43,6 +43,14 @@
 
 日本（`domestic: true`）は国内のため外務省のチェックの対象外です。
 
+## サイトの設定（data/config.json）
+
+- `baseUrl`：公開URL。独自ドメインに変えたらここを書き換えます（canonical・サイトマップ・共有画像のURLに使います）。
+- `contactFormUrl`：お問い合わせ用の Google フォームのURL。空欄のあいだは「準備中」と表示します。
+- `operator`・`policyDate`：運営者名とプライバシーポリシーの制定日。
+
+ビルドすると `sitemap.xml`・`robots.txt`・サイトについて・プライバシーポリシー・お問い合わせのページも作ります。
+
 ## 危険情報の自動反映
 
 毎週、`check-safety.mjs` が次のルールで判定します。

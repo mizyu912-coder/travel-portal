@@ -258,3 +258,15 @@ table.info th{width:10em;white-space:nowrap;color:var(--muted);font-weight:500;f
 .tip-text strong{font-size:.95rem}
 .tip-text small{font-family:var(--en);letter-spacing:.14em;font-size:.62rem;color:var(--gold-h);text-transform:uppercase}
 .tip-cities{font-size:.72rem;color:var(--screen-muted);margin-top:2px}
+
+/* ---- フッターのリンクと広告表記 ---- */
+.foot-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0}
+.foot-nav a{color:var(--screen-fg);text-decoration:none}.foot-nav a:hover{color:var(--gold)}
+.ad-note{margin:8px 0 0}
+
+/* ---- サイトについて・規約ページ ---- */
+.doc{max-width:760px;margin:0 auto}
+.doc h2{font-size:1.15rem;margin:36px 0 10px;padding-left:12px;border-left:4px solid var(--gold);line-height:1.4}
+.doc p{margin:0 0 14px}
+.doc table.info{margin:8px 0 16px}
+.contact-cta{text-align:center;margin:28px 0}

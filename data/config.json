@@ -4,7 +4,7 @@
   "tagline": "旅行vlogで予習する国別ガイド",
   "catch": "旅の前に、旅を観る。",
   "siteDescription": "行き先の国を選ぶだけで、評判のよい旅行vlogとブログがまとめて見られる。旅行前の予習のためのガイドです。",
-  "baseUrl": "",
+  "baseUrl": "https://mizyu912-coder.github.io/travel-portal",
   "videos": {
     "mode": "auto",
     "initial": 8,
@@ -16,5 +16,8 @@
     "maxDurationMin": 40,
     "maxAgeYears": 3,
     "japaneseOnly": true
-  }
+  },
+  "contactFormUrl": "",
+  "operator": "トリップシアター編集部",
+  "policyDate": "2026年11月2日"
 }
