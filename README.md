@@ -21,7 +21,7 @@
 | `scripts/check-safety.mjs` | 外務省のページを読み、各国の掲載可否を判定 |
 | `scripts/collect-videos.mjs` | YouTube Data API で動画の候補を集めて点数を付ける |
 | `scripts/build.mjs` | `dist/` にサイトを生成 |
-| `.github/workflows/weekly-update.yml` | 毎週月曜に危険情報・動画・リンクを確認して公開 |
+| `.github/workflows/weekly-update.yml` | 毎日、危険情報・動画・リンクを確認して公開（動画の検索は1日85回まで、古い順に回る） |
 | `data/images/<国ID>.json` | 国ページの写真（自動で取得。`"hidden": true` で非表示、消すと次回別の写真を探す） |
 | `scripts/fetch-images.mjs` | Wikimedia Commons から写真を探す（Commons が選んだ高品質な写真のみ、AI生成・CGは除外、CC0/PD/CC BY/CC BY-SA のみ） |
 | `scripts/summarize-videos.mjs` | Gemini API（無料枠）で動画の概要文を作る |
@@ -39,7 +39,7 @@
 2. 必要なら `data/blogs/<都市ID>.json` に記事を入れます。
 3. 動画・写真・概要文は国と同じしくみで自動で集まります。すぐ集めたいときは Actions の weekly-update を手動実行し、places に都市のIDを入れます（例：`tokyo kyoto`）。
 4. 都市ページは親の国が掲載中のときだけ公開されます。海外の都市は、親の国の `safety.touristAreas` にその都市名を入れておくと、危険情報に都市名が出たときに国ごと止まります。
-5. YouTube の検索枠は1日100回です。国1件で約3回、都市1件で2回使うので、合計が90回を超えないようにしてください。
+5. YouTube の検索枠は1日100回です。収集は毎日動き、1日85回までの範囲で、最後に検索した日が古い国・都市から順に検索します（国1件で約3回、都市1件で2回）。国・都市を増やしても、1日85回 × 7日 ＝ 約600回分（国・都市あわせて200件ほど）までは週1回のペースで回れます。
 
 日本（`domestic: true`）は国内のため外務省のチェックの対象外です。
 
@@ -53,7 +53,7 @@
 
 ## 危険情報の自動反映
 
-毎週、`check-safety.mjs` が次のルールで判定します。
+毎日、`check-safety.mjs` が次のルールで判定します。
 
 - 危険情報一覧に載っていない国 → 掲載する
 - 載っている国 → 国別ページの危険情報に「全土」「上記以外の地域」などがある、または `touristAreas` の観光地名が含まれていれば **自動で非公開**。それ以外は一部地域だけと判断して掲載を続ける

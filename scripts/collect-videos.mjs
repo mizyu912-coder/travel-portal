@@ -36,11 +36,24 @@ function score(v) {
 
 const publishedAfter = new Date(Date.now() - cfg.maxAgeYears * 365 * 864e5).toISOString();
 
+// YouTube の検索は1日100回まで。1回の実行で使う検索回数を SEARCH_BUDGET（既定85）までにし、
+// 最後に検索した日が古い国・都市から順に検索する（6日以内に検索済みのところは、再生数などの更新だけ）。
+// 毎日実行すれば、国・都市が増えても1週間ほどで全体を回れる。
+const BUDGET = Number(process.env.SEARCH_BUDGET || 85);
+const MIN_DAYS = 6;
+let budget = BUDGET;
+const lastSearched = c => readJSON(`data/videos/${c.id}.json`, {}).searchedAt ?? '';
+const targets = countries.filter(c => !only.length || only.includes(c.id))
+  .sort((a, b) => lastSearched(a).localeCompare(lastSearched(b)));
+
 let quotaHit = false;
 let searchQuotaHit = false;
-for (const c of countries) {
-  if (only.length && !only.includes(c.id)) continue;
-  try { await collect(c); }
+for (const c of targets) {
+  const last = lastSearched(c);
+  const fresh = last && (Date.now() - new Date(last)) / 864e5 < MIN_DAYS;
+  const doSearch = only.length > 0 || (!fresh && budget >= c.videoQueries.length);
+  if (doSearch) budget -= c.videoQueries.length;
+  try { await collect(c, doSearch); }
   catch (e) {
     if (!e.quota) throw e;
     // 1日の上限に達したら、残りの国は次回に回す（集めた分は保存済み）
@@ -50,20 +63,23 @@ for (const c of countries) {
   }
 }
 if (quotaHit) process.exitCode = 0;
+console.log(`今回の検索：${BUDGET - budget} 回（上限 ${BUDGET} 回）`);
 
-async function collect(c) {
+async function collect(c, doSearch = true) {
   const file = `data/videos/${c.id}.json`;
   const store = readJSON(file, { items: [] });
   const known = new Map(store.items.map(i => [i.id, i]));
 
   const ids = new Set();
   let searchError = null;
-  if (!searchQuotaHit) {
+  let searched = false;
+  if (doSearch && !searchQuotaHit) {
     try {
       for (const q of c.videoQueries) {
         const r = await api('search', { part: 'id', q, type: 'video', maxResults: 50, regionCode: 'JP', relevanceLanguage: 'ja', publishedAfter, safeSearch: 'strict' });
         r.items.forEach(i => ids.add(i.id.videoId));
       }
+      searched = true;
     } catch (e) {
       if (!e.quota) throw e;
       // 検索の上限に達しても、既に集めた動画の再生数などの更新は続ける
@@ -107,6 +123,6 @@ async function collect(c) {
       && (!cfg.japaneseOnly || hasJa(v.title));
   }).sort((a, b) => b.score - a.score);
 
-  writeJSON(file, { updatedAt: today(), items });
-  console.log(`${c.name}: 候補 ${items.length} 本`);
+  writeJSON(file, { updatedAt: today(), searchedAt: searched ? today() : store.searchedAt, items });
+  console.log(`${c.name}: 候補 ${items.length} 本${searched ? '（検索して更新）' : '（再生数などだけ更新）'}`);
 }
