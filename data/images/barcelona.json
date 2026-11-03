@@ -11,7 +11,8 @@
     "description": "Houses in Park Güell designed by Antoni Gaudi, Barcelona, Spain",
     "query": "Park Güell",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Park_G%C3%BCell_02.jpg/500px-Park_G%C3%BCell_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Park_G%C3%BCell_02.jpg/500px-Park_G%C3%BCell_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Park_G%C3%BCell_02.jpg/1280px-Park_G%C3%BCell_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Casa Batlló 01.jpg",
@@ -25,7 +26,8 @@
     "description": "Top part of the facade of Casa Batlló designed by Antoni Gaudi between 1904 and 1906, Barcelona, Spain",
     "query": "Casa Batlló",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Casa_Batll%C3%B3_01.jpg/500px-Casa_Batll%C3%B3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Casa_Batll%C3%B3_01.jpg/500px-Casa_Batll%C3%B3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Casa_Batll%C3%B3_01.jpg/1280px-Casa_Batll%C3%B3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Casa Milà 2877.jpg",
@@ -39,6 +41,7 @@
     "description": "Casa Milà (La Pedrera)",
     "query": "Casa Milà",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Casa_Mil%C3%A0_2877.jpg/500px-Casa_Mil%C3%A0_2877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Casa_Mil%C3%A0_2877.jpg/500px-Casa_Mil%C3%A0_2877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Casa_Mil%C3%A0_2877.jpg/1280px-Casa_Mil%C3%A0_2877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

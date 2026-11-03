@@ -11,7 +11,8 @@
     "description": "A staircase at the N Seoul Tower Complex",
     "query": "N Seoul Tower",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/N_Seoul_Tower_complex_staircase.jpg/500px-N_Seoul_Tower_complex_staircase.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/N_Seoul_Tower_complex_staircase.jpg/500px-N_Seoul_Tower_complex_staircase.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/N_Seoul_Tower_complex_staircase.jpg/1280px-N_Seoul_Tower_complex_staircase.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Cheonggyecheon evening 2.jpg",
@@ -25,7 +26,8 @@
     "description": "Cheonggyecheon, Seoul.",
     "query": "Cheonggyecheon",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Cheonggyecheon_evening_2.jpg/500px-Cheonggyecheon_evening_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Cheonggyecheon_evening_2.jpg/500px-Cheonggyecheon_evening_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Cheonggyecheon_evening_2.jpg/1280px-Cheonggyecheon_evening_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Gwanghwamun Square 20220806 06.jpg",
@@ -39,6 +41,7 @@
     "description": "Gwanghwamun Square August 6, 2022 Gwanghwamun Square, Jongno-gu, Seoul KOCIS(Korean Culture and Informatioon Service) Of",
     "query": "Gwanghwamun Square",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Gwanghwamun_Square_20220806_06.jpg/500px-Gwanghwamun_Square_20220806_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Gwanghwamun_Square_20220806_06.jpg/500px-Gwanghwamun_Square_20220806_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Gwanghwamun_Square_20220806_06.jpg/1280px-Gwanghwamun_Square_20220806_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

@@ -11,7 +11,8 @@
     "description": "Matterhorn",
     "query": "Matterhorn",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Matterhorn%2C_March_2019_%2801%29.jpg/500px-Matterhorn%2C_March_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Matterhorn%2C_March_2019_%2801%29.jpg/500px-Matterhorn%2C_March_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Matterhorn%2C_March_2019_%2801%29.jpg/1280px-Matterhorn%2C_March_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:CH.LU.Luzern Kapellbrücke 01 16x9-R 16384x9216.jpg",
@@ -25,7 +26,8 @@
     "description": "Chapel Bridge, a covered wooden footbridge spanning the river Reuss in the city of Lucerne in central Switzerland. Named",
     "query": "Chapel Bridge Lucerne",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg/500px-CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg/500px-CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg/1280px-CH.LU.Luzern_Kapellbr%C3%BCcke_01_16x9-R_16384x9216.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Lauterbrunnen-valley.jpg",
@@ -39,6 +41,7 @@
     "description": "Photograph of Lauterbrunnen valley taken in February 2005 by Keith Halstead. This is now a featured picture on the Engli",
     "query": "Lauterbrunnen",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lauterbrunnen-valley.jpg/500px-Lauterbrunnen-valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lauterbrunnen-valley.jpg/500px-Lauterbrunnen-valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lauterbrunnen-valley.jpg/1280px-Lauterbrunnen-valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

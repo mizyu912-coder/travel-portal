@@ -11,7 +11,8 @@
     "description": "Petronas Towers in December 2019",
     "query": "Petronas Towers",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_Twins_SE_Asia_2019_%2849171985716%29.jpg/500px-The_Twins_SE_Asia_2019_%2849171985716%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_Twins_SE_Asia_2019_%2849171985716%29.jpg/500px-The_Twins_SE_Asia_2019_%2849171985716%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_Twins_SE_Asia_2019_%2849171985716%29.jpg/1280px-The_Twins_SE_Asia_2019_%2849171985716%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Penang Malaysia The-George-Town-Dispensary-01.jpg",
@@ -25,7 +26,8 @@
     "description": "Penang, Malaysia: Historic building \"The George Town Dispensary\" at corner Jalan Pantai / Gat Lebuh China, built in 1923",
     "query": "George Town Penang",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Penang_Malaysia_The-George-Town-Dispensary-01.jpg/500px-Penang_Malaysia_The-George-Town-Dispensary-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Penang_Malaysia_The-George-Town-Dispensary-01.jpg/500px-Penang_Malaysia_The-George-Town-Dispensary-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Penang_Malaysia_The-George-Town-Dispensary-01.jpg/1280px-Penang_Malaysia_The-George-Town-Dispensary-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Langkawi Malaysia Langkawi-Cable-Car-03.jpg",
@@ -39,6 +41,7 @@
     "description": "Langkawi, Malaysia: Langkawi Cable Car, Top Station on Gunung Machinchang",
     "query": "Langkawi",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Langkawi_Malaysia_Langkawi-Cable-Car-03.jpg/500px-Langkawi_Malaysia_Langkawi-Cable-Car-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Langkawi_Malaysia_Langkawi-Cable-Car-03.jpg/500px-Langkawi_Malaysia_Langkawi-Cable-Car-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Langkawi_Malaysia_Langkawi-Cable-Car-03.jpg/1280px-Langkawi_Malaysia_Langkawi-Cable-Car-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

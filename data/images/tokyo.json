@@ -11,7 +11,8 @@
     "description": "Main Hall, Sensō-ji Temple, Tokyo",
     "query": "Sensō-ji",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg/500px-Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg/500px-Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg/1280px-Main_Hall%2C_Sens%C5%8D-ji_Temple%2C_Tokyo%2C_20240824_1104_5619.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Tokyo Tower, Minato City.jpg",
@@ -25,7 +26,8 @@
     "description": "A high-angle night photograph of Tokyo, Japan. The Tokyo Tower is prominently illuminated in its traditional orange \"Lan",
     "query": "Tokyo Tower",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Tokyo_Tower%2C_Minato_City.jpg/500px-Tokyo_Tower%2C_Minato_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Tokyo_Tower%2C_Minato_City.jpg/500px-Tokyo_Tower%2C_Minato_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Tokyo_Tower%2C_Minato_City.jpg/1280px-Tokyo_Tower%2C_Minato_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Worm's-eye view of Tokyo Skytree with vertical symmetry impression, a sunny day, in Japan.jpg",
@@ -39,6 +41,7 @@
     "description": "Worm's-eye view of Tokyo Skytree, with vertical symmetry impression. A sunny day, at 8 o'clock, in Japan.",
     "query": "Tokyo Skytree",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression%2C_a_sunny_day%2C_in_Japan.jpg/500px-Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression%2C_a_sunny_day%2C_in_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression%2C_a_sunny_day%2C_in_Japan.jpg/500px-Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression%2C_a_sunny_day%2C_in_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression%2C_a_sunny_day%2C_in_Japan.jpg/1280px-Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression%2C_a_sunny_day%2C_in_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

@@ -11,7 +11,8 @@
     "description": "A high resolution image of Tower Bridge in London at dusk. This image is a mosaic of around twenty 12.8 megapixel segmen",
     "query": "Tower Bridge",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tower_Bridge_London_Dusk_Feb_2006.jpg/500px-Tower_Bridge_London_Dusk_Feb_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tower_Bridge_London_Dusk_Feb_2006.jpg/500px-Tower_Bridge_London_Dusk_Feb_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Tower_Bridge_London_Dusk_Feb_2006.jpg/1280px-Tower_Bridge_London_Dusk_Feb_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Edinburgh Castle from Grass Market.jpg",
@@ -25,7 +26,8 @@
     "description": "Edinburgh Castle from the Grass Market",
     "query": "Edinburgh Castle",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Edinburgh_Castle_from_Grass_Market.jpg/500px-Edinburgh_Castle_from_Grass_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Edinburgh_Castle_from_Grass_Market.jpg/500px-Edinburgh_Castle_from_Grass_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Edinburgh_Castle_from_Grass_Market.jpg/1280px-Edinburgh_Castle_from_Grass_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Sheepscombe St Johns Church.jpg",
@@ -39,6 +41,7 @@
     "description": "Saint John the Apostle Church in Sheepscombe, England (Cotswolds). The church was built in 1820. The first record of the",
     "query": "Cotswolds",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Sheepscombe_St_Johns_Church.jpg/500px-Sheepscombe_St_Johns_Church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Sheepscombe_St_Johns_Church.jpg/500px-Sheepscombe_St_Johns_Church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Sheepscombe_St_Johns_Church.jpg/1280px-Sheepscombe_St_Johns_Church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

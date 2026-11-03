@@ -11,7 +11,8 @@
     "description": "Brooklyn bridge.",
     "query": "Brooklyn Bridge",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Brooklyn_Bridge_August_2017.jpg/500px-Brooklyn_Bridge_August_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Brooklyn_Bridge_August_2017.jpg/500px-Brooklyn_Bridge_August_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Brooklyn_Bridge_August_2017.jpg/1280px-Brooklyn_Bridge_August_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Central Park New York City New York 23 cropped.jpg",
@@ -25,7 +26,8 @@
     "description": "Central Park Bridges (view from Bridlepath looking southwest), Gothic Arch, Spanning bridlepath south of tennis courts, ",
     "query": "Central Park",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Central_Park_New_York_City_New_York_23_cropped.jpg/500px-Central_Park_New_York_City_New_York_23_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Central_Park_New_York_City_New_York_23_cropped.jpg/500px-Central_Park_New_York_City_New_York_23_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Central_Park_New_York_City_New_York_23_cropped.jpg/1280px-Central_Park_New_York_City_New_York_23_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Statue of liberty front.jpg",
@@ -39,6 +41,7 @@
     "description": "The central object is the Statue of Liberty that located in the Liberty Island.",
     "query": "Statue of Liberty",
     "addedAt": "2026-11-02",
-    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Statue_of_liberty_front.jpg/500px-Statue_of_liberty_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Statue_of_liberty_front.jpg/500px-Statue_of_liberty_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Statue_of_liberty_front.jpg/1280px-Statue_of_liberty_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]
