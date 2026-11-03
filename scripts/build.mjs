@@ -21,7 +21,8 @@ const world = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-5
 const worldLite = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-110m.json'), 'utf8'));
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const isPublished = c => (safety.countries[c.id]?.status ?? 'ok') === 'ok';
+// 海外は外務省チェックで ok と判定されるまで公開しない（新しく追加した国は、次の確認で判定される）
+const isPublished = c => !!c.domestic || safety.countries[c.id]?.status === 'ok';
 const countryOf = city => countries.find(c => c.id === city.country);
 // 都市は親の国が掲載中のときだけ公開する
 const cityPublished = city => { const c = countryOf(city); return !!c && isPublished(c); };

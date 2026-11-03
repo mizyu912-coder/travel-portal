@@ -395,5 +395,148 @@
       "season": "春（4〜6月）と秋（9〜11月）。冬のホリデーシーズンも人気",
       "highlights": "タイムズスクエア、セントラルパーク、自由の女神、ブルックリン橋"
     }
+  },
+  {
+    "id": "kanazawa",
+    "name": "金沢",
+    "nameEn": "Kanazawa",
+    "country": "japan",
+    "videoQueries": [
+      "金沢旅行 vlog",
+      "金沢 観光"
+    ],
+    "imageQueries": [
+      "Kenroku-en",
+      "Higashi Chaya",
+      "Kanazawa Castle",
+      "21st Century Museum"
+    ],
+    "basic": {
+      "area": "北陸地方（石川県）。加賀百万石の城下町",
+      "access": "東京から北陸新幹線で約2時間30分",
+      "stay": "1泊2日〜",
+      "transport": "路線バスと周遊バス。中心部は歩いても回れる",
+      "season": "通年。冬の雪景色と海の幸も人気",
+      "highlights": "兼六園、ひがし茶屋街、金沢城公園、近江町市場、金沢21世紀美術館"
+    }
+  },
+  {
+    "id": "hakone",
+    "name": "箱根",
+    "nameEn": "Hakone",
+    "country": "japan",
+    "videoQueries": [
+      "箱根旅行 vlog",
+      "箱根 観光"
+    ],
+    "imageQueries": [
+      "Lake Ashi",
+      "Hakone Shrine",
+      "Owakudani",
+      "Hakone"
+    ],
+    "basic": {
+      "area": "神奈川県西部。温泉と富士山の眺めの観光地",
+      "access": "新宿からロマンスカーで約1時間30分、東京から新幹線と箱根登山鉄道で約1時間30分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "箱根登山鉄道・ケーブルカー・ロープウェイ・海賊船を乗り継いで周遊できる",
+      "season": "通年。紅葉（11月）と新緑（5月）が特に人気",
+      "highlights": "芦ノ湖、箱根神社、大涌谷、彫刻の森美術館、温泉"
+    }
+  },
+  {
+    "id": "hiroshima",
+    "name": "広島",
+    "nameEn": "Hiroshima",
+    "country": "japan",
+    "videoQueries": [
+      "広島旅行 vlog",
+      "宮島 観光"
+    ],
+    "imageQueries": [
+      "Atomic Bomb Dome",
+      "Hiroshima Peace Memorial",
+      "Miyajima",
+      "Hiroshima Castle"
+    ],
+    "basic": {
+      "area": "中国地方（広島県）。宮島への玄関口",
+      "access": "東京から新幹線で約4時間、飛行機で約1時間30分。新大阪から新幹線で約1時間30分",
+      "stay": "1泊2日〜",
+      "transport": "市内は路面電車。宮島へは電車とフェリーで約1時間",
+      "season": "春と秋。宮島の紅葉（11月）も人気",
+      "highlights": "原爆ドーム、平和記念公園、宮島（厳島神社）、広島城、お好み焼き"
+    }
+  },
+  {
+    "id": "nara",
+    "name": "奈良",
+    "nameEn": "Nara",
+    "country": "japan",
+    "videoQueries": [
+      "奈良旅行 vlog",
+      "奈良 観光"
+    ],
+    "imageQueries": [
+      "Todai-ji",
+      "Nara Park",
+      "Kasuga Taisha",
+      "Kofuku-ji"
+    ],
+    "basic": {
+      "area": "関西地方（奈良県）。かつての都・平城京があった古都",
+      "access": "京都から近鉄で約45分、大阪から約40分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "主な見どころは奈良公園周辺に集まり、歩いて回れる",
+      "season": "春（桜）と秋（紅葉）",
+      "highlights": "東大寺、奈良公園の鹿、春日大社、興福寺、ならまち"
+    }
+  },
+  {
+    "id": "hakodate",
+    "name": "函館",
+    "nameEn": "Hakodate",
+    "country": "japan",
+    "videoQueries": [
+      "函館旅行 vlog",
+      "函館 観光"
+    ],
+    "imageQueries": [
+      "Mount Hakodate",
+      "Goryokaku",
+      "Hakodate",
+      "Motomachi"
+    ],
+    "basic": {
+      "area": "北海道南部。夜景と港町の街並みで知られる",
+      "access": "東京から飛行機で約1時間20分。新函館北斗駅から函館駅まで「はこだてライナー」で約20分",
+      "stay": "1泊2日〜",
+      "transport": "市電とバス。函館山へはロープウェイ",
+      "season": "夏（7〜8月）と、イルミネーションの冬",
+      "highlights": "函館山の夜景、五稜郭、元町の坂と洋館、函館朝市、ベイエリア"
+    }
+  },
+  {
+    "id": "ishigaki",
+    "name": "石垣島",
+    "nameEn": "Ishigaki",
+    "country": "japan",
+    "videoQueries": [
+      "石垣島旅行 vlog",
+      "石垣島 観光"
+    ],
+    "imageQueries": [
+      "Kabira Bay",
+      "Ishigaki",
+      "Taketomi"
+    ],
+    "basic": {
+      "area": "沖縄県・八重山諸島。離島めぐりの拠点",
+      "access": "東京から直行便で約3時間30分、那覇から約1時間",
+      "stay": "2泊3日〜",
+      "transport": "島内はレンタカーかバス。竹富島など周辺の島へは石垣港から船",
+      "season": "海は4〜10月。梅雨（5〜6月）と台風（夏〜秋）に注意",
+      "highlights": "川平湾、竹富島、西表島への日帰り、星空、八重山そば"
+    }
   }
 ]

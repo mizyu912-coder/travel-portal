@@ -835,5 +835,214 @@
       "Chapel Bridge Lucerne",
       "Lauterbrunnen"
     ]
+  },
+  {
+    "id": "portugal",
+    "name": "ポルトガル",
+    "nameEn": "Portugal",
+    "region": "europe",
+    "flag": "pt",
+    "map": {
+      "isoNumeric": "620"
+    },
+    "safety": {
+      "mofaNames": [
+        "ポルトガル"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "リスボン",
+        "ポルト"
+      ]
+    },
+    "videoQueries": [
+      "ポルトガル旅行 vlog",
+      "リスボン 旅行 vlog",
+      "ポルト 旅行"
+    ],
+    "basic": {
+      "capital": "リスボン",
+      "language": "ポルトガル語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より9時間遅い（夏時間は8時間）",
+      "flight": "直行便はなく、ヨーロッパや中東で乗り継いで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "春〜秋（4〜10月）",
+      "plug": "C・SEタイプ／230V",
+      "tip": "必須ではない。レストランでは端数を切り上げる程度"
+    },
+    "imageQueries": [
+      "Belém Tower",
+      "Pena Palace",
+      "Porto",
+      "Lisbon"
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "ドイツ",
+    "nameEn": "Germany",
+    "region": "europe",
+    "flag": "de",
+    "map": {
+      "isoNumeric": "276"
+    },
+    "safety": {
+      "mofaNames": [
+        "ドイツ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ベルリン",
+        "ミュンヘン",
+        "フランクフルト"
+      ]
+    },
+    "videoQueries": [
+      "ドイツ旅行 vlog",
+      "ミュンヘン 旅行",
+      "ベルリン 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "ベルリン",
+      "language": "ドイツ語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "東京からフランクフルト・ミュンヘンまで直行便で約14〜15時間",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "夏（6〜8月）とクリスマスマーケットの冬（11月末〜12月）",
+      "plug": "C・SEタイプ／230V",
+      "tip": "レストランでは5〜10%ほどが目安"
+    },
+    "imageQueries": [
+      "Neuschwanstein",
+      "Brandenburg Gate",
+      "Rothenburg ob der Tauber",
+      "Cologne Cathedral"
+    ]
+  },
+  {
+    "id": "netherlands",
+    "name": "オランダ",
+    "nameEn": "Netherlands",
+    "region": "europe",
+    "flag": "nl",
+    "map": {
+      "isoNumeric": "528"
+    },
+    "safety": {
+      "mofaNames": [
+        "オランダ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "アムステルダム"
+      ]
+    },
+    "videoQueries": [
+      "オランダ旅行 vlog",
+      "アムステルダム 旅行 vlog",
+      "オランダ 観光"
+    ],
+    "basic": {
+      "capital": "アムステルダム",
+      "language": "オランダ語（英語もよく通じる）",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "東京からアムステルダムまで直行便で約14〜15時間",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "チューリップの春（4〜5月）と夏",
+      "plug": "C・SEタイプ／230V",
+      "tip": "必須ではない。サービスがよければ端数を切り上げる程度"
+    },
+    "imageQueries": [
+      "Kinderdijk",
+      "Zaanse Schans",
+      "Keukenhof",
+      "Amsterdam canal"
+    ]
+  },
+  {
+    "id": "czech",
+    "name": "チェコ",
+    "nameEn": "Czech Republic",
+    "region": "europe",
+    "flag": "cz",
+    "map": {
+      "isoNumeric": "203"
+    },
+    "safety": {
+      "mofaNames": [
+        "チェコ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "プラハ"
+      ]
+    },
+    "videoQueries": [
+      "チェコ旅行 vlog",
+      "プラハ 旅行 vlog",
+      "チェスキークルムロフ 旅行"
+    ],
+    "basic": {
+      "capital": "プラハ",
+      "language": "チェコ語",
+      "currency": "チェコ・コルナ（CZK）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "直行便はなく、ヨーロッパなどで乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "春〜秋（5〜9月）とクリスマスマーケットの冬",
+      "plug": "C・Eタイプ／230V",
+      "tip": "レストランでは10%ほどが目安"
+    },
+    "imageQueries": [
+      "Charles Bridge",
+      "Prague Castle",
+      "Český Krumlov",
+      "Old Town Square"
+    ]
+  },
+  {
+    "id": "austria",
+    "name": "オーストリア",
+    "nameEn": "Austria",
+    "region": "europe",
+    "flag": "at",
+    "map": {
+      "isoNumeric": "040"
+    },
+    "safety": {
+      "mofaNames": [
+        "オーストリア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ウィーン",
+        "ザルツブルク"
+      ]
+    },
+    "videoQueries": [
+      "オーストリア旅行 vlog",
+      "ウィーン 旅行 vlog",
+      "ハルシュタット 旅行"
+    ],
+    "basic": {
+      "capital": "ウィーン",
+      "language": "ドイツ語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "東京からウィーンまで直行便で約14時間",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "春〜秋（5〜9月）と音楽シーズンの冬",
+      "plug": "C・SEタイプ／230V",
+      "tip": "レストランでは5〜10%ほどが目安"
+    },
+    "imageQueries": [
+      "Hallstatt",
+      "Schönbrunn",
+      "Vienna State Opera",
+      "Salzburg"
+    ]
   }
 ]
