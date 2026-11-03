@@ -293,6 +293,106 @@
       ],
       "hash": null,
       "maxLevel": 0
+    },
+    "greece": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "croatia": {
+      "status": "hidden",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "危険情報一覧に載ったが、国別ページの番号（mofaCode）が未設定のため自動で非公開"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "denmark": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "sweden": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "norway": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "finland": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "iceland": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "saipan": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "palau": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "macau": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
     }
   }
 }
