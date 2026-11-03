@@ -312,7 +312,9 @@ const descOf = (c, fallback) => { const g = guideOf(c); return g ? `${c.name}旅
 
 // 旅の準備（アフィリエイト広告）。ステマ規制のため必ず「PR」を表示する。ASPのコードは改変しない
 function prepSection(c) {
-  const ads = affiliates.filter(a => a.html && (a.pages === 'all' || (Array.isArray(a.pages) && (a.pages.includes(c.id) || a.pages.includes(c.country)))));
+  // pages: "all"＝全ページ、"overseas"＝海外の国・都市だけ、配列＝指定した国・都市（国を指定するとその国の都市にも出る）
+  const overseas = !(c.domestic || countries.find(x => x.id === c.country)?.domestic);
+  const ads = affiliates.filter(a => a.html && (a.pages === 'all' || (a.pages === 'overseas' && overseas) || (Array.isArray(a.pages) && (a.pages.includes(c.id) || a.pages.includes(c.country)))));
   if (!ads.length) return '';
   return `<section class="prep"><h2><span class="sec-en">PREPARE</span>旅の準備</h2>
 <p class="pr-note"><span class="pr">PR</span>旅の予約や準備に使えるサービスの広告です。</p>
