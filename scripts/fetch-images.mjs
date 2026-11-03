@@ -48,13 +48,14 @@ const usable = i => i.mime === 'image/jpeg' && i.width >= 1600 && i.width > i.he
   && OK_LICENSE.test(i.license) && !BAD_CATEGORY.test(i.cats) && !BAD_CATEGORY.test(i.description)
   && !NOT_SCENERY.test(i.file) && !NOT_SCENERY.test(i.cats);
 
-// 一覧やランキング用の小さい画像（幅500px）のURLを Commons から正式にもらって small に入れる
-async function addSmall(places) {
-  const need = places.flatMap(c => readJSON(`data/images/${c.id}.json`, []).filter(i => !i.small).map(i => i.file));
+// 一覧用の小さい画像（small＝幅500px）と、ページ上部用の中くらいの画像（large＝幅1280px）のURLを
+// Commons から正式にもらって保存する（Wikimedia は決まった幅のサムネイルしか返さないため）
+async function addSize(places, key = 'small', width = '500') {
+  const need = places.flatMap(c => readJSON(`data/images/${c.id}.json`, []).filter(i => !i[key]).map(i => i.file));
   const urls = new Map();
   for (let i = 0; i < need.length; i += 40) {
     const url = new URL(API);
-    Object.entries({ action: 'query', format: 'json', titles: need.slice(i, i + 40).join('|'), prop: 'imageinfo', iiprop: 'url', iiurlwidth: '500' })
+    Object.entries({ action: 'query', format: 'json', titles: need.slice(i, i + 40).join('|'), prop: 'imageinfo', iiprop: 'url', iiurlwidth: width })
       .forEach(([k, v]) => url.searchParams.set(k, v));
     try {
       const res = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -70,10 +71,10 @@ async function addSmall(places) {
   for (const c of places) {
     const file = `data/images/${c.id}.json`;
     const imgs = readJSON(file, []);
-    if (!imgs.some(i => !i.small && urls.has(i.file))) continue;
-    writeJSON(file, imgs.map(i => (!i.small && urls.has(i.file) ? { ...i, small: urls.get(i.file) } : i)));
+    if (!imgs.some(i => !i[key] && urls.has(i.file))) continue;
+    writeJSON(file, imgs.map(i => (!i[key] && urls.has(i.file) ? { ...i, [key]: urls.get(i.file) } : i)));
   }
-  console.log(`小さい画像のURL：${urls.size} 件を追加`);
+  console.log(`${key}（幅${width}px）の画像URL：${urls.size} 件を追加`);
 }
 
 for (const c of loadPlaces()) {
@@ -100,4 +101,6 @@ for (const c of loadPlaces()) {
   console.log(`${c.name}: 写真 ${picked.length} 枚`);
 }
 
-await addSmall(loadPlaces().filter(c => !only.length || only.includes(c.id)));
+const targets = loadPlaces().filter(c => !only.length || only.includes(c.id));
+await addSize(targets, 'small', '500');
+await addSize(targets, 'large', '1280');

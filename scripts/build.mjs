@@ -16,7 +16,9 @@ const cities = readJSON('data/cities.json', []);
 const affiliates = readJSON('data/affiliates.json', []);
 const safety = readJSON('data/safety.json', { countries: {} });
 const links = readJSON('data/links.json', {});
+// 掲載中の国は細かい地図（50m）、それ以外は軽い地図（110m）で描いて、ページを軽くする
 const world = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-50m.json'), 'utf8'));
+const worldLite = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-110m.json'), 'utf8'));
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const isPublished = c => (safety.countries[c.id]?.status ?? 'ok') === 'ok';
@@ -87,14 +89,16 @@ const proj = geoMercator().rotate([-150, 0]).scale(SCALE).translate([W / 2, SCAL
 const H = Math.round(SCALE * (mercY(TOP_LAT) - mercY(BOTTOM_LAT)));
 const geo = feature(world, world.objects.countries);
 geo.features = geo.features.filter(f => f.id !== '010'); // 南極は表示しない
-const path = geoPath(proj);
+const path = geoPath(proj).digits(1);
 const byIso = new Map(countries.filter(c => c.map.isoNumeric).map(c => [c.map.isoNumeric, c]));
 
-const shapes = geo.features.map(f => {
+const isOn = f => { const c = byIso.get(f.id); return c && isPublished(c) && !c.map.marker; };
+const lite = feature(worldLite, worldLite.objects.countries).features.filter(f => f.id !== '010' && !isOn(f));
+const shapes = [...lite, ...geo.features.filter(isOn)].map(f => {
   const c = byIso.get(f.id);
   const d = path(f);
   if (!d) return '';
-  if (c && isPublished(c) && !c.map.marker) {
+  if (isOn(f)) {
     return `<path d="${d}" class="land on" data-id="${c.id}" data-region="${c.region}" tabindex="0" role="link" aria-label="${esc(c.name)}"></path>`;
   }
   return `<path d="${d}" class="land"/>`;
@@ -235,7 +239,7 @@ function gallery(c) {
   const imgs = readJSON(`data/images/${c.id}.json`, []).filter(i => !i.hidden).slice(0, 3);
   if (!imgs.length) return '';
   return `<div class="gallery g${imgs.length}">${imgs.map((im, i) => `<figure>
-  <img src="${esc(im.thumb)}" alt="${esc(c.name)}の風景（${esc(im.query)}）" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1067">
+  <img src="${esc(im.large ?? im.thumb)}" srcset="${[[im.small, 500], [im.large, 1280], [im.thumb, 1920]].filter(([u]) => u).map(([u, w]) => `${esc(u)} ${w}w`).join(', ')}" sizes="${i ? '(max-width:720px) 85vw, 360px' : '(max-width:720px) 85vw, 740px'}" alt="${esc(c.name)}の風景（${esc(im.query)}）" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="1600" height="1067">
   <figcaption><a href="${esc(im.page)}" target="_blank" rel="noopener">写真：${esc(im.artist.slice(0, 40))}</a> / ${im.licenseUrl ? `<a href="${esc(im.licenseUrl)}" target="_blank" rel="noopener">${esc(im.license)}</a>` : esc(im.license)} / Wikimedia Commons</figcaption>
 </figure>`).join('')}</div>`;
 }
