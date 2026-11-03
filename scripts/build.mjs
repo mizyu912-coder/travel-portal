@@ -12,6 +12,8 @@ const cfg = readJSON('data/config.json');
 const regions = readJSON('data/regions.json');
 const countries = readJSON('data/countries.json');
 const cities = readJSON('data/cities.json', []);
+// ASP からもらった広告コード（pages: "all" か、国・都市IDの配列）
+const affiliates = readJSON('data/affiliates.json', []);
 const safety = readJSON('data/safety.json', { countries: {} });
 const links = readJSON('data/links.json', {});
 const world = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countries-50m.json'), 'utf8'));
@@ -298,6 +300,15 @@ ${g.firstTime ? `<div class="guide-first"><strong>最初の旅のコツ</strong>
 }
 const descOf = (c, fallback) => { const g = guideOf(c); return g ? `${c.name}旅行の予習に。${g.lead}`.slice(0, 118) + (`${c.name}旅行の予習に。${g.lead}`.length > 118 ? '…' : '') : fallback; };
 
+// 旅の準備（アフィリエイト広告）。ステマ規制のため必ず「PR」を表示する。ASPのコードは改変しない
+function prepSection(c) {
+  const ads = affiliates.filter(a => a.html && (a.pages === 'all' || (Array.isArray(a.pages) && (a.pages.includes(c.id) || a.pages.includes(c.country)))));
+  if (!ads.length) return '';
+  return `<section class="prep"><h2><span class="sec-en">PREPARE</span>旅の準備</h2>
+<p class="pr-note"><span class="pr">PR</span>旅の予約や準備に使えるサービスの広告です。</p>
+<div class="ad-slots">${ads.map(a => `<div class="ad-slot">${a.html}</div>`).join('')}</div></section>`;
+}
+
 // 国ページと都市ページの共通部分
 function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
   const videos = pickVideos(c);
@@ -311,6 +322,7 @@ ${guideSection(c)}
 ${extra}
 <section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">${c.domestic || countryOf(c)?.domestic ? '移動時間などは目安です。最新の情報は交通機関の公式サイトで確認してください。' : 'ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。'}</p></section>
+${prepSection(c)}
 ${blogs.length ? `<section><h2><span class="sec-en">READING</span>おすすめのブログ・記事</h2><ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul></section>` : ''}
 </article>
 ${PAGE_SCRIPT}`;

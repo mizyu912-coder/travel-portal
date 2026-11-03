@@ -279,3 +279,10 @@ table.info th{width:10em;white-space:nowrap;color:var(--muted);font-weight:500;f
 .guide-first{background:var(--screen);color:var(--screen-fg);border-radius:var(--r);padding:16px 20px}
 .guide-first strong{font-family:var(--ja);color:var(--gold);font-size:.9rem;display:block;margin-bottom:4px}
 .guide-first p{margin:0;font-size:.92rem}
+
+/* ---- 旅の準備（広告） ---- */
+.pr-note{font-size:.82rem;color:var(--muted);margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.pr{display:inline-block;font-family:var(--en);font-size:.68rem;letter-spacing:.1em;border:1px solid var(--muted);color:var(--muted);border-radius:4px;padding:0 6px}
+.ad-slots{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.ad-slot{line-height:0}
+.ad-slot img{max-width:100%;height:auto}
