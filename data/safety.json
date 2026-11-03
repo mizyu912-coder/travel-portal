@@ -305,14 +305,15 @@
       "maxLevel": 0
     },
     "croatia": {
-      "status": "hidden",
+      "status": "ok",
       "listed": true,
       "infection": false,
       "reasons": [
-        "危険情報一覧に載ったが、国別ページの番号（mofaCode）が未設定のため自動で非公開"
+        "国別ページでは危険情報なし"
       ],
-      "hash": null,
-      "maxLevel": 0
+      "hash": "d2bde1c2d31949e9",
+      "maxLevel": 1,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_188.html"
     },
     "denmark": {
       "status": "ok",
