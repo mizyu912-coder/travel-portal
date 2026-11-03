@@ -768,5 +768,159 @@
     "title": "【東京1Dayトリップ】2大タワーを制覇！超王道東京観光コース｜ウォーカープラス",
     "site": "ウォーカープラス（Walkerplus）",
     "checkedAt": "2026-11-03"
+  },
+  "https://newt.net/hrv/dbv/mag": {
+    "ok": true,
+    "fails": 0,
+    "title": "ドブロブニクの旅行情報。ドブロブニクのあたらしい魅力をお伝えします",
+    "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/DBV/model_plan/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.airtrip.jp/travel-column/26795": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 503",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/CPH/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "コペンハーゲン(デンマーク)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.veltra.com/jp/guide/?p=80902": {
+    "ok": true,
+    "fails": 0,
+    "title": "ヘルシンキ観光モデルコース2泊3日で楽しむ全ガイド！ | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-03"
+  },
+  "https://aumo.jp/articles/35807": {
+    "ok": true,
+    "fails": 0,
+    "title": "【ヘルシンキ観光の決定版】2日で満喫できるモデルコースをご紹介♪",
+    "site": "Aumo（アウモ）",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/HEL/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ヘルシンキ(フィンランド)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/ATH/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アテネ(ギリシャ)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/JTR/model_plan/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-03"
+  },
+  "https://guidetoiceland.is/ja/you-guide/what-to-do-with-5-days-in-iceland": {
+    "ok": true,
+    "fails": 0,
+    "title": "アイスランド5日間モデルコース | Guide to Iceland",
+    "site": "Guide to Iceland",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/REK/model_plan/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.kansai-airport.or.jp/flyfromkansai/destination/macao_202505/": {
+    "ok": true,
+    "fails": 0,
+    "title": "マカオのおすすめ観光スポット12選！世界遺産やカジノを巡るモデルコースも！",
+    "site": "FLY from KANSAI",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/MFM/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "マカオのおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.wanderinchina.com/ja/destinations/macao/itineraries/one-day-macao-itinerary/": {
+    "fails": 0,
+    "ok": false,
+    "blocked": true,
+    "error": "HTTP 403",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.smbctb.co.jp/globalcompass/travel/norway-sightseeing/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ノルウェーの観光スポット15選！オスロやフィヨルドの見どころ、ベストシーズン、モデルコースを解説｜海外渡航に役立つメディア『グローバルコンパス』｜SMBC信託銀行プレスティア｜",
+    "site": "SMBC信託銀行",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/OSL/model_plan/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/ROR/model_plan/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.apollomaniacs.com/kaigai_2018_palau.htm": {
+    "ok": true,
+    "fails": 0,
+    "title": "パラオ旅行記 スノーケルツアー＆セスナ遊覧飛行 | 旅行 | 飛行機と旅行(Aircrafts and Travel)",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://newt.net/spn/mag-367545938601": {
+    "ok": true,
+    "fails": 0,
+    "title": "サイパンのおすすめ観光地12選！マリンスポーツと絶景を満喫するモデルコースも紹介",
+    "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/SPN/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "サイパンのおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.smbctb.co.jp/globalcompass/travel/sweden-sightseeing/": {
+    "ok": true,
+    "fails": 0,
+    "title": "スウェーデンのおすすめ観光スポット13選！ベストシーズン・モデルコース・決済事情も解説｜海外渡航に役立つメディア『グローバルコンパス』｜SMBC信託銀行プレスティア｜",
+    "site": "SMBC信託銀行",
+    "checkedAt": "2026-11-03"
+  },
+  "https://newt.net/swe/mag-088697350": {
+    "ok": true,
+    "fails": 0,
+    "title": "ストックホルムのおすすめ観光地14選！名所や穴場、モデルコースも",
+    "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.tour.ne.jp/w_review/STO/model_plan/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-03"
   }
 }
