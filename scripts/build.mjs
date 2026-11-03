@@ -22,10 +22,15 @@ const worldLite = JSON.parse(fs.readFileSync(p('node_modules/world-atlas/countri
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 // 海外は外務省チェックで ok と判定されるまで公開しない（新しく追加した国は、次の確認で判定される）
-const isPublished = c => !!c.domestic || safety.countries[c.id]?.status === 'ok';
+const safeOk = c => !!c.domestic || safety.countries[c.id]?.status === 'ok';
+// 新しく追加した国・都市は、動画が MIN_VIDEOS 本以上そろうまで「準備中」にして公開しない
+const MIN_VIDEOS = 3;
+const hasVideos = x => (readJSON(`data/videos/${x.id}.json`, {}).items ?? []).length >= MIN_VIDEOS;
+const isPublished = c => safeOk(c) && hasVideos(c);
 const countryOf = city => countries.find(c => c.id === city.country);
-// 都市は親の国が掲載中のときだけ公開する
-const cityPublished = city => { const c = countryOf(city); return !!c && isPublished(c); };
+// 都市は親の国が安全基準を満たしているときだけ公開する
+const cityPublished = city => { const c = countryOf(city); return !!c && safeOk(c) && hasVideos(city); };
+const pendingNotice = name => `<article class="country"><h1>${esc(name)}</h1><div class="notice">このページは準備中です。旅行vlogが集まりしだい公開します。</div></article>`;
 const fmtDur = s => `${Math.floor(s / 60)}分${String(s % 60).padStart(2, '0')}秒`;
 const fmtViews = n => n >= 1e8 ? `${(n / 1e8).toFixed(1)}億回` : n >= 1e4 ? `${(n / 1e4).toFixed(n >= 1e5 ? 0 : 1)}万回` : `${n.toLocaleString('ja-JP')}回`;
 
@@ -348,7 +353,9 @@ for (const c of countries) {
   const s = safety.countries[c.id] ?? { status: 'ok' };
   const region = regions.find(r => r.id === c.region);
   let body;
-  if (!isPublished(c)) {
+  if (safeOk(c) && !hasVideos(c)) {
+    body = pendingNotice(c.name);
+  } else if (!isPublished(c)) {
     body = `<article class="country"><h1>${esc(c.name)}</h1><div class="notice">外務省の安全情報が変わったため、このページの掲載を一時停止しています。最新の情報は<a href="${mofaUrlOf(c, s)}" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>でご確認ください。</div></article>`;
   } else {
     body = placeBody(c, {
@@ -374,7 +381,9 @@ for (const ct of cities) {
   if (!c) { console.warn(`${ct.name}：親の国（${ct.country}）が見つかりません`); continue; }
   const s = safety.countries[c.id] ?? { status: 'ok' };
   let body;
-  if (!cityPublished(ct)) {
+  if (safeOk(c) && !hasVideos(ct)) {
+    body = pendingNotice(ct.name);
+  } else if (!cityPublished(ct)) {
     body = `<article class="country"><h1>${esc(ct.name)}</h1><div class="notice">外務省の安全情報が変わったため、このページの掲載を一時停止しています。最新の情報は<a href="${mofaUrlOf(c, s)}" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>でご確認ください。</div></article>`;
   } else {
     const others = pubCities.filter(o => o.country === c.id && o.id !== ct.id);

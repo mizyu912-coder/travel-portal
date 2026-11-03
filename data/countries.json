@@ -1045,5 +1045,435 @@
       "Vienna State Opera",
       "Salzburg"
     ]
+  },
+  {
+    "id": "greece",
+    "name": "ギリシャ",
+    "nameEn": "Greece",
+    "region": "europe",
+    "flag": "gr",
+    "map": {
+      "isoNumeric": "300"
+    },
+    "safety": {
+      "mofaNames": [
+        "ギリシャ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "アテネ",
+        "サントリーニ",
+        "ミコノス"
+      ]
+    },
+    "videoQueries": [
+      "ギリシャ旅行 vlog",
+      "サントリーニ 旅行 vlog",
+      "アテネ 旅行"
+    ],
+    "basic": {
+      "capital": "アテネ",
+      "language": "ギリシャ語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より7時間遅い（夏時間は6時間）",
+      "flight": "直行便はなく、ヨーロッパや中東で乗り継いで約16時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜10月（島めぐりは6〜9月）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは5〜10%程度"
+    },
+    "imageQueries": [
+      "Oia, Santorini",
+      "Parthenon",
+      "Mykonos",
+      "Meteora",
+      "Santorini"
+    ]
+  },
+  {
+    "id": "croatia",
+    "name": "クロアチア",
+    "nameEn": "Croatia",
+    "region": "europe",
+    "flag": "hr",
+    "map": {
+      "isoNumeric": "191"
+    },
+    "safety": {
+      "mofaNames": [
+        "クロアチア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ドゥブロヴニク",
+        "スプリト",
+        "ザグレブ"
+      ]
+    },
+    "videoQueries": [
+      "クロアチア旅行 vlog",
+      "ドゥブロヴニク 旅行 vlog",
+      "プリトヴィツェ 旅行"
+    ],
+    "basic": {
+      "capital": "ザグレブ",
+      "language": "クロアチア語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "直行便はなく、ヨーロッパや中東で乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Dubrovnik",
+      "Plitvice Lakes",
+      "Diocletian's Palace Split",
+      "Hvar",
+      "Rovinj"
+    ]
+  },
+  {
+    "id": "denmark",
+    "name": "デンマーク",
+    "nameEn": "Denmark",
+    "region": "europe",
+    "flag": "dk",
+    "map": {
+      "isoNumeric": "208"
+    },
+    "safety": {
+      "mofaNames": [
+        "デンマーク"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "コペンハーゲン"
+      ]
+    },
+    "videoQueries": [
+      "デンマーク旅行 vlog",
+      "コペンハーゲン 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "コペンハーゲン",
+      "language": "デンマーク語",
+      "currency": "デンマーク・クローネ（DKK）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "羽田からコペンハーゲンへの直行便のほか、乗り継ぎ便も多い（約14時間〜）",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "6〜8月",
+      "plug": "C・F・Kタイプ／230V",
+      "tip": "料金にサービス料が含まれていることが多く、基本的に不要"
+    },
+    "imageQueries": [
+      "Nyhavn",
+      "Tivoli Gardens",
+      "Kronborg",
+      "Copenhagen"
+    ]
+  },
+  {
+    "id": "sweden",
+    "name": "スウェーデン",
+    "nameEn": "Sweden",
+    "region": "europe",
+    "flag": "se",
+    "map": {
+      "isoNumeric": "752"
+    },
+    "safety": {
+      "mofaNames": [
+        "スウェーデン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ストックホルム"
+      ]
+    },
+    "videoQueries": [
+      "スウェーデン旅行 vlog",
+      "ストックホルム 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "ストックホルム",
+      "language": "スウェーデン語",
+      "currency": "スウェーデン・クローナ（SEK）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "直行便はなく、ヨーロッパや中東で乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "6〜8月（オーロラは9〜3月の北部）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "必須ではない。レストランでは端数を切り上げる程度"
+    },
+    "imageQueries": [
+      "Gamla stan",
+      "Stockholm City Hall",
+      "Stockholm",
+      "Kiruna"
+    ]
+  },
+  {
+    "id": "norway",
+    "name": "ノルウェー",
+    "nameEn": "Norway",
+    "region": "europe",
+    "flag": "no",
+    "map": {
+      "isoNumeric": "578"
+    },
+    "safety": {
+      "mofaNames": [
+        "ノルウェー"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "オスロ",
+        "ベルゲン",
+        "トロムソ"
+      ]
+    },
+    "videoQueries": [
+      "ノルウェー旅行 vlog",
+      "フィヨルド 旅行 vlog",
+      "トロムソ オーロラ 旅行"
+    ],
+    "basic": {
+      "capital": "オスロ",
+      "language": "ノルウェー語",
+      "currency": "ノルウェー・クローネ（NOK）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "直行便はなく、ヨーロッパや中東で乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "6〜8月（フィヨルド）、10〜3月（オーロラ）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "必須ではない。レストランでは端数を切り上げる程度"
+    },
+    "imageQueries": [
+      "Geirangerfjord",
+      "Bryggen",
+      "Lofoten",
+      "Oslo Opera House"
+    ]
+  },
+  {
+    "id": "finland",
+    "name": "フィンランド",
+    "nameEn": "Finland",
+    "region": "europe",
+    "flag": "fi",
+    "map": {
+      "isoNumeric": "246"
+    },
+    "safety": {
+      "mofaNames": [
+        "フィンランド"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ヘルシンキ",
+        "ロヴァニエミ"
+      ]
+    },
+    "videoQueries": [
+      "フィンランド旅行 vlog",
+      "ヘルシンキ 旅行 vlog",
+      "ロヴァニエミ 旅行"
+    ],
+    "basic": {
+      "capital": "ヘルシンキ",
+      "language": "フィンランド語、スウェーデン語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より7時間遅い（夏時間は6時間）",
+      "flight": "成田・羽田・関西・中部からヘルシンキへ直行便で約13〜14時間",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "6〜8月（白夜）、9〜3月（オーロラ）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "料金にサービス料が含まれていることが多く、基本的に不要"
+    },
+    "imageQueries": [
+      "Helsinki Cathedral",
+      "Suomenlinna",
+      "Rovaniemi",
+      "Helsinki"
+    ]
+  },
+  {
+    "id": "iceland",
+    "name": "アイスランド",
+    "nameEn": "Iceland",
+    "region": "europe",
+    "flag": "is",
+    "map": {
+      "isoNumeric": "352"
+    },
+    "safety": {
+      "mofaNames": [
+        "アイスランド"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "レイキャビク"
+      ]
+    },
+    "videoQueries": [
+      "アイスランド旅行 vlog",
+      "アイスランド オーロラ 旅行"
+    ],
+    "basic": {
+      "capital": "レイキャビク",
+      "language": "アイスランド語",
+      "currency": "アイスランド・クローナ（ISK）",
+      "timeDiff": "日本より9時間遅い（夏時間なし）",
+      "flight": "直行便はなく、ヨーロッパで乗り継いで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "6〜8月（白夜）、9〜4月（オーロラ）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "料金にサービス料が含まれており不要"
+    },
+    "imageQueries": [
+      "Skógafoss",
+      "Seljalandsfoss",
+      "Jökulsárlón",
+      "Gullfoss",
+      "Reykjavík"
+    ]
+  },
+  {
+    "id": "saipan",
+    "name": "サイパン",
+    "nameEn": "Saipan",
+    "region": "oceania",
+    "flag": "mp",
+    "map": {
+      "isoNumeric": "580",
+      "marker": [
+        145.75,
+        15.19
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "米国",
+        "アメリカ合衆国",
+        "アメリカ",
+        "北マリアナ諸島",
+        "北マリアナ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "サイパン"
+      ]
+    },
+    "videoQueries": [
+      "サイパン旅行 vlog",
+      "サイパン 観光"
+    ],
+    "basic": {
+      "capital": "キャピトル・ヒル（北マリアナ諸島の行政の中心）",
+      "language": "英語、チャモロ語、カロリン語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本より1時間早い",
+      "flight": "成田から直行便で約3時間30分〜",
+      "entry": "ESTA、またはグアム・北マリアナ諸島ビザ免除プログラムで入国",
+      "season": "乾季の12〜6月",
+      "plug": "Aタイプ／110V",
+      "tip": "レストランでは10〜15%程度"
+    },
+    "imageQueries": [
+      "Managaha Island",
+      "Mount Tapochau",
+      "Saipan beach",
+      "Saipan"
+    ]
+  },
+  {
+    "id": "palau",
+    "name": "パラオ",
+    "nameEn": "Palau",
+    "region": "oceania",
+    "flag": "pw",
+    "map": {
+      "isoNumeric": "585",
+      "marker": [
+        134.48,
+        7.4
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "パラオ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "コロール"
+      ]
+    },
+    "videoQueries": [
+      "パラオ旅行 vlog",
+      "パラオ 観光 ダイビング"
+    ],
+    "basic": {
+      "capital": "マルキョク",
+      "language": "パラオ語、英語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本と同じ（時差なし）",
+      "flight": "グアムや台北などで乗り継ぎ。時期により日本からの直行チャーター便あり（約5時間）",
+      "entry": "30日以内の観光ならビザ不要。入国時に「パラオ誓約」への署名と環境保護税の支払いが必要",
+      "season": "乾季の11〜4月",
+      "plug": "Aタイプ／120V",
+      "tip": "レストランやツアーでは10%程度"
+    },
+    "imageQueries": [
+      "Rock Islands Palau",
+      "Jellyfish Lake",
+      "Koror",
+      "Palau"
+    ]
+  },
+  {
+    "id": "macau",
+    "name": "マカオ",
+    "nameEn": "Macau",
+    "region": "asia",
+    "flag": "mo",
+    "map": {
+      "isoNumeric": "446",
+      "marker": [
+        113.55,
+        22.19
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "マカオ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "マカオ"
+      ]
+    },
+    "videoQueries": [
+      "マカオ旅行 vlog",
+      "マカオ 観光"
+    ],
+    "basic": {
+      "capital": "—（中国の特別行政区）",
+      "language": "中国語（広東語）、ポルトガル語",
+      "currency": "マカオ・パタカ（MOP）。香港ドルも広く使える",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "東京から直行便で約5時間。香港からフェリーや橋を渡るバスでも行ける",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "10〜12月",
+      "plug": "Gタイプが主流／220V",
+      "tip": "ホテルや高級店はサービス料込み。それ以外は基本的に不要"
+    },
+    "imageQueries": [
+      "Ruins of St. Paul's",
+      "Senado Square",
+      "A-Ma Temple",
+      "Macau"
+    ]
   }
 ]

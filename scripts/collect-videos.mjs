@@ -43,8 +43,14 @@ const BUDGET = Number(process.env.SEARCH_BUDGET || 85);
 const MIN_DAYS = 6;
 let budget = BUDGET;
 const lastSearched = c => readJSON(`data/videos/${c.id}.json`, {}).searchedAt ?? '';
+// 動画が1本もない国・都市（新しく追加したところなど）を最優先にする
+const sortKey = c => { const v = readJSON(`data/videos/${c.id}.json`, {}); return (v.items ?? []).length ? (v.searchedAt ?? '0') : ''; };
+// 外務省チェックで非公開になっている国（とその都市）は、検索枠を使わない
+const safety = readJSON('data/safety.json', { countries: {} });
+const hiddenBySafety = c => { const id = c.kind === 'city' ? c.country : c.id; return safety.countries[id]?.status === 'hidden'; };
 const targets = countries.filter(c => !only.length || only.includes(c.id))
-  .sort((a, b) => lastSearched(a).localeCompare(lastSearched(b)));
+  .filter(c => only.length || !hiddenBySafety(c))
+  .sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
 
 let quotaHit = false;
 let searchQuotaHit = false;
