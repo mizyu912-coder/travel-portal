@@ -41,17 +41,19 @@ for (const c of countries) {
   const isListed = c.safety.mofaNames.some(n => listed.has(n));
   let r = { status: 'ok', listed: isListed, infection: infected.has(c.id), reasons: [], hash: null, maxLevel: 0 };
 
+  // 国別ページの番号が未設定なら、危険情報一覧のリンクから読み取る
+  const mofaCode = c.safety.mofaCode ?? c.safety.mofaNames.map(n => listed.get(n)).find(Boolean) ?? null;
   if (isListed) {
-    if (!c.safety.mofaCode) {
+    if (!mofaCode) {
       r.status = 'hidden';
       r.reasons.push('危険情報一覧に載ったが、国別ページの番号（mofaCode）が未設定のため自動で非公開');
     } else {
       try {
-        const html = await get(countryUrl(c.safety.mofaCode));
+        const html = await get(countryUrl(mofaCode));
         const page = parseCountryPage(html);
         r.hash = sha(page.block.join('\n'));
         r.maxLevel = page.maxLevel ?? 0;
-        r.mofaUrl = countryUrl(c.safety.mofaCode);
+        r.mofaUrl = countryUrl(mofaCode);
         if (!page.noInfection && !page.noDanger) r.infection = r.infection || /感染症危険情報[（(]レベル/.test(html);
         if (page.noDanger) {
           r.reasons.push('国別ページでは危険情報なし');

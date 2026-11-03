@@ -4,10 +4,12 @@ export const NATIONWIDE = /全土|全域|上記以外|その他の地域/;
 
 // 危険情報一覧ページから、レベルが出ている国・地域名（リンク文字列）の集合を作る
 export function parseKikenList(html) {
-  const names = new Set();
-  for (const m of html.matchAll(/<a\b[^>]*>([\s\S]*?)<\/a>/gi)) {
-    const t = m[1].replace(/<[^>]+>/g, '').replace(/\s+/g, '').trim();
-    if (t && t.length <= 20) names.add(t);
+  // 国名 → 国別ページの番号（リンク先から読み取れたとき。読めなければ null）
+  const names = new Map();
+  for (const m of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const t = m[2].replace(/<[^>]+>/g, '').replace(/\s+/g, '').trim();
+    const code = m[1].match(/_(\d{3})\.html/)?.[1] ?? null;
+    if (t && t.length <= 20 && !names.get(t)) names.set(t, code);
   }
   return names;
 }
