@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02",
+  "checkedAt": "2026-11-03",
   "source": "auto",
   "countries": {
     "japan": {
@@ -235,6 +235,56 @@
       "maxLevel": 0
     },
     "switzerland": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "portugal": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "germany": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "netherlands": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "czech": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "austria": {
       "status": "ok",
       "listed": false,
       "infection": false,
