@@ -776,18 +776,6 @@
     "site": "NEWT（ニュート）",
     "checkedAt": "2026-11-03"
   },
-  "https://www.tour.ne.jp/w_review/DBV/model_plan/": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
-    "checkedAt": "2026-11-03"
-  },
-  "https://www.airtrip.jp/travel-column/26795": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 503",
-    "checkedAt": "2026-11-03"
-  },
   "https://www.tour.ne.jp/w_review/CPH/model_plan/": {
     "ok": true,
     "fails": 0,
@@ -823,23 +811,11 @@
     "site": "",
     "checkedAt": "2026-11-03"
   },
-  "https://www.tour.ne.jp/w_review/JTR/model_plan/": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
-    "checkedAt": "2026-11-03"
-  },
   "https://guidetoiceland.is/ja/you-guide/what-to-do-with-5-days-in-iceland": {
     "ok": true,
     "fails": 0,
     "title": "アイスランド5日間モデルコース | Guide to Iceland",
     "site": "Guide to Iceland",
-    "checkedAt": "2026-11-03"
-  },
-  "https://www.tour.ne.jp/w_review/REK/model_plan/": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
     "checkedAt": "2026-11-03"
   },
   "https://www.kansai-airport.or.jp/flyfromkansai/destination/macao_202505/": {
@@ -868,18 +844,6 @@
     "fails": 0,
     "title": "ノルウェーの観光スポット15選！オスロやフィヨルドの見どころ、ベストシーズン、モデルコースを解説｜海外渡航に役立つメディア『グローバルコンパス』｜SMBC信託銀行プレスティア｜",
     "site": "SMBC信託銀行",
-    "checkedAt": "2026-11-03"
-  },
-  "https://www.tour.ne.jp/w_review/OSL/model_plan/": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
-    "checkedAt": "2026-11-03"
-  },
-  "https://www.tour.ne.jp/w_review/ROR/model_plan/": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
     "checkedAt": "2026-11-03"
   },
   "https://www.apollomaniacs.com/kaigai_2018_palau.htm": {
@@ -917,10 +881,53 @@
     "site": "NEWT（ニュート）",
     "checkedAt": "2026-11-03"
   },
-  "https://www.tour.ne.jp/w_review/STO/model_plan/": {
-    "fails": 1,
-    "ok": false,
-    "error": "HTTP 404",
+  "https://4travel.jp/os_qa_each-29336.html": {
+    "ok": true,
+    "fails": 0,
+    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光に関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
+    "site": "",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.travel.co.jp/guide/matome/369/": {
+    "ok": true,
+    "fails": 0,
+    "title": "デンマーク観光で外せないおすすめスポット17選 憧れの北欧へ！ | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-03"
+  },
+  "https://newt.net/dnk/mag-489378755": {
+    "ok": true,
+    "fails": 0,
+    "title": "デンマークで絶対行きたいおすすめ観光地10選！名所や穴場を都市別に紹介",
+    "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.veltra.com/jp/guide/?p=6371": {
+    "ok": true,
+    "fails": 0,
+    "title": "サントリーニ島観光日数計画とおすすめ情報！ | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-03"
+  },
+  "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
+    "ok": true,
+    "fails": 0,
+    "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
+    "site": "Guide to Iceland",
+    "checkedAt": "2026-11-03"
+  },
+  "https://4travel.jp/travelogue/11478063": {
+    "ok": true,
+    "fails": 0,
+    "title": "早春のベルゲンー北欧3ヵ国オスロ、ベルゲン、ストックホルム、ヘルシンキの旅②ー (ベルゲン) - 旅行のクチコミサイト フォートラベル",
+    "site": "旅行のクチコミサイト フォートラベル",
+    "checkedAt": "2026-11-03"
+  },
+  "https://www.veltra.com/jp/guide/?p=23819": {
+    "ok": true,
+    "fails": 0,
+    "title": "パラオ観光の魅力満載！おすすめスポットとアクティビティ | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
     "checkedAt": "2026-11-03"
   }
 }
