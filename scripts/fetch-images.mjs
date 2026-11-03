@@ -11,7 +11,7 @@ const UA = 'travel-portal/1.0 (https://github.com/mizyu912-coder/travel-portal)'
 const CATEGORIES = ['Featured_pictures_on_Wikimedia_Commons', 'Quality_images', 'Valued_images_sorted_by_promotion_date', ''];
 const BAD_CATEGORY = /AI-generated|AI generated|Computer-generated|CGI|Midjourney|Stable Diffusion|DALL|Renderings/i;
 // 風景写真でないもの（絵画・古い絵はがき・軍用機など）も使わない
-const NOT_SCENERY = /painting|postcard|\bart\b|aircraft|military|navy|Hawkeye|macaque|monkey|\bbirds?\b|insect/i;
+const NOT_SCENERY = /painting|postcard|\bart\b|aircraft|military|navy|Hawkeye|macaque|monkey|eclipse|\bbirds?\b|insect/i;
 const OK_LICENSE = /^(CC0|Public domain|PD|CC BY(-SA)? \d(\.\d)?)/i;
 const PER_COUNTRY = 3;
 const only = process.argv.slice(2);
