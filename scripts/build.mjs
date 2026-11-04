@@ -68,7 +68,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 <link rel="stylesheet" href="${r}style.css?v=${V.css}"></head>
 <body class="${cls}"><header class="site"><div class="bar">
 <a href="${r}index.html" class="logo">${LOGO}<span class="logo-text"><span class="logo-en">${esc(cfg.siteNameEn)}</span><span class="logo-ja">${esc(cfg.siteName)}</span></span></a>
-<nav class="gnav"><a href="${r}index.html#map-section">エリアから探す</a><a href="${r}index.html#lineup">国・地域の一覧</a></nav>
+<nav class="gnav"><a href="${r}index.html#map-section">エリアから探す</a><a href="${r}index.html#lineup">国・地域の一覧</a><a href="${r}features/index.html">特集</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="bar">
@@ -177,6 +177,11 @@ const ranking = `<section class="ranking" id="ranking">
   <p class="note">各ページで紹介している旅行vlog（上位${cfg.videos.initial}本）の合計再生数の順です。毎週の動画の更新に合わせて変わります。</p>
 </section>`;
 
+// 特集（data/features.json）：トップページの入口と特集一覧で使うカード
+const featuresTop = readJSON('data/features.json', []);
+const featureImg = f => firstImage(countries.find(c => c.id === f.image) ?? cities.find(c => c.id === f.image) ?? {});
+const featureList = prefix => `<div class="cards feature-cards">${featuresTop.map(f => { const img = featureImg(f); return `<a class="card card-feature" href="${prefix}${f.id}.html"><span class="card-img">${img ? `<img src="${esc(img.small ?? img.thumb)}" alt="" loading="lazy" width="500" height="333">` : ''}</span><span class="card-en">${esc(f.en)}</span><span class="card-name">${esc(f.title)}</span></a>`; }).join('')}</div>`;
+
 fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
@@ -205,6 +210,7 @@ ${ranking}
   <div class="sec-head"><span class="sec-en">LINEUP</span><h2>上映中の国・地域</h2></div>
   ${lineup}
 </section>
+${featuresTop.length ? `<section class="features" id="features"><div class="sec-head"><span class="sec-en">SPECIAL</span><h2>特集</h2></div>${featureList('features/')}</section>` : ''}
 <section class="howto">
   <div class="sec-head"><span class="sec-en">HOW TO ENJOY</span><h2>トリップシアターの楽しみ方</h2></div>
   <ol class="steps3">
@@ -475,6 +481,55 @@ for (const ct of cities) {
     jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`], [ct.name, `cities/${ct.id}.html`]]),
   }));
 }
+// ---------- 特集ページ（data/features.json。動画の更新に合わせて中身も毎日変わる） ----------
+const features = featuresTop;
+const placeById = id => countries.find(c => c.id === id) ?? cities.find(c => c.id === id);
+const hrefOf = (c, prefix = '../') => `${prefix}${c.country ? 'cities' : 'countries'}/${c.id}.html`;
+const isPubPlace = c => c && (c.country ? cityPublished(c) : isPublished(c));
+const isDomestic = c => !!(c.domestic || countryOf(c)?.domestic);
+fs.mkdirSync(p('dist/features'), { recursive: true });
+for (const f of features) {
+  let body = '';
+  if (f.kind === 'videos') {
+    const re = new RegExp(f.match);
+    const all = [...pub, ...pubCities];
+    const seenV = new Set();
+    const groups = f.groups.map(g => {
+      const list = all.filter(c => g.scope === 'domestic' ? isDomestic(c) : !isDomestic(c)).flatMap(c =>
+        realVideos(c).filter(v => re.test(v.title)).slice(0, f.perPlace ?? 2).map(v => ({ v, c })))
+        .filter(({ v }) => !seenV.has(v.id) && seenV.add(v.id))
+        .sort((a, b) => b.v.views - a.v.views).slice(0, f.max ?? 24);
+      return { ...g, list };
+    }).filter(g => g.list.length);
+    body = groups.map(g => `<section><h2><span class="sec-en">${g.scope === 'domestic' ? 'JAPAN' : 'OVERSEAS'}</span>${esc(g.label)}</h2><p class="watch-count" hidden></p><div class="videos">${g.list.map(({ v, c }, i) =>
+      videoCard(v, i).replace('<p class="meta">', `<p class="meta place-tag"><a href="${hrefOf(c)}">${esc(c.name)}${c.country ? `（${esc(countryOf(c)?.name)}）` : ''}のページへ</a></p><p class="meta">`)).join('')}</div>${g.list.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る</button></p>` : ''}</section>`).join('');
+  } else {
+    const items = f.items.map(it => ({ ...it, c: placeById(it.id) })).filter(it => isPubPlace(it.c));
+    body = `<ol class="feature-places">${items.map(({ c, reason }, n) => {
+      const vids = realVideos(c).slice(0, 3);
+      const im = firstImage(c);
+      return `<li class="feature-place"><div class="fp-head">${im ? `<img src="${esc(im.small ?? im.thumb)}" alt="${esc(c.name)}の風景" loading="lazy" width="500" height="333">` : ''}<div><p class="fp-no">${String(n + 1).padStart(2, '0')}</p><h2>${esc(c.name)}${c.country ? `<small>${esc(countryOf(c)?.name)}</small>` : ''}</h2><p>${esc(reason)}</p><a class="fp-link" href="${hrefOf(c)}">${esc(c.name)}の旅行vlogをもっと見る →</a></div></div>
+<div class="videos">${vids.map(videoCard).join('')}</div></li>`;
+    }).join('')}</ol>`;
+  }
+  const img = featureImg(f);
+  fs.writeFileSync(p(`dist/features/${f.id}.html`), layout({
+    title: `${f.title}｜旅行vlogで予習｜${cfg.siteName}`,
+    desc: f.lead.slice(0, 110) + '…', depth: 1, cls: 'page-country page-feature', path: `features/${f.id}.html`, image: img?.thumb,
+    jsonld: crumbs([[cfg.siteName, 'index.html'], ['特集', 'features/index.html'], [f.title, `features/${f.id}.html`]]),
+    body: `<article class="country"><div class="country-head"><p class="crumb"><a href="index.html">特集</a></p><p class="eyebrow">SPECIAL ・ ${esc(f.en)}</p><h1>${esc(f.title)}</h1></div>
+<p class="feature-lead">${esc(f.lead)}</p>
+${body}
+<p class="small">動画は、各国・都市のページで紹介している旅行vlogから自動で選んでいます。毎日の更新に合わせて入れ替わります。</p>
+</article>
+${PAGE_SCRIPT}`,
+  }));
+}
+if (features.length) fs.writeFileSync(p('dist/features/index.html'), layout({
+  title: `特集｜${cfg.siteName}`, desc: '一人旅、冬の旅行、週末で行ける海外など、テーマ別に旅行vlogを集めた特集です。', depth: 1, cls: 'page-doc', path: 'features/index.html',
+  body: `<article class="country"><div class="country-head"><p class="eyebrow">SPECIAL</p><h1>特集</h1></div><p class="feature-lead">テーマごとに、旅行vlogと行き先を集めました。</p>${featureList('')}</article>`,
+}));
+
 // ---------- サイトについて・プライバシーポリシー・お問い合わせ ----------
 const doc = (path, title, en, html, desc) => fs.writeFileSync(p(`dist/${path}`), layout({
   title: `${title}｜${cfg.siteName}`, desc, path, cls: 'page-doc',
