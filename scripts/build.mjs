@@ -205,12 +205,12 @@ ${reel}
   ${chips}
   <p class="note">色がついている国・地域が掲載中です。国や都市を選ぶと、別のタブでページが開きます。海外は、外務省の危険情報で主な観光地がレベル0の国・地域だけを掲載しています。</p>
 </section>
+${featuresTop.length ? `<section class="features" id="features"><div class="sec-head"><span class="sec-en">SPECIAL</span><h2>特集</h2></div>${featureList('features/')}</section>` : ''}
 ${ranking}
 <section class="lineup" id="lineup">
   <div class="sec-head"><span class="sec-en">LINEUP</span><h2>上映中の国・地域</h2></div>
   ${lineup}
 </section>
-${featuresTop.length ? `<section class="features" id="features"><div class="sec-head"><span class="sec-en">SPECIAL</span><h2>特集</h2></div>${featureList('features/')}</section>` : ''}
 <section class="howto">
   <div class="sec-head"><span class="sec-en">HOW TO ENJOY</span><h2>トリップシアターの楽しみ方</h2></div>
   <ol class="steps3">
