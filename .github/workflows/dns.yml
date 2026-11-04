@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          for u in http://triptheater.com/ https://triptheater.com/ https://www.triptheater.com/ https://mizyu912-coder.github.io/travel-portal/ https://triptheater.com/countries/korea.html https://triptheater.com/sitemap.xml; do echo "R $u $(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url} ssl=%{ssl_verify_result}' $u)"; done
-          echo "T $(curl -s https://triptheater.com/ | grep -o '<title>[^<]*' )"
+          echo "A $(curl -s https://triptheater.com/ads.txt)"
+          echo "M $(curl -s https://triptheater.com/ | grep -o 'google-adsense-account[^>]*')"
