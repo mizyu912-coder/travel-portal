@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -s -H 'accept: application/dns-json' "https://cloudflare-dns.com/dns-query?name=triptheater.com&type=A" | jq -c .
-          curl -s "https://rdap.verisign.com/com/v1/domain/triptheater.com" | jq -c '{ns:[.nameservers[]?.ldhName], st:.status, ev:[.events[]?|{(.eventAction):.eventDate}], reg:[.entities[]?|select(.roles|index("registrar"))|.vcardArray[1][1][3]]}'
+          curl -s "https://rdap.verisign.com/com/v1/domain/triptheater.com" | jq -c '{ns:[.nameservers[]?.ldhName]}'
+          for q in "triptheater.com&type=A" "www.triptheater.com&type=CNAME"; do curl -s -H 'accept: application/dns-json' "https://cloudflare-dns.com/dns-query?name=$q" | jq -c '{q:.Question[0].name,st:.Status,a:[.Answer[]?.data],c:.Comment}'; done
