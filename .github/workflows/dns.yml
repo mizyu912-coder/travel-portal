@@ -1,12 +1,9 @@
 name: dns-check
 on: push
-permissions:
-  pages: write
 jobs:
   dns:
     runs-on: ubuntu-latest
     steps:
-      - env: { GH_TOKEN: '${{ github.token }}' }
-        run: |
-          gh api -X PUT repos/${{ github.repository }}/pages -f cname=triptheater.com && echo SETOK || echo SETFAIL
-          gh api repos/${{ github.repository }}/pages | jq -c '{cname,https_enforced,status,html_url}'
+      - run: |
+          for u in http://triptheater.com/ https://triptheater.com/ https://www.triptheater.com/ https://mizyu912-coder.github.io/travel-portal/ https://triptheater.com/countries/korea.html https://triptheater.com/sitemap.xml; do echo "R $u $(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url} ssl=%{ssl_verify_result}' $u)"; done
+          echo "T $(curl -s https://triptheater.com/ | grep -o '<title>[^<]*' )"
