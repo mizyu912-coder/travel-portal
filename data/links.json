@@ -910,11 +910,12 @@
     "checkedAt": "2026-11-04"
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
-    "checkedAt": "2026-11-04"
+    "checkedAt": "2026-11-04",
+    "error": "HTTP 406"
   },
   "https://4travel.jp/travelogue/11478063": {
     "ok": true,
