@@ -4,6 +4,4 @@ jobs:
   dns:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "A $(curl -s https://triptheater.com/ads.txt)"
-          echo "M $(curl -s https://triptheater.com/ | grep -o 'google-adsense-account[^>]*')"
+      - run: echo "G $(curl -s https://triptheater.com/ | grep -o 'gtag/js?id=[A-Z0-9-]*')"
