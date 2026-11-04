@@ -270,7 +270,7 @@ table.info th{width:10em;white-space:nowrap;color:var(--muted);font-weight:500;f
 
 /* ---- フッターのリンクと広告表記 ---- */
 .foot-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0}
-.foot-nav a{color:var(--screen-fg);text-decoration:none}.foot-nav a:hover{color:var(--gold)}
+.foot-nav a{color:var(--screen-fg);text-decoration:none}.foot-sns{display:inline-flex;align-items:center;gap:5px}.foot-nav a:hover{color:var(--gold)}
 .ad-note{margin:8px 0 0}
 
 /* ---- サイトについて・規約ページ ---- */

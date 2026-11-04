@@ -21,5 +21,8 @@
   "operator": "トリップシアター編集部",
   "policyDate": "2026年11月2日",
   "adsenseClient": "ca-pub-6924362533316751",
-  "gaId": "G-FFR53FZWK1"
+  "gaId": "G-FFR53FZWK1",
+  "sns": {
+    "x": "https://x.com/TRIPTHEATER"
+  }
 }

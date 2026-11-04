@@ -75,7 +75,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 <div class="foot-brand">${LOGO}<span><strong>${esc(cfg.siteNameEn)}</strong><br>${esc(cfg.siteName)}｜${esc(cfg.tagline)}</span></div>
 <p>安全情報の出典：<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>（最終確認 ${esc(safety.checkedAt)}）。動画とブログの著作権は各制作者に、写真の著作権は各撮影者に帰属します。掲載の停止をご希望の方はお問い合わせください。</p>
 <p class="ad-note">当サイトは、アフィリエイト広告などの広告を掲載することがあります。</p>
-<nav class="foot-nav"><a href="${r}about.html">サイトについて</a><a href="${r}privacy.html">プライバシーポリシー</a><a href="${r}privacy.html#ads">広告について</a><a href="${r}contact.html">お問い合わせ</a></nav>
+<nav class="foot-nav"><a href="${r}about.html">サイトについて</a><a href="${r}privacy.html">プライバシーポリシー</a><a href="${r}privacy.html#ads">広告について</a><a href="${r}contact.html">お問い合わせ</a>${cfg.sns?.x ? `<a href="${esc(cfg.sns.x)}" target="_blank" rel="noopener me" class="foot-sns"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg>X（旧Twitter）</a>` : ''}</nav>
 <p class="copy">© ${new Date().getFullYear()} ${esc(cfg.siteNameEn)}</p>
 </div></footer>
 </body></html>`;
@@ -181,7 +181,7 @@ fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
   cls: 'home', path: 'index.html',
-  jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, alternateName: cfg.siteNameEn, url: `${BASE}/`, description: cfg.siteDescription, inLanguage: 'ja' },
+  jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, alternateName: cfg.siteNameEn, url: `${BASE}/`, description: cfg.siteDescription, inLanguage: 'ja', ...(cfg.sns ? { sameAs: Object.values(cfg.sns) } : {}) },
   body: `<section class="hero"><div class="hero-inner">
   <div class="hero-text">
   <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS ・ ${pubCities.length} CITIES</p>
