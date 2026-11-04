@@ -4,4 +4,7 @@ jobs:
   dns:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "G $(curl -s https://triptheater.com/ | grep -o 'gtag/js?id=[A-Z0-9-]*')"
+      - run: |
+          for p in features/index.html features/solo.html features/winter.html features/nearby.html; do echo "$p $(curl -s -o /tmp/x -w '%{http_code}' https://triptheater.com/$p) $(grep -o '<title>[^<]*' /tmp/x)"; done
+          echo "TOP $(curl -s https://triptheater.com/ | grep -c 'card-feature')"
+          echo "AG $(curl -s https://triptheater.com/countries/greece.html | grep -o 'a8mat=4BGD79+[A-Z0-9+]*' | sort -u | tr '\n' ' ')"
