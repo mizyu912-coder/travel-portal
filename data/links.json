@@ -700,12 +700,11 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.nta.co.jp/jr/shinkansen/hokuriku/model.htm": {
-    "ok": false,
-    "fails": 1,
+    "ok": true,
+    "fails": 0,
     "title": "北陸新幹線 モデルコース - 日本旅行",
     "site": "日本旅行の国内旅行・海外旅行",
-    "checkedAt": "2026-11-04",
-    "error": "The operation was aborted due to timeout"
+    "checkedAt": "2026-11-04"
   },
   "https://www.nap-camp.com/mag/41362": {
     "ok": true,
@@ -750,12 +749,11 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.nta.co.jp/kaigai/europe/portugal/": {
-    "ok": false,
-    "fails": 1,
+    "ok": true,
+    "fails": 0,
     "title": "ポルトガル旅行・ポルトガルツアーを探す（ヨーロッパ）【日本旅行】",
     "site": "",
-    "checkedAt": "2026-11-04",
-    "error": "The operation was aborted due to timeout"
+    "checkedAt": "2026-11-04"
   },
   "https://www.nap-camp.com/mag/44764": {
     "ok": true,
@@ -913,7 +911,7 @@
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
     "ok": false,
-    "fails": 1,
+    "fails": 2,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
     "checkedAt": "2026-11-04",
@@ -1284,7 +1282,7 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.kankou-gifu.jp/model/detail_74.html": {
-    "fails": 1,
+    "fails": 2,
     "ok": false,
     "error": "HTTP 503",
     "checkedAt": "2026-11-04"
