@@ -55,7 +55,7 @@ const layout = ({ title, desc, body, depth = 0, cls = '', path, image, jsonld, n
   if (path && !noindex) sitemap.push(path);
   const ogImage = image || `${BASE}/og.png`;
   return `<!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}">` : ''}
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}">
 ${noindex ? '<meta name="robots" content="noindex">' : ''}${path && BASE ? `<link rel="canonical" href="${esc(abs(path))}">` : ''}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${path === 'index.html' ? 'website' : 'article'}">
@@ -529,6 +529,8 @@ if (BASE) {
 ${sitemap.map(path => `  <url><loc>${esc(abs(path))}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n')}
 </urlset>
 `);
+  // Google AdSense の販売者情報（ads.txt）
+  if (cfg.adsenseClient) fs.writeFileSync(p('dist/ads.txt'), `google.com, ${cfg.adsenseClient.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
   fs.writeFileSync(p('dist/robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
 }
 console.log(`dist/ を生成しました（国・地域 ${pub.length} / ${countries.length} 件、都市 ${pubCities.length} / ${cities.length} 件${DEMO ? '、サンプル表示あり' : ''}）`);
