@@ -665,12 +665,11 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.nta.co.jp/jrodekakenet/1trip/hiroshima_twodays.htm": {
-    "ok": false,
-    "fails": 1,
+    "ok": true,
+    "fails": 0,
     "title": "tabiwaトラベル 大阪からのプラス1TRIP広島 1泊2日コース - tabiwaトラベル",
     "site": "tabiwaトラベル 大阪からのプラス1TRIP広島 1泊2日コース - tabiwaトラベル",
-    "checkedAt": "2026-11-04",
-    "error": "The operation was aborted due to timeout"
+    "checkedAt": "2026-11-04"
   },
   "https://www.veltra.com/jp/yokka/article/domestic-okinawa-ishigaki-13899/": {
     "ok": true,
@@ -701,11 +700,12 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.nta.co.jp/jr/shinkansen/hokuriku/model.htm": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "北陸新幹線 モデルコース - 日本旅行",
     "site": "日本旅行の国内旅行・海外旅行",
-    "checkedAt": "2026-11-04"
+    "checkedAt": "2026-11-04",
+    "error": "The operation was aborted due to timeout"
   },
   "https://www.nap-camp.com/mag/41362": {
     "ok": true,
@@ -750,11 +750,12 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.nta.co.jp/kaigai/europe/portugal/": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "ポルトガル旅行・ポルトガルツアーを探す（ヨーロッパ）【日本旅行】",
     "site": "",
-    "checkedAt": "2026-11-04"
+    "checkedAt": "2026-11-04",
+    "error": "The operation was aborted due to timeout"
   },
   "https://www.nap-camp.com/mag/44764": {
     "ok": true,
@@ -911,11 +912,12 @@
     "checkedAt": "2026-11-04"
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
-    "checkedAt": "2026-11-04"
+    "checkedAt": "2026-11-04",
+    "error": "HTTP 406"
   },
   "https://4travel.jp/travelogue/11478063": {
     "ok": true,
@@ -929,6 +931,397 @@
     "fails": 0,
     "title": "パラオ観光の魅力満載！おすすめスポットとアクティビティ | VELTRA旅行ガイド",
     "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/yokka/article/international-belgium-68071/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ベルギー1日観光の完璧なモデルコース｜ブリュッセルで歴史と文化を満喫 | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/BRU/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブリュッセル(ベルギー)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/SAI/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "シェムリアップ(カンボジア)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/SAI/model_plan/257/": {
+    "ok": true,
+    "fails": 0,
+    "title": "朝からめぐるアンコール遺跡、午後はホテルを満喫プラン - シェムリアップ(カンボジア)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.smbctb.co.jp/globalcompass/travel/chiangmai-sightseeing/": {
+    "ok": true,
+    "fails": 0,
+    "title": "チェンマイのおすすめ観光地10選を解説！日数別のモデルコースや定番グルメも｜海外渡航に役立つメディア『グローバルコンパス』｜SMBC信託銀行プレスティア｜",
+    "site": "SMBC信託銀行",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.asoview.com/note/7866/": {
+    "ok": true,
+    "fails": 0,
+    "title": "【2026年最新】チェンマイ観光おすすめ13選！2泊3日王道モデルコースと失敗しない回り方",
+    "site": "アソビュー！",
+    "checkedAt": "2026-11-04"
+  },
+  "https://newt.net/mag/tags/8eh7i8x57sas": {
+    "ok": true,
+    "fails": 0,
+    "title": "エストニア 観光の記事一覧",
+    "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.skygate.co.jp/guide/6702/": {
+    "ok": true,
+    "fails": 0,
+    "title": "フィジーの観光スポット10選と2泊5日のモデルコース | エアトリ",
+    "site": "エアトリ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.mapple.net/global/article/126723/": {
+    "ok": true,
+    "fails": 0,
+    "title": "フィレンツェの観光モデルコースで魅力を満喫！パーフェクト1DAYプラン - まっぷるウェブ",
+    "site": "まっぷるウェブ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/12250/": {
+    "ok": true,
+    "fails": 0,
+    "title": "フィレンツェを効率よく巡る2泊3日のモデルコース！穴場や買い物スポットも紹介 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/FLR/model_plan/193/": {
+    "ok": true,
+    "fails": 0,
+    "title": "フィレンツェとピサ＋ミシュラン3つ星レストランでのディナー - フィレンツェ(イタリア)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.mapple.net/global/article/118000/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ハノイのおすすめ観光モデルコース！3泊5日でハノイを満喫しよう！ - まっぷるウェブ",
+    "site": "まっぷるウェブ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.arukikata.co.jp/webmagazine/393726/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ハノイ2泊4日モデルコース！観光・グルメ・ショッピングを効率よく巡る",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/HAN/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ハノイ(ベトナム)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.travel.co.jp/guide/matome/1417/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ホーチミンで女子旅するなら！1泊2日のモデルコース 短い滞在でも効率よく | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/SGN/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ホーチミン(ベトナム)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/yokka/article/international-hawaii-67251/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ハワイ3泊5日のおすすめモデルプラン｜楽しみ方が詰まった旅行6選 | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.trifa.co/ja/column/preparation-tips-travel/hawaii-model-course": {
+    "ok": true,
+    "fails": 0,
+    "title": "ハワイ観光モデルコース｜日数別おすすめプランと効率的な回り方を紹介",
+    "site": "トリファ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/80969/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブダペスト観光モデルコース｜3日間で巡るおすすめスポットをご紹介 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://loudavymkrokem.cz/ja/budapest-weekend-itinerary/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブダペスト 観光1〜3日モデルコース",
+    "site": "Loudavým krokem",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.travel.co.jp/guide/article/35990/": {
+    "ok": true,
+    "fails": 0,
+    "title": "初めてのブダペスト王道観光１日モデルコース | ハンガリー | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/guide/?p=81205": {
+    "ok": true,
+    "fails": 0,
+    "title": "ダブリン観光モデルコース3日間！歴史と文化の街で過ごす贅沢な旅 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nap-camp.com/mag/41357": {
+    "ok": true,
+    "fails": 0,
+    "title": "鎌倉日帰りの観光モデルコースを紹介！定番スポットから穴場まで巡る完全ガイド | なっぷ",
+    "site": "なっぷ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://matcha-jp.com/jp/3698": {
+    "ok": true,
+    "fails": 0,
+    "title": "東京から鎌倉へ！日帰りで楽しむモデルコースも紹介 - 日本の観光メディアMATCHA",
+    "site": "MATCHA - 日本の観光・文化・ホテル情報を世界に届けるメディア",
+    "checkedAt": "2026-11-04"
+  },
+  "https://kanagawa-kankou.or.jp/courses/14": {
+    "ok": true,
+    "fails": 0,
+    "title": "鎌倉で古都巡り！定番日帰りモデルコース ｜モデルコース | 【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
+    "site": "【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nap-camp.com/mag/45112": {
+    "ok": true,
+    "fails": 0,
+    "title": "山梨1泊2日の観光モデルコースを紹介！定番スポットから穴場まで巡る完全ガイド | なっぷ",
+    "site": "なっぷ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.cocolocala.jp/plans/104": {
+    "ok": true,
+    "fails": 0,
+    "title": "湖！山！洞窟！自然を満喫する河口湖の旅｜山梨｜河口湖の旅行モデルコース｜こころから",
+    "site": "こころから",
+    "checkedAt": "2026-11-04"
+  },
+  "https://tabiiro.jp/plan/2225/": {
+    "ok": true,
+    "fails": 0,
+    "title": "1泊2日で河口湖周辺観光へ。富士山を望む宿・秀峰閣湖月に宿泊｜旅行プランは旅色で。",
+    "site": "トラベルウェブマガジン旅色",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/12403/": {
+    "ok": true,
+    "fails": 0,
+    "title": "マルタ観光のおすすめモデルコース！3日間で訪れたいスポットをご紹介 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://article.his-j.com/kaigai/europe/malta/post-15838/": {
+    "ok": true,
+    "fails": 0,
+    "title": "世界遺産の島、マルタ島で美しき地中海に出合う",
+    "site": "Trip it Easy - 観光・旅行情報サイト【HIS】",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.jtb.co.jp/kaigai/area/mongolia/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モンゴル旅行・モンゴルツアー｜海外ツアー【JTB】",
+    "site": "JTB",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nap-camp.com/mag/45918": {
+    "ok": true,
+    "fails": 0,
+    "title": "長崎市1泊2日の観光モデルコースを紹介！定番スポットから穴場まで巡る完全ガイド | なっぷ",
+    "site": "なっぷ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.cocolocala.jp/plans/69": {
+    "ok": true,
+    "fails": 0,
+    "title": "貿易・原爆・炭鉱、長崎の歴史を知る旅｜長崎の旅行モデルコース｜こころから",
+    "site": "こころから",
+    "checkedAt": "2026-11-04"
+  },
+  "https://matcha-jp.com/jp/24165": {
+    "ok": true,
+    "fails": 0,
+    "title": "長崎の観光モデルコース(1泊2日＆日帰り)！おすすめスポットを制覇しよう - 日本の観光メディアMATCHA",
+    "site": "MATCHA - 日本の観光・文化・ホテル情報を世界に届けるメディア",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/NOU/model_plan/305/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ニューカレドニアといえば海！珊瑚礁に囲まれた海を体感！！ - ニューカレドニアのおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/NOU/model_plan/304/": {
+    "ok": true,
+    "fails": 0,
+    "title": "カレドニアンの休日を体感！南太平洋のプチフランスで過ごす1日 - ニューカレドニアのおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nap-camp.com/mag/43345": {
+    "ok": true,
+    "fails": 0,
+    "title": "日光1泊2日の観光モデルコースを紹介！定番スポットから穴場まで巡る完全ガイド | なっぷ",
+    "site": "なっぷ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.cocolocala.jp/plans/116": {
+    "ok": true,
+    "fails": 0,
+    "title": "これぞ日光！東照宮など定番スポットを巡る旅｜栃木｜日光の旅行モデルコース｜こころから",
+    "site": "こころから",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.gltjp.com/ja/article/item/20948/": {
+    "fails": 0,
+    "ok": false,
+    "blocked": true,
+    "error": "HTTP 403",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/87374/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ワルシャワからアウシュヴィッツの行き方徹底ガイド｜列車,バス,クラクフ経由 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.skygate.co.jp/sa_city/oversea/sha_k545_fe": {
+    "ok": true,
+    "fails": 0,
+    "title": "上海旅行へ！ 2泊3日でショッピングもアミューズメントも満喫しよう｜エアトリ",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.trvlogue.com/ja/shanghai-3-day-itinerary-2": {
+    "fails": 0,
+    "ok": false,
+    "blocked": true,
+    "error": "HTTP 429",
+    "checkedAt": "2026-11-04"
+  },
+  "https://loudavymkrokem.cz/ja/bled-slovenia-guide/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブレッド湖 スロベニア観光15選",
+    "site": "Loudavým krokem",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.hankyu-travel.com/guide/slovenia/": {
+    "ok": true,
+    "fails": 0,
+    "title": "スロベニア観光におすすめの名所＆人気のスポットランキング｜阪急交通社",
+    "site": "阪急交通社",
+    "checkedAt": "2026-11-04"
+  },
+  "https://4travel.jp/travelogue/10941304": {
+    "ok": true,
+    "fails": 0,
+    "title": "スロベニア ブレッド湖＆リュブリャナ 9/14 (ブレッド湖周辺) - 旅行のクチコミサイト フォートラベル",
+    "site": "旅行のクチコミサイト フォートラベル",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/yokka/article/international-australia-12055/": {
+    "ok": true,
+    "fails": 0,
+    "title": "シドニー観光のためのモデルコース完全ガイド｜3日間で巡る絶景と文化 | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/SYD/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "シドニー(オーストラリア)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nta.co.jp/kaigai/beach/tahiti/": {
+    "ok": true,
+    "fails": 0,
+    "title": "タヒチ旅行・タヒチツアーを探す（ビーチ）【日本旅行】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nap-camp.com/mag/42822": {
+    "ok": true,
+    "fails": 0,
+    "title": "岐阜1泊2日の観光モデルコースを紹介！定番スポットから穴場まで巡る完全ガイド | なっぷ",
+    "site": "なっぷ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.cocolocala.jp/plans/245": {
+    "ok": true,
+    "fails": 0,
+    "title": "冬の奥飛騨・高山を満喫する、のんびり温泉旅｜岐阜｜高山・奥飛騨の旅行モデルコース｜こころから",
+    "site": "こころから",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.kankou-gifu.jp/model/detail_74.html": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 503",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/12868/": {
+    "ok": true,
+    "fails": 0,
+    "title": "バンクーバー観光の醍醐味！3日間のモデルコースとおすすめスポット5選 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.tour.ne.jp/w_review/YVR/model_plan/": {
+    "ok": true,
+    "fails": 0,
+    "title": "バンクーバー(カナダ)のおすすめモデルコース・プラン | 現地を知り尽くしたガイドによる口コミ情報【トラベルコ】",
+    "site": "",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.nap-camp.com/mag/41772": {
+    "ok": true,
+    "fails": 0,
+    "title": "横浜日帰りの観光モデルコースを紹介！定番スポットから穴場まで巡る完全ガイド | なっぷ",
+    "site": "なっぷ",
+    "checkedAt": "2026-11-04"
+  },
+  "https://media.jreast.co.jp/articles/2941": {
+    "ok": true,
+    "fails": 0,
+    "title": "横浜｜日帰り観光モデルコース 徒歩で巡る定番プラン",
+    "site": "JREメディア",
+    "checkedAt": "2026-11-04"
+  },
+  "https://www.gltjp.com/ja/article/item/20758/": {
+    "fails": 0,
+    "ok": false,
+    "blocked": true,
+    "error": "HTTP 403",
     "checkedAt": "2026-11-04"
   }
 }
