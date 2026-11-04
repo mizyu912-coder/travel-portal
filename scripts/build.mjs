@@ -55,7 +55,7 @@ const layout = ({ title, desc, body, depth = 0, cls = '', path, image, jsonld, n
   if (path && !noindex) sitemap.push(path);
   const ogImage = image || `${BASE}/og.png`;
   return `<!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}">` : ''}
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${esc(cfg.adsenseClient)}">` : ''}${cfg.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(cfg.gaId)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(cfg.gaId)}');</script>` : ''}
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}">
 ${noindex ? '<meta name="robots" content="noindex">' : ''}${path && BASE ? `<link rel="canonical" href="${esc(abs(path))}">` : ''}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${path === 'index.html' ? 'website' : 'article'}">
@@ -298,8 +298,11 @@ function paint() {
 }
 function mark(id, st) {
   if (watched[id] === 'done' && st === 'started') return;
+  const prev = watched[id];
   if (st) watched[id] = st; else delete watched[id];
   saveW(); paint();
+  // Google アナリティクスに「再生」「視聴完了」を送る（動画IDとページだけ。個人の情報は送らない）
+  if (window.gtag && st && st !== prev) gtag('event', st === 'done' ? 'video_complete' : 'video_start', { video_id: id, page_path: location.pathname });
 }
 document.querySelectorAll('.watch-toggle').forEach(t => t.addEventListener('click', () => {
   const id = t.closest('.video').dataset.vid;
