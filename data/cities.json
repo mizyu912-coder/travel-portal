@@ -538,5 +538,341 @@
       "season": "海は4〜10月。梅雨（5〜6月）と台風（夏〜秋）に注意",
       "highlights": "川平湾、竹富島、西表島への日帰り、星空、八重山そば"
     }
+  },
+  {
+    "id": "hanoi",
+    "name": "ハノイ",
+    "nameEn": "Hanoi",
+    "country": "vietnam",
+    "videoQueries": [
+      "ハノイ 旅行 vlog",
+      "ハノイ 観光"
+    ],
+    "imageQueries": [
+      "Hoàn Kiếm Lake",
+      "Hanoi Old Quarter",
+      "Temple of Literature, Hanoi",
+      "Ha Long Bay"
+    ],
+    "basic": {
+      "area": "ベトナム北部の首都",
+      "access": "東京から直行便で約6時間",
+      "stay": "2泊3日〜（ハロン湾を加えるなら3泊）",
+      "transport": "タクシー・配車アプリ。旧市街は歩いて回れる",
+      "season": "秋（10〜11月）と春（3〜4月）",
+      "highlights": "ホアンキエム湖、旧市街、文廟、ハロン湾（日帰り）"
+    }
+  },
+  {
+    "id": "hochiminh",
+    "name": "ホーチミン",
+    "nameEn": "Ho Chi Minh City",
+    "country": "vietnam",
+    "videoQueries": [
+      "ホーチミン 旅行 vlog",
+      "ホーチミン 観光"
+    ],
+    "imageQueries": [
+      "Saigon Notre-Dame Basilica",
+      "Ben Thanh Market",
+      "Saigon Central Post Office",
+      "Ho Chi Minh City"
+    ],
+    "basic": {
+      "area": "ベトナム南部の最大都市",
+      "access": "東京から直行便で約6時間30分",
+      "stay": "2泊3日〜",
+      "transport": "タクシー・配車アプリ、地下鉄",
+      "season": "乾季の12〜4月",
+      "highlights": "サイゴン大教会、中央郵便局、ベンタイン市場、メコン川クルーズ"
+    }
+  },
+  {
+    "id": "chiangmai",
+    "name": "チェンマイ",
+    "nameEn": "Chiang Mai",
+    "country": "thailand",
+    "videoQueries": [
+      "チェンマイ 旅行 vlog",
+      "チェンマイ 観光"
+    ],
+    "imageQueries": [
+      "Wat Phra That Doi Suthep",
+      "Wat Chedi Luang",
+      "Chiang Mai Old City",
+      "Wat Phra Singh"
+    ],
+    "basic": {
+      "area": "タイ北部の古都",
+      "access": "バンコクから飛行機で約1時間10分",
+      "stay": "2泊3日〜",
+      "transport": "ソンテウ（乗合トラック）、配車アプリ",
+      "season": "乾季の11〜2月",
+      "highlights": "ドイステープ寺院、旧市街の寺院、ナイトバザール、カフェ巡り"
+    }
+  },
+  {
+    "id": "shanghai",
+    "name": "上海",
+    "nameEn": "Shanghai",
+    "country": "china",
+    "videoQueries": [
+      "上海 旅行 vlog",
+      "上海 観光"
+    ],
+    "imageQueries": [
+      "The Bund",
+      "Yu Garden",
+      "Oriental Pearl Tower",
+      "Shanghai skyline"
+    ],
+    "basic": {
+      "area": "中国東部の最大都市",
+      "access": "東京から直行便で約3時間",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄が便利",
+      "season": "春（4〜5月）と秋（10〜11月）",
+      "highlights": "外灘（バンド）の夜景、豫園、新天地、上海タワー"
+    }
+  },
+  {
+    "id": "sydney",
+    "name": "シドニー",
+    "nameEn": "Sydney",
+    "country": "australia",
+    "videoQueries": [
+      "シドニー 旅行 vlog",
+      "シドニー 観光"
+    ],
+    "imageQueries": [
+      "Sydney Opera House",
+      "Sydney Harbour Bridge",
+      "Bondi Beach",
+      "Blue Mountains"
+    ],
+    "basic": {
+      "area": "オーストラリア南東部の最大都市",
+      "access": "東京から直行便で約9時間30分",
+      "stay": "3泊4日〜",
+      "transport": "電車・バス・フェリー（Opalカードかタッチ決済）",
+      "season": "春〜秋（10〜4月）",
+      "highlights": "オペラハウス、ハーバーブリッジ、ボンダイビーチ、ブルーマウンテンズ"
+    }
+  },
+  {
+    "id": "honolulu",
+    "name": "ホノルル",
+    "nameEn": "Honolulu",
+    "country": "hawaii",
+    "videoQueries": [
+      "ホノルル 旅行 vlog",
+      "ワイキキ 旅行"
+    ],
+    "imageQueries": [
+      "Waikiki",
+      "Diamond Head",
+      "Ala Moana",
+      "Hanauma Bay"
+    ],
+    "basic": {
+      "area": "オアフ島（ハワイ州の州都）",
+      "access": "東京から直行便で約7時間",
+      "stay": "3泊5日〜",
+      "transport": "トロリー、路線バス（ザ・バス）、配車アプリ",
+      "season": "通年（乾季は4〜10月）",
+      "highlights": "ワイキキビーチ、ダイヤモンドヘッド、アラモアナ、ハナウマ湾"
+    }
+  },
+  {
+    "id": "vancouver",
+    "name": "バンクーバー",
+    "nameEn": "Vancouver",
+    "country": "canada",
+    "videoQueries": [
+      "バンクーバー 旅行 vlog",
+      "バンクーバー 観光"
+    ],
+    "imageQueries": [
+      "Stanley Park",
+      "Gastown",
+      "Granville Island",
+      "Vancouver skyline"
+    ],
+    "basic": {
+      "area": "カナダ西部（ブリティッシュ・コロンビア州）",
+      "access": "東京から直行便で約9時間",
+      "stay": "3泊4日〜",
+      "transport": "スカイトレイン・バス・シーバス",
+      "season": "夏（6〜9月）。冬はスキーも",
+      "highlights": "スタンレーパーク、ギャスタウン、グランビルアイランド、ウィスラー（日帰り）"
+    }
+  },
+  {
+    "id": "florence",
+    "name": "フィレンツェ",
+    "nameEn": "Florence",
+    "country": "italy",
+    "videoQueries": [
+      "フィレンツェ 旅行 vlog",
+      "フィレンツェ 観光"
+    ],
+    "imageQueries": [
+      "Florence Cathedral",
+      "Ponte Vecchio",
+      "Piazzale Michelangelo",
+      "Uffizi Gallery"
+    ],
+    "basic": {
+      "area": "イタリア中部（トスカーナ州）",
+      "access": "ローマから高速鉄道で約1時間30分",
+      "stay": "2泊3日〜",
+      "transport": "中心部は歩いて回れる",
+      "season": "春（4〜6月）と秋（9〜10月）",
+      "highlights": "ドゥオーモ、ウフィツィ美術館、ヴェッキオ橋、ミケランジェロ広場"
+    }
+  },
+  {
+    "id": "yokohama",
+    "name": "横浜",
+    "nameEn": "Yokohama",
+    "country": "japan",
+    "videoQueries": [
+      "横浜 観光 vlog",
+      "横浜 観光"
+    ],
+    "imageQueries": [
+      "Minato Mirai 21",
+      "Yokohama Chinatown",
+      "Yokohama Red Brick Warehouse",
+      "Sankei-en"
+    ],
+    "basic": {
+      "area": "関東地方（神奈川県）の港町",
+      "access": "東京から電車で約30分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "電車、みなとみらい線、観光バス",
+      "season": "通年",
+      "highlights": "みなとみらい、中華街、赤レンガ倉庫、山下公園、三溪園"
+    }
+  },
+  {
+    "id": "kamakura",
+    "name": "鎌倉",
+    "nameEn": "Kamakura",
+    "country": "japan",
+    "videoQueries": [
+      "鎌倉 観光 vlog",
+      "鎌倉 日帰り"
+    ],
+    "imageQueries": [
+      "Kōtoku-in",
+      "Tsurugaoka Hachimangū",
+      "Hase-dera (Kamakura)",
+      "Enoshima"
+    ],
+    "basic": {
+      "area": "関東地方（神奈川県）の古都",
+      "access": "東京から電車で約1時間",
+      "stay": "日帰り〜1泊2日",
+      "transport": "江ノ電と路線バス。徒歩でも回れる",
+      "season": "通年。紫陽花の6月と紅葉の秋が人気",
+      "highlights": "鎌倉大仏、鶴岡八幡宮、長谷寺、小町通り、江ノ島"
+    }
+  },
+  {
+    "id": "nikko",
+    "name": "日光",
+    "nameEn": "Nikko",
+    "country": "japan",
+    "videoQueries": [
+      "日光 観光 vlog",
+      "日光 旅行"
+    ],
+    "imageQueries": [
+      "Nikkō Tōshō-gū",
+      "Shinkyō",
+      "Kegon Falls",
+      "Lake Chūzenji"
+    ],
+    "basic": {
+      "area": "関東地方（栃木県）",
+      "access": "東京（浅草）から特急で約2時間",
+      "stay": "日帰り〜1泊2日",
+      "transport": "路線バス（周遊パスが便利）",
+      "season": "春〜秋。10月の紅葉が特に人気",
+      "highlights": "日光東照宮、神橋、華厳の滝、中禅寺湖、鬼怒川温泉"
+    }
+  },
+  {
+    "id": "kawaguchiko",
+    "name": "富士山・河口湖",
+    "nameEn": "Mount Fuji & Lake Kawaguchi",
+    "country": "japan",
+    "videoQueries": [
+      "河口湖 旅行 vlog",
+      "富士山 観光 河口湖"
+    ],
+    "imageQueries": [
+      "Lake Kawaguchi",
+      "Chureito Pagoda",
+      "Mount Fuji",
+      "Oshino Hakkai"
+    ],
+    "basic": {
+      "area": "山梨県（富士五湖）",
+      "access": "東京（新宿）から高速バスか特急で約2時間",
+      "stay": "日帰り〜1泊2日",
+      "transport": "周遊バス、レンタサイクル",
+      "season": "通年。富士山がよく見えるのは空気の澄んだ冬",
+      "highlights": "河口湖、新倉山浅間公園、忍野八海、富士山五合目"
+    }
+  },
+  {
+    "id": "takayama",
+    "name": "高山",
+    "nameEn": "Takayama",
+    "country": "japan",
+    "videoQueries": [
+      "高山 観光 vlog",
+      "飛騨高山 旅行"
+    ],
+    "imageQueries": [
+      "Sanmachi Suji",
+      "Takayama Jinya",
+      "Shirakawa-gō",
+      "Miyagawa Morning Market"
+    ],
+    "basic": {
+      "area": "中部地方（岐阜県）の山あいの城下町",
+      "access": "名古屋から特急で約2時間30分",
+      "stay": "1泊2日〜（白川郷と組み合わせるのが定番）",
+      "transport": "中心部は歩いて回れる。白川郷へはバス",
+      "season": "通年。春と秋の高山祭が有名",
+      "highlights": "古い町並み、高山陣屋、朝市、飛騨牛、白川郷"
+    }
+  },
+  {
+    "id": "nagasaki",
+    "name": "長崎",
+    "nameEn": "Nagasaki",
+    "country": "japan",
+    "videoQueries": [
+      "長崎 観光 vlog",
+      "長崎 旅行"
+    ],
+    "imageQueries": [
+      "Glover Garden",
+      "Ōura Church",
+      "Meganebashi",
+      "Gunkanjima"
+    ],
+    "basic": {
+      "area": "九州地方（長崎県）の港町",
+      "access": "東京から飛行機で約2時間。博多から新幹線と特急で約1時間20分",
+      "stay": "1泊2日〜",
+      "transport": "路面電車が便利",
+      "season": "通年。冬のランタンフェスティバルも人気",
+      "highlights": "グラバー園、大浦天主堂、眼鏡橋、稲佐山の夜景、軍艦島ツアー"
+    }
   }
 ]

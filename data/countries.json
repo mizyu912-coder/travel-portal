@@ -1475,5 +1475,512 @@
       "A-Ma Temple",
       "Macau"
     ]
+  },
+  {
+    "id": "belgium",
+    "name": "ベルギー",
+    "nameEn": "Belgium",
+    "region": "europe",
+    "flag": "be",
+    "map": {
+      "isoNumeric": "056"
+    },
+    "safety": {
+      "mofaNames": [
+        "ベルギー"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ブリュッセル",
+        "ブルージュ"
+      ]
+    },
+    "videoQueries": [
+      "ベルギー旅行 vlog",
+      "ブリュッセル 旅行",
+      "ブルージュ 旅行"
+    ],
+    "basic": {
+      "capital": "ブリュッセル",
+      "language": "オランダ語、フランス語、ドイツ語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "ヨーロッパや中東で乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜9月",
+      "plug": "C・Eタイプ／230V",
+      "tip": "料金にサービス料が含まれていることが多く、基本的に不要"
+    },
+    "imageQueries": [
+      "Grand-Place",
+      "Bruges",
+      "Atomium",
+      "Ghent"
+    ]
+  },
+  {
+    "id": "hungary",
+    "name": "ハンガリー",
+    "nameEn": "Hungary",
+    "region": "europe",
+    "flag": "hu",
+    "map": {
+      "isoNumeric": "348"
+    },
+    "safety": {
+      "mofaNames": [
+        "ハンガリー"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ブダペスト"
+      ]
+    },
+    "videoQueries": [
+      "ハンガリー旅行 vlog",
+      "ブダペスト 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "ブダペスト",
+      "language": "ハンガリー語",
+      "currency": "フォリント（HUF）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "ヨーロッパや中東で乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜9月（冬はクリスマスマーケット）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Hungarian Parliament Building",
+      "Fisherman's Bastion",
+      "Széchenyi Chain Bridge",
+      "Széchenyi thermal bath"
+    ]
+  },
+  {
+    "id": "poland",
+    "name": "ポーランド",
+    "nameEn": "Poland",
+    "region": "europe",
+    "flag": "pl",
+    "map": {
+      "isoNumeric": "616"
+    },
+    "safety": {
+      "mofaNames": [
+        "ポーランド"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ワルシャワ",
+        "クラクフ"
+      ]
+    },
+    "videoQueries": [
+      "ポーランド旅行 vlog",
+      "クラクフ 旅行",
+      "ワルシャワ 旅行"
+    ],
+    "basic": {
+      "capital": "ワルシャワ",
+      "language": "ポーランド語",
+      "currency": "ズウォティ（PLN）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "成田からワルシャワへの直行便あり（約14時間〜）。乗り継ぎ便も多い",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜9月",
+      "plug": "C・Eタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Kraków Main Square",
+      "Wawel Castle",
+      "Warsaw Old Town",
+      "Malbork Castle"
+    ]
+  },
+  {
+    "id": "ireland",
+    "name": "アイルランド",
+    "nameEn": "Ireland",
+    "region": "europe",
+    "flag": "ie",
+    "map": {
+      "isoNumeric": "372"
+    },
+    "safety": {
+      "mofaNames": [
+        "アイルランド"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ダブリン"
+      ]
+    },
+    "videoQueries": [
+      "アイルランド旅行 vlog",
+      "ダブリン 旅行"
+    ],
+    "basic": {
+      "capital": "ダブリン",
+      "language": "英語、アイルランド語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より9時間遅い（夏時間は8時間）",
+      "flight": "ヨーロッパや中東で乗り継いで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定には入っていないため、入国審査は別）",
+      "season": "6〜8月",
+      "plug": "Gタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Cliffs of Moher",
+      "Temple Bar, Dublin",
+      "Trinity College Dublin",
+      "Ring of Kerry"
+    ]
+  },
+  {
+    "id": "malta",
+    "name": "マルタ",
+    "nameEn": "Malta",
+    "region": "europe",
+    "flag": "mt",
+    "map": {
+      "isoNumeric": "470",
+      "marker": [
+        14.45,
+        35.9
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "マルタ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "バレッタ"
+      ]
+    },
+    "videoQueries": [
+      "マルタ旅行 vlog",
+      "マルタ島 観光"
+    ],
+    "basic": {
+      "capital": "バレッタ",
+      "language": "マルタ語、英語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "ヨーロッパや中東で乗り継いで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜10月",
+      "plug": "Gタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Valletta",
+      "Blue Grotto Malta",
+      "Mdina",
+      "Gozo"
+    ]
+  },
+  {
+    "id": "slovenia",
+    "name": "スロベニア",
+    "nameEn": "Slovenia",
+    "region": "europe",
+    "flag": "si",
+    "map": {
+      "isoNumeric": "705"
+    },
+    "safety": {
+      "mofaNames": [
+        "スロベニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "リュブリャナ",
+        "ブレッド"
+      ]
+    },
+    "videoQueries": [
+      "スロベニア旅行 vlog",
+      "ブレッド湖 旅行"
+    ],
+    "basic": {
+      "capital": "リュブリャナ",
+      "language": "スロベニア語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "ヨーロッパや中東で乗り継いで約16時間〜",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Lake Bled",
+      "Ljubljana",
+      "Postojna Cave",
+      "Piran"
+    ]
+  },
+  {
+    "id": "estonia",
+    "name": "エストニア",
+    "nameEn": "Estonia",
+    "region": "europe",
+    "flag": "ee",
+    "map": {
+      "isoNumeric": "233"
+    },
+    "safety": {
+      "mofaNames": [
+        "エストニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "タリン"
+      ]
+    },
+    "videoQueries": [
+      "エストニア旅行 vlog",
+      "タリン 旅行"
+    ],
+    "basic": {
+      "capital": "タリン",
+      "language": "エストニア語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より7時間遅い（夏時間は6時間）",
+      "flight": "ヘルシンキなどで乗り継いで約15時間〜。ヘルシンキからはフェリーで約2時間",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "6〜8月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Tallinn Old Town",
+      "Toompea",
+      "Tallinn"
+    ]
+  },
+  {
+    "id": "mongolia",
+    "name": "モンゴル",
+    "nameEn": "Mongolia",
+    "region": "asia",
+    "flag": "mn",
+    "map": {
+      "isoNumeric": "496"
+    },
+    "safety": {
+      "mofaNames": [
+        "モンゴル"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ウランバートル"
+      ]
+    },
+    "videoQueries": [
+      "モンゴル旅行 vlog",
+      "モンゴル 草原 旅行"
+    ],
+    "basic": {
+      "capital": "ウランバートル",
+      "language": "モンゴル語",
+      "currency": "トゥグルグ（MNT）",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "成田からウランバートルへ直行便で約5時間30分",
+      "entry": "30日以内の観光ならビザ不要",
+      "season": "6〜8月",
+      "plug": "C・Eタイプ／230V",
+      "tip": "基本的に不要"
+    },
+    "imageQueries": [
+      "Gorkhi-Terelj National Park",
+      "Ulaanbaatar",
+      "Mongolian ger",
+      "Gobi Desert"
+    ]
+  },
+  {
+    "id": "cambodia",
+    "name": "カンボジア",
+    "nameEn": "Cambodia",
+    "region": "asia",
+    "flag": "kh",
+    "map": {
+      "isoNumeric": "116"
+    },
+    "safety": {
+      "mofaNames": [
+        "カンボジア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "シェムリアップ",
+        "プノンペン"
+      ]
+    },
+    "videoQueries": [
+      "カンボジア旅行 vlog",
+      "アンコールワット 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "プノンペン",
+      "language": "クメール語",
+      "currency": "リエル（KHR）。米ドルも広く使える",
+      "timeDiff": "日本より2時間遅い",
+      "flight": "成田からプノンペンへ直行便で約6〜7時間。シェムリアップへは乗り継ぎ",
+      "entry": "観光ビザが必要（出発前のe-Visaか、到着時に取得）",
+      "season": "乾季の11〜3月",
+      "plug": "A・Cタイプが主流／230V",
+      "tip": "必須ではないが、ガイドやドライバーには少額渡すことが多い"
+    },
+    "imageQueries": [
+      "Angkor Wat",
+      "Bayon",
+      "Ta Prohm",
+      "Royal Palace, Phnom Penh"
+    ]
+  },
+  {
+    "id": "fiji",
+    "name": "フィジー",
+    "nameEn": "Fiji",
+    "region": "oceania",
+    "flag": "fj",
+    "map": {
+      "isoNumeric": "242",
+      "marker": [
+        178,
+        -17.8
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "フィジー"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ナンディ"
+      ]
+    },
+    "videoQueries": [
+      "フィジー旅行 vlog",
+      "フィジー 観光"
+    ],
+    "basic": {
+      "capital": "スバ",
+      "language": "英語、フィジー語、ヒンディー語",
+      "currency": "フィジー・ドル（FJD）",
+      "timeDiff": "日本より3時間早い（夏時間のある年は4時間）",
+      "flight": "成田からナンディへ直行便で約9時間",
+      "entry": "4か月以内の観光ならビザ不要",
+      "season": "乾季の5〜10月",
+      "plug": "Iタイプ／240V",
+      "tip": "基本的に不要"
+    },
+    "imageQueries": [
+      "Mamanuca Islands",
+      "Denarau",
+      "Yasawa Islands",
+      "Fiji"
+    ]
+  },
+  {
+    "id": "tahiti",
+    "name": "タヒチ",
+    "nameEn": "Tahiti",
+    "region": "oceania",
+    "flag": "pf",
+    "map": {
+      "isoNumeric": "258",
+      "marker": [
+        -149.43,
+        -17.65
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "フランス",
+        "フランス領ポリネシア",
+        "タヒチ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "タヒチ",
+        "ボラボラ",
+        "パペーテ"
+      ]
+    },
+    "videoQueries": [
+      "タヒチ旅行 vlog",
+      "ボラボラ島 旅行"
+    ],
+    "basic": {
+      "capital": "パペーテ（フランス領ポリネシア）",
+      "language": "フランス語、タヒチ語",
+      "currency": "CFPフラン（XPF）",
+      "timeDiff": "日本より19時間遅い",
+      "flight": "成田からパペーテへ直行便で約11時間（運航日は限られる）",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "乾季の5〜10月",
+      "plug": "C・Eタイプ／220V",
+      "tip": "基本的に不要"
+    },
+    "imageQueries": [
+      "Bora Bora",
+      "Moorea",
+      "Papeete",
+      "Tahiti"
+    ]
+  },
+  {
+    "id": "newcaledonia",
+    "name": "ニューカレドニア",
+    "nameEn": "New Caledonia",
+    "region": "oceania",
+    "flag": "nc",
+    "map": {
+      "isoNumeric": "540",
+      "marker": [
+        166.45,
+        -22.27
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "ニューカレドニア",
+        "フランス"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ヌメア",
+        "イル・デ・パン"
+      ]
+    },
+    "videoQueries": [
+      "ニューカレドニア旅行 vlog",
+      "ニューカレドニア 観光"
+    ],
+    "basic": {
+      "capital": "ヌメア（フランス領）",
+      "language": "フランス語",
+      "currency": "CFPフラン（XPF）",
+      "timeDiff": "日本より2時間早い",
+      "flight": "成田からヌメアへ直行便で約8時間30分",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "9〜12月",
+      "plug": "C・Eタイプ／220V",
+      "tip": "基本的に不要"
+    },
+    "imageQueries": [
+      "Île des Pins",
+      "Nouméa",
+      "Anse Vata",
+      "Ouvéa"
+    ]
   }
 ]
