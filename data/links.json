@@ -385,11 +385,12 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.arukikata.co.jp/webmagazine/363969/": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "釜山観光2泊3日モデルコース！話題スポット、グルメ、ショッピングを満喫",
     "site": "地球の歩き方",
-    "checkedAt": "2026-11-04"
+    "checkedAt": "2026-11-04",
+    "error": "The operation was aborted due to timeout"
   },
   "https://www.mapple.net/global/article/8204/": {
     "ok": true,
@@ -911,7 +912,7 @@
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
     "ok": false,
-    "fails": 3,
+    "fails": 4,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
     "checkedAt": "2026-11-04",
@@ -1016,11 +1017,12 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.arukikata.co.jp/webmagazine/393726/": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "ハノイ2泊4日モデルコース！観光・グルメ・ショッピングを効率よく巡る",
     "site": "地球の歩き方",
-    "checkedAt": "2026-11-04"
+    "checkedAt": "2026-11-04",
+    "error": "The operation was aborted due to timeout"
   },
   "https://www.tour.ne.jp/w_review/HAN/model_plan/": {
     "ok": true,
@@ -1282,9 +1284,10 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.kankou-gifu.jp/model/detail_74.html": {
-    "fails": 3,
-    "ok": false,
-    "error": "HTTP 503",
+    "ok": true,
+    "fails": 0,
+    "title": "【春の飛騨】春の訪れを感じたら白川郷へ！1泊2日コース｜モデルコース｜岐阜県観光公式サイト 「岐阜の旅ガイド」",
+    "site": "岐阜の旅ガイド",
     "checkedAt": "2026-11-04"
   },
   "https://www.veltra.com/jp/guide/international/spot-international/12868/": {
