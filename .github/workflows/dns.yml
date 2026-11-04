@@ -1,9 +1,12 @@
 name: dns-check
 on: push
+permissions:
+  pages: write
 jobs:
   dns:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          curl -s "https://rdap.verisign.com/com/v1/domain/triptheater.com" | jq -c '{ns:[.nameservers[]?.ldhName]}'
-          for q in "triptheater.com&type=A" "www.triptheater.com&type=CNAME"; do curl -s -H 'accept: application/dns-json' "https://cloudflare-dns.com/dns-query?name=$q" | jq -c '{q:.Question[0].name,st:.Status,a:[.Answer[]?.data],c:.Comment}'; done
+      - env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          gh api -X PUT repos/${{ github.repository }}/pages -f cname=triptheater.com && echo SETOK || echo SETFAIL
+          gh api repos/${{ github.repository }}/pages | jq -c '{cname,https_enforced,status,html_url}'
