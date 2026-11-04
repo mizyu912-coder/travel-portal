@@ -314,3 +314,8 @@ table.info th{width:10em;white-space:nowrap;color:var(--muted);font-weight:500;f
 .fp-link{font-weight:700;font-size:.92rem}
 .place-tag a{color:var(--link);font-weight:700;text-decoration:none}.place-tag a:hover{text-decoration:underline}
 @media (max-width:720px){.fp-head{grid-template-columns:1fr}}
+
+/* 旅のプランの目安 */
+.guide-plan { margin-top: 1.5rem; }
+.guide-plan h3 { font-size: 1.05rem; margin: 0 0 .5rem; }
+.guide-plan .info.plan th { width: 9em; white-space: nowrap; }

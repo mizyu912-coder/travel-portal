@@ -382,9 +382,17 @@ function guideSection(c) {
   return `<section class="guide"><h2><span class="sec-en">TRAVEL NOTES</span>${label}</h2>
 <p class="guide-lead">${esc(g.lead)}</p>
 <ul class="guide-points">${g.points.map(pt => `<li>${esc(pt)}</li>`).join('')}</ul>
-${g.firstTime ? `<div class="guide-first"><strong>最初の旅のコツ</strong><p>${esc(g.firstTime)}</p></div>` : ''}</section>`;
+${g.firstTime ? `<div class="guide-first"><strong>最初の旅のコツ</strong><p>${esc(g.firstTime)}</p></div>` : ''}${planTable(c, g.plan)}</section>`;
 }
-const descOf = (c, fallback) => { const g = guideOf(c); return g ? `${c.name}旅行の予習に。${g.lead}`.slice(0, 118) + (`${c.name}旅行の予習に。${g.lead}`.length > 118 ? '…' : '') : fallback; };
+// 旅のプランの目安（data/guides の plan：season・days・access・budget）
+const planTable = (c, pl) => {
+  if (!pl) return '';
+  const rows = [['season', 'ベストシーズン'], ['days', '日数の目安'], ['access', '移動時間'], ['budget', '費用の目安']].filter(([k]) => pl[k]);
+  const domestic = !!(c.domestic || countries.find(x => x.id === c.country)?.domestic);
+  return `<div class="guide-plan"><h3>${esc(c.name)}旅行のプランの目安</h3><table class="info plan">${rows.map(([k, l]) => `<tr><th>${l}</th><td>${esc(pl[k])}</td></tr>`).join('')}</table>
+${pl.budget ? `<p class="small">費用は${domestic ? '交通費と宿泊費' : '航空券と宿泊費'}を合わせた1人あたりの目安です。時期や${domestic ? '予約のタイミング' : '為替'}によって大きく変わります。</p>` : ''}</div>`;
+};
+const descOf = (c, fallback) => { const g = guideOf(c); if (!g) return fallback; const t = `${c.name}旅行の予習に、おすすめの旅行vlogを紹介。${g.plan?.season ? `ベストシーズンは${g.plan.season.replace(/（.*?）/g, '')}。` : ''}${g.lead}`; return t.length > 118 ? t.slice(0, 118) + '…' : t; };
 
 // 旅の準備（アフィリエイト広告）。ステマ規制のため必ず「PR」を表示する。ASPのコードは改変しない
 function prepSection(c) {
@@ -445,7 +453,7 @@ for (const c of countries) {
     });
   }
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
-    title: `${c.name}の旅行情報・おすすめ旅行vlog｜${cfg.siteName}`,
+    title: `${c.name}旅行のおすすめvlog・観光情報｜ベストシーズンと費用の目安｜${cfg.siteName}`,
     desc: descOf(c, `${c.name}旅行の予習に。${c.domestic ? '人気の都市' : '安全情報や入国・通貨などの基本情報'}と、再生数や評価で選んだ旅行vlog・ブログをまとめています。`),
     body, depth: 1, cls: 'page-country', path: `countries/${c.id}.html`, noindex: !isPublished(c),
     image: firstImage(c)?.thumb,
@@ -474,7 +482,7 @@ for (const ct of cities) {
     });
   }
   fs.writeFileSync(p(`dist/cities/${ct.id}.html`), layout({
-    title: `${ct.name}の観光情報・おすすめ旅行vlog｜${cfg.siteName}`,
+    title: `${ct.name}旅行のおすすめvlog・観光情報｜ベストシーズンと費用の目安｜${cfg.siteName}`,
     desc: descOf(ct, `${ct.name}旅行の予習に。見どころ・アクセス・滞在日数の目安と、再生数や評価で選んだ旅行vlog・モデルコース記事をまとめています。`),
     body, depth: 1, cls: 'page-country page-city', path: `cities/${ct.id}.html`, noindex: !cityPublished(ct),
     image: firstImage(ct)?.thumb,
