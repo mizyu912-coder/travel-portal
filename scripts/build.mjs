@@ -254,11 +254,12 @@ function videoCard(v, i) {
   const url = v.demo ? '#' : `https://www.youtube.com/watch?v=${v.id}`;
   const thumb = v.demo ? '<div class="thumb demo">サンプル</div>'
     : `<img class="thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" width="480" height="360">`;
-  return `<article class="video"${i >= cfg.videos.initial ? ' hidden' : ''}>
-  <a href="${url}" target="_blank" rel="noopener" class="thumb-link" data-embed="${v.embeddable && !v.demo ? esc(v.id) : ''}">${thumb}<span class="dur">${fmtDur(v.durationSec)}</span></a>
+  return `<article class="video"${v.demo ? '' : ` data-vid="${esc(v.id)}"`}${i >= cfg.videos.initial ? ' hidden' : ''}>
+  <div class="thumb-box"><a href="${url}" target="_blank" rel="noopener" class="thumb-link" data-embed="${v.embeddable && !v.demo ? esc(v.id) : ''}">${thumb}<span class="dur">${fmtDur(v.durationSec)}</span></a><span class="watch-badge" hidden></span></div>
   <h3><a href="${url}" target="_blank" rel="noopener">${esc(v.title)}</a></h3>
   <p class="meta">${esc(v.channel)} ・ ${fmtViews(v.views)}再生</p>
   ${v.summary ? `<p class="summary">${esc(v.summary)}</p>` : ''}
+  ${v.demo ? '' : '<p class="watch-row"><button type="button" class="watch-toggle" aria-pressed="false">視聴済みにする</button></p>'}
 </article>`;
 }
 
@@ -275,16 +276,82 @@ document.querySelectorAll('.more-btn').forEach(btn => {
     if (left <= 0) btn.parentElement.remove();
   });
 });
+// 視聴の記録：会員登録なし。この端末のブラウザ（localStorage）にだけ保存し、外部には送らない
+const WKEY = 'tt-watched';
+let watched = {};
+try { watched = JSON.parse(localStorage.getItem(WKEY) || '{}') || {}; } catch (e) {}
+const saveW = () => { try { localStorage.setItem(WKEY, JSON.stringify(watched)); } catch (e) {} };
+function paint() {
+  document.querySelectorAll('.video[data-vid]').forEach(card => {
+    const st = watched[card.dataset.vid];
+    const b = card.querySelector('.watch-badge'), t = card.querySelector('.watch-toggle');
+    card.classList.toggle('is-done', st === 'done');
+    if (b) { b.hidden = !st; b.textContent = st === 'done' ? '✓ 視聴済み' : '途中まで視聴'; b.className = 'watch-badge ' + (st || ''); }
+    if (t) { t.textContent = st === 'done' ? '視聴済みを取り消す' : '視聴済みにする'; t.setAttribute('aria-pressed', st === 'done'); }
+  });
+  document.querySelectorAll('.watch-count').forEach(el => {
+    const cards = [...el.closest('section').querySelectorAll('.video[data-vid]')];
+    const done = cards.filter(c => watched[c.dataset.vid] === 'done').length;
+    el.hidden = !done;
+    el.innerHTML = '<span>視聴済み</span> <b>' + done + '</b> / ' + cards.length + '本';
+  });
+}
+function mark(id, st) {
+  if (watched[id] === 'done' && st === 'started') return;
+  if (st) watched[id] = st; else delete watched[id];
+  saveW(); paint();
+}
+document.querySelectorAll('.watch-toggle').forEach(t => t.addEventListener('click', () => {
+  const id = t.closest('.video').dataset.vid;
+  mark(id, watched[id] === 'done' ? null : 'done');
+}));
+// YouTube の公式プレーヤーAPIで、再生したら「途中まで」、9割以上か最後まで見たら「視聴済み」にする
+let ytReady = null;
+const loadYT = () => ytReady || (ytReady = new Promise((res, rej) => {
+  if (window.YT && YT.Player) return res();
+  window.onYouTubeIframeAPIReady = res;
+  const s = document.createElement('script'); s.src = 'https://www.youtube.com/iframe_api';
+  s.onerror = rej; setTimeout(rej, 6000);
+  document.head.appendChild(s);
+}));
+// プレーヤーAPIが読み込めないとき（広告ブロッカーなど）は、これまでどおり普通に埋め込む（記録は「途中まで」だけ）
+function plainEmbed(holder, id) {
+  const f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+  f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true; f.className = 'thumb';
+  holder.replaceWith(f); mark(id, 'started');
+}
 document.querySelectorAll('.thumb-link[data-embed]').forEach(a => {
   if (!a.dataset.embed) return;
   a.addEventListener('click', e => {
     e.preventDefault();
-    const f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.embed + '?autoplay=1';
-    f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true; f.className = 'thumb';
-    a.replaceWith(f);
+    const id = a.dataset.embed;
+    const holder = document.createElement('div'); holder.className = 'thumb';
+    a.replaceWith(holder);
+    loadYT().then(() => {
+      let timer;
+      const p = new YT.Player(holder, {
+        host: 'https://www.youtube-nocookie.com', videoId: id,
+        playerVars: { autoplay: 1, rel: 0, playsinline: 1 },
+        events: {
+          onStateChange: ev => {
+            if (ev.data === YT.PlayerState.PLAYING) {
+              mark(id, 'started');
+              clearInterval(timer);
+              timer = setInterval(() => {
+                const d = p.getDuration(), t = p.getCurrentTime();
+                if (d && t / d >= 0.9) { mark(id, 'done'); clearInterval(timer); }
+              }, 5000);
+            } else if (ev.data === YT.PlayerState.ENDED) { mark(id, 'done'); clearInterval(timer); }
+            else clearInterval(timer);
+          }
+        }
+      });
+      const f = p.getIframe && p.getIframe(); if (f) f.className = 'thumb';
+    }).catch(() => plainEmbed(holder, id));
   });
 });
+paint();
 </script>`;
 
 function blogsOf(c) {
@@ -330,7 +397,7 @@ function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
 ${gallery(c)}
 ${safetyHtml}
 ${guideSection(c)}
-<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
+<section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.length ? '<p class="watch-count" hidden></p>' : ''}${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
 ${extra}
 <section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">${c.domestic || countryOf(c)?.domestic ? '移動時間などは目安です。最新の情報は交通機関の公式サイトで確認してください。' : 'ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。'}</p></section>
@@ -437,6 +504,7 @@ doc('privacy.html', 'プライバシーポリシー', 'PRIVACY POLICY', `
 <p>動画や記事の選定は、再生数や評価などの基準に基づいて行っており、広告主からの依頼や報酬によって選んだり順位を変えたりすることはありません。</p>
 <h2>YouTube動画の埋め込み</h2>
 <p>当サイトの動画は、YouTubeのプライバシー強化モード（youtube-nocookie.com）で埋め込んでいます。再生した場合、YouTube（Google）がCookieなどを使うことがあります。詳しくは<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご覧ください。</p>
+<p>動画の「視聴済み」の印は、お使いのブラウザの中（ローカルストレージ）にだけ保存しています。この記録が当サイトや第三者に送られることはありません。ブラウザの閲覧データを削除すると、記録も消えます。</p>
 <h2>免責事項</h2>
 <p>当サイトの情報はできるかぎり正確になるよう努めていますが、内容の正確さや最新であることを保証するものではありません。ビザ・入国条件・安全情報などは変わることがあるため、渡航前に公式の情報をご確認ください。当サイトからリンクしている外部サイトの内容について、当サイトは責任を負いません。</p>
 <h2>著作権</h2>
