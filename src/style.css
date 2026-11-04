@@ -26,7 +26,7 @@ header.site,footer.site{background:var(--screen);color:var(--screen-fg)}
 header.site{position:sticky;top:0;z-index:20;border-bottom:3px solid var(--gold)}
 .bar{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--screen-fg)}
-.logo-mark{width:34px;height:34px;color:var(--gold);flex:none}
+.logo-mark{width:34px;height:34px;color:var(--gold);flex:none;--cut:var(--screen)}
 .logo-text{display:flex;flex-direction:column;line-height:1.1}
 .logo-en{font-family:var(--en);font-weight:600;letter-spacing:.14em;font-size:1.15rem}
 .logo-ja{font-size:.68rem;letter-spacing:.2em;color:var(--screen-muted)}

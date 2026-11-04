@@ -45,7 +45,7 @@ fs.copyFileSync(p('src/map.js'), p('dist/map.js'));
 fs.copyFileSync(p('src/home.js'), p('dist/home.js'));
 for (const f of ['favicon.svg', 'og.png']) if (fs.existsSync(p(`src/${f}`))) fs.copyFileSync(p(`src/${f}`), p(`dist/${f}`));
 
-const LOGO = `<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="6" width="28" height="20" rx="3" fill="currentColor"/><path d="M13 11.5v9l8-4.5z" fill="var(--cut)"/><g fill="var(--cut)"><rect x="4.5" y="8" width="2" height="2" rx=".5"/><rect x="4.5" y="22" width="2" height="2" rx=".5"/><rect x="25.5" y="8" width="2" height="2" rx=".5"/><rect x="25.5" y="22" width="2" height="2" rx=".5"/></g></svg>`;
+const LOGO = `<svg class="logo-mark" viewBox="18 18 64 64" aria-hidden="true"><clipPath id="lm"><circle cx="50" cy="50" r="31"/></clipPath><circle cx="50" cy="50" r="31" fill="currentColor"/><g clip-path="url(#lm)"><g fill="none" stroke="var(--cut)" stroke-width="2.6"><ellipse cx="50" cy="50" rx="13.95" ry="31"/><line x1="50" y1="19" x2="50" y2="81"/><line x1="19" y1="50" x2="81" y2="50"/><path d="M23.03 34.50h53.94M23.03 65.50h53.94"/></g></g><circle cx="50" cy="50" r="13" fill="var(--cut)"/><path d="M46 43v14l11.5-7z" fill="currentColor"/></svg>`;
 // サイトマップに載せるページ（path はサイトのルートからの相対パス）
 const sitemap = [];
 const BASE = (cfg.baseUrl || '').replace(/\/$/, '');
