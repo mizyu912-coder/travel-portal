@@ -5,7 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          for t in A AAAA NS; do echo "== $t"; dig +short triptheater.com $t @8.8.8.8; done
-          echo "== www"; dig +short www.triptheater.com @8.8.8.8
-          echo "== NS auth"; dig +short triptheater.com NS @a.gtld-servers.net +norec || true
-          dig triptheater.com NS @a.gtld-servers.net +norec | grep -A5 AUTHORITY || true
+          for q in "triptheater.com&type=A" "triptheater.com&type=NS" "www.triptheater.com&type=CNAME"; do echo "== $q"; curl -s "https://dns.google/resolve?name=$q" | jq -c '[.Status, (.Answer // .Authority // [] | map(.data))]'; done
+          echo "== local"; getent hosts triptheater.com || true; getent hosts www.triptheater.com || true
