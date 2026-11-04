@@ -911,7 +911,7 @@
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
     "ok": false,
-    "fails": 2,
+    "fails": 3,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
     "checkedAt": "2026-11-04",
@@ -1282,7 +1282,7 @@
     "checkedAt": "2026-11-04"
   },
   "https://www.kankou-gifu.jp/model/detail_74.html": {
-    "fails": 2,
+    "fails": 3,
     "ok": false,
     "error": "HTTP 503",
     "checkedAt": "2026-11-04"
