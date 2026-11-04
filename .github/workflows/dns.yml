@@ -1,0 +1,11 @@
+name: dns-check
+on: push
+jobs:
+  dns:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for t in A AAAA NS; do echo "== $t"; dig +short triptheater.com $t @8.8.8.8; done
+          echo "== www"; dig +short www.triptheater.com @8.8.8.8
+          echo "== NS auth"; dig +short triptheater.com NS @a.gtld-servers.net +norec || true
+          dig triptheater.com NS @a.gtld-servers.net +norec | grep -A5 AUTHORITY || true
