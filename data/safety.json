@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-04",
+  "checkedAt": "2026-11-05",
   "source": "auto",
   "countries": {
     "japan": {
@@ -394,6 +394,181 @@
       ],
       "hash": null,
       "maxLevel": 0
+    },
+    "belgium": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "hungary": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "poland": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "ireland": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "malta": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "slovenia": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "estonia": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "mongolia": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "cambodia": {
+      "status": "hidden",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "全土または「上記以外の地域」にレベルが出ている"
+      ],
+      "hash": "ad6a84c7704c2dc3",
+      "maxLevel": 3,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_004.html",
+      "dangerText": [
+        "危険情報",
+        "2026年07月02日",
+        "レベル3",
+        "渡航中止勧告",
+        "レベル2",
+        "不要不急の渡航中止",
+        "レベル1",
+        "十分注意",
+        "【危険レベル】",
+        "●タイとの国境付近（タイ国境から 30km以内の地域)",
+        "レベル3：渡航は止めてください。《渡航中止勧告》《継続》",
+        "●タイとの国境付近（タイ国境から30kmを越えて50km以内の地域)",
+        "レベル2：不要不急の渡航は止めてください。《引下げ》",
+        "●上記以外の全土",
+        "レベル1：十分注意してください。《継続》"
+      ]
+    },
+    "fiji": {
+      "status": "hidden",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "主な観光地（ナンディ）が危険情報に含まれている"
+      ],
+      "hash": "aab1de66b1b73cdc",
+      "maxLevel": 1,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_076.html",
+      "dangerText": [
+        "危険情報",
+        "2026年05月26日",
+        "レベル1",
+        "十分注意",
+        "【危険レベル】",
+        "●首都圏（スバ市、ラミ町、ナシヌ町及びナウソリ町）、西部地区のラウトカ市、ナンディ町（デナラウ除く）及びバ町",
+        "レベル1：十分注意してください。≪継続≫",
+        "【ポイント】",
+        "●首都圏（スバ市、ラミ町、ナシヌ町及びナウソリ町）、西部地区のラウトカ市、ナンディ町（デラナウを除く）及びバ町では、窃盗、強盗、詐欺、暴行、性犯罪及び家宅侵入が発生しています。特に外国人観光客はターゲットになりやすいため、滞在中（特に夜間）は十分に注意してください。",
+        "危険情報の詳細はこちら",
+        "2025年02月13日",
+        "レベル1",
+        "十分注意",
+        "【危険レベル】",
+        "●首都圏（スバ市、ラミ町、ナシヌ町及びナウソリ町）、西部地区のラウトカ市、ナンディ町（デナラウ除く）及びバ町"
+      ]
+    },
+    "tahiti": {
+      "status": "ok",
+      "listed": false,
+      "infection": false,
+      "reasons": [
+        "危険情報なし"
+      ],
+      "hash": null,
+      "maxLevel": 0
+    },
+    "newcaledonia": {
+      "status": "hidden",
+      "listed": true,
+      "infection": false,
+      "reasons": [
+        "全土または「上記以外の地域」にレベルが出ている",
+        "主な観光地（ヌメア）が危険情報に含まれている"
+      ],
+      "hash": "6b6e9ce72051e982",
+      "maxLevel": 2,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_299.html",
+      "dangerText": [
+        "危険情報",
+        "2025年11月18日",
+        "レベル1",
+        "十分注意",
+        "【危険レベル】",
+        "●ニューカレドニア全域",
+        "レベル1：十分注意してください。",
+        "・グランテール(Grand Terre)島の北部、東側沿岸部、同島内陸部とリフー島を除くその他の島嶼（引き下げ）",
+        "・グランテール島の西側沿岸部の一部（ヌメアからコネまでの沿岸部）及びリフー島（継続）",
+        "【ポイント】",
+        "●2024年5月13日、独立派による抗議活動が激化し、その後の期間を含めて、道路の封鎖、略奪、建物・車両等への放火等が発生しました。同日から1年半が経過し、治安情勢は相当程度回復しています。一方、依然として独立派と反独立派の対立等を背景とした一定の緊張が続いており、道路封鎖、投石、発砲等により、主要道路の通行が困難となる等の事案が予期せず発生する可能性がありますので、十分注意してください。",
+        "●治安状況の一定の改善が認められるので、ニューカレドニア全域の危険情報をレベル1（十分注意してください）に引き下げます。（既にレベル1であった地域は継続）。",
+        "危険情報の詳細はこちら",
+        "2025年07月02日",
+        "レベル2"
+      ]
     }
   }
 }
