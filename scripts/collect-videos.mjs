@@ -96,9 +96,11 @@ async function collect(c, doSearch = true) {
   known.forEach((_, id) => ids.add(id)); // 既存の動画も統計を更新する
 
   const all = [...ids];
+  const returned = new Set();
   for (let i = 0; i < all.length; i += 50) {
     const r = await api('videos', { part: 'snippet,statistics,contentDetails,status', id: all.slice(i, i + 50).join(',') });
     for (const v of r.items) {
+      returned.add(v.id);
       const item = {
         id: v.id,
         title: v.snippet.title,
@@ -121,6 +123,8 @@ async function collect(c, doSearch = true) {
     }
   }
 
+  // 削除・非公開になった動画（API が返さなかったもの）は保存データからも消す（YouTube API の規約とリンク切れ対策）
+  for (const id of known.keys()) if (!returned.has(id)) known.delete(id);
   // 条件に合わない候補は落とす（人が承認した動画は残す）
   const items = [...known.values()].filter(v => {
     if (v.status === 'approved' || v.status === 'blocked') return true;
