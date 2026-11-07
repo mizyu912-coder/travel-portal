@@ -375,7 +375,9 @@
     "fails": 0,
     "title": "2日間で巡るバルセロナ：見どころ | spain.info",
     "site": "Spain.info",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-07",
+    "blocked": true,
+    "error": "HTTP 403"
   },
   "https://www.veltra.com/jp/guide/international/spot-international/81258/": {
     "ok": true,
@@ -884,7 +886,7 @@
   "https://4travel.jp/os_qa_each-29336.html": {
     "ok": true,
     "fails": 0,
-    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光に関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
+    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光・遊ぶに関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
     "site": "",
     "checkedAt": "2026-11-07"
   },
@@ -1100,7 +1102,7 @@
   },
   "https://kanagawa-kankou.or.jp/courses/14": {
     "ok": false,
-    "fails": 3,
+    "fails": 4,
     "title": "鎌倉で古都巡り！定番日帰りモデルコース ｜モデルコース | 【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "site": "【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "checkedAt": "2026-11-07",
