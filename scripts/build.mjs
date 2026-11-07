@@ -394,6 +394,40 @@ ${pl.budget ? `<p class="small">費用は${domestic ? '交通費と宿泊費' : 
 };
 const descOf = (c, fallback) => { const g = guideOf(c); if (!g) return fallback; const t = `${c.name}旅行の予習に、おすすめの旅行vlogを紹介。${g.plan?.season ? `ベストシーズンは${g.plan.season.replace(/（.*?）/g, '')}。` : ''}${g.lead}`; return t.length > 118 ? t.slice(0, 118) + '…' : t; };
 
+// よくある質問（data/guides の faq：[{q, a}] を先に、残りは plan と基本情報から自動で作る）
+// 「〇〇 何泊」「〇〇 費用」のような質問の検索に答えるための欄
+const strip = t => String(t).replace(/。$/, '');
+function faqOf(c) {
+  const g = guideOf(c) ?? {};
+  const pl = g.plan ?? {};
+  const b = c.basic ?? {};
+  const n = c.name;
+  const domestic = !!(c.domestic || countryOf(c)?.domestic);
+  const isCity = !!c.country;
+  const list = [...(g.faq ?? [])];
+  // 値は自由な書き方なので「〇〇です」とつながず、「項目：値。」の形で答える
+  const kv = (k, v) => v ? `${k}：${strip(v)}。` : '';
+  const season = pl.season || b.season;
+  if (season) list.push({ q: `${n}旅行のベストシーズンはいつ？`, a: `${kv('おすすめの時期', season)}${b.season && pl.season && b.season !== pl.season ? kv('気候の目安', b.season) : ''}` });
+  const days = pl.days || b.stay;
+  if (days) list.push({ q: `${n}旅行は何泊がちょうどいい？`, a: `${kv('日数の目安', days)}${g.firstTime ?? ''}` });
+  if (pl.budget) list.push({ q: `${n}旅行の費用はどのくらい？`, a: `${kv(`${domestic ? '交通費と宿泊費' : '航空券と宿泊費'}の目安（1人あたり）`, pl.budget)}時期や${domestic ? '予約のタイミング' : '為替'}によって大きく変わるので、早めに比べておくと安心です。` });
+  const access = pl.access || b.flight || b.access;
+  if (access) list.push({ q: domestic ? `${n}へのアクセスは？` : `日本から${n}まで何時間？`, a: `${kv('移動時間', access)}${kv('時差', b.timeDiff?.replace(/^時差/, ''))}` });
+  if (b.entry) list.push({ q: `${n}旅行にビザは必要？`, a: `${kv('日本のパスポートの場合', b.entry)}条件は変わることがあるので、渡航前に大使館などの公式情報で確認してください。` });
+  if (b.currency || b.tip) list.push({ q: `${n}のお金（通貨・チップ）は？`, a: `${kv('通貨', b.currency)}${kv('チップ', b.tip)}` });
+  if (b.plug) list.push({ q: `${n}のコンセントは日本のものが使える？`, a: `${kv('コンセント・電圧', b.plug)}${/A/.test(b.plug) && /1[0-2]0V/.test(b.plug) ? '日本の電化製品もそのまま使えることが多いですが、念のため対応電圧を確認してください。' : '日本のプラグは形が合わないことがあるので、変換プラグを持っていきましょう。電圧が違う場合は、使う製品が対応電圧（100-240V）か確認してください。'}` });
+  if (b.transport) list.push({ q: `${n}での移動はどうする？`, a: kv('おもな移動手段', b.transport) });
+  return list.filter(x => x.q && x.a);
+}
+function faqSection(c) {
+  const list = faqOf(c);
+  if (!list.length) return '';
+  return `<section class="faq"><h2><span class="sec-en">Q&amp;A</span>${esc(c.name)}旅行のよくある質問</h2>
+<dl class="faq-list">${list.map(x => `<div class="faq-item"><dt>${esc(x.q)}</dt><dd>${esc(x.a)}</dd></div>`).join('')}</dl></section>`;
+}
+const faqJsonld = c => { const list = faqOf(c); return list.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: list.map(x => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) } : null; };
+
 // 旅の準備（アフィリエイト広告）。ステマ規制のため必ず「PR」を表示する。ASPのコードは改変しない
 function prepSection(c) {
   // pages: "all"＝全ページ、"overseas"＝海外の国・都市だけ、配列＝指定した国・都市（国を指定するとその国の都市にも出る）
@@ -418,11 +452,15 @@ ${guideSection(c)}
 ${extra}
 <section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
 <p class="small">${c.domestic || countryOf(c)?.domestic ? '移動時間などは目安です。最新の情報は交通機関の公式サイトで確認してください。' : 'ビザや入国の条件は変わることがあります。渡航前に大使館などの公式情報で確認してください。'}</p></section>
+${faqSection(c)}
 ${prepSection(c)}
 ${blogs.length ? `<section><h2><span class="sec-en">READING</span>おすすめのブログ・記事</h2><ul class="blogs">${blogs.map(b => `<li>${b.type ? `<span class="tag">${esc(b.type)}</span>` : ''}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)}</a><span class="meta">${esc(b.site)}</span>${b.note ? `<p>${esc(b.note)}</p>` : ''}</li>`).join('')}</ul></section>` : ''}
 </article>
 ${PAGE_SCRIPT}`;
 }
+
+// 検索結果で切れないよう、狙う言葉（〇〇旅行 vlog）を先頭に、30字前後に収める
+const placeTitle = c => { const n = pickVideos(c).filter(v => !v.demo).length; return `${c.name}旅行vlog${n >= 5 ? `おすすめ${n}選` : 'まとめ'}｜費用・日数・ベストシーズン｜${cfg.siteName}`; };
 
 function safetySection(c, s, cityName) {
   if (c.domestic) return '';
@@ -453,11 +491,11 @@ for (const c of countries) {
     });
   }
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
-    title: `${c.name}旅行のおすすめvlog・観光情報｜ベストシーズンと費用の目安｜${cfg.siteName}`,
+    title: placeTitle(c),
     desc: descOf(c, `${c.name}旅行の予習に。${c.domestic ? '人気の都市' : '安全情報や入国・通貨などの基本情報'}と、再生数や評価で選んだ旅行vlog・ブログをまとめています。`),
     body, depth: 1, cls: 'page-country', path: `countries/${c.id}.html`, noindex: !isPublished(c),
     image: firstImage(c)?.thumb,
-    jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`]]),
+    jsonld: [crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`]]), isPublished(c) && faqJsonld(c)].filter(Boolean),
   }));
 }
 
@@ -482,11 +520,11 @@ for (const ct of cities) {
     });
   }
   fs.writeFileSync(p(`dist/cities/${ct.id}.html`), layout({
-    title: `${ct.name}旅行のおすすめvlog・観光情報｜ベストシーズンと費用の目安｜${cfg.siteName}`,
+    title: placeTitle(ct),
     desc: descOf(ct, `${ct.name}旅行の予習に。見どころ・アクセス・滞在日数の目安と、再生数や評価で選んだ旅行vlog・モデルコース記事をまとめています。`),
     body, depth: 1, cls: 'page-country page-city', path: `cities/${ct.id}.html`, noindex: !cityPublished(ct),
     image: firstImage(ct)?.thumb,
-    jsonld: crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`], [ct.name, `cities/${ct.id}.html`]]),
+    jsonld: [crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`], [ct.name, `cities/${ct.id}.html`]]), cityPublished(ct) && faqJsonld(ct)].filter(Boolean),
   }));
 }
 // ---------- 特集ページ（data/features.json。動画の更新に合わせて中身も毎日変わる） ----------
