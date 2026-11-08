@@ -186,7 +186,10 @@ const featureList = prefix => `<div class="cards feature-cards">${featuresTop.ma
 const odometer = n => [...String(n)].map((d, i) => `<span class="odo-d" style="--n:${d};--i:${i}"><span class="odo-s">${'01234567890123456789'.split('').map(x => `<span>${x}</span>`).join('')}</span></span>`).join('');
 const marquee = items => `<div class="marquee">
   <p class="visually-hidden">上映中：${items.map(([n, , ja]) => `${ja} ${n}`).join('、')}</p>
-  <div class="marquee-frame" aria-hidden="true"><p class="marquee-title">NOW SHOWING</p><div class="marquee-board">${items.map(([n, en, ja]) => `<div class="counter"><span class="odo">${odometer(n)}</span><span class="counter-label"><span class="counter-en">${en}</span><span class="counter-ja">${ja}</span></span></div>`).join('<span class="marquee-sep"></span>')}</div></div>
+  <div class="mq" aria-hidden="true">
+    <div class="mq-crown"><span>NOW SHOWING</span></div>
+    <div class="mq-frame"><div class="mq-board">${items.map(([n, en, ja]) => `<div class="mq-row"><span class="odo">${odometer(n)}</span><span class="mq-words"><span class="mq-en">${en}</span><span class="mq-ja">${ja}</span></span></div>`).join('')}</div></div>
+  </div>
 </div>`;
 fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
