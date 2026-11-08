@@ -76,8 +76,8 @@ for (const c of countries) {
   } else {
     r.reasons.push('危険情報なし');
     // 国名の表記ゆれで一覧の国を見落とさないための安全装置（まだ一度も ok になっていない国だけ）。
-    // 一覧で国別ページへのリンクになっている名前に「似た名前」（片方がもう片方を含む）があれば、人が確認するまで非公開にする。
-    const similar = [...listed].filter(([k, code]) => code && k.length >= 2 && c.safety.mofaNames.some(n => k !== n && (k.includes(n) || n.includes(k)))).map(([k]) => k);
+    // 一覧で国別ページへのリンクになっている名前に、この国の名前を含む別の表記（例：北マケドニア共和国）があれば、人が確認するまで非公開にする。
+    const similar = [...listed].filter(([k, code]) => code && k.length >= 2 && c.safety.mofaNames.some(n => k !== n && k.includes(n))).map(([k]) => k);
     if (similar.length && before.status !== 'ok') {
       r.status = 'hidden';
       r.reasons.push(`危険情報一覧に似た名前（${similar.join('、')}）があるため、確認まで非公開`);
