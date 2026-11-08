@@ -1100,7 +1100,7 @@
   },
   "https://kanagawa-kankou.or.jp/courses/14": {
     "ok": false,
-    "fails": 7,
+    "fails": 8,
     "title": "鎌倉で古都巡り！定番日帰りモデルコース ｜モデルコース | 【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "site": "【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "checkedAt": "2026-11-08",
@@ -1786,7 +1786,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/mu/": {
-    "fails": 1,
+    "fails": 2,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
@@ -1834,7 +1834,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/pr/": {
-    "fails": 1,
+    "fails": 2,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
@@ -1847,7 +1847,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/sm/": {
-    "fails": 1,
+    "fails": 2,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
@@ -1860,7 +1860,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/sc/": {
-    "fails": 1,
+    "fails": 2,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
