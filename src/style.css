@@ -60,9 +60,9 @@ body.home main>section.hero{max-width:none;padding:0}
 .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .marquee{display:flex;justify-content:center;margin:0 0 30px}
 .mq{display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}
-/* ネオン管：枠の内側に光る金色の線を1本通し、ときどき瞬かせる */
-.mq-crown::before,.mq-frame::before{content:"";position:absolute;inset:8px;border-radius:7px;pointer-events:none;border:2.5px solid #ffe6a8;
-  box-shadow:0 0 2px #fff3c9,0 0 6px #ffd77a,0 0 14px rgba(255,196,80,.85),0 0 30px rgba(217,164,65,.55),inset 0 0 2px #fff3c9,inset 0 0 6px #ffd77a,inset 0 0 16px rgba(255,196,80,.5);
+/* ネオン管：枠の内側に光る赤オレンジの線を1本通し、ときどき瞬かせる */
+.mq-crown::before,.mq-frame::before{content:"";position:absolute;inset:8px;border-radius:7px;pointer-events:none;border:2.5px solid #ff9a5e;
+  box-shadow:0 0 1px #ffd9b8,0 0 5px #ff6a2a,0 0 12px rgba(255,70,20,.95),0 0 28px rgba(235,50,20,.6),inset 0 0 1px #ffd9b8,inset 0 0 5px #ff6a2a,inset 0 0 14px rgba(255,70,20,.5);
   animation:neon 7s linear infinite}
 .mq-crown::before{border-radius:6px 6px 4px 4px}
 .mq-frame::before{animation-delay:-3.2s}
@@ -74,7 +74,8 @@ body.home main>section.hero{max-width:none;padding:0}
 /* 本体の枠と、白く光る文字盤 */
 .mq-frame{position:relative;padding:22px;border-radius:8px;background:linear-gradient(180deg,#262a40,#171a27);border:2px solid var(--gold);box-shadow:inset 0 0 0 4px #10121b,inset 0 0 0 5px rgba(217,164,65,.45)}
 .mq-board{position:relative;display:flex;gap:8px 34px;padding:12px 26px;border-radius:3px;
-  background:radial-gradient(120% 140% at 50% 50%,#fffaf0 0,#f6ecd6 60%,#e4d3ae 100%);
+  /* 横長のタイル（レンガ積みのように1段ずつずらす）を、裏から照らしたように見せる */
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='44'%3E%3Cg fill='none' stroke='%23a08a62' stroke-opacity='.28'%3E%3Cpath d='M0 .5H72M0 22.5H72M.5 0V22M36.5 22V44'/%3E%3C/g%3E%3Cg fill='none' stroke='%23fff' stroke-opacity='.7'%3E%3Cpath d='M1 1.5H72M0 23.5H72M1.5 1V22M37.5 23V44'/%3E%3C/g%3E%3C/svg%3E") 0 0/72px 44px,radial-gradient(120% 140% at 50% 50%,#fffaf0 0,#f6ecd6 60%,#e4d3ae 100%);
   box-shadow:inset 0 0 0 2px #c9b48a,inset 0 0 22px rgba(255,236,190,.9),0 0 34px rgba(255,236,190,.35)}
 .mq-row{display:flex;align-items:center;gap:12px}
 .mq-row+.mq-row{border-left:1px solid rgba(60,48,30,.16);padding-left:34px}
