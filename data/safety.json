@@ -966,23 +966,21 @@
       "maxLevel": 0
     },
     "liechtenstein": {
-      "status": "hidden",
+      "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし",
-        "危険情報一覧に似た名前（タイ）があるため、確認まで非公開"
+        "危険情報なし"
       ],
       "hash": null,
       "maxLevel": 0
     },
     "sanmarino": {
-      "status": "hidden",
+      "status": "ok",
       "listed": false,
       "infection": false,
       "reasons": [
-        "危険情報なし",
-        "危険情報一覧に似た名前（マリ）があるため、確認まで非公開"
+        "危険情報なし"
       ],
       "hash": null,
       "maxLevel": 0
@@ -1036,15 +1034,15 @@
       ]
     },
     "northmacedonia": {
-      "status": "hidden",
-      "listed": false,
+      "status": "ok",
+      "listed": true,
       "infection": false,
       "reasons": [
-        "危険情報なし",
-        "危険情報一覧に似た名前（北マケドニア共和国）があるため、確認まで非公開"
+        "国別ページでは危険情報なし"
       ],
-      "hash": null,
-      "maxLevel": 0
+      "hash": "efcac0d02e47b953",
+      "maxLevel": 1,
+      "mofaUrl": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_205.html"
     },
     "albania": {
       "status": "ok",
