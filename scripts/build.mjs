@@ -182,6 +182,12 @@ const featuresTop = readJSON('data/features.json', []);
 const featureImg = f => firstImage(countries.find(c => c.id === f.image) ?? cities.find(c => c.id === f.image) ?? {});
 const featureList = prefix => `<div class="cards feature-cards">${featuresTop.map(f => { const img = featureImg(f); return `<a class="card card-feature" href="${prefix}${f.id}.html"><span class="card-img">${img ? `<img src="${esc(img.small ?? img.thumb)}" alt="" loading="lazy" width="500" height="333">` : ''}</span><span class="card-en">${esc(f.en)}</span><span class="card-name">${esc(f.title)}</span></a>`; }).join('')}</div>`;
 
+// ファーストビューの掲載数：映画館の電飾看板風。数字は公開数からビルド時に入れ、ブラウザでは0から回って止まる
+const odometer = n => [...String(n)].map((d, i) => `<span class="odo-d" style="--n:${d};--i:${i}"><span class="odo-s">${'01234567890123456789'.split('').map(x => `<span>${x}</span>`).join('')}</span></span>`).join('');
+const marquee = items => `<div class="marquee">
+  <p class="visually-hidden">上映中：${items.map(([n, , ja]) => `${ja} ${n}`).join('、')}</p>
+  <div class="marquee-frame" aria-hidden="true"><p class="marquee-title">NOW SHOWING</p><div class="marquee-board">${items.map(([n, en, ja]) => `<div class="counter"><span class="odo">${odometer(n)}</span><span class="counter-label"><span class="counter-en">${en}</span><span class="counter-ja">${ja}</span></span></div>`).join('<span class="marquee-sep"></span>')}</div></div>
+</div>`;
 fs.writeFileSync(p('dist/index.html'), layout({
   title: `${cfg.siteName}｜${cfg.tagline}`,
   desc: cfg.siteDescription,
@@ -189,7 +195,7 @@ fs.writeFileSync(p('dist/index.html'), layout({
   jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.siteName, alternateName: cfg.siteNameEn, url: `${BASE}/`, description: cfg.siteDescription, inLanguage: 'ja', ...(cfg.sns ? { sameAs: Object.values(cfg.sns) } : {}) },
   body: `<section class="hero"><div class="hero-inner">
   <div class="hero-text">
-  <p class="eyebrow">NOW SHOWING ・ ${pub.length} COUNTRIES &amp; REGIONS ・ ${pubCities.length} CITIES</p>
+  ${marquee([[pub.length, 'COUNTRIES &amp; REGIONS', '国・地域'], [pubCities.length, 'CITIES', '都市']])}
   <h1>${esc(cfg.catch).replace('、', '、<wbr>')}</h1>
   <p class="lead">${esc(cfg.siteDescription).replace("。", "。<br>")}</p>
   <a class="cta" href="#map-section">行き先を選ぶ</a>
