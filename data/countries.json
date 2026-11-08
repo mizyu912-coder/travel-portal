@@ -2845,5 +2845,1749 @@
       "Atacama Desert",
       "Santiago de Chile"
     ]
+  },
+  {
+    "id": "monaco",
+    "name": "モナコ",
+    "nameEn": "Monaco",
+    "region": "europe",
+    "flag": "mc",
+    "map": {
+      "isoNumeric": "492",
+      "marker": [
+        7.42,
+        43.74
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "モナコ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "モナコ",
+        "モンテカルロ"
+      ]
+    },
+    "videoQueries": [
+      "モナコ 旅行 vlog",
+      "モナコ 観光"
+    ],
+    "basic": {
+      "capital": "モナコ",
+      "language": "フランス語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "ニースまで乗り継いで約15時間〜。ニースから電車で約20分",
+      "entry": "フランスと同じく、観光目的で90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・E・Fタイプ／230V",
+      "tip": "レストランでは5〜10%程度"
+    },
+    "imageQueries": [
+      "Monaco harbour",
+      "Monte Carlo Casino",
+      "Prince's Palace of Monaco",
+      "Oceanographic Museum Monaco"
+    ]
+  },
+  {
+    "id": "liechtenstein",
+    "name": "リヒテンシュタイン",
+    "nameEn": "Liechtenstein",
+    "region": "europe",
+    "flag": "li",
+    "map": {
+      "isoNumeric": "438",
+      "marker": [
+        9.52,
+        47.14
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "リヒテンシュタイン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ファドゥーツ"
+      ]
+    },
+    "videoQueries": [
+      "リヒテンシュタイン 旅行",
+      "リヒテンシュタイン vlog"
+    ],
+    "basic": {
+      "capital": "ファドゥーツ",
+      "language": "ドイツ語",
+      "currency": "スイス・フラン（CHF）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "チューリッヒまで乗り継いで約15時間〜。チューリッヒから電車とバスで約1時間30分",
+      "entry": "観光目的で90日以内ならビザ不要（シェンゲン協定）。今後導入予定の事前渡航認証（ETIAS）も出発前に確認",
+      "season": "5〜9月",
+      "plug": "C・Jタイプ／230V",
+      "tip": "基本的に不要（端数を切り上げる程度）"
+    },
+    "imageQueries": [
+      "Vaduz Castle",
+      "Vaduz",
+      "Malbun",
+      "Liechtenstein Alps"
+    ]
+  },
+  {
+    "id": "sanmarino",
+    "name": "サンマリノ",
+    "nameEn": "San Marino",
+    "region": "europe",
+    "flag": "sm",
+    "map": {
+      "isoNumeric": "674",
+      "marker": [
+        12.45,
+        43.94
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "サンマリノ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "サンマリノ"
+      ]
+    },
+    "videoQueries": [
+      "サンマリノ 旅行",
+      "サンマリノ vlog"
+    ],
+    "basic": {
+      "capital": "サンマリノ",
+      "language": "イタリア語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "イタリアのボローニャなどまで乗り継いで約15時間〜。リミニからバスで約50分",
+      "entry": "イタリアと同じく、観光目的で90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・F・Lタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "San Marino Guaita",
+      "Monte Titano",
+      "San Marino"
+    ]
+  },
+  {
+    "id": "andorra",
+    "name": "アンドラ",
+    "nameEn": "Andorra",
+    "region": "europe",
+    "flag": "ad",
+    "map": {
+      "isoNumeric": "020",
+      "marker": [
+        1.52,
+        42.51
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "アンドラ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "アンドラ・ラ・ベリャ",
+        "アンドララベリャ"
+      ]
+    },
+    "videoQueries": [
+      "アンドラ 旅行",
+      "アンドラ公国 vlog"
+    ],
+    "basic": {
+      "capital": "アンドラ・ラ・ベリャ",
+      "language": "カタルーニャ語",
+      "currency": "ユーロ（EUR）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "バルセロナまで乗り継いで約15時間〜。バルセロナからバスで約3時間",
+      "entry": "スペインかフランスから陸路で入国。観光目的ならビザ不要",
+      "season": "6〜9月（スキーは12〜3月）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Andorra la Vella",
+      "Pyrenees Andorra",
+      "Grandvalira",
+      "Sant Joan de Caselles"
+    ]
+  },
+  {
+    "id": "serbia",
+    "name": "セルビア",
+    "nameEn": "Serbia",
+    "region": "europe",
+    "flag": "rs",
+    "map": {
+      "isoNumeric": "688"
+    },
+    "safety": {
+      "mofaNames": [
+        "セルビア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ベオグラード",
+        "ノヴィ・サド",
+        "ノビサド"
+      ]
+    },
+    "videoQueries": [
+      "セルビア旅行 vlog",
+      "ベオグラード 旅行"
+    ],
+    "basic": {
+      "capital": "ベオグラード",
+      "language": "セルビア語",
+      "currency": "ディナール（RSD）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "乗り継ぎで約15時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Belgrade Fortress",
+      "Church of Saint Sava",
+      "Novi Sad",
+      "Studenica Monastery"
+    ]
+  },
+  {
+    "id": "bosnia",
+    "name": "ボスニア・ヘルツェゴビナ",
+    "nameEn": "Bosnia and Herzegovina",
+    "region": "europe",
+    "flag": "ba",
+    "map": {
+      "isoNumeric": "070"
+    },
+    "safety": {
+      "mofaNames": [
+        "ボスニア・ヘルツェゴビナ",
+        "ボスニア・ヘルツェゴヴィナ",
+        "ボスニアヘルツェゴビナ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "サラエボ",
+        "サラエヴォ",
+        "モスタル"
+      ]
+    },
+    "videoQueries": [
+      "ボスニア・ヘルツェゴビナ 旅行 vlog",
+      "モスタル 旅行"
+    ],
+    "basic": {
+      "capital": "サラエボ",
+      "language": "ボスニア語、クロアチア語、セルビア語",
+      "currency": "兌換マルク（BAM）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "乗り継ぎで約16時間〜。クロアチアのドゥブロヴニクから車で約3時間",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Stari Most",
+      "Mostar",
+      "Baščaršija",
+      "Kravica waterfall"
+    ]
+  },
+  {
+    "id": "northmacedonia",
+    "name": "北マケドニア",
+    "nameEn": "North Macedonia",
+    "region": "europe",
+    "flag": "mk",
+    "map": {
+      "isoNumeric": "807"
+    },
+    "safety": {
+      "mofaNames": [
+        "北マケドニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "スコピエ",
+        "オフリド"
+      ]
+    },
+    "videoQueries": [
+      "北マケドニア 旅行",
+      "オフリド 旅行"
+    ],
+    "basic": {
+      "capital": "スコピエ",
+      "language": "マケドニア語、アルバニア語",
+      "currency": "デナル（MKD）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "乗り継ぎで約16時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Lake Ohrid",
+      "Church of St. John at Kaneo",
+      "Skopje",
+      "Matka Canyon"
+    ]
+  },
+  {
+    "id": "albania",
+    "name": "アルバニア",
+    "nameEn": "Albania",
+    "region": "europe",
+    "flag": "al",
+    "map": {
+      "isoNumeric": "008"
+    },
+    "safety": {
+      "mofaNames": [
+        "アルバニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ティラナ",
+        "ベラト",
+        "ジロカストラ",
+        "サランダ"
+      ]
+    },
+    "videoQueries": [
+      "アルバニア旅行 vlog",
+      "アルバニア 観光"
+    ],
+    "basic": {
+      "capital": "ティラナ",
+      "language": "アルバニア語",
+      "currency": "レク（ALL）",
+      "timeDiff": "日本より8時間遅い（夏時間は7時間）",
+      "flight": "乗り継ぎで約16時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Berat",
+      "Gjirokastër",
+      "Ksamil",
+      "Butrint",
+      "Tirana Skanderbeg Square"
+    ]
+  },
+  {
+    "id": "georgia",
+    "name": "ジョージア",
+    "nameEn": "Georgia",
+    "region": "europe",
+    "flag": "ge",
+    "map": {
+      "isoNumeric": "268"
+    },
+    "safety": {
+      "mofaNames": [
+        "ジョージア",
+        "グルジア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "トビリシ",
+        "カズベギ",
+        "ステパンツミンダ",
+        "ムツヘタ"
+      ]
+    },
+    "videoQueries": [
+      "ジョージア旅行 vlog",
+      "トビリシ 旅行"
+    ],
+    "basic": {
+      "capital": "トビリシ",
+      "language": "ジョージア語",
+      "currency": "ラリ（GEL）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "乗り継ぎで約15時間〜",
+      "entry": "観光目的なら1年以内の滞在はビザ不要",
+      "season": "5〜10月",
+      "plug": "C・Fタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Tbilisi Old Town",
+      "Gergeti Trinity Church",
+      "Mtskheta",
+      "Ananuri",
+      "Narikala Fortress"
+    ]
+  },
+  {
+    "id": "armenia",
+    "name": "アルメニア",
+    "nameEn": "Armenia",
+    "region": "europe",
+    "flag": "am",
+    "map": {
+      "isoNumeric": "051"
+    },
+    "safety": {
+      "mofaNames": [
+        "アルメニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "エレバン",
+        "エレヴァン"
+      ]
+    },
+    "videoQueries": [
+      "アルメニア旅行 vlog",
+      "エレバン 旅行"
+    ],
+    "basic": {
+      "capital": "エレバン",
+      "language": "アルメニア語",
+      "currency": "ドラム（AMD）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "乗り継ぎで約15時間〜",
+      "entry": "観光目的で180日以内ならビザ不要",
+      "season": "5〜10月",
+      "plug": "C・Fタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Khor Virap",
+      "Geghard Monastery",
+      "Yerevan Cascade",
+      "Tatev Monastery",
+      "Lake Sevan"
+    ]
+  },
+  {
+    "id": "azerbaijan",
+    "name": "アゼルバイジャン",
+    "nameEn": "Azerbaijan",
+    "region": "europe",
+    "flag": "az",
+    "map": {
+      "isoNumeric": "031"
+    },
+    "safety": {
+      "mofaNames": [
+        "アゼルバイジャン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "バクー"
+      ]
+    },
+    "videoQueries": [
+      "アゼルバイジャン 旅行 vlog",
+      "バクー 旅行"
+    ],
+    "basic": {
+      "capital": "バクー",
+      "language": "アゼルバイジャン語",
+      "currency": "マナト（AZN）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "乗り継ぎで約14時間〜",
+      "entry": "電子ビザ（e-Visa）の取得が必要",
+      "season": "4〜6月、9〜10月",
+      "plug": "C・Fタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Flame Towers",
+      "Baku Old City",
+      "Heydar Aliyev Center",
+      "Gobustan"
+    ]
+  },
+  {
+    "id": "turkey",
+    "name": "トルコ",
+    "nameEn": "Türkiye",
+    "region": "middle-east-africa",
+    "flag": "tr",
+    "map": {
+      "isoNumeric": "792"
+    },
+    "safety": {
+      "mofaNames": [
+        "トルコ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "イスタンブール",
+        "カッパドキア",
+        "パムッカレ",
+        "アンタルヤ"
+      ]
+    },
+    "videoQueries": [
+      "トルコ旅行 vlog",
+      "イスタンブール 旅行 vlog",
+      "カッパドキア 旅行"
+    ],
+    "basic": {
+      "capital": "アンカラ",
+      "language": "トルコ語",
+      "currency": "トルコ・リラ（TRY）",
+      "timeDiff": "日本より6時間遅い",
+      "flight": "成田・羽田からイスタンブールへ直行便で約13時間",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "4〜6月、9〜10月",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Hagia Sophia",
+      "Cappadocia balloons",
+      "Pamukkale",
+      "Blue Mosque",
+      "Ephesus"
+    ]
+  },
+  {
+    "id": "jordan",
+    "name": "ヨルダン",
+    "nameEn": "Jordan",
+    "region": "middle-east-africa",
+    "flag": "jo",
+    "map": {
+      "isoNumeric": "400"
+    },
+    "safety": {
+      "mofaNames": [
+        "ヨルダン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "アンマン",
+        "ペトラ",
+        "ワディ・ラム",
+        "死海"
+      ]
+    },
+    "videoQueries": [
+      "ヨルダン旅行 vlog",
+      "ペトラ遺跡 旅行"
+    ],
+    "basic": {
+      "capital": "アンマン",
+      "language": "アラビア語（観光地では英語も通じる）",
+      "currency": "ヨルダン・ディナール（JOD）",
+      "timeDiff": "日本より6時間遅い",
+      "flight": "乗り継ぎで約15時間〜",
+      "entry": "観光ビザが必要（到着時に取得できる。ヨルダンパスでビザ代が免除になる）",
+      "season": "3〜5月、9〜11月",
+      "plug": "C・D・F・G・Jなど／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Petra Treasury",
+      "Wadi Rum",
+      "Dead Sea",
+      "Amman Citadel",
+      "Jerash"
+    ]
+  },
+  {
+    "id": "uae",
+    "name": "アラブ首長国連邦（ドバイ）",
+    "nameEn": "United Arab Emirates",
+    "region": "middle-east-africa",
+    "flag": "ae",
+    "map": {
+      "isoNumeric": "784"
+    },
+    "safety": {
+      "mofaNames": [
+        "アラブ首長国連邦",
+        "UAE"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ドバイ",
+        "アブダビ"
+      ]
+    },
+    "videoQueries": [
+      "ドバイ旅行 vlog",
+      "ドバイ 観光",
+      "アブダビ 旅行"
+    ],
+    "basic": {
+      "capital": "アブダビ（最大都市はドバイ）",
+      "language": "アラビア語（英語が広く通じる）",
+      "currency": "UAEディルハム（AED）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "成田・羽田・関空からドバイへ直行便で約11時間",
+      "entry": "観光目的で30日以内ならビザ不要",
+      "season": "11〜3月",
+      "plug": "Gタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Burj Khalifa",
+      "Sheikh Zayed Grand Mosque",
+      "Dubai Marina",
+      "Palm Jumeirah",
+      "Dubai desert"
+    ]
+  },
+  {
+    "id": "qatar",
+    "name": "カタール",
+    "nameEn": "Qatar",
+    "region": "middle-east-africa",
+    "flag": "qa",
+    "map": {
+      "isoNumeric": "634",
+      "marker": [
+        51.53,
+        25.29
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "カタール"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ドーハ"
+      ]
+    },
+    "videoQueries": [
+      "カタール 旅行 vlog",
+      "ドーハ 観光"
+    ],
+    "basic": {
+      "capital": "ドーハ",
+      "language": "アラビア語（英語が広く通じる）",
+      "currency": "カタール・リヤル（QAR）",
+      "timeDiff": "日本より6時間遅い",
+      "flight": "成田・羽田からドーハへ直行便で約12時間",
+      "entry": "観光目的で30日以内ならビザ不要",
+      "season": "11〜3月",
+      "plug": "D・Gタイプ／240V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Museum of Islamic Art Doha",
+      "Souq Waqif",
+      "National Museum of Qatar",
+      "Doha skyline"
+    ]
+  },
+  {
+    "id": "oman",
+    "name": "オマーン",
+    "nameEn": "Oman",
+    "region": "middle-east-africa",
+    "flag": "om",
+    "map": {
+      "isoNumeric": "512"
+    },
+    "safety": {
+      "mofaNames": [
+        "オマーン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "マスカット",
+        "ニズワ"
+      ]
+    },
+    "videoQueries": [
+      "オマーン 旅行 vlog",
+      "オマーン 観光"
+    ],
+    "basic": {
+      "capital": "マスカット",
+      "language": "アラビア語（英語も通じる）",
+      "currency": "オマーン・リアル（OMR）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "乗り継ぎで約13時間〜",
+      "entry": "観光目的で14日以内ならビザ不要",
+      "season": "10〜3月",
+      "plug": "Gタイプ／240V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Sultan Qaboos Grand Mosque",
+      "Wadi Shab",
+      "Nizwa Fort",
+      "Wahiba Sands",
+      "Muscat"
+    ]
+  },
+  {
+    "id": "egypt",
+    "name": "エジプト",
+    "nameEn": "Egypt",
+    "region": "middle-east-africa",
+    "flag": "eg",
+    "map": {
+      "isoNumeric": "818"
+    },
+    "safety": {
+      "mofaNames": [
+        "エジプト"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "カイロ",
+        "ギザ",
+        "ルクソール",
+        "アスワン"
+      ]
+    },
+    "videoQueries": [
+      "エジプト旅行 vlog",
+      "ピラミッド 旅行",
+      "ルクソール 旅行"
+    ],
+    "basic": {
+      "capital": "カイロ",
+      "language": "アラビア語",
+      "currency": "エジプト・ポンド（EGP）",
+      "timeDiff": "日本より7時間遅い（夏時間は6時間）",
+      "flight": "成田からカイロへ直行便で約14時間",
+      "entry": "観光ビザが必要（到着時かオンラインで取得できる）",
+      "season": "10〜4月",
+      "plug": "C・Fタイプ／220V",
+      "tip": "チップの習慣が根づいている。少額を渡す場面が多い"
+    },
+    "imageQueries": [
+      "Giza pyramids",
+      "Karnak Temple",
+      "Abu Simbel",
+      "Valley of the Kings",
+      "Grand Egyptian Museum"
+    ]
+  },
+  {
+    "id": "morocco",
+    "name": "モロッコ",
+    "nameEn": "Morocco",
+    "region": "middle-east-africa",
+    "flag": "ma",
+    "map": {
+      "isoNumeric": "504"
+    },
+    "safety": {
+      "mofaNames": [
+        "モロッコ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "マラケシュ",
+        "フェズ",
+        "シャウエン",
+        "カサブランカ",
+        "メルズーガ"
+      ]
+    },
+    "videoQueries": [
+      "モロッコ旅行 vlog",
+      "シャウエン 旅行",
+      "サハラ砂漠 モロッコ"
+    ],
+    "basic": {
+      "capital": "ラバト",
+      "language": "アラビア語、ベルベル語（フランス語も広く通じる）",
+      "currency": "モロッコ・ディルハム（MAD）",
+      "timeDiff": "日本より8時間遅い（ラマダン期間は9時間）",
+      "flight": "乗り継ぎで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "3〜5月、9〜11月",
+      "plug": "C・Eタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Chefchaouen",
+      "Jemaa el-Fnaa",
+      "Fes el Bali",
+      "Merzouga dunes",
+      "Aït Benhaddou"
+    ]
+  },
+  {
+    "id": "tunisia",
+    "name": "チュニジア",
+    "nameEn": "Tunisia",
+    "region": "middle-east-africa",
+    "flag": "tn",
+    "map": {
+      "isoNumeric": "788"
+    },
+    "safety": {
+      "mofaNames": [
+        "チュニジア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "チュニス",
+        "シディ・ブ・サイド",
+        "カルタゴ"
+      ]
+    },
+    "videoQueries": [
+      "チュニジア 旅行 vlog",
+      "シディブサイド 旅行"
+    ],
+    "basic": {
+      "capital": "チュニス",
+      "language": "アラビア語（フランス語も広く通じる）",
+      "currency": "チュニジア・ディナール（TND）",
+      "timeDiff": "日本より8時間遅い",
+      "flight": "乗り継ぎで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "4〜6月、9〜10月",
+      "plug": "C・Eタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Sidi Bou Said",
+      "Carthage",
+      "El Jem amphitheatre",
+      "Medina of Tunis"
+    ]
+  },
+  {
+    "id": "kenya",
+    "name": "ケニア",
+    "nameEn": "Kenya",
+    "region": "middle-east-africa",
+    "flag": "ke",
+    "map": {
+      "isoNumeric": "404"
+    },
+    "safety": {
+      "mofaNames": [
+        "ケニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ナイロビ",
+        "マサイマラ",
+        "マサイ・マラ"
+      ]
+    },
+    "videoQueries": [
+      "ケニア 旅行 vlog",
+      "サファリ ケニア"
+    ],
+    "basic": {
+      "capital": "ナイロビ",
+      "language": "スワヒリ語、英語",
+      "currency": "ケニア・シリング（KES）",
+      "timeDiff": "日本より6時間遅い",
+      "flight": "乗り継ぎで約18時間〜",
+      "entry": "出発前に電子渡航認証（eTA）の取得が必要",
+      "season": "7〜10月（ヌーの大移動）、1〜2月",
+      "plug": "Gタイプ／240V",
+      "tip": "ガイドやドライバーに渡すことが多い"
+    },
+    "imageQueries": [
+      "Maasai Mara",
+      "Amboseli Kilimanjaro",
+      "Giraffe Centre Nairobi",
+      "Lake Nakuru"
+    ]
+  },
+  {
+    "id": "tanzania",
+    "name": "タンザニア",
+    "nameEn": "Tanzania",
+    "region": "middle-east-africa",
+    "flag": "tz",
+    "map": {
+      "isoNumeric": "834"
+    },
+    "safety": {
+      "mofaNames": [
+        "タンザニア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ザンジバル",
+        "アルーシャ",
+        "セレンゲティ",
+        "キリマンジャロ",
+        "ンゴロンゴロ"
+      ]
+    },
+    "videoQueries": [
+      "タンザニア 旅行 vlog",
+      "ザンジバル 旅行",
+      "セレンゲティ サファリ"
+    ],
+    "basic": {
+      "capital": "ドドマ（最大都市はダルエスサラーム）",
+      "language": "スワヒリ語、英語",
+      "currency": "タンザニア・シリング（TZS）",
+      "timeDiff": "日本より6時間遅い",
+      "flight": "乗り継ぎで約18時間〜",
+      "entry": "観光ビザが必要（オンラインで事前取得がおすすめ）",
+      "season": "6〜10月（乾季）",
+      "plug": "D・Gタイプ／230V",
+      "tip": "ガイドやドライバーに渡すことが多い"
+    },
+    "imageQueries": [
+      "Serengeti",
+      "Ngorongoro Crater",
+      "Stone Town Zanzibar",
+      "Mount Kilimanjaro",
+      "Nungwi beach"
+    ]
+  },
+  {
+    "id": "southafrica",
+    "name": "南アフリカ",
+    "nameEn": "South Africa",
+    "region": "middle-east-africa",
+    "flag": "za",
+    "map": {
+      "isoNumeric": "710"
+    },
+    "safety": {
+      "mofaNames": [
+        "南アフリカ",
+        "南アフリカ共和国"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ケープタウン",
+        "ヨハネスブルグ",
+        "ヨハネスブルク"
+      ]
+    },
+    "videoQueries": [
+      "南アフリカ 旅行 vlog",
+      "ケープタウン 旅行"
+    ],
+    "basic": {
+      "capital": "プレトリア（行政府）",
+      "language": "英語など11の公用語",
+      "currency": "ランド（ZAR）",
+      "timeDiff": "日本より7時間遅い",
+      "flight": "乗り継ぎで約18時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "10〜4月（ケープタウン）",
+      "plug": "M・Nタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Table Mountain",
+      "Cape of Good Hope",
+      "Boulders Beach penguins",
+      "Kruger National Park",
+      "Bo-Kaap"
+    ]
+  },
+  {
+    "id": "namibia",
+    "name": "ナミビア",
+    "nameEn": "Namibia",
+    "region": "middle-east-africa",
+    "flag": "na",
+    "map": {
+      "isoNumeric": "516"
+    },
+    "safety": {
+      "mofaNames": [
+        "ナミビア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ウィントフック",
+        "ナミブ砂漠",
+        "ソーサスフレイ",
+        "スワコップムント"
+      ]
+    },
+    "videoQueries": [
+      "ナミビア 旅行 vlog",
+      "ナミブ砂漠 旅行"
+    ],
+    "basic": {
+      "capital": "ウィントフック",
+      "language": "英語",
+      "currency": "ナミビア・ドル（NAD）",
+      "timeDiff": "日本より7時間遅い",
+      "flight": "乗り継ぎで約20時間〜",
+      "entry": "ビザが必要（到着時かオンラインで取得できる）",
+      "season": "5〜10月（乾季）",
+      "plug": "D・Mタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Sossusvlei",
+      "Deadvlei",
+      "Etosha National Park",
+      "Dune 45",
+      "Swakopmund"
+    ]
+  },
+  {
+    "id": "mauritius",
+    "name": "モーリシャス",
+    "nameEn": "Mauritius",
+    "region": "middle-east-africa",
+    "flag": "mu",
+    "map": {
+      "isoNumeric": "480",
+      "marker": [
+        57.55,
+        -20.2
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "モーリシャス"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ポートルイス"
+      ]
+    },
+    "videoQueries": [
+      "モーリシャス 旅行 vlog",
+      "モーリシャス 観光"
+    ],
+    "basic": {
+      "capital": "ポートルイス",
+      "language": "英語、フランス語、クレオール語",
+      "currency": "モーリシャス・ルピー（MUR）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "乗り継ぎで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "5〜11月",
+      "plug": "C・Gタイプ／230V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Le Morne Brabant",
+      "Seven Coloured Earths",
+      "Chamarel Waterfall",
+      "Île aux Cerfs"
+    ]
+  },
+  {
+    "id": "seychelles",
+    "name": "セーシェル",
+    "nameEn": "Seychelles",
+    "region": "middle-east-africa",
+    "flag": "sc",
+    "map": {
+      "isoNumeric": "690",
+      "marker": [
+        55.45,
+        -4.62
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "セーシェル"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "マヘ",
+        "プララン"
+      ]
+    },
+    "videoQueries": [
+      "セーシェル 旅行 vlog",
+      "セーシェル 観光"
+    ],
+    "basic": {
+      "capital": "ヴィクトリア",
+      "language": "英語、フランス語、セーシェル・クレオール語",
+      "currency": "セーシェル・ルピー（SCR）",
+      "timeDiff": "日本より5時間遅い",
+      "flight": "乗り継ぎで約16時間〜",
+      "entry": "ビザ不要。出発前に電子渡航認証の申請が必要",
+      "season": "4〜5月、10〜11月",
+      "plug": "Gタイプ／240V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Anse Source d'Argent",
+      "Vallée de Mai",
+      "Anse Lazio",
+      "Beau Vallon"
+    ]
+  },
+  {
+    "id": "india",
+    "name": "インド",
+    "nameEn": "India",
+    "region": "asia",
+    "flag": "in",
+    "map": {
+      "isoNumeric": "356"
+    },
+    "safety": {
+      "mofaNames": [
+        "インド"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "デリー",
+        "ニューデリー",
+        "アグラ",
+        "ジャイプール",
+        "ムンバイ",
+        "バラナシ",
+        "ヴァーラーナシー"
+      ]
+    },
+    "videoQueries": [
+      "インド旅行 vlog",
+      "タージマハル 旅行",
+      "バラナシ 旅行"
+    ],
+    "basic": {
+      "capital": "ニューデリー",
+      "language": "ヒンディー語、英語など",
+      "currency": "インド・ルピー（INR）",
+      "timeDiff": "日本より3時間30分遅い",
+      "flight": "成田・羽田からデリーへ直行便で約10時間",
+      "entry": "観光ビザが必要（オンラインの電子ビザが便利）",
+      "season": "10〜3月",
+      "plug": "B・C・D・Mタイプ／230V",
+      "tip": "レストランでは5〜10%程度"
+    },
+    "imageQueries": [
+      "Taj Mahal",
+      "Hawa Mahal",
+      "Varanasi ghats",
+      "Amber Fort",
+      "Qutub Minar"
+    ]
+  },
+  {
+    "id": "kazakhstan",
+    "name": "カザフスタン",
+    "nameEn": "Kazakhstan",
+    "region": "asia",
+    "flag": "kz",
+    "map": {
+      "isoNumeric": "398"
+    },
+    "safety": {
+      "mofaNames": [
+        "カザフスタン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "アルマトイ",
+        "アスタナ"
+      ]
+    },
+    "videoQueries": [
+      "カザフスタン 旅行 vlog",
+      "アルマトイ 旅行"
+    ],
+    "basic": {
+      "capital": "アスタナ",
+      "language": "カザフ語、ロシア語",
+      "currency": "テンゲ（KZT）",
+      "timeDiff": "日本より4時間遅い",
+      "flight": "成田からアルマトイへ直行便で約7時間30分",
+      "entry": "30日以内の観光ならビザ不要",
+      "season": "5〜9月",
+      "plug": "C・Fタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Charyn Canyon",
+      "Big Almaty Lake",
+      "Kolsai Lakes",
+      "Baiterek Tower",
+      "Medeu"
+    ]
+  },
+  {
+    "id": "kyrgyzstan",
+    "name": "キルギス",
+    "nameEn": "Kyrgyzstan",
+    "region": "asia",
+    "flag": "kg",
+    "map": {
+      "isoNumeric": "417"
+    },
+    "safety": {
+      "mofaNames": [
+        "キルギス"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ビシュケク",
+        "イシク・クル",
+        "イシククル",
+        "カラコル"
+      ]
+    },
+    "videoQueries": [
+      "キルギス 旅行 vlog",
+      "キルギス 観光"
+    ],
+    "basic": {
+      "capital": "ビシュケク",
+      "language": "キルギス語、ロシア語",
+      "currency": "ソム（KGS）",
+      "timeDiff": "日本より3時間遅い",
+      "flight": "乗り継ぎで約10時間〜",
+      "entry": "60日以内の観光ならビザ不要",
+      "season": "6〜9月",
+      "plug": "C・Fタイプ／220V",
+      "tip": "基本的に不要"
+    },
+    "imageQueries": [
+      "Issyk-Kul",
+      "Song-Kul",
+      "Ala Archa National Park",
+      "Karakol",
+      "Jeti-Oguz"
+    ]
+  },
+  {
+    "id": "indonesia",
+    "name": "インドネシア（バリ島）",
+    "nameEn": "Indonesia",
+    "region": "asia",
+    "flag": "id",
+    "map": {
+      "isoNumeric": "360"
+    },
+    "safety": {
+      "mofaNames": [
+        "インドネシア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "バリ",
+        "ジャカルタ",
+        "ジョグジャカルタ"
+      ]
+    },
+    "videoQueries": [
+      "バリ島 旅行 vlog",
+      "インドネシア 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "ジャカルタ",
+      "language": "インドネシア語",
+      "currency": "ルピア（IDR）",
+      "timeDiff": "日本より1〜2時間遅い（バリ島は1時間）",
+      "flight": "成田・羽田・関空からバリ島へ直行便で約7時間",
+      "entry": "観光ビザが必要（到着時かオンラインで取得できる）。バリ島は観光税も必要",
+      "season": "4〜10月（乾季）",
+      "plug": "C・Fタイプ／230V",
+      "tip": "レストランではサービス料が含まれることが多い"
+    },
+    "imageQueries": [
+      "Tanah Lot",
+      "Tegallalang rice terraces",
+      "Borobudur",
+      "Ubud",
+      "Uluwatu Temple"
+    ]
+  },
+  {
+    "id": "philippines",
+    "name": "フィリピン（セブ島）",
+    "nameEn": "Philippines",
+    "region": "asia",
+    "flag": "ph",
+    "map": {
+      "isoNumeric": "608"
+    },
+    "safety": {
+      "mofaNames": [
+        "フィリピン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "マニラ",
+        "セブ",
+        "ボホール",
+        "ボラカイ",
+        "パラワン",
+        "エルニド"
+      ]
+    },
+    "videoQueries": [
+      "セブ島 旅行 vlog",
+      "フィリピン 旅行 vlog"
+    ],
+    "basic": {
+      "capital": "マニラ",
+      "language": "フィリピノ語、英語",
+      "currency": "フィリピン・ペソ（PHP）",
+      "timeDiff": "日本より1時間遅い",
+      "flight": "成田・羽田・関空などからマニラ・セブへ直行便で約4〜5時間",
+      "entry": "30日以内の観光ならビザ不要。出発前にオンラインの入国登録（eTravel）が必要",
+      "season": "12〜5月（乾季）",
+      "plug": "A・B・Cタイプ／220V",
+      "tip": "レストランでは5〜10%程度"
+    },
+    "imageQueries": [
+      "Chocolate Hills",
+      "El Nido",
+      "Boracay White Beach",
+      "Intramuros",
+      "Kawasan Falls"
+    ]
+  },
+  {
+    "id": "argentina",
+    "name": "アルゼンチン",
+    "nameEn": "Argentina",
+    "region": "latin-america",
+    "flag": "ar",
+    "map": {
+      "isoNumeric": "032"
+    },
+    "safety": {
+      "mofaNames": [
+        "アルゼンチン"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ブエノスアイレス",
+        "イグアス",
+        "エル・カラファテ"
+      ]
+    },
+    "videoQueries": [
+      "アルゼンチン 旅行 vlog",
+      "イグアスの滝 旅行"
+    ],
+    "basic": {
+      "capital": "ブエノスアイレス",
+      "language": "スペイン語",
+      "currency": "アルゼンチン・ペソ（ARS）",
+      "timeDiff": "日本より12時間遅い",
+      "flight": "乗り継ぎで約25時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "10〜3月",
+      "plug": "C・Iタイプ／220V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Iguazu Falls",
+      "Perito Moreno Glacier",
+      "La Boca",
+      "Fitz Roy",
+      "Teatro Colón"
+    ]
+  },
+  {
+    "id": "brazil",
+    "name": "ブラジル",
+    "nameEn": "Brazil",
+    "region": "latin-america",
+    "flag": "br",
+    "map": {
+      "isoNumeric": "076"
+    },
+    "safety": {
+      "mofaNames": [
+        "ブラジル"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "リオデジャネイロ",
+        "サンパウロ",
+        "イグアス",
+        "フォス・ド・イグアス"
+      ]
+    },
+    "videoQueries": [
+      "ブラジル 旅行 vlog",
+      "リオデジャネイロ 旅行"
+    ],
+    "basic": {
+      "capital": "ブラジリア",
+      "language": "ポルトガル語",
+      "currency": "レアル（BRL）",
+      "timeDiff": "日本より12時間遅い",
+      "flight": "乗り継ぎで約24時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "4〜10月",
+      "plug": "C・Nタイプ／127V・220V",
+      "tip": "レストランではサービス料（10%）が含まれることが多い"
+    },
+    "imageQueries": [
+      "Christ the Redeemer",
+      "Sugarloaf Mountain",
+      "Copacabana",
+      "Iguazu Falls Brazil",
+      "Lençóis Maranhenses"
+    ]
+  },
+  {
+    "id": "ecuador",
+    "name": "エクアドル",
+    "nameEn": "Ecuador",
+    "region": "latin-america",
+    "flag": "ec",
+    "map": {
+      "isoNumeric": "218"
+    },
+    "safety": {
+      "mofaNames": [
+        "エクアドル"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "キト",
+        "ガラパゴス"
+      ]
+    },
+    "videoQueries": [
+      "ガラパゴス 旅行 vlog",
+      "エクアドル 旅行"
+    ],
+    "basic": {
+      "capital": "キト",
+      "language": "スペイン語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本より14時間遅い（ガラパゴス諸島は15時間）",
+      "flight": "乗り継ぎで約22時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "6〜11月（ガラパゴスは通年）",
+      "plug": "A・Bタイプ／120V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Galápagos giant tortoise",
+      "Galápagos sea lions",
+      "Quito Old Town",
+      "Cotopaxi"
+    ]
+  },
+  {
+    "id": "colombia",
+    "name": "コロンビア",
+    "nameEn": "Colombia",
+    "region": "latin-america",
+    "flag": "co",
+    "map": {
+      "isoNumeric": "170"
+    },
+    "safety": {
+      "mofaNames": [
+        "コロンビア"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ボゴタ",
+        "カルタヘナ",
+        "メデジン"
+      ]
+    },
+    "videoQueries": [
+      "コロンビア 旅行 vlog",
+      "カルタヘナ 旅行"
+    ],
+    "basic": {
+      "capital": "ボゴタ",
+      "language": "スペイン語",
+      "currency": "コロンビア・ペソ（COP）",
+      "timeDiff": "日本より14時間遅い",
+      "flight": "乗り継ぎで約22時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "12〜3月",
+      "plug": "A・Bタイプ／110V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Cartagena walled city",
+      "Guatapé",
+      "Cocora Valley",
+      "Monserrate Bogotá",
+      "Caño Cristales"
+    ]
+  },
+  {
+    "id": "costarica",
+    "name": "コスタリカ",
+    "nameEn": "Costa Rica",
+    "region": "latin-america",
+    "flag": "cr",
+    "map": {
+      "isoNumeric": "188"
+    },
+    "safety": {
+      "mofaNames": [
+        "コスタリカ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "サンホセ",
+        "サン・ホセ",
+        "モンテベルデ"
+      ]
+    },
+    "videoQueries": [
+      "コスタリカ 旅行 vlog",
+      "コスタリカ 観光"
+    ],
+    "basic": {
+      "capital": "サンホセ",
+      "language": "スペイン語",
+      "currency": "コロン（CRC）",
+      "timeDiff": "日本より15時間遅い",
+      "flight": "乗り継ぎで約20時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "12〜4月（乾季）",
+      "plug": "A・Bタイプ／120V",
+      "tip": "レストランではサービス料（10%）が含まれる"
+    },
+    "imageQueries": [
+      "Arenal Volcano",
+      "Monteverde cloud forest",
+      "Resplendent quetzal",
+      "Manuel Antonio"
+    ]
+  },
+  {
+    "id": "guatemala",
+    "name": "グアテマラ",
+    "nameEn": "Guatemala",
+    "region": "latin-america",
+    "flag": "gt",
+    "map": {
+      "isoNumeric": "320"
+    },
+    "safety": {
+      "mofaNames": [
+        "グアテマラ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "アンティグア",
+        "アティトラン",
+        "ティカル",
+        "フローレス"
+      ]
+    },
+    "videoQueries": [
+      "グアテマラ 旅行 vlog",
+      "アンティグア グアテマラ"
+    ],
+    "basic": {
+      "capital": "グアテマラシティ",
+      "language": "スペイン語",
+      "currency": "ケツァル（GTQ）",
+      "timeDiff": "日本より15時間遅い",
+      "flight": "乗り継ぎで約20時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "11〜4月（乾季）",
+      "plug": "A・Bタイプ／120V",
+      "tip": "レストランでは10%程度"
+    },
+    "imageQueries": [
+      "Antigua Guatemala",
+      "Lake Atitlán",
+      "Tikal",
+      "Santa Catalina Arch"
+    ]
+  },
+  {
+    "id": "dominicanrep",
+    "name": "ドミニカ共和国",
+    "nameEn": "Dominican Republic",
+    "region": "latin-america",
+    "flag": "do",
+    "map": {
+      "isoNumeric": "214"
+    },
+    "safety": {
+      "mofaNames": [
+        "ドミニカ共和国"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "サントドミンゴ",
+        "プンタカナ",
+        "プンタ・カナ"
+      ]
+    },
+    "videoQueries": [
+      "ドミニカ共和国 旅行 vlog",
+      "プンタカナ 旅行"
+    ],
+    "basic": {
+      "capital": "サントドミンゴ",
+      "language": "スペイン語",
+      "currency": "ドミニカ・ペソ（DOP）",
+      "timeDiff": "日本より13時間遅い",
+      "flight": "乗り継ぎで約20時間〜",
+      "entry": "観光目的で30日以内ならビザ不要（オンラインの出入国申告が必要）",
+      "season": "12〜4月",
+      "plug": "A・Bタイプ／110V",
+      "tip": "レストランではサービス料（10%）が含まれることが多い"
+    },
+    "imageQueries": [
+      "Punta Cana beach",
+      "Zona Colonial Santo Domingo",
+      "Saona Island",
+      "Los Haitises"
+    ]
+  },
+  {
+    "id": "jamaica",
+    "name": "ジャマイカ",
+    "nameEn": "Jamaica",
+    "region": "latin-america",
+    "flag": "jm",
+    "map": {
+      "isoNumeric": "388"
+    },
+    "safety": {
+      "mofaNames": [
+        "ジャマイカ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "キングストン",
+        "モンテゴベイ",
+        "モンテゴ・ベイ",
+        "ネグリル",
+        "オーチョリオス"
+      ]
+    },
+    "videoQueries": [
+      "ジャマイカ 旅行 vlog",
+      "ジャマイカ 観光"
+    ],
+    "basic": {
+      "capital": "キングストン",
+      "language": "英語",
+      "currency": "ジャマイカ・ドル（JMD）",
+      "timeDiff": "日本より14時間遅い",
+      "flight": "乗り継ぎで約20時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "12〜4月",
+      "plug": "A・Bタイプ／110V",
+      "tip": "レストランでは10〜15%程度"
+    },
+    "imageQueries": [
+      "Dunn's River Falls",
+      "Seven Mile Beach Negril",
+      "Blue Mountains Jamaica",
+      "Montego Bay"
+    ]
+  },
+  {
+    "id": "bahamas",
+    "name": "バハマ",
+    "nameEn": "Bahamas",
+    "region": "latin-america",
+    "flag": "bs",
+    "map": {
+      "isoNumeric": "044"
+    },
+    "safety": {
+      "mofaNames": [
+        "バハマ"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "ナッソー",
+        "エグズーマ"
+      ]
+    },
+    "videoQueries": [
+      "バハマ 旅行 vlog",
+      "バハマ 観光"
+    ],
+    "basic": {
+      "capital": "ナッソー",
+      "language": "英語",
+      "currency": "バハマ・ドル（BSD）。米ドルも同じ価値で使える",
+      "timeDiff": "日本より14時間遅い（夏時間は13時間）",
+      "flight": "アメリカで乗り継いで約17時間〜",
+      "entry": "観光目的で90日以内ならビザ不要",
+      "season": "12〜5月",
+      "plug": "A・Bタイプ／120V",
+      "tip": "レストランでは15%程度"
+    },
+    "imageQueries": [
+      "Exuma swimming pigs",
+      "Nassau",
+      "Paradise Island",
+      "Harbour Island pink sand"
+    ]
+  },
+  {
+    "id": "puertorico",
+    "name": "プエルトリコ",
+    "nameEn": "Puerto Rico",
+    "region": "latin-america",
+    "flag": "pr",
+    "map": {
+      "isoNumeric": "630",
+      "marker": [
+        -66.1,
+        18.4
+      ]
+    },
+    "safety": {
+      "mofaNames": [
+        "プエルトリコ",
+        "米国"
+      ],
+      "mofaCode": null,
+      "touristAreas": [
+        "サンフアン",
+        "サン・フアン"
+      ]
+    },
+    "videoQueries": [
+      "プエルトリコ 旅行 vlog",
+      "プエルトリコ 観光"
+    ],
+    "basic": {
+      "capital": "サンフアン（アメリカの自治領）",
+      "language": "スペイン語、英語",
+      "currency": "米ドル（USD）",
+      "timeDiff": "日本より13時間遅い",
+      "flight": "アメリカ本土で乗り継いで約17時間〜",
+      "entry": "アメリカと同じく、90日以内の観光はビザ不要。電子渡航認証（ESTA）が必要",
+      "season": "12〜4月",
+      "plug": "A・Bタイプ／120V",
+      "tip": "レストランでは15〜20%程度"
+    },
+    "imageQueries": [
+      "Old San Juan",
+      "Castillo San Felipe del Morro",
+      "El Yunque",
+      "Flamenco Beach"
+    ]
   }
 ]
