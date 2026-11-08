@@ -884,7 +884,7 @@
   "https://4travel.jp/os_qa_each-29336.html": {
     "ok": true,
     "fails": 0,
-    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光に関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
+    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光・遊ぶに関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
     "site": "",
     "checkedAt": "2026-11-08"
   },
@@ -910,11 +910,12 @@
     "checkedAt": "2026-11-08"
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
-    "checkedAt": "2026-11-08"
+    "checkedAt": "2026-11-08",
+    "error": "HTTP 406"
   },
   "https://4travel.jp/travelogue/11478063": {
     "ok": true,
@@ -1100,7 +1101,7 @@
   },
   "https://kanagawa-kankou.or.jp/courses/14": {
     "ok": false,
-    "fails": 9,
+    "fails": 10,
     "title": "鎌倉で古都巡り！定番日帰りモデルコース ｜モデルコース | 【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "site": "【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "checkedAt": "2026-11-08",
@@ -1786,7 +1787,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/mu/": {
-    "fails": 3,
+    "fails": 4,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
@@ -1834,7 +1835,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/pr/": {
-    "fails": 3,
+    "fails": 4,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
@@ -1847,7 +1848,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/sm/": {
-    "fails": 3,
+    "fails": 4,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
@@ -1860,7 +1861,7 @@
     "checkedAt": "2026-11-08"
   },
   "https://www.arukikata.co.jp/area/sc/": {
-    "fails": 3,
+    "fails": 4,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-08"
