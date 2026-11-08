@@ -132,7 +132,7 @@ const regionTabs = regions.filter(r => pub.some(c => c.region === r.id)).map(r =
   const withCities = list.filter(c => pubCities.some(ct => ct.country === c.id));
   return `<div class="region-item"><button type="button" class="region-btn" data-region="${r.id}" aria-haspopup="true">${esc(r.name)}</button>
 <div class="flyout"><div class="fly-inner">
-<div class="fly-col"><p class="fly-label">国・地域</p><ul>${list.map(c => `<li><a class="fly-country" data-id="${c.id}" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}${pubCities.some(ct => ct.country === c.id) ? '<span class="fly-arrow">›</span>' : ''}</a></li>`).join('')}</ul></div>
+<div class="fly-col"><p class="fly-label">国・地域</p><ul class="fly-countries" style="--rows:${Math.ceil(list.length / Math.min(3, Math.ceil(list.length / 14)))}">${list.map(c => `<li><a class="fly-country" data-id="${c.id}" href="countries/${c.id}.html" target="_blank" rel="noopener">${esc(c.name)}${pubCities.some(ct => ct.country === c.id) ? '<span class="fly-arrow">›</span>' : ''}</a></li>`).join('')}</ul></div>
 ${withCities.length ? `<div class="fly-col fly-cities-col"><p class="fly-label">人気の都市</p>${withCities.map((c, i) => `<ul class="fly-cities" data-country="${c.id}"${i ? ' hidden' : ''}>${pubCities.filter(ct => ct.country === c.id).map(ct => `<li><a href="cities/${ct.id}.html" target="_blank" rel="noopener">${esc(ct.name)}</a></li>`).join('')}</ul>`).join('')}<p class="fly-empty" hidden>この国の都市ページは準備中です</p></div>` : ''}
 </div></div></div>`;
 }).join('');

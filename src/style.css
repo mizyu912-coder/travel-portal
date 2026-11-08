@@ -102,6 +102,8 @@ body.home main>section.map-wrap{padding:18px 20px 14px;margin-top:40px;max-width
 .fly-inner{display:flex;background:var(--screen-2);border:1px solid #3a3e52;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,.5);overflow:hidden}
 .fly-col{padding:10px 6px;min-width:160px}
 .fly-col ul{list-style:none;margin:0;padding:0}
+/* 国が多いエリアは、14行ごと（最大3列）に列を分けて縦に長くなりすぎないようにする */
+.fly-countries{display:grid;grid-template-rows:repeat(var(--rows),auto);grid-auto-flow:column;column-gap:2px}
 .fly-cities-col{border-left:1px solid #3a3e52;background:rgba(0,0,0,.18)}
 .fly-label{font-size:.68rem;color:var(--screen-muted);margin:2px 12px 6px;letter-spacing:.12em}
 .fly-col a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:6px 12px;border-radius:8px;color:var(--screen-fg);text-decoration:none;white-space:nowrap;font-size:.92rem}
