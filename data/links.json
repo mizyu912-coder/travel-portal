@@ -910,12 +910,11 @@
     "checkedAt": "2026-11-08"
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
-    "ok": false,
-    "fails": 1,
+    "ok": true,
+    "fails": 0,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
-    "checkedAt": "2026-11-08",
-    "error": "HTTP 406"
+    "checkedAt": "2026-11-08"
   },
   "https://4travel.jp/travelogue/11478063": {
     "ok": true,
@@ -1101,7 +1100,7 @@
   },
   "https://kanagawa-kankou.or.jp/courses/14": {
     "ok": false,
-    "fails": 6,
+    "fails": 7,
     "title": "鎌倉で古都巡り！定番日帰りモデルコース ｜モデルコース | 【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "site": "【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "checkedAt": "2026-11-08",
@@ -1623,6 +1622,282 @@
     "fails": 0,
     "title": "ウズベキスタン旅行でおすすめの観光地15選！名所や穴場をエリア別に厳選",
     "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/al/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アルバニアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ad/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アンドラの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ar/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アルゼンチンの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/am/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アルメニアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/az/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アゼルバイジャンの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/bs/": {
+    "ok": true,
+    "fails": 0,
+    "title": "バハマの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ba/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ボスニア・ヘルツェゴヴィナの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/br/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブラジルの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/co/": {
+    "ok": true,
+    "fails": 0,
+    "title": "コロンビアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/cr/": {
+    "ok": true,
+    "fails": 0,
+    "title": "コスタリカの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/do/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ドミニカ共和国の基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ec/": {
+    "ok": true,
+    "fails": 0,
+    "title": "エクアドルの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/eg/": {
+    "ok": true,
+    "fails": 0,
+    "title": "エジプトの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ge/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ジョージアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/gt/": {
+    "ok": true,
+    "fails": 0,
+    "title": "グアテマラの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/in/": {
+    "ok": true,
+    "fails": 0,
+    "title": "インドの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/id/": {
+    "ok": true,
+    "fails": 0,
+    "title": "インドネシアの基本情報と観光ガイド おすすめ観光地",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/jm/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ジャマイカの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/jo/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ヨルダンの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/kz/": {
+    "ok": true,
+    "fails": 0,
+    "title": "カザフスタンの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ke/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ケニアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/kg/": {
+    "ok": true,
+    "fails": 0,
+    "title": "キルギスの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/li/": {
+    "ok": true,
+    "fails": 0,
+    "title": "リヒテンシュタインの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/mu/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/mc/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モナコの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ma/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モロッコの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/na/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ナミビアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/mk/": {
+    "ok": true,
+    "fails": 0,
+    "title": "北マケドニアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/om/": {
+    "ok": true,
+    "fails": 0,
+    "title": "オマーンの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ph/": {
+    "ok": true,
+    "fails": 0,
+    "title": "フィリピンの基本情報と観光ガイド おすすめ観光地",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/pr/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/qa/": {
+    "ok": true,
+    "fails": 0,
+    "title": "カタールの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/sm/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/rs/": {
+    "ok": true,
+    "fails": 0,
+    "title": "セルビアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/sc/": {
+    "fails": 1,
+    "ok": false,
+    "error": "HTTP 404",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/za/": {
+    "ok": true,
+    "fails": 0,
+    "title": "南アフリカの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/tz/": {
+    "ok": true,
+    "fails": 0,
+    "title": "タンザニアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/tn/": {
+    "ok": true,
+    "fails": 0,
+    "title": "チュニジアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/tr/": {
+    "ok": true,
+    "fails": 0,
+    "title": "トルコの基本情報と観光ガイド おすすめ観光地",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/ae/": {
+    "ok": true,
+    "fails": 0,
+    "title": "アラブ首長国連邦の基本情報と観光ガイド",
+    "site": "地球の歩き方",
     "checkedAt": "2026-11-08"
   }
 }
