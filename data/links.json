@@ -910,11 +910,12 @@
     "checkedAt": "2026-11-08"
   },
   "https://guidetoiceland.is/ja/connect-with-locals/hiro/golden-circle": {
-    "ok": true,
-    "fails": 0,
+    "ok": false,
+    "fails": 1,
     "title": "ド定番観光スポットゴールデンサークル！ | Guide to Iceland",
     "site": "Guide to Iceland",
-    "checkedAt": "2026-11-08"
+    "checkedAt": "2026-11-08",
+    "error": "HTTP 406"
   },
   "https://4travel.jp/travelogue/11478063": {
     "ok": true,
@@ -1100,7 +1101,7 @@
   },
   "https://kanagawa-kankou.or.jp/courses/14": {
     "ok": false,
-    "fails": 5,
+    "fails": 6,
     "title": "鎌倉で古都巡り！定番日帰りモデルコース ｜モデルコース | 【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "site": "【公式】神奈川県のお出かけ・観光・旅行サイト「観光かながわNOW」",
     "checkedAt": "2026-11-08",
@@ -1321,6 +1322,307 @@
     "ok": false,
     "blocked": true,
     "error": "HTTP 403",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/2457/": {
+    "ok": true,
+    "fails": 0,
+    "title": "世界で一番幸せな国・ブータンのおすすめ観光スポット10選 | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/bt/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブータンの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/16289/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ウユニ塩湖への行き方とその魅力をご紹介！最高の体験を求めて | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/1055/": {
+    "ok": true,
+    "fails": 0,
+    "title": "【2025年最新】ボリビアのおすすめ観光地13選 | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/bo/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ボリビアの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/3222/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブルネイのおすすめ観光スポット14選！行くべき場所はココ | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://tabippo.net/brunei-spot/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブルネイのオススメ観光スポット13選 | TABIPPO.NET",
+    "site": "TABIPPO.NET",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/35983/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブルガリア観光おすすめスポット15選！世界遺産から美食まで紹介 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://newt.net/bgr/mag-165754885": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブルガリアでおすすめの観光地12選！首都ソフィアから世界遺産＆名所も",
+    "site": "NEWT（ニュート）",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/cl/": {
+    "ok": true,
+    "fails": 0,
+    "title": "チリの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/cu/": {
+    "ok": true,
+    "fails": 0,
+    "title": "キューバの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/webmagazine/272373/": {
+    "ok": true,
+    "fails": 0,
+    "title": "キプロスのおすすめ観光スポット10選！地中海の絶景と悠久の歴史を巡る",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/7504/": {
+    "ok": true,
+    "fails": 0,
+    "title": "キプロスのおすすめ観光スポット14選 2つの文化を有する島 | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/80873/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ラオス観光モデルコース4日間｜豊かな文化と自然を満喫する旅 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/article/36375/": {
+    "ok": true,
+    "fails": 0,
+    "title": "魅力に引き込まれる！世界遺産の街ルアンパバーンの１日モデルコース | ラオス | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://tabippo.net/luangprabang-spot/": {
+    "ok": true,
+    "fails": 0,
+    "title": "托鉢からナイトマーケットまで！ルアンパバーンを100％満喫できる観光スポットを紹介 | TABIPPO.NET",
+    "site": "TABIPPO.NET",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/81174/": {
+    "ok": true,
+    "fails": 0,
+    "title": "リガ観光モデルコース：初めてのリガで歴史と文化を満喫する旅 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/3132/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ラトビア観光のおすすめスポット11選！世界遺産リガから絶景の自然まで | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/81271/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ビリニュス観光モデルコース｜歴史と文化満喫の2泊3日おすすめガイド | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/2540/": {
+    "ok": true,
+    "fails": 0,
+    "title": "リトアニアのおすすめ観光スポット10選 歴史や自然に触れる | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://tabippo.net/luxembourg-p01/": {
+    "ok": true,
+    "fails": 0,
+    "title": "世界一リッチなヨーロッパの小国を実際に旅してきた！「ルクセンブルク」観光スポットまとめ | TABIPPO.NET",
+    "site": "TABIPPO.NET",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/webmagazine/270611/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ルクセンブルクのおすすめ観光スポット5選！中世の雰囲気残る町並みを楽しむ",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/34662/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モルディブの観光スポット14選｜ベストシーズンや人気ホテルも紹介 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/howto/485/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モルディブ旅行は何泊がおすすめ？最低何日滞在すると楽しめる？ | モルディブ | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/13376/": {
+    "ok": true,
+    "fails": 0,
+    "title": "メキシコ観光モデルコースで行く！メキシコシティからグアナファト、サンミゲル・デ・アジェンデを3泊で訪問 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/2911/": {
+    "ok": true,
+    "fails": 0,
+    "title": "メキシコ旅行のおすすめプランは？費用やベストシーズン、安い時期、スポット情報などを解説！ | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/3152/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モンテネグロのおすすめ観光スポット9選 歴史ある世界遺産の街も | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/article/12314/": {
+    "ok": true,
+    "fails": 0,
+    "title": "世界遺産のコトル！旧市街の町並み＆城壁から見渡す絶景を満喫しよう | モンテネグロ | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/area/me/": {
+    "ok": true,
+    "fails": 0,
+    "title": "モンテネグロの基本情報と観光ガイド",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/80929/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ネパール観光モデルコース｜2泊3日でカトマンズとポカラを探索 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/article/36411/": {
+    "ok": true,
+    "fails": 0,
+    "title": "世界遺産の宝庫！カトマンズ王道観光１日モデルコース | ネパール | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/421/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ペルー観光の見どころは？定番から穴場までおすすめ16選 | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/article/36798/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ペルーの古都クスコをコンパクトに巡る！１日観光モデルコース | ペルー | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/81148/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ルーマニア観光モデルコースで楽しむ2泊3日｜ドラキュラ城や歴史地区も満喫 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/2853/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ルーマニアのおすすめ観光スポット16選 世界遺産やあの伝説の舞台も | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/81213/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ブラチスラバ観光モデルコースのガイド：2日間で巡るおすすめスポット | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/2507/": {
+    "ok": true,
+    "fails": 0,
+    "title": "【2025年最新】スロバキアでおすすめの観光地13選 街歩きも自然も満喫できる！ | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://tabippo.net/bratislava/": {
+    "ok": true,
+    "fails": 0,
+    "title": "ウィーンから日帰り10時間で、スロバキアの首都ブラチスラバを楽しむ方法 | TABIPPO.NET",
+    "site": "TABIPPO.NET",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.veltra.com/jp/guide/international/spot-international/80968/": {
+    "ok": true,
+    "fails": 0,
+    "title": "スリランカ観光モデルコース｜4日間で巡る歴史と自然、美しい風景を堪能する旅 | VELTRA旅行ガイド",
+    "site": "VELTRA旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.travel.co.jp/guide/matome/441/": {
+    "ok": true,
+    "fails": 0,
+    "title": "【2025年最新】スリランカでおすすめの観光地20選 | トラベルjp 旅行ガイド",
+    "site": "トラベルjp 旅行ガイド",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/tokuhain/257042/": {
+    "ok": true,
+    "fails": 0,
+    "title": "100. ウズベキスタン旅行モデルプラン紹介。人気の観光都市を効率よく巡る周遊コースの決定版！",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://www.arukikata.co.jp/tokuhain/256291/": {
+    "ok": true,
+    "fails": 0,
+    "title": "87. サマルカンド観光モデルコース！見所いっぱいの世界遺産都市を満喫するおすすめプラン紹介",
+    "site": "地球の歩き方",
+    "checkedAt": "2026-11-08"
+  },
+  "https://newt.net/uzb/mag-789664804459": {
+    "ok": true,
+    "fails": 0,
+    "title": "ウズベキスタン旅行でおすすめの観光地15選！名所や穴場をエリア別に厳選",
+    "site": "NEWT（ニュート）",
     "checkedAt": "2026-11-08"
   }
 }
