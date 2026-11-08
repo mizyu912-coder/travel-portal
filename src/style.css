@@ -56,25 +56,23 @@ body.home main>section.hero{max-width:none;padding:0}
 .hero::before,.hero::after{content:"";position:absolute;left:0;right:0;height:14px;background:repeating-linear-gradient(90deg,transparent 0 10px,rgba(243,238,228,.16) 10px 24px,transparent 24px 34px);background-size:34px 8px;background-repeat:repeat-x;background-position:0 3px}
 .hero::before{top:6px}.hero::after{bottom:6px}
 .hero-inner{max-width:1120px;margin:0 auto;padding:52px 16px 36px;text-align:center}
-/* 掲載数：昔の映画館のマーキー看板（電球で囲んだ枠＋白く光る文字盤）。数字はオドメーターのように回って止まる */
+/* 掲載数：昔の映画館のマーキー看板（ネオン管で縁取った枠＋白く光る文字盤）。数字はオドメーターのように回って止まる */
 .visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .marquee{display:flex;justify-content:center;margin:0 0 30px}
-.mq{--bulb:radial-gradient(circle,#fffbe8 0 1.8px,#ffd77a 2.8px,rgba(255,200,90,.45) 4.2px,transparent 6px);--dim:radial-gradient(circle,#8a6a2c 0 2px,rgba(138,106,44,.4) 3px,transparent 4px);
-  display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}
-/* 電球の列：明るい球と暗い球を交互に並べ、位置を入れ替えて追いかけるように点滅させる */
-.mq-crown::before,.mq-frame::before{content:"";position:absolute;inset:4px;border-radius:inherit;pointer-events:none;
-  background:var(--bulb) 0 0/22px 12px repeat-x,var(--dim) 11px 0/22px 12px repeat-x,var(--bulb) 0 100%/22px 12px repeat-x,var(--dim) 11px 100%/22px 12px repeat-x,
-    var(--bulb) 0 11px/12px 22px repeat-y,var(--dim) 0 0/12px 22px repeat-y,var(--bulb) 100% 11px/12px 22px repeat-y,var(--dim) 100% 0/12px 22px repeat-y;
-  -webkit-mask:linear-gradient(#000 0 0) top/100% 12px no-repeat,linear-gradient(#000 0 0) bottom/100% 12px no-repeat,linear-gradient(#000 0 0) left/12px 100% no-repeat,linear-gradient(#000 0 0) right/12px 100% no-repeat;
-  mask:linear-gradient(#000 0 0) top/100% 12px no-repeat,linear-gradient(#000 0 0) bottom/100% 12px no-repeat,linear-gradient(#000 0 0) left/12px 100% no-repeat,linear-gradient(#000 0 0) right/12px 100% no-repeat;
-  animation:chase 1s steps(1,end) infinite}
-@keyframes chase{50%{background-position:11px 0,0 0,11px 100%,0 100%,0 0,0 11px,100% 0,100% 11px}}
+.mq{display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}
+/* ネオン管：枠の内側に光る金色の線を1本通し、ときどき瞬かせる */
+.mq-crown::before,.mq-frame::before{content:"";position:absolute;inset:8px;border-radius:7px;pointer-events:none;border:2.5px solid #ffe6a8;
+  box-shadow:0 0 2px #fff3c9,0 0 6px #ffd77a,0 0 14px rgba(255,196,80,.85),0 0 30px rgba(217,164,65,.55),inset 0 0 2px #fff3c9,inset 0 0 6px #ffd77a,inset 0 0 16px rgba(255,196,80,.5);
+  animation:neon 7s linear infinite}
+.mq-crown::before{border-radius:6px 6px 4px 4px}
+.mq-frame::before{animation-delay:-3.2s}
+@keyframes neon{0%,90%,93%,95.5%,100%{opacity:1}91.5%,94.5%{opacity:.35}}
 /* 上の看板（劇場名の位置）：金色の大きな文字 */
 .mq-crown{position:relative;z-index:1;margin-bottom:-2px;padding:22px 36px 20px;border-radius:10px 10px 0 0;background:linear-gradient(180deg,#22263a,#151824);border:2px solid var(--gold);border-bottom:0}
 .mq-crown span{display:block;font-family:var(--en);font-weight:600;font-size:clamp(1.15rem,2.6vw,1.5rem);letter-spacing:.3em;padding-left:.3em;line-height:1.1;color:#ffd77a;
   text-shadow:0 0 2px #fff3c9,0 0 10px rgba(255,200,90,.85),0 0 26px rgba(217,164,65,.6)}
 /* 本体の枠と、白く光る文字盤 */
-.mq-frame{position:relative;padding:20px;border-radius:8px;background:linear-gradient(180deg,#262a40,#171a27);border:2px solid var(--gold);box-shadow:inset 0 0 0 4px #10121b,inset 0 0 0 5px rgba(217,164,65,.45)}
+.mq-frame{position:relative;padding:22px;border-radius:8px;background:linear-gradient(180deg,#262a40,#171a27);border:2px solid var(--gold);box-shadow:inset 0 0 0 4px #10121b,inset 0 0 0 5px rgba(217,164,65,.45)}
 .mq-board{position:relative;display:flex;gap:8px 34px;padding:12px 26px;border-radius:3px;
   background:radial-gradient(120% 140% at 50% 50%,#fffaf0 0,#f6ecd6 60%,#e4d3ae 100%);
   box-shadow:inset 0 0 0 2px #c9b48a,inset 0 0 22px rgba(255,236,190,.9),0 0 34px rgba(255,236,190,.35)}
@@ -92,7 +90,7 @@ body.home main>section.hero{max-width:none;padding:0}
 .mq-ja{font-size:1.15rem;font-weight:700;color:#1d1b22;letter-spacing:.1em}
 @media (prefers-reduced-motion:reduce){.odo-s{animation:none}.mq-crown::before,.mq-frame::before{animation:none}}
 @media (max-width:560px){
-  .mq-frame{padding:18px}
+  .mq-frame{padding:20px}
   .mq-board{flex-direction:column;padding:10px 20px}
   .mq-row+.mq-row{border-left:0;padding-left:0;border-top:1px solid rgba(60,48,30,.16);padding-top:8px}
   .odo-d{--h:2.9rem}
