@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Schonbrunn Palace - Vienna.jpg",
+    "width": 5998,
+    "height": 1292,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Schonbrunn_Palace_-_Vienna.jpg/1920px-Schonbrunn_Palace_-_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Schonbrunn_Palace_-_Vienna.jpg",
+    "artist": "Plamen Agov (user:MrPanyGoff)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Panorama of the west wing of the entrance court, Schonbrunn Palace, Vienna.",
+    "query": "Schönbrunn Palace",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Schonbrunn_Palace_-_Vienna.jpg/500px-Schonbrunn_Palace_-_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Schonbrunn_Palace_-_Vienna.jpg/1280px-Schonbrunn_Palace_-_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:St. Stephen's Cathedral Sundial - Vienna.jpg",
+    "width": 2622,
+    "height": 2100,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg/1920px-St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg",
+    "artist": "MrPanyGoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "The sundial of St. Stephen's Cathedral in Vienna.",
+    "query": "St. Stephen's Cathedral",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg/500px-St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg/1280px-St._Stephen%27s_Cathedral_Sundial_-_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:20180109 Vienna State Opera at blue hour 850 9387.jpg",
+    "width": 7520,
+    "height": 4637,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg/1920px-20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg",
+    "artist": "Granada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Vienna State Opera at the blue hour",
+    "query": "Vienna State Opera",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg/500px-20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg/1280px-20180109_Vienna_State_Opera_at_blue_hour_850_9387.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

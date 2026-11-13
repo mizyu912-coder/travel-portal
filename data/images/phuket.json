@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Photo of Patong Beach, Phuket - Thailand, taken by Wolfgang Holzem / https://isaan.live",
     "query": "Patong Beach",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Patong_Beach_%281%29.jpg/500px-Patong_Beach_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Patong_Beach_%281%29.jpg/1280px-Patong_Beach_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Sunrise, Koh Yao Noi (island), Phang Nga Bay, Thailand.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "description": "Dreamy ethereal sunrise on the shores of tropical Koh Yao Noi island. The islands of Krabi and Phang Nga Bay were formed",
     "query": "Phang Nga Bay",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Sunrise%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg/500px-Sunrise%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Sunrise%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg/1280px-Sunrise%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:The Big Buddha, Phuket.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Phuket Big Buddha, or The Great Buddha of Phuket, is a seated Maravija Buddha statue in Phuket, Thailand. The official n",
     "query": "Big Buddha Phuket",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/The_Big_Buddha%2C_Phuket.jpg/500px-The_Big_Buddha%2C_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/The_Big_Buddha%2C_Phuket.jpg/1280px-The_Big_Buddha%2C_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

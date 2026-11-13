@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Dülmen, Marienplatz -- 2012 -- 3936.jpg",
+    "width": 5184,
+    "height": 2592,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/D%C3%BClmen%2C_Marienplatz_--_2012_--_3936.jpg/1920px-D%C3%BClmen%2C_Marienplatz_--_2012_--_3936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Marienplatz_--_2012_--_3936.jpg",
+    "artist": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Marienplatz (and Lüdinghauser Straße) in Dülmen, North Rhine-Westphalia, Germany",
+    "query": "Marienplatz",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/D%C3%BClmen%2C_Marienplatz_--_2012_--_3936.jpg/500px-D%C3%BClmen%2C_Marienplatz_--_2012_--_3936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/D%C3%BClmen%2C_Marienplatz_--_2012_--_3936.jpg/1280px-D%C3%BClmen%2C_Marienplatz_--_2012_--_3936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Neuschwanstein Castle 2024-02.jpg",
+    "width": 15083,
+    "height": 10270,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/1920px-Neuschwanstein_Castle_2024-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024-02.jpg",
+    "artist": "Wilfredor",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Neuschwanstein Castle at Schwangau, Bavaria, Germany.",
+    "query": "Neuschwanstein Castle",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/500px-Neuschwanstein_Castle_2024-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/1280px-Neuschwanstein_Castle_2024-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:20230209 Nymphenburg Palace 11.jpg",
+    "width": 5033,
+    "height": 3360,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/20230209_Nymphenburg_Palace_11.jpg/1920px-20230209_Nymphenburg_Palace_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:20230209_Nymphenburg_Palace_11.jpg",
+    "artist": "Flocci Nivis",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "description": "The Nymphenburg Palace.",
+    "query": "Nymphenburg Palace",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/20230209_Nymphenburg_Palace_11.jpg/500px-20230209_Nymphenburg_Palace_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/20230209_Nymphenburg_Palace_11.jpg/1280px-20230209_Nymphenburg_Palace_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

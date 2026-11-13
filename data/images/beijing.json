@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Belvedere of Embodying Benevolence in the forbidden city in Beijing",
     "query": "Forbidden City",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Beijing_forbidden_city_Belvedere_of_Embodying_Benevolence-20071018-RM-142403.jpg/500px-Beijing_forbidden_city_Belvedere_of_Embodying_Benevolence-20071018-RM-142403.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Beijing_forbidden_city_Belvedere_of_Embodying_Benevolence-20071018-RM-142403.jpg/1280px-Beijing_forbidden_city_Belvedere_of_Embodying_Benevolence-20071018-RM-142403.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:67054-The-Great-Wall, Mutianyu.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "description": "Mutianyu Great Wall, Beijing, China",
     "query": "Great Wall Mutianyu",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/67054-The-Great-Wall%2C_Mutianyu.jpg/500px-67054-The-Great-Wall%2C_Mutianyu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/67054-The-Great-Wall%2C_Mutianyu.jpg/1280px-67054-The-Great-Wall%2C_Mutianyu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Temple of Heaven, Beijing, China - 010 edit.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "description": "Temple of Heaven, Beijing, China, edit by Thegreenj",
     "query": "Temple of Heaven",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/500px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg/1280px-Temple_of_Heaven%2C_Beijing%2C_China_-_010_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

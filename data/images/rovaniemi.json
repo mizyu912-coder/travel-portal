@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "file": "File:Santa Claus Village (5306867729).jpg",
+    "width": 1600,
+    "height": 1200,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Santa_Claus_Village_%285306867729%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Santa_Claus_Village_(5306867729).jpg",
+    "artist": "Timo Newton-Syms from Helsinki, Finland and Chalfont St Giles, Bucks, UK",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "Santa Claus Village in Rovaniemi, Lapland, Finland",
+    "query": "Santa Claus Village",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Santa_Claus_Village_%285306867729%29.jpg/500px-Santa_Claus_Village_%285306867729%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Santa_Claus_Village_%285306867729%29.jpg/1280px-Santa_Claus_Village_%285306867729%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Rovaniemi Arktikum 1.jpg",
+    "width": 2848,
+    "height": 2138,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Rovaniemi_Arktikum_1.jpg/1920px-Rovaniemi_Arktikum_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rovaniemi_Arktikum_1.jpg",
+    "artist": "Clemensfranz",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "description": "Rovaniemi, Finland, the Arktikum Museum",
+    "query": "Arktikum",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Rovaniemi_Arktikum_1.jpg/500px-Rovaniemi_Arktikum_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Rovaniemi_Arktikum_1.jpg/1280px-Rovaniemi_Arktikum_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

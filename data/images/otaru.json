@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Otaru Canal, Otaru, Hokkaido",
     "query": "Otaru Canal",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Otaru_Canal_HDR1.jpg/500px-Otaru_Canal_HDR1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Otaru_Canal_HDR1.jpg/1280px-Otaru_Canal_HDR1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Sakaimachi street Otaru Hokkaido11n.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "description": "Sakaimachi-dori (Sakaimachi Street) in Otaru, Hokkaido prefecture, Japan",
     "query": "Sakaimachi Street",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Sakaimachi_street_Otaru_Hokkaido11n.jpg/500px-Sakaimachi_street_Otaru_Hokkaido11n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Sakaimachi_street_Otaru_Hokkaido11n.jpg/1280px-Sakaimachi_street_Otaru_Hokkaido11n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Otaru Music Box Museum interior.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Interior of the Otaru Music Box Museum",
     "query": "Otaru Music Box Museum",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Otaru_Music_Box_Museum_interior.jpg/500px-Otaru_Music_Box_Museum_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Otaru_Music_Box_Museum_interior.jpg/1280px-Otaru_Music_Box_Museum_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

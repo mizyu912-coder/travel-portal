@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Hollywood Sign in Los Angeles, California. This view can be seen in the Columbo tv-series episode \"Ashes to Ashes\" (1998",
     "query": "Hollywood Sign",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/500px-Hollywood_Sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Aerial Photo of Santa Monica Pier.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "",
     "description": "The Santa Monica Pier seen from an altitude of about 2,000', looking south.",
     "query": "Santa Monica Pier",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aerial_Photo_of_Santa_Monica_Pier.jpg/500px-Aerial_Photo_of_Santa_Monica_Pier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aerial_Photo_of_Santa_Monica_Pier.jpg/1280px-Aerial_Photo_of_Santa_Monica_Pier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Griffith Observatory 2012 01.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Griffith Observatory.",
     "query": "Griffith Observatory",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Griffith_Observatory_2012_01.jpg/500px-Griffith_Observatory_2012_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Griffith_Observatory_2012_01.jpg/1280px-Griffith_Observatory_2012_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

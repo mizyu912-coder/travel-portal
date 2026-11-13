@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "A ferry between Kagoshima and Sakurajima in Japan",
     "query": "Sakurajima",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/20100721_Sakurajima_Ferry_4243.jpg/500px-20100721_Sakurajima_Ferry_4243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/20100721_Sakurajima_Ferry_4243.jpg/1280px-20100721_Sakurajima_Ferry_4243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Sengan-en promenade (Yoshino-chō, Kagoshima) VLux5 hdsr 27.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "description": "Sengan-en promenade (Yoshino-chō, Kagoshima)",
     "query": "Sengan-en",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Sengan-en_promenade_%28Yoshino-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_27.jpg/500px-Sengan-en_promenade_%28Yoshino-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Sengan-en_promenade_%28Yoshino-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_27.jpg/1280px-Sengan-en_promenade_%28Yoshino-ch%C5%8D%2C_Kagoshima%29_VLux5_hdsr_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Kagoshima City Hall 20260221.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Kagoshima City Hall",
     "query": "Kagoshima city",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Kagoshima_City_Hall_20260221.jpg/500px-Kagoshima_City_Hall_20260221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Kagoshima_City_Hall_20260221.jpg/1280px-Kagoshima_City_Hall_20260221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

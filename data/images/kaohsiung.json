@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "description": "Lotus Pond, Kaohsiung",
     "query": "Lotus Pond Kaohsiung",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/2017-08-07_Lotus_Pond%2C_Kaohsiung_01.jpg/500px-2017-08-07_Lotus_Pond%2C_Kaohsiung_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/2017-08-07_Lotus_Pond%2C_Kaohsiung_01.jpg/1280px-2017-08-07_Lotus_Pond%2C_Kaohsiung_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:R10 Formosa Boulevard Station 20240815.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Formosa Boulevard Station",
     "query": "Formosa Boulevard Station",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/R10_Formosa_Boulevard_Station_20240815.jpg/500px-R10_Formosa_Boulevard_Station_20240815.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/R10_Formosa_Boulevard_Station_20240815.jpg/1280px-R10_Formosa_Boulevard_Station_20240815.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Cijin Island from Kaohsiung Lighthouse.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Cijin Island from Kaohsiung Lighthouse",
     "query": "Cijin Island",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Cijin_Island_from_Kaohsiung_Lighthouse.jpg/500px-Cijin_Island_from_Kaohsiung_Lighthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Cijin_Island_from_Kaohsiung_Lighthouse.jpg/1280px-Cijin_Island_from_Kaohsiung_Lighthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

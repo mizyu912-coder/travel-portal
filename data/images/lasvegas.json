@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "HDR of 3 exposures (+2 to -2), skyline of Las Vegas Strip, Las Vegas, Nevada, from Allē Lounge on 66, Resorts World Las ",
     "query": "Las Vegas Strip",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Las_Vegas_Strip_from_Resorts_World_February_2023_HDR_1.jpg/500px-Las_Vegas_Strip_from_Resorts_World_February_2023_HDR_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Las_Vegas_Strip_from_Resorts_World_February_2023_HDR_1.jpg/1280px-Las_Vegas_Strip_from_Resorts_World_February_2023_HDR_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Las Vegas, Bellagio Fountains, 2018.11.24 (15).jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "description": "Fountains of Bellagio",
     "query": "Bellagio fountains",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Las_Vegas%2C_Bellagio_Fountains%2C_2018.11.24_%2815%29.jpg/500px-Las_Vegas%2C_Bellagio_Fountains%2C_2018.11.24_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Las_Vegas%2C_Bellagio_Fountains%2C_2018.11.24_%2815%29.jpg/1280px-Las_Vegas%2C_Bellagio_Fountains%2C_2018.11.24_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Grand Canyon South Rim at Sunset.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Grand Canyon South Rim at Sunset.",
     "query": "Grand Canyon South Rim",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Grand_Canyon_South_Rim_at_Sunset.jpg/500px-Grand_Canyon_South_Rim_at_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Grand_Canyon_South_Rim_at_Sunset.jpg/1280px-Grand_Canyon_South_Rim_at_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

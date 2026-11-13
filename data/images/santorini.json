@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Panoramic view of Oia, Santorini island (Thira), Greece.jpg",
+    "width": 3000,
+    "height": 1134,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Panoramic_view_of_Oia%2C_Santorini_island_%28Thira%29%2C_Greece.jpg/1920px-Panoramic_view_of_Oia%2C_Santorini_island_%28Thira%29%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Oia,_Santorini_island_(Thira),_Greece.jpg",
+    "artist": "Mstyslav Chernov",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Panoramic view of Oia, Santorini island (Thira), Greece.",
+    "query": "Oia Santorini",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Panoramic_view_of_Oia%2C_Santorini_island_%28Thira%29%2C_Greece.jpg/500px-Panoramic_view_of_Oia%2C_Santorini_island_%28Thira%29%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Panoramic_view_of_Oia%2C_Santorini_island_%28Thira%29%2C_Greece.jpg/1280px-Panoramic_view_of_Oia%2C_Santorini_island_%28Thira%29%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Santorin (GR), Fira -- 2017 -- 2598.jpg",
+    "width": 5410,
+    "height": 3607,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Santorin_%28GR%29%2C_Fira_--_2017_--_2598.jpg/1920px-Santorin_%28GR%29%2C_Fira_--_2017_--_2598.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Santorin_(GR),_Fira_--_2017_--_2598.jpg",
+    "artist": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Table and chairs in Fira, Santorini, Greece",
+    "query": "Fira",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Santorin_%28GR%29%2C_Fira_--_2017_--_2598.jpg/500px-Santorin_%28GR%29%2C_Fira_--_2017_--_2598.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Santorin_%28GR%29%2C_Fira_--_2017_--_2598.jpg/1280px-Santorin_%28GR%29%2C_Fira_--_2017_--_2598.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Red Beach, Santorini.jpg",
+    "width": 4653,
+    "height": 1080,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Red_Beach%2C_Santorini.jpg/1920px-Red_Beach%2C_Santorini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_Beach,_Santorini.jpg",
+    "artist": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "View of Red Beach, Santorini, Greece",
+    "query": "Red Beach Santorini",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Red_Beach%2C_Santorini.jpg/500px-Red_Beach%2C_Santorini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Red_Beach%2C_Santorini.jpg/1280px-Red_Beach%2C_Santorini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

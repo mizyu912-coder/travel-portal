@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "When you look at the Yonaha Maehama Beach scenery from Yonaha Maehama Port around 11 o'clock on a summer sunny day, you ",
     "query": "Yonaha Maehama Beach",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/202408_Yonaha_Maehama_Beach_around_11_o%27clock_in_summer_%28JK-DSC0765%29.jpg/500px-202408_Yonaha_Maehama_Beach_around_11_o%27clock_in_summer_%28JK-DSC0765%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/202408_Yonaha_Maehama_Beach_around_11_o%27clock_in_summer_%28JK-DSC0765%29.jpg/1280px-202408_Yonaha_Maehama_Beach_around_11_o%27clock_in_summer_%28JK-DSC0765%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Irabu Bridge (52204774130).jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "description": "伊良部大橋",
     "query": "Irabu Bridge",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Irabu_Bridge_%2852204774130%29.jpg/500px-Irabu_Bridge_%2852204774130%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Irabu_Bridge_%2852204774130%29.jpg/1280px-Irabu_Bridge_%2852204774130%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Miyako higashi hennazaki.JPG",
@@ -36,6 +40,8 @@
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "description": "Higashi-Hen'nazaki, Miyako island, Japan / 東平安名崎（宮古島）",
     "query": "Higashi-hennazaki",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Miyako_higashi_hennazaki.JPG/500px-Miyako_higashi_hennazaki.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Miyako_higashi_hennazaki.JPG/1280px-Miyako_higashi_hennazaki.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

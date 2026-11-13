@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Petronas Towers. Kuala Lumpur, Malaysia.",
     "query": "Petronas Towers",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/2016_Kuala_Lumpur%2C_Petronas_Towers_%2827%29.jpg/500px-2016_Kuala_Lumpur%2C_Petronas_Towers_%2827%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/2016_Kuala_Lumpur%2C_Petronas_Towers_%2827%29.jpg/1280px-2016_Kuala_Lumpur%2C_Petronas_Towers_%2827%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Pankaj Vashisht at Batu Caves, Malaysia.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Pankaj Vashisht at Batu Caves, Malaysia",
     "query": "Batu Caves",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg/500px-Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg/1280px-Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Jakarta Indonesia Merdeka-Square-03.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Jakarta, Indonesia: Two baby kitten seeking shelter in a hollow stone block in Merdeka Square .",
     "query": "Merdeka Square",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Jakarta_Indonesia_Merdeka-Square-03.jpg/500px-Jakarta_Indonesia_Merdeka-Square-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Jakarta_Indonesia_Merdeka-Square-03.jpg/1280px-Jakarta_Indonesia_Merdeka-Square-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "file": "File:Promenade des Anglais in Nice.jpg",
+    "width": 3648,
+    "height": 2736,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Promenade_des_Anglais_in_Nice.jpg/1920px-Promenade_des_Anglais_in_Nice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Promenade_des_Anglais_in_Nice.jpg",
+    "artist": "Staeiou",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "The Mediterranean beach and the Promenade des Anglais in Nice, France",
+    "query": "Promenade des Anglais",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Promenade_des_Anglais_in_Nice.jpg/500px-Promenade_des_Anglais_in_Nice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Promenade_des_Anglais_in_Nice.jpg/1280px-Promenade_des_Anglais_in_Nice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Église Èze village.jpg",
+    "width": 4157,
+    "height": 2722,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%C3%89glise_%C3%88ze_village.jpg/1920px-%C3%89glise_%C3%88ze_village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%C3%89glise_%C3%88ze_village.jpg",
+    "artist": "Cayambe",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Notre-Dame de l'Assomption, the church of the medieval village of Èze in the department of Alpes-Maritimes, France, was ",
+    "query": "Èze",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%C3%89glise_%C3%88ze_village.jpg/500px-%C3%89glise_%C3%88ze_village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%C3%89glise_%C3%88ze_village.jpg/1280px-%C3%89glise_%C3%88ze_village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

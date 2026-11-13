@@ -10,6 +10,38 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "description": "View out to Lake Wakatipu from Queenstown on a cloudy day",
     "query": "Queenstown Lake Wakatipu",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Queenstown_-_Lake_Wakatipu_4_%2831641186206%29.jpg/500px-Queenstown_-_Lake_Wakatipu_4_%2831641186206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Queenstown_-_Lake_Wakatipu_4_%2831641186206%29.jpg/1280px-Queenstown_-_Lake_Wakatipu_4_%2831641186206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Milford Sound in Fiordland National Park 01.jpg",
+    "width": 4030,
+    "height": 2687,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Milford_Sound_in_Fiordland_National_Park_01.jpg/1920px-Milford_Sound_in_Fiordland_National_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Milford_Sound_in_Fiordland_National_Park_01.jpg",
+    "artist": "Krzysztof Golik",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Milford Sound in Fiordland National Park, South Island of New Zealand",
+    "query": "Milford Sound",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Milford_Sound_in_Fiordland_National_Park_01.jpg/500px-Milford_Sound_in_Fiordland_National_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Milford_Sound_in_Fiordland_National_Park_01.jpg/1280px-Milford_Sound_in_Fiordland_National_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Elwick-Glenorchy-P1010363.JPG",
+    "width": 2288,
+    "height": 1712,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Elwick-Glenorchy-P1010363.JPG/1920px-Elwick-Glenorchy-P1010363.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Elwick-Glenorchy-P1010363.JPG",
+    "artist": "Graeme Bartlett",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Elwick and Glenorchy suburbs of Hobart Tasmania viewd from Lost World near Mount Wellington",
+    "query": "Glenorchy",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Elwick-Glenorchy-P1010363.JPG/500px-Elwick-Glenorchy-P1010363.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Elwick-Glenorchy-P1010363.JPG/1280px-Elwick-Glenorchy-P1010363.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

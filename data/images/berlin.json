@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Brandenburg Gate Quadriga at Night.jpg",
+    "width": 3032,
+    "height": 2274,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Brandenburg_Gate_Quadriga_at_Night.jpg/1920px-Brandenburg_Gate_Quadriga_at_Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_Quadriga_at_Night.jpg",
+    "artist": "א (Aleph) Creator: Johann Gottfried Schadow",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "description": "This picture is a close-up of the quadriga on top of the Brandenburg Gate in Berlin (Germany) at night. The sculpture wa",
+    "query": "Brandenburg Gate",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Brandenburg_Gate_Quadriga_at_Night.jpg/500px-Brandenburg_Gate_Quadriga_at_Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Brandenburg_Gate_Quadriga_at_Night.jpg/1280px-Brandenburg_Gate_Quadriga_at_Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Spree und East Side Gallery, Berlin, 170331, ako.jpg",
+    "width": 5139,
+    "height": 3426,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Spree_und_East_Side_Gallery%2C_Berlin%2C_170331%2C_ako.jpg/1920px-Spree_und_East_Side_Gallery%2C_Berlin%2C_170331%2C_ako.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Spree_und_East_Side_Gallery,_Berlin,_170331,_ako.jpg",
+    "artist": "Ansgar Koreng",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "View over river Spree towards East Side Gallery in Berlin-Kreuzberg.",
+    "query": "East Side Gallery",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Spree_und_East_Side_Gallery%2C_Berlin%2C_170331%2C_ako.jpg/500px-Spree_und_East_Side_Gallery%2C_Berlin%2C_170331%2C_ako.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Spree_und_East_Side_Gallery%2C_Berlin%2C_170331%2C_ako.jpg/1280px-Spree_und_East_Side_Gallery%2C_Berlin%2C_170331%2C_ako.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Humboldt Forum and Berlin Cathedral June 2023 01.jpg",
+    "width": 4168,
+    "height": 2782,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg/1920px-Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg",
+    "artist": "ArildV",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Humboldt Forum and Berlin Cathedral.",
+    "query": "Berlin Cathedral",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg/500px-Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg/1280px-Humboldt_Forum_and_Berlin_Cathedral_June_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

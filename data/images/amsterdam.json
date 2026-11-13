@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Amsterdam Canals - July 2006.jpg",
+    "width": 4017,
+    "height": 2117,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Amsterdam_Canals_-_July_2006.jpg/1920px-Amsterdam_Canals_-_July_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Amsterdam_Canals_-_July_2006.jpg",
+    "artist": "Diliff",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "description": "A panorama of 4 segments of an Amsterdam Canal in summer.",
+    "query": "Amsterdam canals",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Amsterdam_Canals_-_July_2006.jpg/500px-Amsterdam_Canals_-_July_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Amsterdam_Canals_-_July_2006.jpg/1280px-Amsterdam_Canals_-_July_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Rijksmuseum atrium glass roof seen from below in Amsterdam.jpg",
+    "width": 6467,
+    "height": 4311,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg/1920px-Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg",
+    "artist": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Rijksmuseum atrium glass roof seen from below in Amsterdam, the Netherlands.",
+    "query": "Rijksmuseum",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg/500px-Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg/1280px-Rijksmuseum_atrium_glass_roof_seen_from_below_in_Amsterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Zaanse Schans, Windmühlen -- 2015 -- 7270.jpg",
+    "width": 5397,
+    "height": 2267,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Zaanse_Schans%2C_Windm%C3%BChlen_--_2015_--_7270.jpg/1920px-Zaanse_Schans%2C_Windm%C3%BChlen_--_2015_--_7270.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Zaanse_Schans,_Windm%C3%BChlen_--_2015_--_7270.jpg",
+    "artist": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Windmills in Zaanse Schans near Amsterdam, Netherlands",
+    "query": "Zaanse Schans",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Zaanse_Schans%2C_Windm%C3%BChlen_--_2015_--_7270.jpg/500px-Zaanse_Schans%2C_Windm%C3%BChlen_--_2015_--_7270.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Zaanse_Schans%2C_Windm%C3%BChlen_--_2015_--_7270.jpg/1280px-Zaanse_Schans%2C_Windm%C3%BChlen_--_2015_--_7270.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

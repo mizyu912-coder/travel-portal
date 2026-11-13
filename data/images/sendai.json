@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "description": "「宮城県 桜と松島湾」FIND/47プロジェクトより",
     "query": "Matsushima Bay",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Miyagi-Landscape_of_cherry_blossoms_and_Matsushima_Bay-xl.jpg/500px-Miyagi-Landscape_of_cherry_blossoms_and_Matsushima_Bay-xl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Miyagi-Landscape_of_cherry_blossoms_and_Matsushima_Bay-xl.jpg/1280px-Miyagi-Landscape_of_cherry_blossoms_and_Matsushima_Bay-xl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Nehan-mon, Zuihoden.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "瑞宝殿、涅槃門（仙台市青葉区）",
     "query": "Zuihoden",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Nehan-mon%2C_Zuihoden.jpg/500px-Nehan-mon%2C_Zuihoden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Nehan-mon%2C_Zuihoden.jpg/1280px-Nehan-mon%2C_Zuihoden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Tsume-mon gate of Sendai Castle.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Tsume-mon gate of Sendai Castle",
     "query": "Sendai Castle",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tsume-mon_gate_of_Sendai_Castle.jpg/500px-Tsume-mon_gate_of_Sendai_Castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tsume-mon_gate_of_Sendai_Castle.jpg/1280px-Tsume-mon_gate_of_Sendai_Castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

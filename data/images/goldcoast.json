@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "description": "Skyline of Surfers Paradise, Gold Coast.",
     "query": "Surfers Paradise",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Surfers_Paradise_Dec_2013.JPG/500px-Surfers_Paradise_Dec_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Surfers_Paradise_Dec_2013.JPG/1280px-Surfers_Paradise_Dec_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Gold-Coast-Skyline-at-Night.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "description": "The Gold Coast skyline at sunset in Queensland, Australia.",
     "query": "Gold Coast skyline",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Gold-Coast-Skyline-at-Night.jpg/500px-Gold-Coast-Skyline-at-Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Gold-Coast-Skyline-at-Night.jpg/1280px-Gold-Coast-Skyline-at-Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Clouds on horizon, Burleigh Heads, Gold Coast DSCF1973 1.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Clouds on horizon, Burleigh Heads, Gold Coast",
     "query": "Burleigh Heads",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Clouds_on_horizon%2C_Burleigh_Heads%2C_Gold_Coast_DSCF1973_1.jpg/500px-Clouds_on_horizon%2C_Burleigh_Heads%2C_Gold_Coast_DSCF1973_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Clouds_on_horizon%2C_Burleigh_Heads%2C_Gold_Coast_DSCF1973_1.jpg/1280px-Clouds_on_horizon%2C_Burleigh_Heads%2C_Gold_Coast_DSCF1973_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

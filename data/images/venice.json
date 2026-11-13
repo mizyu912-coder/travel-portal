@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:The Grand Canal. Venice, Italy.jpg",
+    "width": 4207,
+    "height": 2753,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/The_Grand_Canal._Venice%2C_Italy.jpg/1920px-The_Grand_Canal._Venice%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Grand_Canal._Venice,_Italy.jpg",
+    "artist": "Ввласенко",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "The Grand Canal. Venice, Italy",
+    "query": "Grand Canal Venice",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/The_Grand_Canal._Venice%2C_Italy.jpg/500px-The_Grand_Canal._Venice%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/The_Grand_Canal._Venice%2C_Italy.jpg/1280px-The_Grand_Canal._Venice%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Piazza San Marco, St Mark's Square, Venice, Italy.jpg",
+    "width": 3072,
+    "height": 2048,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Piazza_San_Marco%2C_St_Mark%27s_Square%2C_Venice%2C_Italy.jpg/1920px-Piazza_San_Marco%2C_St_Mark%27s_Square%2C_Venice%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Piazza_San_Marco,_St_Mark%27s_Square,_Venice,_Italy.jpg",
+    "artist": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "description": "Venice, Italy. Piazza San Marco, often known in English as St Mark's Square, is the principal square of Venice.",
+    "query": "St Mark's Square",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Piazza_San_Marco%2C_St_Mark%27s_Square%2C_Venice%2C_Italy.jpg/500px-Piazza_San_Marco%2C_St_Mark%27s_Square%2C_Venice%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Piazza_San_Marco%2C_St_Mark%27s_Square%2C_Venice%2C_Italy.jpg/1280px-Piazza_San_Marco%2C_St_Mark%27s_Square%2C_Venice%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Rialto Bridge at night1.jpg",
+    "width": 5028,
+    "height": 3462,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Rialto_Bridge_at_night1.jpg/1920px-Rialto_Bridge_at_night1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rialto_Bridge_at_night1.jpg",
+    "artist": "Livioandronico2013",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Rialto Bridge at night",
+    "query": "Rialto Bridge",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Rialto_Bridge_at_night1.jpg/500px-Rialto_Bridge_at_night1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Rialto_Bridge_at_night1.jpg/1280px-Rialto_Bridge_at_night1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

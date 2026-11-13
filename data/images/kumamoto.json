@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "description": "Kumamoto Castle, Kumamoto, Kumamoto prefecture, Japan",
     "query": "Kumamoto Castle",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Kumamoto_Castle_02n3200.jpg/500px-Kumamoto_Castle_02n3200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Kumamoto_Castle_02n3200.jpg/1280px-Kumamoto_Castle_02n3200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Mount Aso 20230102.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Mount Aso",
     "query": "Mount Aso",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Mount_Aso_20230102.jpg/500px-Mount_Aso_20230102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Mount_Aso_20230102.jpg/1280px-Mount_Aso_20230102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Daikanbo Station 20100906-1.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "立山ロープウェイ・大観峰駅 近景",
     "query": "Daikanbo",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Daikanbo_Station_20100906-1.jpg/500px-Daikanbo_Station_20100906-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Daikanbo_Station_20100906-1.jpg/1280px-Daikanbo_Station_20100906-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

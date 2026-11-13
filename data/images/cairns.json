@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Great Barrier Reef Queensland Ank Kumar",
     "query": "Great Barrier Reef",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Great_Barrier_Reef_Queensland_Ank_Kumar.jpg/500px-Great_Barrier_Reef_Queensland_Ank_Kumar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Great_Barrier_Reef_Queensland_Ank_Kumar.jpg/1280px-Great_Barrier_Reef_Queensland_Ank_Kumar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Kuranda Scenic Railway crossing Grove Street, Cairns, Australia 02.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Kuranda Scenic Railway",
     "query": "Kuranda Scenic Railway",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Kuranda_Scenic_Railway_crossing_Grove_Street%2C_Cairns%2C_Australia_02.jpg/500px-Kuranda_Scenic_Railway_crossing_Grove_Street%2C_Cairns%2C_Australia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Kuranda_Scenic_Railway_crossing_Grove_Street%2C_Cairns%2C_Australia_02.jpg/1280px-Kuranda_Scenic_Railway_crossing_Grove_Street%2C_Cairns%2C_Australia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Water reflection of a green island at sunrise with blue sky and pirogue in Don Det Laos.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Water reflection of a green island in the Mekong at sunrise with blue sky, white cloud and running pirogue, in Don Det, ",
     "query": "Green Island",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Water_reflection_of_a_green_island_at_sunrise_with_blue_sky_and_pirogue_in_Don_Det_Laos.jpg/500px-Water_reflection_of_a_green_island_at_sunrise_with_blue_sky_and_pirogue_in_Don_Det_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Water_reflection_of_a_green_island_at_sunrise_with_blue_sky_and_pirogue_in_Don_Det_Laos.jpg/1280px-Water_reflection_of_a_green_island_at_sunrise_with_blue_sky_and_pirogue_in_Don_Det_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

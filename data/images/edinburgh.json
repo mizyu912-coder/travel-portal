@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Edinburgh Castle from Esplanade 20211019.jpg",
+    "width": 3832,
+    "height": 2750,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Edinburgh_Castle_from_Esplanade_20211019.jpg/1920px-Edinburgh_Castle_from_Esplanade_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_from_Esplanade_20211019.jpg",
+    "artist": "Daniel Kraft",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "View of Edinburgh Castle and the main gate from the castle Esplanade, shortly before it opened to the public on the day.",
+    "query": "Edinburgh Castle",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Edinburgh_Castle_from_Esplanade_20211019.jpg/500px-Edinburgh_Castle_from_Esplanade_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Edinburgh_Castle_from_Esplanade_20211019.jpg/1280px-Edinburgh_Castle_from_Esplanade_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Edinburgh Royal Mile from Salisbury Crags 20211019.jpg",
+    "width": 29077,
+    "height": 4280,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg/1920px-Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg",
+    "artist": "Daniel Kraft",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Panoramic view of the old town of Edinburgh, in particular the Royal Mile, from Salisbury Crags. This is a panoramic in ",
+    "query": "Royal Mile",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg/500px-Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg/1280px-Edinburgh_Royal_Mile_from_Salisbury_Crags_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Edinburgh Calton Hill from Salisbury Crags 20211019.jpg",
+    "width": 4162,
+    "height": 2792,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg/1920px-Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg",
+    "artist": "Daniel Kraft",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Remote view of Calton Hill in Edinburgh, Scotland, from Salisbury Crags in Holyrood Park.",
+    "query": "Calton Hill",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg/500px-Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg/1280px-Edinburgh_Calton_Hill_from_Salisbury_Crags_20211019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

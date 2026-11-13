@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Golden Gate Bridge as seen from Marshall’s Beach, Presidio of San Francisco, in March 2018",
     "query": "Golden Gate Bridge",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach%2C_March_2018.jpg/500px-Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach%2C_March_2018.jpg/1280px-Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Alcatraz Island as seen from the East.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Alcatraz Island as seen from the East. The small island in the San Francisco Bay was developed with facilities for a lig",
     "query": "Alcatraz Island",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Alcatraz_Island_as_seen_from_the_East.jpg/500px-Alcatraz_Island_as_seen_from_the_East.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Alcatraz_Island_as_seen_from_the_East.jpg/1280px-Alcatraz_Island_as_seen_from_the_East.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:San Francisco (CA, USA), Lombard Street, Blick auf Alcatraz -- 2022 -- 3080.jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "View from Lombard Street to Alcatraz Island, San Francisco, California, USA",
     "query": "Lombard Street",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/San_Francisco_%28CA%2C_USA%29%2C_Lombard_Street%2C_Blick_auf_Alcatraz_--_2022_--_3080.jpg/500px-San_Francisco_%28CA%2C_USA%29%2C_Lombard_Street%2C_Blick_auf_Alcatraz_--_2022_--_3080.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/San_Francisco_%28CA%2C_USA%29%2C_Lombard_Street%2C_Blick_auf_Alcatraz_--_2022_--_3080.jpg/1280px-San_Francisco_%28CA%2C_USA%29%2C_Lombard_Street%2C_Blick_auf_Alcatraz_--_2022_--_3080.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

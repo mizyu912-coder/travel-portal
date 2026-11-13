@@ -10,7 +10,9 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "description": "Ise Grand Shrine, Mie Prefecture, Japan.",
     "query": "Ise Grand Shrine",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Ise_Grand_Shrine%2C_Mie_Prefecture%3B_February_2015_%2802%29.jpg/500px-Ise_Grand_Shrine%2C_Mie_Prefecture%3B_February_2015_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Ise_Grand_Shrine%2C_Mie_Prefecture%3B_February_2015_%2802%29.jpg/1280px-Ise_Grand_Shrine%2C_Mie_Prefecture%3B_February_2015_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Ise Mie Okage Yokocho 24.jpg",
@@ -23,7 +25,9 @@
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "description": "Ise city, Mie prefecture, Japan.",
     "query": "Okage Yokocho",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ise_Mie_Okage_Yokocho_24.jpg/500px-Ise_Mie_Okage_Yokocho_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ise_Mie_Okage_Yokocho_24.jpg/1280px-Ise_Mie_Okage_Yokocho_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   {
     "file": "File:Meoto Iwa rocks (scan 2023).jpg",
@@ -36,6 +40,8 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "description": "Meotoiwa rocks at Futamigaura, Mie Prefecture, Japan",
     "query": "Meoto Iwa",
-    "addedAt": "2026-11-13"
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Meoto_Iwa_rocks_%28scan_2023%29.jpg/500px-Meoto_Iwa_rocks_%28scan_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Meoto_Iwa_rocks_%28scan_2023%29.jpg/1280px-Meoto_Iwa_rocks_%28scan_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   }
 ]

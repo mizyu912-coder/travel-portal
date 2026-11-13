@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Royal Palace of Madrid east facade 1.jpg",
+    "width": 5410,
+    "height": 3560,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Royal_Palace_of_Madrid_east_facade_1.jpg/1920px-Royal_Palace_of_Madrid_east_facade_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Royal_Palace_of_Madrid_east_facade_1.jpg",
+    "artist": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Royal Palace of Madrid: east facade.",
+    "query": "Royal Palace of Madrid",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Royal_Palace_of_Madrid_east_facade_1.jpg/500px-Royal_Palace_of_Madrid_east_facade_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Royal_Palace_of_Madrid_east_facade_1.jpg/1280px-Royal_Palace_of_Madrid_east_facade_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Windows at Plaza Mayor - Madrid (2).JPG",
+    "width": 5184,
+    "height": 3456,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Windows_at_Plaza_Mayor_-_Madrid_%282%29.JPG/1920px-Windows_at_Plaza_Mayor_-_Madrid_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Windows_at_Plaza_Mayor_-_Madrid_(2).JPG",
+    "artist": "José Luiz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Janelas",
+    "query": "Plaza Mayor Madrid",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Windows_at_Plaza_Mayor_-_Madrid_%282%29.JPG/500px-Windows_at_Plaza_Mayor_-_Madrid_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Windows_at_Plaza_Mayor_-_Madrid_%282%29.JPG/1280px-Windows_at_Plaza_Mayor_-_Madrid_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:1 toledo spain evening sunset 2014 DXR edit.jpg",
+    "width": 5938,
+    "height": 2607,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/1_toledo_spain_evening_sunset_2014_DXR_edit.jpg/1920px-1_toledo_spain_evening_sunset_2014_DXR_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:1_toledo_spain_evening_sunset_2014_DXR_edit.jpg",
+    "artist": "Chensiyuan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "A Panorama of Toledo as seen from Parador Hotel",
+    "query": "Toledo Spain",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/1_toledo_spain_evening_sunset_2014_DXR_edit.jpg/500px-1_toledo_spain_evening_sunset_2014_DXR_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/1_toledo_spain_evening_sunset_2014_DXR_edit.jpg/1280px-1_toledo_spain_evening_sunset_2014_DXR_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]

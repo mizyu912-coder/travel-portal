@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "file": "File:Dubrovnik Old Town 1.jpg",
+    "width": 5100,
+    "height": 3140,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dubrovnik_Old_Town_1.jpg/1920px-Dubrovnik_Old_Town_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Dubrovnik_Old_Town_1.jpg",
+    "artist": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Morning view of the Old Town of Dubrovnik and its city walls, an UNESCO Heritage Site since 1979.",
+    "query": "Dubrovnik Old Town",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dubrovnik_Old_Town_1.jpg/500px-Dubrovnik_Old_Town_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Dubrovnik_Old_Town_1.jpg/1280px-Dubrovnik_Old_Town_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Dubrovnik and Otok Lokrum as seen from Mount Srđ.jpg",
+    "width": 1600,
+    "height": 777,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/af/Dubrovnik_and_Otok_Lokrum_as_seen_from_Mount_Sr%C4%91.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Dubrovnik_and_Otok_Lokrum_as_seen_from_Mount_Sr%C4%91.jpg",
+    "artist": "Jeegfullcrum",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "description": "Dubrovnik and Otok Lokrum island as seen from Mount Srđ, in the Dalmatian Coast.",
+    "query": "Mount Srđ",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Dubrovnik_and_Otok_Lokrum_as_seen_from_Mount_Sr%C4%91.jpg/500px-Dubrovnik_and_Otok_Lokrum_as_seen_from_Mount_Sr%C4%91.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Dubrovnik_and_Otok_Lokrum_as_seen_from_Mount_Sr%C4%91.jpg/1280px-Dubrovnik_and_Otok_Lokrum_as_seen_from_Mount_Sr%C4%91.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Boats - Lokrum island.jpg",
+    "width": 2549,
+    "height": 1944,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Boats_-_Lokrum_island.jpg/1920px-Boats_-_Lokrum_island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Boats_-_Lokrum_island.jpg",
+    "artist": "Pudelek (Marcin Szala)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Lokrum island - boats near marina",
+    "query": "Lokrum",
+    "addedAt": "2026-11-13",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Boats_-_Lokrum_island.jpg/500px-Boats_-_Lokrum_island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Boats_-_Lokrum_island.jpg/1280px-Boats_-_Lokrum_island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]
