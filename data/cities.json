@@ -874,5 +874,965 @@
       "season": "通年。冬のランタンフェスティバルも人気",
       "highlights": "グラバー園、大浦天主堂、眼鏡橋、稲佐山の夜景、軍艦島ツアー"
     }
+  },
+  {
+    "id": "nagoya",
+    "name": "名古屋",
+    "nameEn": "Nagoya",
+    "country": "japan",
+    "videoQueries": [
+      "名古屋 旅行 vlog",
+      "名古屋 観光 グルメ"
+    ],
+    "imageQueries": [
+      "Nagoya Castle",
+      "Atsuta Shrine",
+      "Osu Kannon",
+      "Nagoya TV Tower"
+    ],
+    "basic": {
+      "area": "中部地方（愛知県）",
+      "access": "東京から新幹線で約1時間40分、大阪から約50分",
+      "stay": "1泊2日〜",
+      "transport": "地下鉄と観光ルートバス「メーグル」が便利",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "名古屋城、熱田神宮、大須商店街、ジブリパーク、レゴランド"
+    }
+  },
+  {
+    "id": "kobe",
+    "name": "神戸",
+    "nameEn": "Kobe",
+    "country": "japan",
+    "videoQueries": [
+      "神戸 旅行 vlog",
+      "神戸 観光"
+    ],
+    "imageQueries": [
+      "Kobe Port Tower",
+      "Kitano Ijinkan",
+      "Kobe Harborland",
+      "Mount Rokko night view"
+    ],
+    "basic": {
+      "area": "関西地方（兵庫県）",
+      "access": "大阪から電車で約20〜30分、東京から新幹線で約2時間45分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "JR・阪急・阪神と地下鉄。中心部は歩いて回れる",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "北野異人館街、ハーバーランド、南京町、六甲山の夜景、有馬温泉"
+    }
+  },
+  {
+    "id": "sendai",
+    "name": "仙台",
+    "nameEn": "Sendai",
+    "country": "japan",
+    "videoQueries": [
+      "仙台 旅行 vlog",
+      "仙台 松島 観光"
+    ],
+    "imageQueries": [
+      "Matsushima Bay",
+      "Zuihoden",
+      "Sendai Castle",
+      "Osaki Hachimangu"
+    ],
+    "basic": {
+      "area": "東北地方（宮城県）",
+      "access": "東京から新幹線で約1時間30分",
+      "stay": "1泊2日〜",
+      "transport": "観光バス「るーぷる仙台」と地下鉄。松島へはJRで約40分",
+      "season": "夏（8月の七夕まつり）と秋（10〜11月）",
+      "highlights": "仙台城跡、瑞鳳殿、松島、定禅寺通り、秋保温泉"
+    }
+  },
+  {
+    "id": "otaru",
+    "name": "小樽",
+    "nameEn": "Otaru",
+    "country": "japan",
+    "videoQueries": [
+      "小樽 旅行 vlog",
+      "小樽 観光"
+    ],
+    "imageQueries": [
+      "Otaru Canal",
+      "Sakaimachi Street",
+      "Otaru Music Box Museum"
+    ],
+    "basic": {
+      "area": "北海道（後志地方）",
+      "access": "札幌からJRで約35〜50分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "中心部は歩いて回れる",
+      "season": "冬（2月の雪あかりの路）と夏（7〜8月）",
+      "highlights": "小樽運河、堺町通り、小樽オルゴール堂、寿司屋通り"
+    }
+  },
+  {
+    "id": "furano",
+    "name": "富良野・美瑛",
+    "nameEn": "Furano and Biei",
+    "country": "japan",
+    "videoQueries": [
+      "富良野 美瑛 旅行 vlog",
+      "富良野 ラベンダー"
+    ],
+    "imageQueries": [
+      "Farm Tomita",
+      "Shirogane Blue Pond",
+      "Biei hills",
+      "Furano lavender"
+    ],
+    "basic": {
+      "area": "北海道（上川地方）",
+      "access": "旭川空港から車で約20〜60分、札幌から車で約2時間",
+      "stay": "1泊2日〜",
+      "transport": "レンタカーが便利。夏は観光列車「ノロッコ号」も運行",
+      "season": "夏（7月のラベンダー）、冬（12〜2月の雪景色）",
+      "highlights": "ファーム富田、青い池、四季彩の丘、パッチワークの路"
+    }
+  },
+  {
+    "id": "karuizawa",
+    "name": "軽井沢",
+    "nameEn": "Karuizawa",
+    "country": "japan",
+    "videoQueries": [
+      "軽井沢 旅行 vlog",
+      "軽井沢 観光"
+    ],
+    "imageQueries": [
+      "Kumoba Pond",
+      "Shiraito Falls",
+      "Karuizawa Kyu-Karuizawa",
+      "Harunire Terrace"
+    ],
+    "basic": {
+      "area": "中部地方（長野県）",
+      "access": "東京から新幹線で約1時間10分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "駅周辺は歩いて回れる。郊外へはバスかレンタサイクル",
+      "season": "夏（7〜8月）と秋（10月下旬〜11月上旬の紅葉）",
+      "highlights": "旧軽井沢銀座、雲場池、白糸の滝、ハルニレテラス、アウトレット"
+    }
+  },
+  {
+    "id": "ise",
+    "name": "伊勢",
+    "nameEn": "Ise",
+    "country": "japan",
+    "videoQueries": [
+      "伊勢神宮 旅行 vlog",
+      "伊勢 観光"
+    ],
+    "imageQueries": [
+      "Ise Grand Shrine",
+      "Okage Yokocho",
+      "Meoto Iwa",
+      "Uji Bridge"
+    ],
+    "basic": {
+      "area": "近畿地方（三重県）",
+      "access": "名古屋から近鉄特急で約1時間30分、大阪から約1時間50分",
+      "stay": "1泊2日〜",
+      "transport": "伊勢神宮の外宮・内宮の間はバスが便利",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "伊勢神宮（外宮・内宮）、おはらい町・おかげ横丁、夫婦岩、鳥羽水族館"
+    }
+  },
+  {
+    "id": "shirakawago",
+    "name": "白川郷",
+    "nameEn": "Shirakawa-go",
+    "country": "japan",
+    "videoQueries": [
+      "白川郷 旅行 vlog",
+      "白川郷 観光"
+    ],
+    "imageQueries": [
+      "Shirakawa-go",
+      "Ogimachi village",
+      "Shirakawa-go winter illumination"
+    ],
+    "basic": {
+      "area": "中部地方（岐阜県）",
+      "access": "高山からバスで約50分、金沢からバスで約1時間15分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "集落の中は歩いて回れる",
+      "season": "冬（1〜2月のライトアップ）と夏（7〜8月）",
+      "highlights": "合掌造り集落、城山展望台、和田家、出会い橋"
+    }
+  },
+  {
+    "id": "beppu",
+    "name": "別府・湯布院",
+    "nameEn": "Beppu and Yufuin",
+    "country": "japan",
+    "videoQueries": [
+      "別府 湯布院 旅行 vlog",
+      "別府温泉 観光"
+    ],
+    "imageQueries": [
+      "Beppu Jigoku",
+      "Umi Jigoku",
+      "Lake Kinrin Yufuin",
+      "Yufuin"
+    ],
+    "basic": {
+      "area": "九州（大分県）",
+      "access": "福岡から特急で別府まで約2時間、湯布院まで約2時間10分",
+      "stay": "1泊2日〜",
+      "transport": "別府と湯布院の間はバスで約1時間",
+      "season": "秋（10〜11月）と冬（12〜2月）",
+      "highlights": "別府地獄めぐり、別府の共同温泉、湯布院の湯の坪街道、金鱗湖"
+    }
+  },
+  {
+    "id": "kumamoto",
+    "name": "熊本・阿蘇",
+    "nameEn": "Kumamoto and Aso",
+    "country": "japan",
+    "videoQueries": [
+      "熊本 旅行 vlog",
+      "阿蘇 観光"
+    ],
+    "imageQueries": [
+      "Kumamoto Castle",
+      "Mount Aso",
+      "Daikanbo",
+      "Suizenji Garden"
+    ],
+    "basic": {
+      "area": "九州（熊本県）",
+      "access": "福岡から新幹線で約35分",
+      "stay": "1泊2日〜",
+      "transport": "市内は路面電車。阿蘇へはレンタカーか特急",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "熊本城、水前寺成趣園、阿蘇山、大観峰、黒川温泉"
+    }
+  },
+  {
+    "id": "kagoshima",
+    "name": "鹿児島",
+    "nameEn": "Kagoshima",
+    "country": "japan",
+    "videoQueries": [
+      "鹿児島 旅行 vlog",
+      "鹿児島 観光 桜島"
+    ],
+    "imageQueries": [
+      "Sakurajima",
+      "Sengan-en",
+      "Kagoshima city",
+      "Ibusuki"
+    ],
+    "basic": {
+      "area": "九州（鹿児島県）",
+      "access": "福岡から新幹線で約1時間20分、東京から飛行機で約1時間50分",
+      "stay": "1泊2日〜",
+      "transport": "市内は路面電車と観光バス。桜島へはフェリーで約15分",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "桜島、仙巌園、天文館、指宿の砂むし温泉、知覧"
+    }
+  },
+  {
+    "id": "miyakojima",
+    "name": "宮古島",
+    "nameEn": "Miyakojima",
+    "country": "japan",
+    "videoQueries": [
+      "宮古島 旅行 vlog",
+      "宮古島 観光"
+    ],
+    "imageQueries": [
+      "Yonaha Maehama Beach",
+      "Irabu Bridge",
+      "Higashi-hennazaki",
+      "Sunayama Beach"
+    ],
+    "basic": {
+      "area": "沖縄県（宮古諸島）",
+      "access": "東京から直行便で約3時間、那覇から飛行機で約50分",
+      "stay": "2泊3日〜",
+      "transport": "レンタカーが便利。橋でつながる伊良部島・来間島にも車で行ける",
+      "season": "5〜10月（海水浴）",
+      "highlights": "与那覇前浜ビーチ、伊良部大橋、東平安名崎、砂山ビーチ、17END"
+    }
+  },
+  {
+    "id": "jeju",
+    "name": "済州島",
+    "nameEn": "Jeju",
+    "country": "korea",
+    "videoQueries": [
+      "済州島 旅行 vlog",
+      "チェジュ 観光"
+    ],
+    "imageQueries": [
+      "Seongsan Ilchulbong",
+      "Hallasan",
+      "Jeju Island coast",
+      "Manjanggul"
+    ],
+    "basic": {
+      "area": "韓国の南の島（済州特別自治道）",
+      "access": "成田・関空などから直行便で約2〜2時間30分、ソウルから飛行機で約1時間",
+      "stay": "2泊3日〜",
+      "transport": "レンタカーかタクシーのチャーター、路線バス",
+      "season": "4〜6月、9〜10月",
+      "highlights": "城山日出峰、漢拏山、万丈窟、海沿いのカフェ"
+    }
+  },
+  {
+    "id": "kaohsiung",
+    "name": "高雄",
+    "nameEn": "Kaohsiung",
+    "country": "taiwan",
+    "videoQueries": [
+      "高雄 旅行 vlog",
+      "高雄 観光"
+    ],
+    "imageQueries": [
+      "Lotus Pond Kaohsiung",
+      "Formosa Boulevard Station",
+      "Pier-2 Art Center",
+      "Cijin Island"
+    ],
+    "basic": {
+      "area": "台湾の南部",
+      "access": "成田・関空などから直行便で約3時間30〜4時間、台北から新幹線で約1時間30分",
+      "stay": "2泊3日〜",
+      "transport": "MRT（地下鉄）とライトレールが便利",
+      "season": "10〜4月",
+      "highlights": "蓮池潭、美麗島駅、駁二芸術特区、旗津、六合夜市"
+    }
+  },
+  {
+    "id": "tainan",
+    "name": "台南",
+    "nameEn": "Tainan",
+    "country": "taiwan",
+    "videoQueries": [
+      "台南 旅行 vlog",
+      "台南 観光 グルメ"
+    ],
+    "imageQueries": [
+      "Chihkan Tower",
+      "Anping Fort",
+      "Anping Tree House",
+      "Shennong Street"
+    ],
+    "basic": {
+      "area": "台湾の南西部",
+      "access": "高雄から電車で約30〜40分、台北から新幹線とバスで約2時間",
+      "stay": "1泊2日〜",
+      "transport": "中心部は歩いてもバスでも回れる",
+      "season": "10〜4月",
+      "highlights": "赤崁楼、安平古堡、安平樹屋、神農街、林百貨"
+    }
+  },
+  {
+    "id": "phuket",
+    "name": "プーケット",
+    "nameEn": "Phuket",
+    "country": "thailand",
+    "videoQueries": [
+      "プーケット 旅行 vlog",
+      "プーケット 観光"
+    ],
+    "imageQueries": [
+      "Patong Beach",
+      "Phi Phi Islands",
+      "Phang Nga Bay",
+      "Big Buddha Phuket",
+      "Phuket Old Town"
+    ],
+    "basic": {
+      "area": "タイ南部のアンダマン海の島",
+      "access": "バンコクから飛行機で約1時間20分。日本からは乗り継ぎで約9〜10時間",
+      "stay": "3泊5日〜",
+      "transport": "島内はタクシーや配車アプリ、ツアーの送迎",
+      "season": "11〜4月（乾季）",
+      "highlights": "パトンビーチ、ピピ島、パンガー湾、プーケット・オールドタウン、ビッグブッダ"
+    }
+  },
+  {
+    "id": "kualalumpur",
+    "name": "クアラルンプール",
+    "nameEn": "Kuala Lumpur",
+    "country": "malaysia",
+    "videoQueries": [
+      "クアラルンプール 旅行 vlog",
+      "クアラルンプール 観光"
+    ],
+    "imageQueries": [
+      "Petronas Towers",
+      "Batu Caves",
+      "Merdeka Square",
+      "Jalan Alor"
+    ],
+    "basic": {
+      "area": "マレーシアの首都（マレー半島西部）",
+      "access": "成田・羽田・関空から直行便で約7〜8時間",
+      "stay": "2泊4日〜",
+      "transport": "LRT・MRTなどの電車と配車アプリ（Grab）が便利",
+      "season": "通年（5〜9月はやや雨が少ない）",
+      "highlights": "ペトロナス・ツインタワー、バトゥ洞窟、ムルデカ広場、ブキッビンタン、アロー通り"
+    }
+  },
+  {
+    "id": "hoian",
+    "name": "ホイアン",
+    "nameEn": "Hoi An",
+    "country": "vietnam",
+    "videoQueries": [
+      "ホイアン 旅行 vlog",
+      "ホイアン 観光"
+    ],
+    "imageQueries": [
+      "Hoi An Ancient Town",
+      "Japanese Covered Bridge",
+      "Hoi An lanterns",
+      "An Bang Beach"
+    ],
+    "basic": {
+      "area": "ベトナム中部（クアンナム省）",
+      "access": "ダナン空港から車で約40分",
+      "stay": "1泊2日〜",
+      "transport": "旧市街は歩いて回れる。自転車のレンタルも人気",
+      "season": "2〜5月",
+      "highlights": "ホイアン旧市街、来遠橋（日本橋）、ランタンの夜景、トゥボン川の灯籠流し"
+    }
+  },
+  {
+    "id": "beijing",
+    "name": "北京",
+    "nameEn": "Beijing",
+    "country": "china",
+    "videoQueries": [
+      "北京 旅行 vlog",
+      "北京 観光"
+    ],
+    "imageQueries": [
+      "Forbidden City",
+      "Great Wall Mutianyu",
+      "Temple of Heaven",
+      "Summer Palace"
+    ],
+    "basic": {
+      "area": "中国の首都（華北）",
+      "access": "成田・羽田・関空などから直行便で約3時間30分〜4時間",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄が便利。万里の長城へはツアーかバス",
+      "season": "4〜5月、9〜10月",
+      "highlights": "故宮、万里の長城、天壇、頤和園、胡同"
+    }
+  },
+  {
+    "id": "losangeles",
+    "name": "ロサンゼルス",
+    "nameEn": "Los Angeles",
+    "country": "usa",
+    "videoQueries": [
+      "ロサンゼルス 旅行 vlog",
+      "ロス 観光"
+    ],
+    "imageQueries": [
+      "Hollywood Sign",
+      "Santa Monica Pier",
+      "Griffith Observatory",
+      "Venice Beach"
+    ],
+    "basic": {
+      "area": "アメリカ西海岸（カリフォルニア州）",
+      "access": "成田・羽田・関空から直行便で約10時間",
+      "stay": "3泊5日〜",
+      "transport": "車社会なのでレンタカーか配車アプリが便利",
+      "season": "通年（4〜10月は晴れの日が多い）",
+      "highlights": "ハリウッド、サンタモニカ、グリフィス天文台、ユニバーサル・スタジオ、ディズニーランド・リゾート"
+    }
+  },
+  {
+    "id": "lasvegas",
+    "name": "ラスベガス",
+    "nameEn": "Las Vegas",
+    "country": "usa",
+    "videoQueries": [
+      "ラスベガス 旅行 vlog",
+      "ラスベガス 観光"
+    ],
+    "imageQueries": [
+      "Las Vegas Strip",
+      "Bellagio fountains",
+      "Grand Canyon South Rim",
+      "Antelope Canyon"
+    ],
+    "basic": {
+      "area": "アメリカ西部（ネバダ州）",
+      "access": "ロサンゼルスなどで乗り継いで約12〜14時間",
+      "stay": "2泊〜",
+      "transport": "ストリップ沿いは歩くかモノレール。郊外へはツアー",
+      "season": "3〜5月、9〜11月",
+      "highlights": "ストリップ、ベラージオの噴水ショー、スフィア、グランドキャニオン"
+    }
+  },
+  {
+    "id": "sanfrancisco",
+    "name": "サンフランシスコ",
+    "nameEn": "San Francisco",
+    "country": "usa",
+    "videoQueries": [
+      "サンフランシスコ 旅行 vlog",
+      "サンフランシスコ 観光"
+    ],
+    "imageQueries": [
+      "Golden Gate Bridge",
+      "Alcatraz Island",
+      "Lombard Street",
+      "Painted Ladies"
+    ],
+    "basic": {
+      "area": "アメリカ西海岸（カリフォルニア州）",
+      "access": "成田・羽田・関空から直行便で約9〜10時間",
+      "stay": "3泊5日〜",
+      "transport": "ケーブルカー、路面電車、バス。坂が多い",
+      "season": "9〜10月",
+      "highlights": "ゴールデン・ゲート・ブリッジ、アルカトラズ島、ケーブルカー、フィッシャーマンズ・ワーフ"
+    }
+  },
+  {
+    "id": "cairns",
+    "name": "ケアンズ",
+    "nameEn": "Cairns",
+    "country": "australia",
+    "videoQueries": [
+      "ケアンズ 旅行 vlog",
+      "ケアンズ 観光"
+    ],
+    "imageQueries": [
+      "Great Barrier Reef",
+      "Kuranda Scenic Railway",
+      "Green Island",
+      "Daintree Rainforest"
+    ],
+    "basic": {
+      "area": "オーストラリア北東部（クイーンズランド州）",
+      "access": "成田から直行便で約7時間30分",
+      "stay": "3泊5日〜",
+      "transport": "中心部は歩いて回れる。郊外や島へはツアー",
+      "season": "5〜10月（乾季）",
+      "highlights": "グレートバリアリーフ、グリーン島、キュランダ、世界最古の熱帯雨林"
+    }
+  },
+  {
+    "id": "goldcoast",
+    "name": "ゴールドコースト",
+    "nameEn": "Gold Coast",
+    "country": "australia",
+    "videoQueries": [
+      "ゴールドコースト 旅行 vlog",
+      "ゴールドコースト 観光"
+    ],
+    "imageQueries": [
+      "Surfers Paradise",
+      "Gold Coast skyline",
+      "Burleigh Heads",
+      "Springbrook National Park"
+    ],
+    "basic": {
+      "area": "オーストラリア東海岸（クイーンズランド州）",
+      "access": "成田から直行便で約9時間、ブリスベンから車で約1時間",
+      "stay": "3泊5日〜",
+      "transport": "ライトレール（トラム）とバス",
+      "season": "9〜4月",
+      "highlights": "サーファーズパラダイス、テーマパーク、スプリングブルック国立公園、土ボタル"
+    }
+  },
+  {
+    "id": "melbourne",
+    "name": "メルボルン",
+    "nameEn": "Melbourne",
+    "country": "australia",
+    "videoQueries": [
+      "メルボルン 旅行 vlog",
+      "メルボルン 観光"
+    ],
+    "imageQueries": [
+      "Flinders Street Station",
+      "Hosier Lane",
+      "Twelve Apostles",
+      "Brighton Beach Bathing Boxes"
+    ],
+    "basic": {
+      "area": "オーストラリア南東部（ビクトリア州）",
+      "access": "成田から直行便で約10時間30分",
+      "stay": "3泊5日〜",
+      "transport": "中心部の路面電車（トラム）は無料区間あり",
+      "season": "11〜3月",
+      "highlights": "フリンダース・ストリート駅、ホージアー・レーン、グレート・オーシャン・ロード、ペンギン・パレード"
+    }
+  },
+  {
+    "id": "queenstown",
+    "name": "クイーンズタウン",
+    "nameEn": "Queenstown",
+    "country": "new-zealand",
+    "videoQueries": [
+      "クイーンズタウン 旅行 vlog",
+      "ミルフォードサウンド 旅行"
+    ],
+    "imageQueries": [
+      "Queenstown Lake Wakatipu",
+      "Milford Sound",
+      "Glenorchy",
+      "Skyline Queenstown"
+    ],
+    "basic": {
+      "area": "ニュージーランド南島",
+      "access": "オークランドやシドニーなどで乗り継いで約14時間〜",
+      "stay": "3泊〜",
+      "transport": "街なかは歩いて回れる。郊外へはツアーやレンタカー",
+      "season": "12〜3月（夏）、6〜8月（スキー）",
+      "highlights": "ワカティプ湖、ミルフォード・サウンド、スカイライン・ゴンドラ、グレノーキー"
+    }
+  },
+  {
+    "id": "venice",
+    "name": "ヴェネツィア",
+    "nameEn": "Venice",
+    "country": "italy",
+    "videoQueries": [
+      "ヴェネツィア 旅行 vlog",
+      "ベネチア 観光"
+    ],
+    "imageQueries": [
+      "Grand Canal Venice",
+      "St Mark's Square",
+      "Rialto Bridge",
+      "Burano"
+    ],
+    "basic": {
+      "area": "イタリア北東部（ヴェネト州）",
+      "access": "ローマから高速鉄道で約4時間、ミラノから約2時間30分",
+      "stay": "1泊2日〜",
+      "transport": "水上バス（ヴァポレット）と徒歩。車は入れない",
+      "season": "4〜6月、9〜10月",
+      "highlights": "サン・マルコ広場、大運河、リアルト橋、ゴンドラ、ブラーノ島"
+    }
+  },
+  {
+    "id": "milan",
+    "name": "ミラノ",
+    "nameEn": "Milan",
+    "country": "italy",
+    "videoQueries": [
+      "ミラノ 旅行 vlog",
+      "ミラノ 観光"
+    ],
+    "imageQueries": [
+      "Milan Cathedral",
+      "Galleria Vittorio Emanuele II",
+      "Sforza Castle",
+      "Navigli"
+    ],
+    "basic": {
+      "area": "イタリア北部（ロンバルディア州）",
+      "access": "羽田から直行便で約14時間30分。ローマから高速鉄道で約3時間",
+      "stay": "1泊2日〜",
+      "transport": "地下鉄とトラムが便利",
+      "season": "4〜6月、9〜10月",
+      "highlights": "ドゥオーモ、ガッレリア、最後の晩餐、スフォルツェスコ城、ナヴィリオ運河"
+    }
+  },
+  {
+    "id": "nice",
+    "name": "ニース",
+    "nameEn": "Nice",
+    "country": "france",
+    "videoQueries": [
+      "ニース 旅行 vlog",
+      "南仏 旅行 vlog"
+    ],
+    "imageQueries": [
+      "Promenade des Anglais",
+      "Nice Old Town",
+      "Èze",
+      "Castle Hill Nice"
+    ],
+    "basic": {
+      "area": "フランス南東部（コート・ダジュール）",
+      "access": "パリから飛行機で約1時間30分、TGVで約6時間",
+      "stay": "2泊3日〜",
+      "transport": "市内はトラムとバス。近郊の町へは電車かバス",
+      "season": "5〜9月",
+      "highlights": "プロムナード・デ・ザングレ、旧市街、城跡の丘、エズ、モナコ"
+    }
+  },
+  {
+    "id": "munich",
+    "name": "ミュンヘン",
+    "nameEn": "Munich",
+    "country": "germany",
+    "videoQueries": [
+      "ミュンヘン 旅行 vlog",
+      "ノイシュヴァンシュタイン城 旅行"
+    ],
+    "imageQueries": [
+      "Marienplatz",
+      "Neuschwanstein Castle",
+      "Nymphenburg Palace",
+      "Hofbräuhaus"
+    ],
+    "basic": {
+      "area": "ドイツ南部（バイエルン州）",
+      "access": "羽田から直行便で約14時間30分",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄（Uバーン）と近郊電車（Sバーン）",
+      "season": "6〜9月、12月（クリスマスマーケット）",
+      "highlights": "マリエン広場、ホフブロイハウス、ニンフェンブルク宮殿、ノイシュヴァンシュタイン城"
+    }
+  },
+  {
+    "id": "berlin",
+    "name": "ベルリン",
+    "nameEn": "Berlin",
+    "country": "germany",
+    "videoQueries": [
+      "ベルリン 旅行 vlog",
+      "ベルリン 観光"
+    ],
+    "imageQueries": [
+      "Brandenburg Gate",
+      "East Side Gallery",
+      "Berlin Cathedral",
+      "Museum Island"
+    ],
+    "basic": {
+      "area": "ドイツの首都（北東部）",
+      "access": "乗り継ぎで約14〜16時間、ミュンヘンから高速鉄道で約4時間",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄・近郊電車・トラムが便利",
+      "season": "5〜9月",
+      "highlights": "ブランデンブルク門、ベルリンの壁、博物館島、ベルリン大聖堂"
+    }
+  },
+  {
+    "id": "vienna",
+    "name": "ウィーン",
+    "nameEn": "Vienna",
+    "country": "austria",
+    "videoQueries": [
+      "ウィーン 旅行 vlog",
+      "ウィーン 観光"
+    ],
+    "imageQueries": [
+      "Schönbrunn Palace",
+      "St. Stephen's Cathedral",
+      "Belvedere Palace",
+      "Vienna State Opera"
+    ],
+    "basic": {
+      "area": "オーストリアの首都（北東部）",
+      "access": "成田から直行便で約14時間",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄とトラムが便利",
+      "season": "5〜9月、12月（クリスマス市）",
+      "highlights": "シェーンブルン宮殿、シュテファン大聖堂、ベルヴェデーレ宮殿、国立歌劇場"
+    }
+  },
+  {
+    "id": "prague",
+    "name": "プラハ",
+    "nameEn": "Prague",
+    "country": "czech",
+    "videoQueries": [
+      "プラハ 旅行 vlog",
+      "プラハ 観光"
+    ],
+    "imageQueries": [
+      "Charles Bridge",
+      "Prague Castle",
+      "Old Town Square Prague",
+      "Astronomical Clock Prague"
+    ],
+    "basic": {
+      "area": "チェコの首都",
+      "access": "乗り継ぎで約14〜16時間、ウィーンから鉄道で約4時間",
+      "stay": "2泊3日〜",
+      "transport": "中心部は歩いて回れる。トラムと地下鉄も便利",
+      "season": "5〜9月、12月（クリスマスマーケット）",
+      "highlights": "カレル橋、プラハ城、旧市街広場、天文時計"
+    }
+  },
+  {
+    "id": "amsterdam",
+    "name": "アムステルダム",
+    "nameEn": "Amsterdam",
+    "country": "netherlands",
+    "videoQueries": [
+      "アムステルダム 旅行 vlog",
+      "アムステルダム 観光"
+    ],
+    "imageQueries": [
+      "Amsterdam canals",
+      "Rijksmuseum",
+      "Zaanse Schans",
+      "Keukenhof"
+    ],
+    "basic": {
+      "area": "オランダの首都",
+      "access": "成田から直行便で約14時間30分",
+      "stay": "2泊3日〜",
+      "transport": "トラムと自転車。中心部は歩いても回れる",
+      "season": "4〜5月（チューリップ）、6〜9月",
+      "highlights": "運河、国立美術館、ゴッホ美術館、アンネ・フランクの家、ザーンセ・スカンス"
+    }
+  },
+  {
+    "id": "lisbon",
+    "name": "リスボン",
+    "nameEn": "Lisbon",
+    "country": "portugal",
+    "videoQueries": [
+      "リスボン 旅行 vlog",
+      "リスボン 観光"
+    ],
+    "imageQueries": [
+      "Belém Tower",
+      "Jerónimos Monastery",
+      "Lisbon Tram 28",
+      "Alfama",
+      "Sintra Pena Palace"
+    ],
+    "basic": {
+      "area": "ポルトガルの首都",
+      "access": "乗り継ぎで約16〜18時間",
+      "stay": "2泊3日〜",
+      "transport": "路面電車・地下鉄・ケーブルカー。坂が多い",
+      "season": "4〜10月",
+      "highlights": "ベレンの塔、ジェロニモス修道院、28番トラム、アルファマ地区、シントラ"
+    }
+  },
+  {
+    "id": "madrid",
+    "name": "マドリード",
+    "nameEn": "Madrid",
+    "country": "spain",
+    "videoQueries": [
+      "マドリード 旅行 vlog",
+      "マドリード 観光"
+    ],
+    "imageQueries": [
+      "Royal Palace of Madrid",
+      "Prado Museum",
+      "Plaza Mayor Madrid",
+      "Toledo Spain"
+    ],
+    "basic": {
+      "area": "スペインの首都（中央部）",
+      "access": "成田から直行便で約14時間30分",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄が便利",
+      "season": "4〜6月、9〜10月",
+      "highlights": "プラド美術館、王宮、マヨール広場、ソフィア王妃芸術センター、トレド"
+    }
+  },
+  {
+    "id": "edinburgh",
+    "name": "エディンバラ",
+    "nameEn": "Edinburgh",
+    "country": "uk",
+    "videoQueries": [
+      "エディンバラ 旅行 vlog",
+      "スコットランド 旅行 vlog"
+    ],
+    "imageQueries": [
+      "Edinburgh Castle",
+      "Royal Mile",
+      "Calton Hill",
+      "Arthur's Seat"
+    ],
+    "basic": {
+      "area": "イギリス北部（スコットランドの首都）",
+      "access": "ロンドンから鉄道で約4時間30分、飛行機で約1時間20分",
+      "stay": "2泊3日〜",
+      "transport": "中心部は歩いて回れる。坂が多い",
+      "season": "6〜8月（8月はフェスティバル）",
+      "highlights": "エディンバラ城、ロイヤル・マイル、カールトン・ヒル、アーサーズ・シート"
+    }
+  },
+  {
+    "id": "dubrovnik",
+    "name": "ドゥブロヴニク",
+    "nameEn": "Dubrovnik",
+    "country": "croatia",
+    "videoQueries": [
+      "ドゥブロヴニク 旅行 vlog",
+      "ドブロブニク 観光"
+    ],
+    "imageQueries": [
+      "Dubrovnik Old Town",
+      "Dubrovnik city walls",
+      "Mount Srđ",
+      "Lokrum"
+    ],
+    "basic": {
+      "area": "クロアチア南部（アドリア海沿岸）",
+      "access": "ヨーロッパの都市で乗り継いで約16時間〜",
+      "stay": "2泊3日〜",
+      "transport": "旧市街は歩いて回れる",
+      "season": "5〜6月、9〜10月",
+      "highlights": "旧市街、城壁めぐり、スルジ山のロープウェイ、ロクルム島"
+    }
+  },
+  {
+    "id": "santorini",
+    "name": "サントリーニ島",
+    "nameEn": "Santorini",
+    "country": "greece",
+    "videoQueries": [
+      "サントリーニ 旅行 vlog",
+      "サントリーニ島 観光"
+    ],
+    "imageQueries": [
+      "Oia Santorini",
+      "Fira",
+      "Santorini caldera",
+      "Red Beach Santorini"
+    ],
+    "basic": {
+      "area": "ギリシャ・エーゲ海のキクラデス諸島",
+      "access": "アテネから飛行機で約45分、高速船で約5時間",
+      "stay": "2泊3日〜",
+      "transport": "バス、タクシー、レンタカーやバギー",
+      "season": "5〜6月、9〜10月",
+      "highlights": "イア、フィラ、カルデラの断崖、夕日、レッドビーチ"
+    }
+  },
+  {
+    "id": "rovaniemi",
+    "name": "ロヴァニエミ",
+    "nameEn": "Rovaniemi",
+    "country": "finland",
+    "videoQueries": [
+      "ロヴァニエミ 旅行 vlog",
+      "サンタクロース村 旅行"
+    ],
+    "imageQueries": [
+      "Santa Claus Village",
+      "Rovaniemi aurora",
+      "Arktikum",
+      "Rovaniemi winter"
+    ],
+    "basic": {
+      "area": "フィンランド北部（ラップランド）",
+      "access": "ヘルシンキから飛行機で約1時間20分、夜行列車で約12時間",
+      "stay": "2泊3日〜",
+      "transport": "市内はバスかタクシー。郊外へはツアー",
+      "season": "12〜3月（オーロラ・雪）、6〜7月（白夜）",
+      "highlights": "サンタクロース村、オーロラ観賞、ハスキー犬ぞり、トナカイぞり"
+    }
   }
 ]
