@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Hollywood Sign.jpg",
+    "width": 16850,
+    "height": 11464,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1920px-Hollywood_Sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hollywood_Sign.jpg",
+    "artist": "Thomas Wolf, www.foto-tw.de",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Hollywood Sign in Los Angeles, California. This view can be seen in the Columbo tv-series episode \"Ashes to Ashes\" (1998",
+    "query": "Hollywood Sign",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "file": "File:Aerial Photo of Santa Monica Pier.jpg",
+    "width": 3517,
+    "height": 1555,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aerial_Photo_of_Santa_Monica_Pier.jpg/1920px-Aerial_Photo_of_Santa_Monica_Pier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Aerial_Photo_of_Santa_Monica_Pier.jpg",
+    "artist": "Jelson25",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "description": "The Santa Monica Pier seen from an altitude of about 2,000', looking south.",
+    "query": "Santa Monica Pier",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "file": "File:Griffith Observatory 2012 01.jpg",
+    "width": 5184,
+    "height": 3456,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Griffith_Observatory_2012_01.jpg/1920px-Griffith_Observatory_2012_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_2012_01.jpg",
+    "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Griffith Observatory.",
+    "query": "Griffith Observatory",
+    "addedAt": "2026-11-13"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Surfers Paradise Dec 2013.JPG",
+    "width": 5572,
+    "height": 3744,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Surfers_Paradise_Dec_2013.JPG/1920px-Surfers_Paradise_Dec_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Surfers_Paradise_Dec_2013.JPG",
+    "artist": "Donaldytong",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Skyline of Surfers Paradise, Gold Coast.",
+    "query": "Surfers Paradise",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "file": "File:Gold-Coast-Skyline-at-Night.jpg",
+    "width": 5184,
+    "height": 3456,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Gold-Coast-Skyline-at-Night.jpg/1920px-Gold-Coast-Skyline-at-Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gold-Coast-Skyline-at-Night.jpg",
+    "artist": "marty.vdh",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "The Gold Coast skyline at sunset in Queensland, Australia.",
+    "query": "Gold Coast skyline",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "file": "File:Clouds on horizon, Burleigh Heads, Gold Coast DSCF1973 1.jpg",
+    "width": 3118,
+    "height": 2338,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Clouds_on_horizon%2C_Burleigh_Heads%2C_Gold_Coast_DSCF1973_1.jpg/1920px-Clouds_on_horizon%2C_Burleigh_Heads%2C_Gold_Coast_DSCF1973_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Clouds_on_horizon,_Burleigh_Heads,_Gold_Coast_DSCF1973_1.jpg",
+    "artist": "John Robert McPherson",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Clouds on horizon, Burleigh Heads, Gold Coast",
+    "query": "Burleigh Heads",
+    "addedAt": "2026-11-13"
+  }
+]

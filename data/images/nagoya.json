@@ -1,0 +1,41 @@
+[
+  {
+    "file": "File:Nagoya Castle(Larger).jpg",
+    "width": 3840,
+    "height": 2160,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/1920px-Nagoya_Castle%28Larger%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nagoya_Castle(Larger).jpg",
+    "artist": "Base64",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "The keep of Nagoya Castle (名古屋城, Nagoya-jō) located in Nagoya, Aichi Prefecture, Japan. Originally built around 1525, de",
+    "query": "Nagoya Castle",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "file": "File:Atsuta Shrine.jpg",
+    "width": 5938,
+    "height": 3964,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/1920px-Atsuta_Shrine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Atsuta_Shrine.jpg",
+    "artist": "Bariston",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Temple of Atsuta Shrine",
+    "query": "Atsuta Shrine",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "file": "File:Osu Kannon main hall 2025-02 ac (1).jpg",
+    "width": 5471,
+    "height": 3637,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Osu_Kannon_main_hall_2025-02_ac_%281%29.jpg/1920px-Osu_Kannon_main_hall_2025-02_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Osu_Kannon_main_hall_2025-02_ac_(1).jpg",
+    "artist": "Asturio Cantabrio",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "愛知県名古屋市中区大須2丁目にある大須観音。本堂。",
+    "query": "Osu Kannon",
+    "addedAt": "2026-11-13"
+  }
+]
