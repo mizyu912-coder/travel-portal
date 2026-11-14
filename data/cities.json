@@ -1834,5 +1834,292 @@
       "season": "12〜3月（オーロラ・雪）、6〜7月（白夜）",
       "highlights": "サンタクロース村、オーロラ観賞、ハスキー犬ぞり、トナカイぞり"
     }
+  },
+  {
+    "id": "atami",
+    "name": "熱海",
+    "nameEn": "Atami",
+    "country": "japan",
+    "videoQueries": [
+      "熱海 旅行 vlog",
+      "熱海 観光"
+    ],
+    "imageQueries": [
+      "Atami",
+      "Atami Castle",
+      "Atami Sun Beach",
+      "MOA Museum of Art"
+    ],
+    "basic": {
+      "area": "東海地方（静岡県）",
+      "access": "東京から新幹線で約45分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "駅周辺は歩いて回れる。観光地へは湯〜遊〜バス",
+      "season": "通年（夏は花火大会、1〜2月は梅）",
+      "highlights": "熱海サンビーチ、熱海城、MOA美術館、来宮神社、熱海銀座"
+    }
+  },
+  {
+    "id": "kusatsu",
+    "name": "草津温泉",
+    "nameEn": "Kusatsu Onsen",
+    "country": "japan",
+    "videoQueries": [
+      "草津温泉 旅行 vlog",
+      "草津温泉 観光"
+    ],
+    "imageQueries": [
+      "Kusatsu Yubatake",
+      "Sainokawara Park",
+      "Kusatsu Onsen night"
+    ],
+    "basic": {
+      "area": "関東地方（群馬県）",
+      "access": "東京から特急と路線バスで約3時間、高速バスで約4時間",
+      "stay": "1泊2日〜",
+      "transport": "温泉街は歩いて回れる",
+      "season": "通年（冬は雪景色、秋は紅葉）",
+      "highlights": "湯畑、西の河原公園、湯もみショー、外湯めぐり"
+    }
+  },
+  {
+    "id": "matsumoto",
+    "name": "松本・上高地",
+    "nameEn": "Matsumoto and Kamikochi",
+    "country": "japan",
+    "videoQueries": [
+      "松本 旅行 vlog",
+      "上高地 観光"
+    ],
+    "imageQueries": [
+      "Matsumoto Castle",
+      "Kamikochi Kappa Bridge",
+      "Nakamachi Matsumoto",
+      "Daio Wasabi Farm"
+    ],
+    "basic": {
+      "area": "中部地方（長野県）",
+      "access": "東京（新宿）から特急で約2時間40分、名古屋から約2時間",
+      "stay": "1泊2日〜",
+      "transport": "市内は歩きと周遊バス。上高地へはバスで約1時間30分（4月下旬〜11月中旬）",
+      "season": "春（4〜5月）と夏〜秋（7〜10月）",
+      "highlights": "松本城、中町通り、縄手通り、上高地、大王わさび農場"
+    }
+  },
+  {
+    "id": "kurashiki",
+    "name": "倉敷",
+    "nameEn": "Kurashiki",
+    "country": "japan",
+    "videoQueries": [
+      "倉敷 旅行 vlog",
+      "倉敷美観地区 観光"
+    ],
+    "imageQueries": [
+      "Kurashiki Bikan Historical Quarter",
+      "Ohara Museum of Art",
+      "Kurashiki Ivy Square"
+    ],
+    "basic": {
+      "area": "中国地方（岡山県）",
+      "access": "岡山から電車で約15分、東京から新幹線で約3時間30分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "美観地区は歩いて回れる",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "倉敷美観地区、大原美術館、倉敷アイビースクエア、川舟流し"
+    }
+  },
+  {
+    "id": "yakushima",
+    "name": "屋久島",
+    "nameEn": "Yakushima",
+    "country": "japan",
+    "videoQueries": [
+      "屋久島 旅行 vlog",
+      "屋久島 縄文杉"
+    ],
+    "imageQueries": [
+      "Yakushima Jomon Sugi",
+      "Shiratani Unsuikyo",
+      "Yakushima forest",
+      "Oko Falls"
+    ],
+    "basic": {
+      "area": "九州（鹿児島県の離島）",
+      "access": "鹿児島から高速船で約2時間、飛行機で約40分",
+      "stay": "2泊3日〜",
+      "transport": "レンタカーか路線バス。登山口へは登山バスも",
+      "season": "4〜10月（縄文杉の登山シーズン）",
+      "highlights": "縄文杉、白谷雲水峡、ヤクスギランド、大川の滝"
+    }
+  },
+  {
+    "id": "gyeongju",
+    "name": "慶州",
+    "nameEn": "Gyeongju",
+    "country": "korea",
+    "videoQueries": [
+      "慶州 旅行 vlog",
+      "慶州 観光"
+    ],
+    "imageQueries": [
+      "Bulguksa",
+      "Seokguram",
+      "Donggung Palace and Wolji Pond",
+      "Hwangnidan-gil"
+    ],
+    "basic": {
+      "area": "韓国南東部（慶尚北道）",
+      "access": "釜山からバスや電車で約1時間、ソウルからKTXで約2時間",
+      "stay": "1泊2日〜",
+      "transport": "市内バスとタクシー、レンタサイクル",
+      "season": "4月（桜）、10〜11月（紅葉）",
+      "highlights": "仏国寺、石窟庵、東宮と月池、大陵苑、皇理団通り"
+    }
+  },
+  {
+    "id": "jiufen",
+    "name": "九份",
+    "nameEn": "Jiufen",
+    "country": "taiwan",
+    "videoQueries": [
+      "九份 旅行 vlog",
+      "九份 十分 観光"
+    ],
+    "imageQueries": [
+      "Jiufen Old Street",
+      "Shifen Old Street",
+      "Jiufen night",
+      "Jinguashi"
+    ],
+    "basic": {
+      "area": "台湾北部（新北市）",
+      "access": "台北からバスで約1時間〜1時間30分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "台北からバスかタクシー、ツアー。十分へはタクシーやツアーで移動",
+      "season": "10〜4月",
+      "highlights": "九份老街、阿妹茶樓、十分のランタン上げ、金瓜石、猴硐（猫村）"
+    }
+  },
+  {
+    "id": "penang",
+    "name": "ペナン",
+    "nameEn": "Penang",
+    "country": "malaysia",
+    "videoQueries": [
+      "ペナン 旅行 vlog",
+      "ペナン島 観光"
+    ],
+    "imageQueries": [
+      "George Town Penang street art",
+      "Kek Lok Si",
+      "Penang Hill",
+      "Clan Jetties"
+    ],
+    "basic": {
+      "area": "マレーシア北西部の島",
+      "access": "クアラルンプールから飛行機で約1時間",
+      "stay": "2泊3日〜",
+      "transport": "配車アプリ（Grab）とバス。世界遺産地区は歩いて回れる",
+      "season": "12〜3月",
+      "highlights": "ジョージタウン、ストリートアート、極楽寺、ペナン・ヒル、ホーカー（屋台街）"
+    }
+  },
+  {
+    "id": "phuquoc",
+    "name": "フーコック島",
+    "nameEn": "Phu Quoc",
+    "country": "vietnam",
+    "videoQueries": [
+      "フーコック 旅行 vlog",
+      "フーコック島 観光"
+    ],
+    "imageQueries": [
+      "Phu Quoc beach",
+      "Sao Beach",
+      "Hon Thom cable car",
+      "Sunset Town Phu Quoc"
+    ],
+    "basic": {
+      "area": "ベトナム南部のタイランド湾の島",
+      "access": "ホーチミンから飛行機で約1時間",
+      "stay": "3泊4日〜",
+      "transport": "タクシーや配車アプリ、リゾートの送迎",
+      "season": "11〜4月（乾季）",
+      "highlights": "サオビーチ、ホントム島ロープウェイ、サンセットタウン、ナイトマーケット"
+    }
+  },
+  {
+    "id": "salzburg",
+    "name": "ザルツブルク",
+    "nameEn": "Salzburg",
+    "country": "austria",
+    "videoQueries": [
+      "ザルツブルク 旅行 vlog",
+      "ハルシュタット 旅行"
+    ],
+    "imageQueries": [
+      "Salzburg Old Town",
+      "Hohensalzburg Fortress",
+      "Mirabell Palace",
+      "Hallstatt"
+    ],
+    "basic": {
+      "area": "オーストリア西部",
+      "access": "ウィーンから鉄道で約2時間30分、ミュンヘンから約1時間30分",
+      "stay": "1泊2日〜",
+      "transport": "旧市街は歩いて回れる。ハルシュタットへはバスと電車かツアー",
+      "season": "5〜9月、12月（クリスマス市）",
+      "highlights": "旧市街、ホーエンザルツブルク城、ミラベル庭園、モーツァルトの生家、ハルシュタット"
+    }
+  },
+  {
+    "id": "interlaken",
+    "name": "インターラーケン",
+    "nameEn": "Interlaken",
+    "country": "switzerland",
+    "videoQueries": [
+      "インターラーケン 旅行 vlog",
+      "グリンデルワルト ユングフラウ 旅行"
+    ],
+    "imageQueries": [
+      "Jungfraujoch",
+      "Grindelwald",
+      "Lauterbrunnen",
+      "Lake Brienz",
+      "Harder Kulm"
+    ],
+    "basic": {
+      "area": "スイス中部（ベルン州）",
+      "access": "チューリッヒから鉄道で約2時間",
+      "stay": "2泊3日〜",
+      "transport": "登山鉄道とロープウェイ。スイストラベルパスなどが便利",
+      "season": "6〜9月",
+      "highlights": "ユングフラウヨッホ、グリンデルワルト、ラウターブルンネン、ブリエンツ湖"
+    }
+  },
+  {
+    "id": "porto",
+    "name": "ポルト",
+    "nameEn": "Porto",
+    "country": "portugal",
+    "videoQueries": [
+      "ポルト 旅行 vlog",
+      "ポルト 観光"
+    ],
+    "imageQueries": [
+      "Ribeira Porto",
+      "Dom Luís I Bridge",
+      "Livraria Lello",
+      "São Bento Station"
+    ],
+    "basic": {
+      "area": "ポルトガル北部",
+      "access": "リスボンから鉄道で約3時間",
+      "stay": "2泊3日〜",
+      "transport": "地下鉄とトラム。中心部は歩いて回れる。坂が多い",
+      "season": "5〜9月",
+      "highlights": "リベイラ地区、ドン・ルイス1世橋、レロ書店、サン・ベント駅、ワインセラー"
+    }
   }
 ]
