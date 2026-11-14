@@ -17,7 +17,8 @@
       "tags": [],
       "score": 6.399,
       "status": "candidate",
-      "summary": ""
+      "summary": "大会出場の様子やプエルトリコ初日の移動と民泊のルームツアーが見られます。羽田空港からの移動や夜の街並みの様子が収録されています。",
+      "summarySource": "ai"
     },
     {
       "id": "JmEkoJSxGGk",
@@ -34,7 +35,8 @@
       "tags": [],
       "score": 6.285,
       "status": "candidate",
-      "summary": ""
+      "summary": "大会翌日のビーチ散策や世界遺産の要塞を訪れる様子が見られます。現地の人との交流や夜にサルサを踊る場面が楽しめます。",
+      "summarySource": "ai"
     },
     {
       "id": "K4cJ2KxGz4I",
@@ -62,7 +64,8 @@
       ],
       "score": 5.614,
       "status": "candidate",
-      "summary": ""
+      "summary": "親友と２人でプエルトリコを訪れた３泊４日の旅行の様子が見られます。姉のツッコミが入る楽しい旅の雰囲気を感じられます。",
+      "summarySource": "ai"
     },
     {
       "id": "ah96uuMqk0g",
@@ -90,7 +93,8 @@
       ],
       "score": 5.416,
       "status": "candidate",
-      "summary": ""
+      "summary": "アメリカ領プエルトリコを訪れた一泊二日の旅行の様子が見られます。現地の食べ物やスペイン語が飛び交う街並みの雰囲気が分かります。",
+      "summarySource": "ai"
     },
     {
       "id": "WRUuzBvLKl0",
@@ -107,7 +111,8 @@
       "tags": [],
       "score": 5.238,
       "status": "candidate",
-      "summary": ""
+      "summary": "ラテン文化が息づく旧市街地や要塞を巡る様子が見られます。ピニャコラーダ発祥の店やナイトライフを楽しむ場面が収録されています。",
+      "summarySource": "ai"
     },
     {
       "id": "Djb3ijsw_wc",
@@ -135,7 +140,8 @@
       ],
       "score": 5.125,
       "status": "candidate",
-      "summary": ""
+      "summary": "ニューヨークからプエルトリコを訪れた一人旅の様子が見られます。旧市街の観光や地元のスーパーでの買い物が紹介されています。",
+      "summarySource": "ai"
     },
     {
       "id": "n6Fr4CVuIDY",
@@ -163,7 +169,8 @@
       ],
       "score": 4.712,
       "status": "candidate",
-      "summary": ""
+      "summary": "アメリカ領プエルトリコがどのような場所なのかを解説しています。島の見どころや交通事情について詳しく知ることができます。",
+      "summarySource": "ai"
     },
     {
       "id": "ClHAXxedUMk",
@@ -191,7 +198,8 @@
       ],
       "score": 4.499,
       "status": "candidate",
-      "summary": ""
+      "summary": "サンフアン旧市街のおすすめスポット巡りが見られます。ピニャコラーダ発祥の地での歴史散策やお買い物の様子が分かります。",
+      "summarySource": "ai"
     }
   ]
 }
