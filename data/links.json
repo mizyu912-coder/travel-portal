@@ -1594,7 +1594,7 @@
   },
   "https://www.veltra.com/jp/guide/international/spot-international/80968/": {
     "ok": false,
-    "fails": 8,
+    "fails": 9,
     "title": "スリランカ観光モデルコース｜4日間で巡る歴史と自然、美しい風景を堪能する旅 | VELTRA旅行ガイド",
     "site": "VELTRA旅行ガイド",
     "checkedAt": "2026-11-16",
@@ -1790,7 +1790,7 @@
     "checkedAt": "2026-11-16"
   },
   "https://www.arukikata.co.jp/area/mu/": {
-    "fails": 14,
+    "fails": 15,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-16"
@@ -1838,7 +1838,7 @@
     "checkedAt": "2026-11-16"
   },
   "https://www.arukikata.co.jp/area/pr/": {
-    "fails": 14,
+    "fails": 15,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-16"
@@ -1851,7 +1851,7 @@
     "checkedAt": "2026-11-16"
   },
   "https://www.arukikata.co.jp/area/sm/": {
-    "fails": 14,
+    "fails": 15,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-16"
@@ -1864,7 +1864,7 @@
     "checkedAt": "2026-11-16"
   },
   "https://www.arukikata.co.jp/area/sc/": {
-    "fails": 14,
+    "fails": 15,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-16"
