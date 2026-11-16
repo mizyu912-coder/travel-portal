@@ -2121,5 +2121,288 @@
       "season": "5〜9月",
       "highlights": "リベイラ地区、ドン・ルイス1世橋、レロ書店、サン・ベント駅、ワインセラー"
     }
+  },
+  {
+    "id": "himeji",
+    "name": "姫路",
+    "nameEn": "Himeji",
+    "country": "japan",
+    "videoQueries": [
+      "姫路城 旅行 vlog",
+      "姫路 観光"
+    ],
+    "imageQueries": [
+      "Himeji Castle",
+      "Kokoen Garden",
+      "Engyoji Mount Shosha"
+    ],
+    "basic": {
+      "area": "関西地方（兵庫県）",
+      "access": "大阪から新快速で約1時間、新幹線で約30分",
+      "stay": "日帰り〜",
+      "transport": "駅から姫路城まで歩いて約15分",
+      "season": "春（3月下旬〜4月上旬の桜）と秋（10〜11月）",
+      "highlights": "姫路城、好古園、書寫山圓教寺"
+    }
+  },
+  {
+    "id": "matsuyama",
+    "name": "松山・道後温泉",
+    "nameEn": "Matsuyama and Dogo Onsen",
+    "country": "japan",
+    "videoQueries": [
+      "道後温泉 旅行 vlog",
+      "松山 観光"
+    ],
+    "imageQueries": [
+      "Dogo Onsen Honkan",
+      "Matsuyama Castle",
+      "Botchan Train"
+    ],
+    "basic": {
+      "area": "四国（愛媛県）",
+      "access": "東京から飛行機で約1時間30分、岡山から特急で約2時間40分",
+      "stay": "1泊2日〜",
+      "transport": "市内は路面電車（伊予鉄）が便利",
+      "season": "春（3〜5月）と秋（10〜11月）",
+      "highlights": "道後温泉本館、松山城、坊っちゃん列車、道後商店街"
+    }
+  },
+  {
+    "id": "naoshima",
+    "name": "直島",
+    "nameEn": "Naoshima",
+    "country": "japan",
+    "videoQueries": [
+      "直島 旅行 vlog",
+      "直島 アート"
+    ],
+    "imageQueries": [
+      "Naoshima Yellow Pumpkin",
+      "Chichu Art Museum",
+      "Benesse House",
+      "Naoshima Red Pumpkin"
+    ],
+    "basic": {
+      "area": "瀬戸内海の島（香川県）",
+      "access": "岡山の宇野港からフェリーで約20分、高松港からフェリーで約50分",
+      "stay": "日帰り〜1泊2日",
+      "transport": "島内は町営バスとレンタサイクル",
+      "season": "春（3〜5月）と秋（9〜11月）",
+      "highlights": "地中美術館、草間彌生の「南瓜」、家プロジェクト、ベネッセハウス"
+    }
+  },
+  {
+    "id": "kinosaki",
+    "name": "城崎温泉",
+    "nameEn": "Kinosaki Onsen",
+    "country": "japan",
+    "videoQueries": [
+      "城崎温泉 旅行 vlog",
+      "城崎温泉 観光"
+    ],
+    "imageQueries": [
+      "Kinosaki Onsen",
+      "Otani River Kinosaki",
+      "Kinosaki ropeway"
+    ],
+    "basic": {
+      "area": "関西地方（兵庫県北部）",
+      "access": "大阪から特急で約2時間40分、京都から約2時間20分",
+      "stay": "1泊2日〜",
+      "transport": "温泉街は歩いて回れる",
+      "season": "冬（11月〜3月のカニの季節）",
+      "highlights": "外湯めぐり（7つの共同浴場）、大谿川の柳並木、ロープウェイ"
+    }
+  },
+  {
+    "id": "aomori",
+    "name": "青森・奥入瀬",
+    "nameEn": "Aomori and Oirase",
+    "country": "japan",
+    "videoQueries": [
+      "青森 旅行 vlog",
+      "奥入瀬渓流 観光"
+    ],
+    "imageQueries": [
+      "Oirase Stream",
+      "Lake Towada",
+      "Nebuta Museum Wa Rasse",
+      "Sukayu Onsen"
+    ],
+    "basic": {
+      "area": "東北地方（青森県）",
+      "access": "東京から新幹線で新青森まで約3時間",
+      "stay": "1泊2日〜",
+      "transport": "市内はバス。奥入瀬・十和田湖へは路線バスかレンタカー",
+      "season": "夏（8月上旬のねぶた祭）、秋（10月中旬〜下旬の紅葉）、冬（樹氷）",
+      "highlights": "ねぶたの家 ワ・ラッセ、奥入瀬渓流、十和田湖、酸ヶ湯温泉、八甲田"
+    }
+  },
+  {
+    "id": "ayutthaya",
+    "name": "アユタヤ",
+    "nameEn": "Ayutthaya",
+    "country": "thailand",
+    "videoQueries": [
+      "アユタヤ 旅行 vlog",
+      "アユタヤ 遺跡"
+    ],
+    "imageQueries": [
+      "Wat Mahathat Ayutthaya",
+      "Wat Chaiwatthanaram",
+      "Wat Phra Si Sanphet"
+    ],
+    "basic": {
+      "area": "タイ中部（バンコクの北）",
+      "access": "バンコクから車で約1時間30分、鉄道で約1時間30〜2時間",
+      "stay": "日帰り〜",
+      "transport": "遺跡の間はトゥクトゥクかレンタサイクル",
+      "season": "11〜2月（乾季）",
+      "highlights": "ワット・マハタート、ワット・チャイワッタナラーム、ワット・プラ・シー・サンペット"
+    }
+  },
+  {
+    "id": "halong",
+    "name": "ハロン湾",
+    "nameEn": "Ha Long Bay",
+    "country": "vietnam",
+    "videoQueries": [
+      "ハロン湾 旅行 vlog",
+      "ハロン湾 クルーズ"
+    ],
+    "imageQueries": [
+      "Ha Long Bay",
+      "Ha Long Bay cruise",
+      "Sung Sot Cave",
+      "Ti Top Island"
+    ],
+    "basic": {
+      "area": "ベトナム北部（クアンニン省）",
+      "access": "ハノイから車で約2時間30分〜3時間",
+      "stay": "日帰り〜1泊2日",
+      "transport": "ハノイ発のツアーかクルーズ船",
+      "season": "4〜6月、9〜11月",
+      "highlights": "ハロン湾クルーズ、スンソット洞窟、ティートップ島、カヤック"
+    }
+  },
+  {
+    "id": "banff",
+    "name": "バンフ",
+    "nameEn": "Banff",
+    "country": "canada",
+    "videoQueries": [
+      "バンフ 旅行 vlog",
+      "カナディアンロッキー 旅行"
+    ],
+    "imageQueries": [
+      "Moraine Lake",
+      "Lake Louise",
+      "Banff Avenue",
+      "Peyto Lake"
+    ],
+    "basic": {
+      "area": "カナダ西部（アルバータ州のカナディアンロッキー）",
+      "access": "カルガリー空港から車で約1時間30分。日本からはバンクーバーなどで乗り継いで約12時間〜",
+      "stay": "2泊3日〜",
+      "transport": "レンタカーかツアー。湖へはシャトルバスも",
+      "season": "6〜9月（夏）、12〜3月（スキー）",
+      "highlights": "モレーン湖、レイク・ルイーズ、ペイトー湖、バンフの街並み、温泉"
+    }
+  },
+  {
+    "id": "maui",
+    "name": "マウイ島",
+    "nameEn": "Maui",
+    "country": "hawaii",
+    "videoQueries": [
+      "マウイ島 旅行 vlog",
+      "マウイ島 観光"
+    ],
+    "imageQueries": [
+      "Haleakalā sunrise",
+      "Road to Hana",
+      "Kaanapali Beach",
+      "Molokini"
+    ],
+    "basic": {
+      "area": "ハワイ諸島のマウイ島",
+      "access": "ホノルルから飛行機で約40分",
+      "stay": "3泊〜",
+      "transport": "レンタカーが便利",
+      "season": "4〜10月（冬はクジラ観察）",
+      "highlights": "ハレアカラ国立公園、ハナ・ハイウェイ、カアナパリ・ビーチ、モロキニ島"
+    }
+  },
+  {
+    "id": "zermatt",
+    "name": "ツェルマット",
+    "nameEn": "Zermatt",
+    "country": "switzerland",
+    "videoQueries": [
+      "ツェルマット 旅行 vlog",
+      "マッターホルン 旅行"
+    ],
+    "imageQueries": [
+      "Matterhorn",
+      "Gornergrat",
+      "Riffelsee",
+      "Zermatt village"
+    ],
+    "basic": {
+      "area": "スイス南部（ヴァレー州）",
+      "access": "チューリッヒから鉄道で約3時間30分",
+      "stay": "2泊3日〜",
+      "transport": "ガソリン車は入れない。登山鉄道とロープウェイで展望台へ",
+      "season": "7〜9月（ハイキング）、12〜4月（スキー）",
+      "highlights": "マッターホルン、ゴルナーグラート展望台、リッフェルゼー、氷河特急"
+    }
+  },
+  {
+    "id": "montsaintmichel",
+    "name": "モン・サン・ミシェル",
+    "nameEn": "Mont-Saint-Michel",
+    "country": "france",
+    "videoQueries": [
+      "モンサンミッシェル 旅行 vlog",
+      "モンサンミッシェル 観光"
+    ],
+    "imageQueries": [
+      "Mont-Saint-Michel",
+      "Mont-Saint-Michel Abbey",
+      "Mont-Saint-Michel night"
+    ],
+    "basic": {
+      "area": "フランス北西部（ノルマンディー地方）",
+      "access": "パリから鉄道とバスで約4時間、日帰りツアーもある",
+      "stay": "日帰り〜1泊2日",
+      "transport": "対岸からシャトルバスか徒歩で島へ渡る",
+      "season": "5〜9月",
+      "highlights": "修道院、グランド・リュ（参道）、夜のライトアップ、潮の満ち引き"
+    }
+  },
+  {
+    "id": "amalfi",
+    "name": "アマルフィ海岸",
+    "nameEn": "Amalfi Coast",
+    "country": "italy",
+    "videoQueries": [
+      "アマルフィ 旅行 vlog",
+      "ポジターノ 旅行"
+    ],
+    "imageQueries": [
+      "Positano",
+      "Amalfi",
+      "Ravello",
+      "Amalfi Coast"
+    ],
+    "basic": {
+      "area": "イタリア南部（カンパーニア州）",
+      "access": "ナポリから車で約1時間30分〜2時間、ローマから約4時間",
+      "stay": "2泊3日〜",
+      "transport": "バス（SITA）とフェリー。海沿いの道は細く曲がりくねっている",
+      "season": "5〜9月",
+      "highlights": "ポジターノ、アマルフィ、ラヴェッロ、カプリ島の青の洞窟"
+    }
   }
 ]
