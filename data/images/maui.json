@@ -1,0 +1,47 @@
+[
+  {
+    "file": "File:Haleakala Sunrise.jpg",
+    "width": 2808,
+    "height": 1872,
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Haleakala_Sunrise.jpg/1920px-Haleakala_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Haleakala_Sunrise.jpg",
+    "artist": "Melissa Doroquez",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "Haleakala Sunrise",
+    "query": "Haleakalā sunrise",
+    "addedAt": "2026-11-16",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Haleakala_Sunrise.jpg/500px-Haleakala_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Haleakala_Sunrise.jpg/1280px-Haleakala_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Kaanapali Beach Maui.jpg",
+    "width": 1725,
+    "height": 1313,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/38/Kaanapali_Beach_Maui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaanapali_Beach_Maui.jpg",
+    "artist": "John P Salvatore",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Beach in Kaanapali Beach on western shore of Maui, Hawaii",
+    "query": "Kaanapali Beach",
+    "addedAt": "2026-11-16",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Kaanapali_Beach_Maui.jpg/500px-Kaanapali_Beach_Maui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Kaanapali_Beach_Maui.jpg/1280px-Kaanapali_Beach_Maui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  {
+    "file": "File:Molokini Aerial.jpg",
+    "width": 1632,
+    "height": 1224,
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Molokini_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Molokini_Aerial.jpg",
+    "artist": "Forest &amp; Kim Starr",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "description": "Aerial view of Molokini Island, Hawaii",
+    "query": "Molokini",
+    "addedAt": "2026-11-16",
+    "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Molokini_Aerial.jpg/500px-Molokini_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "large": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Molokini_Aerial.jpg/1280px-Molokini_Aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  }
+]
