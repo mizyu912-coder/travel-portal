@@ -96,3 +96,9 @@ npm ci
 node scripts/build.mjs --demo   # 動画が無い国にサンプルを表示
 npx serve dist                  # http://localhost:3000
 ```
+
+## 編集部の旅行ガイドと検索への表示（AdSense 対策）
+
+- `data/guides/<ID>.json` の `detail`（`intro`・`course`・`spots`・`food`・`tips`・`watch`・`updated`）が、国・都市ページの「〇〇旅行ガイド」欄になります。
+- `data/config.json` の `indexOnlyDetailed: true` のあいだは、`detail` がまだのページを `noindex` にしてサイトマップから外します。ページ自体は今までどおり見られます。
+- 読み物「旅の予習ガイド」は `data/articles.json`（`/articles/`）、更新履歴は `data/updates.json`（サイトについて の下）です。

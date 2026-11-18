@@ -68,14 +68,14 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 <link rel="stylesheet" href="${r}style.css?v=${V.css}"></head>
 <body class="${cls}"><header class="site"><div class="bar">
 <a href="${r}index.html" class="logo">${LOGO}<span class="logo-text"><span class="logo-en">${esc(cfg.siteNameEn)}</span><span class="logo-ja">${esc(cfg.siteName)}</span></span></a>
-<nav class="gnav"><a href="${r}index.html#map-section">エリアから探す</a><a href="${r}index.html#lineup">国・地域の一覧</a><a href="${r}features/index.html">特集</a></nav>
+<nav class="gnav"><a href="${r}index.html#map-section">エリアから探す</a><a href="${r}index.html#lineup">国・地域の一覧</a><a href="${r}features/index.html">特集</a><a href="${r}articles/index.html">旅の予習ガイド</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="bar">
 <div class="foot-brand">${LOGO}<span><strong>${esc(cfg.siteNameEn)}</strong><br>${esc(cfg.siteName)}｜${esc(cfg.tagline)}</span></div>
 <p>安全情報の出典：<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>（最終確認 ${esc(safety.checkedAt)}）。動画とブログの著作権は各制作者に、写真の著作権は各撮影者に帰属します。掲載の停止をご希望の方はお問い合わせください。</p>
 <p class="ad-note">当サイトは、アフィリエイト広告などの広告を掲載することがあります。</p>
-<nav class="foot-nav"><a href="${r}about.html">サイトについて</a><a href="${r}privacy.html">プライバシーポリシー</a><a href="${r}privacy.html#ads">広告について</a><a href="${r}contact.html">お問い合わせ</a>${cfg.sns?.x ? `<a href="${esc(cfg.sns.x)}" target="_blank" rel="noopener me" class="foot-sns"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg>X（旧Twitter）</a>` : ''}</nav>
+<nav class="foot-nav"><a href="${r}about.html">サイトについて</a><a href="${r}articles/index.html">旅の予習ガイド</a><a href="${r}about.html#updates">更新履歴</a><a href="${r}privacy.html">プライバシーポリシー</a><a href="${r}privacy.html#ads">広告について</a><a href="${r}contact.html">お問い合わせ</a>${cfg.sns?.x ? `<a href="${esc(cfg.sns.x)}" target="_blank" rel="noopener me" class="foot-sns"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.8-6.3L6.4 22H3.3l7.3-8.3L1 2h6.3l4.4 5.8zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg>X（旧Twitter）</a>` : ''}</nav>
 <p class="copy">© ${new Date().getFullYear()} ${esc(cfg.siteNameEn)}</p>
 </div></footer>
 </body></html>`;
@@ -179,6 +179,9 @@ const ranking = `<section class="ranking" id="ranking">
 
 // 特集（data/features.json）：トップページの入口と特集一覧で使うカード
 const featuresTop = readJSON('data/features.json', []);
+// 旅の予習ガイド（data/articles.json、編集部が書いた読み物）
+const articles = readJSON('data/articles.json', []).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+const articleList = prefix => `<ul class="article-list">${articles.map(a => `<li><a href="${prefix}${a.id}.html"><span class="card-en">${esc(a.en)}</span><strong>${esc(a.title)}</strong><span class="al-lead">${esc(a.lead.slice(0, 70))}…</span></a></li>`).join('')}</ul>`;
 const featureImg = f => firstImage(countries.find(c => c.id === f.image) ?? cities.find(c => c.id === f.image) ?? {});
 const featureList = prefix => `<div class="cards feature-cards">${featuresTop.map(f => { const img = featureImg(f); return `<a class="card card-feature" href="${prefix}${f.id}.html"><span class="card-img">${img ? `<img src="${esc(img.small ?? img.thumb)}" alt="" loading="lazy" width="500" height="333">` : ''}</span><span class="card-en">${esc(f.en)}</span><span class="card-name">${esc(f.title)}</span></a>`; }).join('')}</div>`;
 
@@ -215,6 +218,7 @@ ${reel}
   <p class="note">色がついている国・地域が掲載中です。国や都市を選ぶと、別のタブでページが開きます。海外は、外務省の危険情報で主な観光地がレベル0の国・地域だけを掲載しています。</p>
 </section>
 ${featuresTop.length ? `<section class="features" id="features"><div class="sec-head"><span class="sec-en">SPECIAL</span><h2>特集</h2></div>${featureList('features/')}</section>` : ''}
+${articles.length ? `<section class="articles" id="articles"><div class="sec-head"><span class="sec-en">GUIDE</span><h2>旅の予習ガイド</h2></div>${articleList('articles/')}<p class="more-link"><a href="articles/index.html">ガイドの一覧を見る →</a></p></section>` : ''}
 ${ranking}
 <section class="lineup" id="lineup">
   <div class="sec-head"><span class="sec-en">LINEUP</span><h2>上映中の国・地域</h2></div>
@@ -393,6 +397,25 @@ function guideSection(c) {
 <ul class="guide-points">${g.points.map(pt => `<li>${esc(pt)}</li>`).join('')}</ul>
 ${g.firstTime ? `<div class="guide-first"><strong>最初の旅のコツ</strong><p>${esc(g.firstTime)}</p></div>` : ''}${planTable(c, g.plan)}</section>`;
 }
+// 編集部の詳しい解説（data/guides の detail：course・spots・food・tips・watch・updated）
+// 動画やブログのまとめだけでなく、サイト独自の情報を読めるようにする（AdSense の「有用性の低いコンテンツ」対策）
+const hasDetail = c => !!guideOf(c)?.detail;
+function detailSection(c) {
+  const d = guideOf(c)?.detail;
+  if (!d) return '';
+  const items = list => list.map(x => `<div class="dt-item"><h4>${esc(x.name)}</h4><p>${esc(x.text)}</p></div>`).join('');
+  return `<section class="detail"><h2><span class="sec-en">EDITOR'S GUIDE</span>${esc(c.name)}旅行ガイド</h2>
+${d.intro ? `<p class="guide-lead">${esc(d.intro)}</p>` : ''}
+${d.course?.length ? `<h3>モデルコース</h3><ol class="dt-course">${d.course.map(x => `<li><strong>${esc(x.day)}</strong><p>${esc(x.text)}</p></li>`).join('')}</ol>` : ''}
+${d.spots?.length ? `<h3>主な見どころ</h3><div class="dt-grid">${items(d.spots)}</div>` : ''}
+${d.food?.length ? `<h3>食べておきたいもの</h3><div class="dt-grid">${items(d.food)}</div>` : ''}
+${d.tips?.length ? `<h3>旅の注意点とコツ</h3><ul class="dt-tips">${d.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
+${d.watch ? `<div class="guide-first"><strong>旅行vlogで予習するときのポイント</strong><p>${esc(d.watch)}</p></div>` : ''}
+<p class="small byline">文：${esc(cfg.operator)}${d.updated ? `（${esc(d.updated)}更新）` : ''}。料金や営業時間などは変わることがあるため、出発前に公式の情報を確認してください。</p></section>`;
+}
+// 解説がまだのページは、書き終わるまで検索結果に出さない（config の indexOnlyDetailed）
+const thin = c => !!cfg.indexOnlyDetailed && !hasDetail(c);
+
 // 旅のプランの目安（data/guides の plan：season・days・access・budget）
 const planTable = (c, pl) => {
   if (!pl) return '';
@@ -457,6 +480,7 @@ function placeBody(c, { crumb, sub, safetyHtml, infoRows, extra = '' }) {
 ${gallery(c)}
 ${safetyHtml}
 ${guideSection(c)}
+${detailSection(c)}
 <section><h2><span class="sec-en">FEATURED VLOGS</span>おすすめの旅行動画</h2>${videos.length ? '<p class="watch-count" hidden></p>' : ''}${videos.some(v => v.summarySource === 'ai') ? '<p class="small">動画の概要は、動画の説明文をもとにAIが作成しています。</p>' : ''}${videos.length ? `<div class="videos">${videos.map(videoCard).join('')}</div>${videos.length > cfg.videos.initial ? `<p class="more-wrap"><button type="button" class="more-btn" data-step="${cfg.videos.step}">もっと見る</button></p>` : ''}` : '<p>動画は準備中です。新しい動画は毎週自動で集めています。</p>'}</section>
 ${extra}
 <section><h2><span class="sec-en">BASICS</span>基本情報</h2><table class="info">${infoRows.map(([k, l]) => c.basic?.[k] ? `<tr><th>${l}</th><td>${esc(c.basic[k])}</td></tr>` : '').join('')}</table>
@@ -502,7 +526,7 @@ for (const c of countries) {
   fs.writeFileSync(p(`dist/countries/${c.id}.html`), layout({
     title: placeTitle(c),
     desc: descOf(c, `${c.name}旅行の予習に。${c.domestic ? '人気の都市' : '安全情報や入国・通貨などの基本情報'}と、再生数や評価で選んだ旅行vlog・ブログをまとめています。`),
-    body, depth: 1, cls: 'page-country', path: `countries/${c.id}.html`, noindex: !isPublished(c),
+    body, depth: 1, cls: 'page-country', path: `countries/${c.id}.html`, noindex: !isPublished(c) || thin(c),
     image: firstImage(c)?.thumb,
     jsonld: [crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`]]), isPublished(c) && faqJsonld(c)].filter(Boolean),
   }));
@@ -531,7 +555,7 @@ for (const ct of cities) {
   fs.writeFileSync(p(`dist/cities/${ct.id}.html`), layout({
     title: placeTitle(ct),
     desc: descOf(ct, `${ct.name}旅行の予習に。見どころ・アクセス・滞在日数の目安と、再生数や評価で選んだ旅行vlog・モデルコース記事をまとめています。`),
-    body, depth: 1, cls: 'page-country page-city', path: `cities/${ct.id}.html`, noindex: !cityPublished(ct),
+    body, depth: 1, cls: 'page-country page-city', path: `cities/${ct.id}.html`, noindex: !cityPublished(ct) || thin(ct),
     image: firstImage(ct)?.thumb,
     jsonld: [crumbs([[cfg.siteName, 'index.html'], [c.name, `countries/${c.id}.html`], [ct.name, `cities/${ct.id}.html`]]), cityPublished(ct) && faqJsonld(ct)].filter(Boolean),
   }));
@@ -585,7 +609,28 @@ if (features.length) fs.writeFileSync(p('dist/features/index.html'), layout({
   body: `<article class="country"><div class="country-head"><p class="eyebrow">SPECIAL</p><h1>特集</h1></div><p class="feature-lead">テーマごとに、旅行vlogと行き先を集めました。</p>${featureList('')}</article>`,
 }));
 
+// ---------- 旅の予習ガイド（読み物） ----------
+fs.mkdirSync(p('dist/articles'), { recursive: true });
+const pageLink = id => { const c = placeById(id); return isPubPlace(c) ? `<a href="${hrefOf(c)}">${esc(c.name)}</a>` : null; };
+for (const a of articles) {
+  const body = a.sections.map(sec => `<h2>${esc(sec.h)}</h2>${(sec.p ?? []).map(t => `<p>${esc(t)}</p>`).join('')}${sec.list?.length ? `<ul>${sec.list.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}${sec.links?.length ? `<p class="small">関連ページ：${sec.links.map(pageLink).filter(Boolean).join('・')}</p>` : ''}`).join('');
+  fs.writeFileSync(p(`dist/articles/${a.id}.html`), layout({
+    title: `${a.title}｜${cfg.siteName}`, desc: a.lead.slice(0, 110) + '…', depth: 1, cls: 'page-doc', path: `articles/${a.id}.html`,
+    jsonld: [crumbs([[cfg.siteName, 'index.html'], ['旅の予習ガイド', 'articles/index.html'], [a.title, `articles/${a.id}.html`]]),
+      { '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.lead, datePublished: a.date, dateModified: a.updated ?? a.date, author: { '@type': 'Organization', name: cfg.operator }, publisher: { '@type': 'Organization', name: cfg.siteName }, inLanguage: 'ja' }],
+    body: `<article class="doc"><div class="country-head"><p class="crumb"><a href="index.html">旅の予習ガイド</a></p><p class="eyebrow">${esc(a.en)}</p><h1>${esc(a.title)}</h1></div>
+<p class="small byline">文：${esc(cfg.operator)}（${esc(a.date)}公開${a.updated && a.updated !== a.date ? `・${esc(a.updated)}更新` : ''}）</p>
+<p class="feature-lead">${esc(a.lead)}</p>${body}
+<p class="small">情報は公開時点のものです。制度や料金は変わることがあるため、出発前に公式の情報を確認してください。</p></article>`,
+  }));
+}
+if (articles.length) fs.writeFileSync(p('dist/articles/index.html'), layout({
+  title: `旅の予習ガイド｜${cfg.siteName}`, desc: '旅行vlogの見方、海外旅行の準備、通信や費用のことなど、旅の前に読んでおきたいガイドをまとめています。', depth: 1, cls: 'page-doc', path: 'articles/index.html',
+  body: `<article class="doc"><div class="country-head"><p class="eyebrow">GUIDE</p><h1>旅の予習ガイド</h1></div><p class="feature-lead">旅行vlogの見方から、出発前の準備、お金や通信のことまで。旅の前に読んでおきたいことを編集部がまとめました。</p>${articleList('')}</article>`,
+}));
+
 // ---------- サイトについて・プライバシーポリシー・お問い合わせ ----------
+const updates = readJSON('data/updates.json', []).sort((a, b) => String(b.date).localeCompare(String(a.date)));
 const doc = (path, title, en, html, desc) => fs.writeFileSync(p(`dist/${path}`), layout({
   title: `${title}｜${cfg.siteName}`, desc, path, cls: 'page-doc',
   body: `<article class="doc"><div class="country-head"><p class="eyebrow">${en}</p><h1>${title}</h1></div>${html}</article>`,
@@ -595,14 +640,19 @@ const contactLink = cfg.contactFormUrl ? `<a href="${esc(cfg.contactFormUrl)}" t
 doc('about.html', 'サイトについて', 'ABOUT', `
 <p>${esc(cfg.siteName)}（${esc(cfg.siteNameEn)}）は、旅行の前に旅行vlogやブログで予習したい人のためのガイドサイトです。行き先の国・地域や都市を選ぶと、評判のよい旅行動画と記事、旅の基本情報をまとめて見られます。</p>
 <h2>掲載している国・地域</h2>
-<p>海外は、外務省 海外安全ホームページの危険情報で、主な観光地がレベル0（危険情報なし）の国・地域だけを掲載しています。感染症危険情報が出ている国・地域は掲載しません。危険情報は毎週自動で確認し、変化があれば掲載を止めます。渡航前には必ず<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>で最新の情報をご確認ください。</p>
+<p>海外は、外務省 海外安全ホームページの危険情報で、主な観光地がレベル0（危険情報なし）の国・地域だけを掲載しています。感染症危険情報が出ている国・地域は掲載しません。危険情報は毎日自動で確認し、変化があれば掲載を止めます。渡航前には必ず<a href="https://www.anzen.mofa.go.jp/" target="_blank" rel="noopener">外務省 海外安全ホームページ</a>で最新の情報をご確認ください。</p>
 <h2>動画の選び方</h2>
-<p>YouTubeで公開されている日本語の旅行動画から、再生数、高評価の割合、公開時期、動画の長さをもとに自動で選んでいます。同じチャンネルの動画は1ページ2本までです。動画の概要文は、動画のタイトルと説明文をもとにAIが作成しており、動画の内容をすべて確認したものではありません。</p>
+<p>YouTubeで公開されている日本語の旅行動画から、再生数、高評価の割合、公開時期（${cfg.videos.maxAgeYears}年以内）、動画の長さ（${cfg.videos.minDurationMin}〜${cfg.videos.maxDurationMin}分）をもとに選んでいます。いろいろな人の目線で予習できるよう、同じチャンネルの動画は1ページ${cfg.videos.maxPerChannel}本までにしています。候補は毎日更新し、削除・非公開になった動画は自動で外します。動画の概要文は、動画のタイトルと説明文をもとにAIが作成しており、動画の内容をすべて確認したものではありません。</p>
+<h2>編集方針</h2>
+<p>旅行vlogは、街の雰囲気や移動のようす、混み具合など、文章や写真だけでは分かりにくいことを教えてくれます。一方で、動画だけでは「何日必要か」「いつ行くのがよいか」「何に気をつければよいか」は分かりにくいものです。${esc(cfg.siteName)}では、動画とあわせて読めるよう、各ページに編集部が書いた旅行ガイド（モデルコース、見どころ、名物料理、注意点、動画で予習するときのポイント）と、ベストシーズン・日数・費用の目安を載せています。</p>
+<ul><li>ガイドの文章は、編集部が公的機関や観光局などの公開情報を確認して書いています。AIが自動で作った文章をそのまま載せることはしません。</li><li>費用や日数は、一般的な旅行プランをもとにした目安です。金額は時期や為替で大きく変わります。</li><li>広告やアフィリエイトの有無で、動画や行き先の選び方・順番を変えることはありません。</li><li>誤りに気づいた場合や、ご指摘をいただいた場合は、確認のうえ速やかに直します。</li></ul>
+<p>旅のガイドの書き足しは順番に進めています。ガイドがまだのページは、準備ができるまで検索結果に表示されない設定にしています。</p>
 <h2>写真と記事</h2>
 <p>ページ上部の写真は、Wikimedia Commons で自由な利用が認められた写真（CC0・パブリックドメイン・CC BY・CC BY-SA）を使い、撮影者とライセンスを表示しています。AIで生成された画像は使いません。紹介している記事は各サイトへのリンクで、内容の著作権は各サイトに帰属します。</p>
 <h2>運営者</h2>
 <table class="info"><tr><th>サイト名</th><td>${esc(cfg.siteName)}（${esc(cfg.siteNameEn)}）</td></tr><tr><th>運営</th><td>${esc(cfg.operator)}</td></tr><tr><th>URL</th><td>${esc(BASE)}/</td></tr><tr><th>お問い合わせ</th><td>${contactLink}</td></tr></table>
-<p>動画やブログの制作者の方で、掲載の停止をご希望の場合は、お問い合わせからご連絡ください。確認のうえ速やかに対応します。</p>`,
+<p>動画やブログの制作者の方で、掲載の停止をご希望の場合は、お問い合わせからご連絡ください。確認のうえ速やかに対応します。</p>
+${updates.length ? `<h2 id="updates">更新履歴</h2><dl class="updates">${updates.map(u => `<div><dt>${esc(u.date)}</dt><dd>${esc(u.text)}</dd></div>`).join('')}</dl>` : ''}`,
 `${cfg.siteName}の目的、掲載している国・地域の基準、動画の選び方、運営者について。`);
 
 doc('privacy.html', 'プライバシーポリシー', 'PRIVACY POLICY', `
