@@ -290,7 +290,7 @@
   },
   "https://www.veltra.com/jp/yokka/article/international-thailand-bangkok-67427/": {
     "ok": false,
-    "fails": 13,
+    "fails": 14,
     "title": "バンコク2泊3日モデルコース完全ガイド！必見の観光からグルメ体験まで | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
     "site": "",
     "checkedAt": "2026-11-26",
@@ -368,7 +368,7 @@
   },
   "https://www.veltra.com/jp/yokka/article/international-thailand-bangkok-67249/": {
     "ok": false,
-    "fails": 12,
+    "fails": 13,
     "title": "バンコク3泊4日モデルコース｜遺跡巡りからグルメ、ショッピングまで | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
     "site": "",
     "checkedAt": "2026-11-26",
@@ -509,7 +509,7 @@
   },
   "https://www.veltra.com/jp/yokka/article/international-france-paris-67336/": {
     "ok": false,
-    "fails": 12,
+    "fails": 13,
     "title": "パリ観光モデルコース1日完全ガイド！王道コースやパリの暮らしを体験できるコースもご紹介 | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
     "site": "",
     "checkedAt": "2026-11-26",
@@ -678,7 +678,7 @@
   },
   "https://www.veltra.com/jp/yokka/article/domestic-okinawa-ishigaki-13899/": {
     "ok": false,
-    "fails": 13,
+    "fails": 14,
     "title": "石垣島を2泊3日モデルコースで楽しもう！離島めぐりなどのおすすめ旅行プランをご紹介 | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
     "site": "",
     "checkedAt": "2026-11-26",
@@ -770,11 +770,11 @@
   },
   "https://www.walkerplus.com/article/114383/": {
     "ok": false,
-    "fails": 1,
+    "fails": 2,
     "title": "【東京1Dayトリップ】2大タワーを制覇！超王道東京観光コース｜ウォーカープラス",
     "site": "ウォーカープラス（Walkerplus）",
     "checkedAt": "2026-11-26",
-    "error": "The operation was aborted due to timeout"
+    "error": "HTTP 504"
   },
   "https://newt.net/hrv/dbv/mag": {
     "ok": true,
@@ -891,7 +891,7 @@
   "https://4travel.jp/os_qa_each-29336.html": {
     "ok": true,
     "fails": 0,
-    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光・遊ぶに関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
+    "title": "『初めてのクロアチア、モデルルートを教えて下さい。』snowdさんの観光に関する質問・掲示板【フォートラベル】| ザグレブ(Zagreb)",
     "site": "",
     "checkedAt": "2026-11-26"
   },
@@ -1051,7 +1051,7 @@
   },
   "https://www.veltra.com/jp/yokka/article/international-hawaii-67251/": {
     "ok": false,
-    "fails": 12,
+    "fails": 13,
     "title": "ハワイ3泊5日のおすすめモデルプラン｜楽しみ方が詰まった旅行6選 | 海外旅行、日本国内旅行のおすすめ情報 | ベルトラYOKKA | VELTRA",
     "site": "",
     "checkedAt": "2026-11-26",
@@ -1209,9 +1209,7 @@
     "fails": 0,
     "title": "世界遺産と大自然を満喫！レンタカーなしの奥日光1泊2日モデルコース",
     "site": "GOOD LUCK TRIP",
-    "checkedAt": "2026-11-26",
-    "blocked": true,
-    "error": "HTTP 403"
+    "checkedAt": "2026-11-26"
   },
   "https://www.veltra.com/jp/guide/international/spot-international/87374/": {
     "ok": true,
@@ -1330,9 +1328,7 @@
     "fails": 0,
     "title": "東京からの日帰り旅行先に最適！横浜の旅行ガイド",
     "site": "GOOD LUCK TRIP",
-    "checkedAt": "2026-11-26",
-    "blocked": true,
-    "error": "HTTP 403"
+    "checkedAt": "2026-11-26"
   },
   "https://www.travel.co.jp/guide/matome/2457/": {
     "ok": true,
@@ -1602,7 +1598,7 @@
   },
   "https://www.veltra.com/jp/guide/international/spot-international/80968/": {
     "ok": false,
-    "fails": 22,
+    "fails": 23,
     "title": "スリランカ観光モデルコース｜4日間で巡る歴史と自然、美しい風景を堪能する旅 | VELTRA旅行ガイド",
     "site": "VELTRA旅行ガイド",
     "checkedAt": "2026-11-26",
@@ -1644,12 +1640,11 @@
     "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/ad/": {
-    "ok": false,
-    "fails": 1,
+    "ok": true,
+    "fails": 0,
     "title": "アンドラの基本情報と観光ガイド",
     "site": "地球の歩き方",
-    "checkedAt": "2026-11-26",
-    "error": "The operation was aborted due to timeout"
+    "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/ar/": {
     "ok": true,
@@ -1659,12 +1654,11 @@
     "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/am/": {
-    "ok": false,
-    "fails": 1,
+    "ok": true,
+    "fails": 0,
     "title": "アルメニアの基本情報と観光ガイド",
     "site": "地球の歩き方",
-    "checkedAt": "2026-11-26",
-    "error": "The operation was aborted due to timeout"
+    "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/az/": {
     "ok": true,
@@ -1800,7 +1794,7 @@
     "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/mu/": {
-    "fails": 28,
+    "fails": 29,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-26"
@@ -1848,7 +1842,7 @@
     "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/pr/": {
-    "fails": 28,
+    "fails": 29,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-26"
@@ -1861,7 +1855,7 @@
     "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/sm/": {
-    "fails": 28,
+    "fails": 29,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-26"
@@ -1874,7 +1868,7 @@
     "checkedAt": "2026-11-26"
   },
   "https://www.arukikata.co.jp/area/sc/": {
-    "fails": 28,
+    "fails": 29,
     "ok": false,
     "error": "HTTP 404",
     "checkedAt": "2026-11-26"
